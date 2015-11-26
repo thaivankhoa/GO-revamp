@@ -12,6 +12,15 @@ body {
   background-color: #fff;
 }
 
+.container-fluid {
+  margin: 0;
+  padding: 0;
+  .inner-container {
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
+
 textarea {
 	resize: vertical;
 }
@@ -23,8 +32,14 @@ textarea {
 	}
 }
 
-.conatiner{
-
+.footer-above{
+  margin: auto;
+  h3{
+    color: white;
+  }
+  p{
+    color: white;
+  }
 }
 
 .base-section {
@@ -32,13 +47,24 @@ textarea {
   text-align: left;
   background: #fff;
   color: orangered;
+  width: 100%;
 }
 
-.panel-default{
-  .panel-heading{
-    text-align: center;
-    color: white;
-    background-color: orangered;
+.panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 2px 5px 10px #AB9A9A;
+  &.panel-default {
+    .panel-heading{
+      text-align: center;
+      color: white;
+      background-color: orangered;
+    }
+  }
+  &.panel-custom {
+    color: black;
   }
 }
 
@@ -46,6 +72,24 @@ textarea {
   color: white;
   background-color: orangered;
   margin-left: 15px;
+  &.btn-outline {
+    margin: 5px;
+    margin-left: 0px;
+    border: solid 2px #fff;
+    font-size: 20px;
+    color: #fff;
+    background: 0 0;
+  }
+  &.btn-social {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+  }
 }
 
 .form-control{
@@ -75,5 +119,11 @@ textarea {
 .contact-section {
   @extend .base-section;
   background: #fff;
+}
+
+.footer-section{
+  @extend .base-section;
+  background-color: orangered;
+  padding-top: 50px;
 }
 
