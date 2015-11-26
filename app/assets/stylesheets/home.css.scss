@@ -108,12 +108,13 @@ textarea {
 
 .team-section {
   @extend .base-section;
-  background: #fff;
+  background: #FF4C00;
 }
 
 .about-section {
   @extend .base-section;
-  background: #eee;
+  background: white;
+
 }
 
 .contact-section {
@@ -127,3 +128,20 @@ textarea {
   padding-top: 50px;
 }
 
+.section {
+	.header {
+		color: yellow;
+	}
+	.content {
+		.items {
+			color: red;	
+		}
+		.subheader {}
+	}
+}
+.about_background {  
+  background-image: image-url('ha.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 30px;
+}
