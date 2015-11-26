@@ -1,5 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 // Place all the styles related to the Home controller here.
 // They will automatically be extendd in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
@@ -7,23 +9,11 @@ body {
 	padding-top: 60px;
   width: 100%;
   height: 100%;
+  background-color: #fff;
 }
 
 textarea {
 	resize: vertical;
-}
-
-@media(min-width:767px) {
-    .navbar {
-        padding: 20px 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
-    }
-
-    .top-nav-collapse {
-        padding: 0;
-    }
 }
 
 .center {
@@ -33,10 +23,33 @@ textarea {
 	}
 }
 
+.conatiner{
+
+}
+
 .base-section {
-	padding-top: 300px;
-  text-align: center;
-  background: #eee;
+  padding-top: 100px;
+  text-align: left;
+  background: #fff;
+  color: orangered;
+}
+
+.panel-default{
+  .panel-heading{
+    text-align: center;
+    color: white;
+    background-color: orangered;
+  }
+}
+
+.btn{
+  color: white;
+  background-color: orangered;
+  margin-left: 15px;
+}
+
+.form-control{
+  border-color: orangered;
 }
 
 .service-section {
@@ -46,6 +59,7 @@ textarea {
 .work-section {
   @extend .base-section;
   background: #000;
+
 }
 
 .team-section {
@@ -60,17 +74,6 @@ textarea {
 
 .contact-section {
   @extend .base-section;
-  background: #000;
+  background: #fff;
 }
 
-.section {
-	.header {
-		color: yellow;
-	}
-	.content {
-		.items {
-			color: red;	
-		}
-		.subheader {}
-	}
-}
