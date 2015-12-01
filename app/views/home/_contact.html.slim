@@ -3,7 +3,7 @@
 	  h1 CONTACT
 contact.row
 	.col-md-7
-	  = render "contact_form"
+	  = render partial: "contacts/form", locals:  { contact: @contact }
 	.col-md-5 
 		.panel.panel-default
 			.panel-heading
