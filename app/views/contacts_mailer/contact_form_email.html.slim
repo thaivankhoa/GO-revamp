@@ -1,0 +1,14 @@
+h2 Hi Admin,
+
+p
+	| A person name
+	= @contact.name
+	| sent you a feedback with following content:
+	
+p
+	b Subject
+	= @contact.subject
+
+p
+	b Content
+	= @contact.message

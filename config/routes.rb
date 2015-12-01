@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  resources :contacts
+  resources :contacts
+  resources :contacts
   get 'home/home'
 
   get 'home/about'
