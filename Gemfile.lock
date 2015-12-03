@@ -169,7 +169,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  actionmailer (~> 4.2, >= 4.2.5)
   bootstrap-sass (~> 3.3.5)
   byebug
   coffee-rails (~> 4.1.0)
