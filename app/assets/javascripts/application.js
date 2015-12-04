@@ -14,3 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
++-javascripts/
+| +-application.js (manifest)
+| +-myjs.js
+| +-admin.js
++-stylesheets/

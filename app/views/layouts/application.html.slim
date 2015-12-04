@@ -7,10 +7,9 @@ html
     = csrf_meta_tags
 
   body data-spy="scroll"
-    .container-fluid
-      .row
-        .col-lg-12.inner-container
+      
+        .header-section
           = render "layouts/header"
-      .row 
-        .col-lg-12
+      
+        .body-content
           = yield
