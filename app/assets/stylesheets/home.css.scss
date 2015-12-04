@@ -32,20 +32,20 @@ body {
 }
 
 .logo{
-  width: 300px;
-  height: 300px;
+  width: 235px;
+  height: 235px;
   border-radius: 50%;
   float: left;
-  margin-top: -23px;
+  margin-top: 3px;
 }
 .title{
   width: 600px;
-  padding: 23px 20px;
+  padding: 5px 20px;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   float:left;
-  margin-left: -20px;
-  margin-top: 15px;
+  margin-left: -11px;
+  margin-top: 30px;
 }
 .title-medium{
   color: white;
@@ -75,7 +75,7 @@ body {
   width: 100%;
   height: 60px;
   background-color: #ff5722;
-  box-shadow: 2px 3px 10px #959595;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.9);
     .menu-content{
       width: 670px;
       margin: 0px auto;
@@ -95,12 +95,16 @@ body {
         }
     }
 }
+.menu-section-scroll{
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
 //Service
 
 .service-section {
-  
   width: 100%;
-  height: 1020px;
+  height: auto;
     .service-content{
       width: 1245px;
       margin: 0px auto;
@@ -115,13 +119,14 @@ body {
           margin: 0px auto;
         }
         .service-center{
-          margin-top: 65px;
+          margin: 65px 0px;
+          height: 420px;
             .service-box{
               width: 268px;
               height: 420px;
               margin-right: 57px;
               float: left;
-              box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+              box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
                 .service-header{
                   width: 100%;
                   height: 55px;
@@ -132,12 +137,41 @@ body {
                   text-align: center;
                   padding: 15px;
                 }
+                .textlong{
+                  padding: 2px;
+                }
+                .service-body{
+                  padding: 30px;
+                    img{
+                      margin-left: 39px;
+                    }
+                    p{
+                      padding-top: 35px;
+                      width: 212px;
+                      color: #414242;
+                    }
+                }
             }
             .last{
             margin-right: 0px;
             }
         }
     }
+}
+@media screen and (max-width: 1245px) {
+  .service-section{
+    .service-content{
+      width: 594px;
+      .service-center{
+        .service-box{
+          margin-bottom: 65px;
+        }
+        #section-box-2{
+          margin-right: 0px;
+        }
+      }
+    }
+  }
 }
 
 textarea {
