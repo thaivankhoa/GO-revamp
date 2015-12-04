@@ -17,24 +17,22 @@ body {
 .header-section{
   width: 100%;
   height: 452px;
-  left: 0;
   margin-top: -60px;
-    .bg-header{
+  .bg-header{
       z-index: -1;
-    }
-    .header-title{
+  }
+  .header-title{
       width: 945px;
       padding-top: 70px;
       margin: 0px auto;
       position: relative;
       margin-top: -468px;
-    }
+  }
 }
 
 .logo{
   width: 235px;
   height: 235px;
-  border-radius: 50%;
   float: left;
   margin-top: 3px;
 }
@@ -76,23 +74,23 @@ body {
   height: 60px;
   background-color: #ff5722;
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.9);
-    .menu-content{
+  .menu-content{
       width: 670px;
       margin: 0px auto;
       list-style: none;
-        li{
+      li{
           float: left;
           padding: 16px 19px 15px;
-            a{
+          a{
             color: white;
             text-decoration: none;
             font-size: 18px;
             font-weight: bold;
           }
         }
-        li:hover{
+      li:hover{
           border-bottom: 3px solid white;
-        }
+      }
     }
 }
 .menu-section-scroll{
@@ -105,11 +103,11 @@ body {
 .service-section {
   width: 100%;
   height: auto;
-    .service-content{
+  .service-content{
       width: 1245px;
       margin: 0px auto;
       margin-top: 101px;
-        .service-title{
+      .service-title{
           color: #ff5722;
           font-weight: bold;
           font-size: 60px;
@@ -117,17 +115,17 @@ body {
           border-bottom: 1px solid #ff4e50;
           width: 265px;
           margin: 0px auto;
-        }
-        .service-center{
+      }
+      .service-center{
           margin: 65px 0px;
           height: 420px;
-            .service-box{
+          .service-box{
               width: 268px;
               height: 420px;
               margin-right: 57px;
               float: left;
               box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-                .service-header{
+              .service-header{
                   width: 100%;
                   height: 55px;
                   background-color: #ff5722;
@@ -136,41 +134,41 @@ body {
                   font-weight: bold;
                   text-align: center;
                   padding: 15px;
-                }
-                .textlong{
+              }
+              .textlong{
                   padding: 2px;
-                }
-                .service-body{
+              }
+              .service-body{
                   padding: 30px;
-                    img{
+                  img{
                       margin-left: 39px;
-                    }
-                    p{
+                  }
+                  p{
                       padding-top: 35px;
                       width: 212px;
                       color: #414242;
-                    }
-                }
-            }
-            .last{
+                  }
+              }
+          }
+          .last{
             margin-right: 0px;
-            }
+          }
         }
     }
 }
 @media screen and (max-width: 1245px) {
   .service-section{
-    .service-content{
+  .service-content{
       width: 594px;
       .service-center{
-        .service-box{
+      .service-box{
           margin-bottom: 65px;
-        }
-        #section-box-2{
+      }
+      #section-box-2{
           margin-right: 0px;
-        }
       }
     }
+  }
   }
 }
 

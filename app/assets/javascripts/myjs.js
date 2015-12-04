@@ -1,7 +1,7 @@
 $('document').ready(function() {
   	var mn = $('.menu-section');
-  	mns = 'menu-section-scroll';
-  	hdr = $('.header-section').height();
+  	var mns = 'menu-section-scroll';
+  	var hdr = $('.header-section').height();
   	$(window).scroll(function(){
   		if($(this).scrollTop() > hdr){
   			mn.addClass(mns);
