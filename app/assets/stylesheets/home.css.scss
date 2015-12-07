@@ -6,14 +6,34 @@
 // They will automatically be extendd in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-	padding-top: 60px;
+  padding-top: 60px;
   width: 100%;
   height: 100%;
   background-color: #fff;
   font-family: "Helvetica";
 }
-//Header
+//Structure
+.content{
+  width: 1110px;
+  margin: 0px auto;
+  .title{
+    color: #ff5722;
+    border-top: 1px solid #ff4e50;
+    border-bottom: 1px solid #ff4e50;
+    font-weight: bold;
+    font-size: 60px;
+    width: 265px;
+    margin: 0px auto;
+    margin-top: 101px;
+  }
+  .container{
+    margin-top: 65px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
 
+//Header
 .header-section{
   width: 100%;
   height: 452px;
@@ -36,7 +56,7 @@ body {
   float: left;
   margin-top: 3px;
 }
-.title{
+.title-01{
   width: 600px;
   padding: 5px 20px;
   border-top: 1px solid white;
@@ -80,7 +100,7 @@ body {
       list-style: none;
       li{
           float: left;
-          padding: 16px 19px 15px;
+          padding: 16px 19px 16px;
           a{
             color: white;
             text-decoration: none;
@@ -93,36 +113,23 @@ body {
       }
     }
 }
-.menu-section-scroll{
-  position: fixed;
+.menu-section-scroll
+{  position: fixed;
   top: 0;
   z-index: 1;
 }
+      
 //Service
-
 .service-section {
-  width: 100%;
   height: auto;
-  .service-content{
-      width: 1245px;
-      margin: 0px auto;
-      margin-top: 101px;
-      .service-title{
-          color: #ff5722;
-          font-weight: bold;
-          font-size: 60px;
-          border-top: 1px solid #ff4e50;
-          border-bottom: 1px solid #ff4e50;
-          width: 265px;
-          margin: 0px auto;
-      }
+  padding-bottom: 65px;
+  .content{
       .service-center{
-          margin: 65px 0px;
           height: 420px;
           .service-box{
-              width: 268px;
+              width: 240px;
               height: 420px;
-              margin-right: 57px;
+              margin-right: 50px;
               float: left;
               box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
               .service-header{
@@ -136,17 +143,18 @@ body {
                   padding: 15px;
               }
               .textlong{
-                  padding: 2px;
+                  padding-top: 5px;
               }
               .service-body{
-                  padding: 30px;
+                  padding: 30px 16px 0px 16px;
                   img{
-                      margin-left: 39px;
+                    margin-left: 38px;
                   }
                   p{
                       padding-top: 35px;
                       width: 212px;
                       color: #414242;
+                      text-align: left;
                   }
               }
           }
@@ -158,29 +166,80 @@ body {
 }
 @media screen and (max-width: 1245px) {
   .service-section{
-  .service-content{
-      width: 594px;
-      .service-center{
-      .service-box{
-          margin-bottom: 65px;
-      }
-      #section-box-2{
-          margin-right: 0px;
+    .content{
+        width: 594px;
+        .service-center{
+        .service-box{
+            margin-bottom: 65px;
+        }
+        #section-box-2{
+            margin-right: 0px;
+        }
       }
     }
   }
-  }
 }
 
+//Work Session
+.work-section {
+  background-image: url("#{asset_path('bg-work.png')}");
+  padding-bottom: 65px;
+  .content{
+      padding-top: 120px;
+      .work-title{
+          color: white;
+          border-top: 1px solid white;
+          border-bottom: 1px solid white;
+          width: 200px;
+          padding-left: 3px;
+      }
+      .container{
+        .work-box{
+          height: 240px;
+          width: 260px;
+          background-color: white;
+          float: left;
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+          margin-right: 23px;
+          transition: 0.1s;
+          p{
+            color: #ff5722;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+          }
+          img{
+            width: 100%; 
+            height: 83%;
+            margin-bottom: 9px;
+          }
+        }
+        .work-box:hover{
+          width: 280px;
+          height: 260px;
+          margin-left: -10px;
+          margin-right: 13px;
+          margin-top: -10px;
+          transition: 0.1s;
+          box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.9);
+        }
+        .last{
+          margin-right: 0px;
+        }
+      }
+    }
+}
+  
+
 textarea {
-	resize: vertical;
+  resize: vertical;
 }
 
 .center {
-	text-align: center;
-	h1 {
-		margin-bottom: 10px;
-	}
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
 }
 
 .footer-above{
@@ -249,11 +308,7 @@ textarea {
 
 
 
-.work-section {
-  @extend .base-section;
-  background: orangered;
 
-}
 
 .team-section {
   @extend .base-section;
@@ -277,17 +332,17 @@ textarea {
   padding-top: 50px;
 }
 
-.section {
-	.header {
-		color: yellow;
-	}
-	.content {
-		.items {
-			color: red;	
-		}
-		.subheader {}
-	}
-}
+// .section {
+//   .header {
+//     color: yellow;
+//   }
+//   .content {
+//     .items {
+//       color: red;  
+//     }
+//     .subheader {}
+//   }
+// }
 
 .title_red{
   color:orangered; 
