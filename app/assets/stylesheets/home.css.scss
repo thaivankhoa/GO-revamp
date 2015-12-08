@@ -309,18 +309,45 @@ textarea {
 }
 
 
-
-
+.work-section {
+  @extend .base-section;
+  background: orangered;
+  .img-rounded {
+    height: 150px;
+    width: 300px;
+    padding-top: 15px;
+  }
+}
 
 .team-section {
   @extend .base-section;
   background: #FF4C00;
+  .img-circle {
+    height: 250px;
+    width: 250px;
+  }
+  .team-content{
+    color:white;
+    h3{
+      font-size: 25px;
+    }
+    p{
+      font-size: 15px;
+    }
+    div{
+      font-size: 15px;
+      padding-top: 30px;
+    }
+  }
 }
-
 .about-section {
   @extend .base-section;
   background: white;
-
+  .img{
+    width: 150px;
+    height: 150px;
+  }
+  font-size: large;
 }
 
 .contact-section {
@@ -333,18 +360,6 @@ textarea {
   background-color: orangered;
   padding-top: 50px;
 }
-
-// .section {
-//   .header {
-//     color: yellow;
-//   }
-//   .content {
-//     .items {
-//       color: red;  
-//     }
-//     .subheader {}
-//   }
-// }
 
 .title_red{
   color:orangered; 
@@ -372,19 +387,5 @@ textarea {
   }
   p{
     font-size: 35px
-  }
-}
-.team-content{
-  
-  color:white;
-  h3{
-    font-size: 25px;
-  }
-  p{
-    font-size: 15px;
-  }
-  .image{
-    height: 250px;
-    width: 250px;
   }
 }
