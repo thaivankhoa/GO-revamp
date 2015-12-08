@@ -123,6 +123,17 @@ body {
 {  position: fixed;
   top: 0;
   z-index: 1;
+  background-color: #181818;
+  .menu-content{
+    li{
+      a{
+        color: white;
+      }
+    }
+    li:hover{
+      border-bottom: 3px solid white;
+    }
+  }
 }    
 //Service
 .service-section {
@@ -189,7 +200,7 @@ body {
 //Work Session
 .work-section {
   background-image: url("#{asset_path('bg-work.jpg')}");
-  padding-bottom: 65px;
+  height: 740px;
   .content{
       padding-top: 200px;
       .work-title{
@@ -235,7 +246,30 @@ body {
       }
     }
 }
-  
+// ABOUT SECTION:
+.about-section{
+  background-color: #181818;
+  .content{
+    width: 900px;
+    .about-title{
+      padding-left: 5px;
+      width: 225px;
+    }
+    .about-center{
+      img{
+        width: 235px;
+        height: 220px;
+        float: left;
+        margin-top: -5px;
+      }
+      .text{
+        width: 870px;
+        font-size: 20px;
+        color: white;
+      }
+    }
+  }
+}
 
 textarea {
   resize: vertical;
@@ -312,17 +346,6 @@ textarea {
   border-color: orangered;
 }
 
-
-.work-section {
-  @extend .base-section;
-  background: orangered;
-  .img-rounded {
-    height: 150px;
-    width: 300px;
-    padding-top: 15px;
-  }
-}
-
 .team-section {
   @extend .base-section;
   background: #FF4C00;
@@ -343,15 +366,6 @@ textarea {
       padding-top: 30px;
     }
   }
-}
-.about-section {
-  @extend .base-section;
-  background: white;
-  .img{
-    width: 150px;
-    height: 150px;
-  }
-  font-size: large;
 }
 
 .contact-section {
