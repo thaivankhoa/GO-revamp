@@ -114,12 +114,16 @@ body {
       }
     }
 }
-.menu-section-scroll
+.menu-section-scroll-01
 {  position: fixed;
   top: 0;
   z-index: 1;
 }
-      
+.menu-section-scroll-02
+{  position: fixed;
+  top: 0;
+  z-index: 1;
+}    
 //Service
 .service-section {
   height: auto;
@@ -187,7 +191,7 @@ body {
   background-image: url("#{asset_path('bg-work.jpg')}");
   padding-bottom: 65px;
   .content{
-      padding-top: 120px;
+      padding-top: 200px;
       .work-title{
           color: #181818;
           border-top: 1px solid #181818;
