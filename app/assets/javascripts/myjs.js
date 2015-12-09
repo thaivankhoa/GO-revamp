@@ -2,9 +2,9 @@ $('document').ready(function() {
   	var mn = $('.menu-section');
   	var mns_01 = 'menu-section-scroll-01';
     var mns_02 = 'menu-section-scroll-02';
-  	var hdr = $('.header-section').height();
-    var work = $('.header-section').height()+$('.menu-section').height()+$('.service-section').height();
-    var about = work + $('.about-section').height() - 60;
+  	var hdr = $('.service-section').offset().top;
+    var work = $('.work-section').offset().top;
+    var about = $('.about-section').offset().top - $('.menu-section').height();
   	$(window).scroll(function(){
   		if($(this).scrollTop() > hdr){
   			mn.addClass(mns_01);
