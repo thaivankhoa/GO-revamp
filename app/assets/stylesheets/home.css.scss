@@ -14,7 +14,6 @@ body {
 }
 //Structure
 .content{
-  font-family:  OpenSans-Regular;
   padding: 101px 90px 65px 90px;
   .title{
     color: #f7c31b;
@@ -37,7 +36,7 @@ body {
 //Header
 .header-section{
   width: 100%;
-  height: 600px;
+  height: 610px;
   margin-top: -60px;
   .bg-header{
       z-index: -1;
@@ -48,7 +47,6 @@ body {
       margin: 0px auto;
       position: relative;
       margin-top: -468px;
-      font-family:  OpenSans-Regular;
   }
 }
 .row{
@@ -95,7 +93,7 @@ body {
 //Navbar
 .menu-section{
   width: 100%;
-  height: 60px;
+  height: 70px;
   background-color: #f7c31b;
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.9);
   .menu-content{
@@ -103,6 +101,7 @@ body {
       margin: 0px auto;
       list-style: none;
       li{
+          margin-top: 10px;
           float: left;
           padding: 16px 19px 16px;
           a{
@@ -110,7 +109,6 @@ body {
             text-decoration: none;
             font-size: 18px;
             font-weight: bold;
-            font-family:  OpenSans-Regular;
           }
         }
       li:hover{
@@ -160,7 +158,6 @@ body {
                   color: #100e09;
                   font-size: 18px;
                   font-weight: bold;
-                  font-family: OpenSans-Regular;
                   text-align: center;
                   padding: 15px;
               }
@@ -230,7 +227,6 @@ body {
               overflow: hidden;
               position: relative;
               text-align: center;
-              font-family: OpenSans-Regular;
               box-shadow: 1px 1px 2px #e6e6e6;
               cursor: default;
               background: #fff url(../images/bgimg.jpg) no-repeat center center
@@ -346,7 +342,6 @@ body {
 // ABOUT SECTION:
 .about-section{
   height: 660px;
-  font-family: OpenSans-Regular;
   background-color: #181818;
   .content{
     .about-title{
@@ -381,7 +376,6 @@ textarea {
 }
 
 .footer-above{
-  font-family: OpenSans-Regular;
   margin: auto;
   h3{
     margin-left: 30%;
@@ -418,7 +412,6 @@ textarea {
 .footer-copyright{
   margin: 0px;
   p{
-    font-family: OpenSans-Regular;
     text-align: center;
     margin-left: 30%;
     width: 180px;
@@ -511,8 +504,8 @@ textarea {
   background: #333333;
   height: 660px;
   .panel-body{
+    width: 335px;
     color: white;
-    font-family: OpenSans-Regular;
   }
   .row{
     

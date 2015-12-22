@@ -51,7 +51,7 @@ $('document').ready(function() {
       return false;
     });
     var h0 = 0;
-    var h1 = h0 + $('.header-section').height();
+    var h1 = h0 + $('.header-section').height() - 21;
     var h2 = h1 + $('.service-section').height();
     var h3 = h2 + $('.work-section').height();
     var h4 = h3 +  $('.carousel-section').height() + $('.about-section').height();
