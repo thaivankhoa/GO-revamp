@@ -25,5 +25,9 @@
       br/
       = f.text_area :message, class: "form-control", required: "true", type: "text"
     .row
-      .form-group.col-xs-12
+      .form-group.col-xs-12        
         = f.submit "EMAIL US", :class => "btn"
+        - flash.each do |key, value|
+          javascript: 
+            alert("#{value}")
+        end
