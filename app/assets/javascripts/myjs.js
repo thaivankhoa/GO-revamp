@@ -2,7 +2,8 @@ $('document').ready(function() {
     var mn = $('.menu-section');
     var mns_01 = 'menu-section-scroll-01';
     var mns_02 = 'menu-section-scroll-02';
-    var service = $('.service-section').offset().top-100;
+    var service = $('.service-section').offset().top - 100;
+    var current_slider = 1;
 
     var stt = $('.scrollToTop');
     var stt_1 = 'scrollToTop-1';
@@ -11,8 +12,20 @@ $('document').ready(function() {
     var current_menu = $('.menu-content > li:nth-child(1) > .inside');
     var numService = $('.service-row').size();
 
+
+    //Set height auto for slider
+    var heightSlider = $('.image:nth-child(1)').height();
+    $('.slider').css('height', heightSlider + 'px');
+
+    //Auto slider
+    var autoNext = setInterval(setAuto,10000); 
+    $('.image-slider > .image:nth-child(1) > img').css({'transform':'scale(1)','opacity':'0.4'});
+
+    
     //Scroll
     $(window).scroll(function(){
+
+      //Active menu
       if($(this).scrollTop() >= $('.header-section').offset().top - 80){
         current_menu.removeClass('active');
         current_menu = $('.menu-content > li:nth-child(1) > .inside');
@@ -46,10 +59,12 @@ $('document').ready(function() {
       }
       
       //Check to see if the window is top if not then display button
-      if ($(this).scrollTop() > 100) {
+      if ($(this).scrollTop() > 0) {
          $('.scrollToTop').fadeIn();
+         $('.navigation').css('position','fixed');
       } else {
          $('.scrollToTop').fadeOut();
+         $('.navigation').css('position','static');
       }
     });
 
@@ -61,13 +76,12 @@ $('document').ready(function() {
     });
 
 
-    //Navbar
+    //Navbar Responsive
     $('.navbar').click(function(){
       $('.menu-content').slideToggle();
     });
 
     
-
     //Navigation
     $('.menu-content > li').click(function(){
       var index = $(this).attr('id');
@@ -87,6 +101,24 @@ $('document').ready(function() {
     });
 
 
+    //Function
+    function setAuto(){
+      current_slider = current_slider + 1;
+      if(current_slider > 3){
+        current_slider = 1;
+      }
+      $('.image-slider > .image:nth-child(' + current_slider + ') > img').css({'transform':'scale(1)','opacity':'0.4'});
+      var before = current_slider - 1;
+      var next = current_slider + 1;
+      if(before < 1){
+        before = 3;
+      }
+      if(next > 3){
+        next = 1;
+      }
+      $('.image-slider > .image:nth-child(' + next + ') > img').css({'transform':'scale(1.5)','opacity':'0'});
+      $('.image-slider > .image:nth-child(' + before + ') > img').css({'opacity':'0'});
+    }
     function animateService_01(){
       //Amination image
       $('.service-row:nth-child(1) > .service-img').css({'transform':'scale(1)','top':'0px','left':'0px', 'transition-delay':'1s'});
