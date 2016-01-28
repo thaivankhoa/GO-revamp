@@ -1,2 +1,29 @@
-.bg-header
+.navigation
+  .logo
+    = image_tag 'logo.png', :alt => "Golden Owl Consulting"
+    .title
+      h1 Golden
+      h2 Owl Consulting
+  .navbar
+    = image_tag 'iconbar.png'
+  ul.menu-content
+    li#header
+      .outside
+      .inside.active HOME
+    li#service
+      .outside
+      .inside SERVICE
+    li#work
+      .outside
+      .inside PORTFOLIO
+    li#about
+      .outside
+      .inside ABOUT
+    li#team
+      .outside
+      .inside TEAM
+    li#contact
+      .outside
+      .inside CONTACT
+.slider
 	img src="#{asset_path('bg-header4.jpg')}" width="100%" height="610px"

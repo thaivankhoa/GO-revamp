@@ -2,61 +2,185 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
 // Place all the styles related to the Home controller here.
 // They will automatically be extendd in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-  padding-top: 60px;
   width: 100%;
   height: 100%;
   background-color: #fff;
-  font-family: "Helvetica";
+  font-family: "Open Sans";
 }
 //Structure
 .content{
-  padding: 101px 90px 65px 90px;
+  padding: 100px 0px;
   .title{
-    color: #f7c31b;
-    font-weight: bold;
-    font-size: 60px;
+    color: #181818;
+    font-size: 40px;
     text-align: center;
-    margin: 0px auto;
+    margin: 5px auto;
     span {
-      border-top: 1px solid #f7c31b;
-      border-bottom: 1px solid #f7c31b;
+      // border-top: 1px solid #f7c31b;
+      // border-bottom: 1px solid #f7c31b;
     }
+  }
+  .line{
+    width: 50px;
+    height: 2px;
+    margin: 10px auto;
+    background-color: #f7c31b;
   }
   .container{
     margin-top: 65px;
     padding-left: 0px;
     padding-right: 0px;
+    min-width: 100%;
   }
 }
 
 //Header
+//Navbar
 .header-section{
-  width: 100%;
-  height: 610px;
-  margin-top: -60px;
-  .bg-header{
-      z-index: -1;
+  .slider{
   }
-  .header-title{
-      width: 945px;
-      padding-top: 70px;
-      margin: 0px auto;
-      position: relative;
-      margin-top: -468px;
+  .navigation{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    .logo{
+      float: left;
+      margin-left: 20px;
+      margin-top: 10px;
+      img{
+        width: 60px;
+        height: 60px;
+        float: left;
+      }
+      .title{
+        float: left;
+        margin-left: 8px;
+        h1{
+          margin-bottom: 5px;
+          color: #f7c31b;
+          font-size: 25px;
+          margin-top: 8px;
+          text-transform: uppercase;
+        }
+        h2{
+          margin-top: 0px;
+          font-size: 15px;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .navbar{
+      display: none;
+    }
+    .menu-content{
+      list-style: none;
+      float: right;
+      margin: 5px 10px 5px 0px;
+      padding-left: 10px;
+      padding-right: 10px;
+      li{
+        margin: 10px 0px;
+        float: left;
+        cursor: pointer;
+        .outside{
+          border: 1px solid transparent;
+          width: 100px;
+          height: 40px;
+          opacity: 1;
+          margin: 10px;
+          transform: scale(1);
+          transition: 1s;
+          position: absolute;
+          display: block;
+        }
+        .inside{
+          width: 100px;
+          text-align: center;
+          height: 40px;
+          margin: 10px;
+          outline: 1px solid transparent;
+          font-size: 14px;
+          padding-top: 12px;
+          box-shadow: inset 0px 0px 6px transparent;
+          transition: 0.5s;
+        }
+        &:hover{
+          .outside{
+            transform: scale(1.2);
+            height: 50px;
+            border: 1px solid #f8b100;
+            opacity: 0;
+            margin-top: 5px;
+          }
+          .inside{
+            background-color: #f7c31b;
+            color: white;
+            outline: 1px solid transparent;
+            box-shadow: inset 0px 0px 6px #f7c31b;
+          }
+        }
+      }
+      .active{
+        background-color: #f7c31b;
+        color: white;
+        outline: 1px solid transparent;
+        box-shadow: inset 0px 0px 6px #f7c31b;
+      }
+    }
   }
 }
+@media screen and (max-width: 986px){
+  .header-section{
+    .navigation{
+      position: static;
+      .logo{
+        float: left;
+      }
+      .navbar{
+        display: block;
+        width: 30px;
+        float: right;
+        margin-right: 20px;
+        cursor: pointer;
+        img{
+          width: 100%;
+          height: 100%;
+          margin-top: 25px;
+        }
+      }
+      .menu-content{
+        padding-left: 0px;
+        margin-left: 0px;
+        width: 100%;
+        float: left;
+        display: none;
+        li{
+          float: none;
+          padding-right: 10px;
+          .outside{
+            display: none;
+          }
+          .inside{
+            width: 100%;
+            text-align: left;
+            padding-left: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
 .row{
   margin-right: 0px;
-}
-.logo{
-  width: 235px;
-  height: 235px;
-  float: left;
-  margin-top: 3px;
 }
 .title-01{
   width: 600px;
@@ -90,109 +214,177 @@ body {
     margin: 0 auto;
   }
 }
-//Navbar
-.menu-section{
-  width: 100%;
-  height: 70px;
-  background-color: #f7c31b;
-  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.9);
-  .menu-content{
-      width: 730px;
-      margin: 0px auto;
-      list-style: none;
-      li{
-          margin-top: 10px;
-          float: left;
-          padding: 16px 19px 16px;
-          a{
-            color: #181818;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-          }
-        }
-      li:hover{
-          border-bottom: 3px solid #181818;
-      }
-    }
-}
-.menu-section-scroll-01
-{  position: fixed;
-  top: 0;
-  z-index: 1;
-}
-.menu-section-scroll-02
-{  position: fixed;
-  top: 0;
-  z-index: 1;
-  background-color: #181818;
-  .menu-content{
-    li{
-      a{
-        color: white;
-      }
-    }
-    li:hover{
-      border-bottom: 3px solid white;
-    }
-  }
-}    
+
 //Service
 .service-section {
   height: auto;
-  background-color: #100e09;
   .content{
-      .service-center{
-          height: 420px;
-          .service-box{
-              background-color: #1c1703;
-              width: 240px;
-              height: 420px;
-              margin-right: 50px;
-              float: left;
-              box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-              .service-header{
-                  width: 100%;
-                  height: 55px;
-                  background-color: #f7c31b;
-                  color: #100e09;
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-align: center;
-                  padding: 15px;
-              }
-              .textlong{
-                  padding-top: 5px;
-              }
-              .service-body{
-                  padding: 30px 16px 0px 24px;
-                  img{
-                    margin-left: 30px;
-                  }
-                  p{
-                      padding-top: 35px;
-                      width: 208px;
-                      color: white;
-                      text-align: left;
-                  }
-              }
-          }
-          .last{
-            margin-right: 0px;
-          }
+    .service-row{
+      width: 50%;
+      float: left;
+      margin-top: 50px;
+      height: 150px;
+      .service-img{
+        width: 150px;
+        height: 150px;
+        background-color: #f7c31b;
+        border-radius: 50%;
+        margin-left: 20px;
+        float: left;
+        position: relative;
+        transform: scale(0);
+        transition: 0.5s;
+        img{
+          width: 60%;
+          height: 60%;
+          margin-top: 20%;
+          margin-left: 20%;
+          opacity: 0.6;
         }
+      }
+      .service-right{
+        float: right;
+        margin-left: 0px;
+        margin-right: 20px;
+      }
+      .text-service-right{
+        h4, p{
+          text-align: right;
+          padding-right: 200px;
+          padding-left: 50px;
+        }
+        h4{
+          margin-top: 20px;
+        }
+      }
+      .text-service-left{
+        h4, p{
+          padding-left: 200px;
+          padding-right: 50px;
+        }
+        h4{
+          margin-top: 20px;
+        }
+      }
+      .text-service{
+        opacity: 0;
+        h4{
+          text-transform: uppercase;
+          color: #f7c31b;
+          font-size: 19px;
+        }
+        p{
+          color: #878787;
+          font-size: 14px;
+        }
+      }
     }
+   .service-row:nth-child(1){
+     .service-img{
+        top: 100px;
+        left: 90px;
+      }
+    }
+    .service-row:nth-child(2){
+     .service-img{
+        top: 100px;
+        left: -100px;
+      }
+    }
+    .service-row:nth-child(3){
+     .service-img{
+        top: -100px;
+        left: 90px;
+      }
+    }
+    .service-row:nth-child(4){
+     .service-img{
+        top: -100px;
+        left: -100px;
+      }
+    }
+  }
 }
-@media screen and (max-width: 1245px) {
-  .service-section{
+
+@media screen and (max-width: 860px){
+  .service-section {
     .content{
-        width: 594px;
-        .service-center{
-        .service-box{
-            margin-bottom: 65px;
+      .service-row{
+        width: 90%;
+        margin-left: 5%;
+        .service-right{
+          float: left;
+          margin-left: 20px;
+          margin-right: 0px;
         }
-        #section-box-2{
-            margin-right: 0px;
+        .text-service-right{
+          h4, p{
+            text-align: left;
+            padding-left: 200px;
+            padding-right: 20px;
+          }
+        }
+      }
+      .service-row:nth-child(1),.service-row:nth-child(2),.service-row:nth-child(3),.service-row:nth-child(4){
+       .service-img{
+          top: 0px;
+          left: 0px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px){
+  .service-section {
+    .content{
+      .service-row{
+        width: 100%;
+        margin-left: 0%;
+        .service-img{
+          width: 120px;
+          height: 120px;
+        }
+        .text-service-right, .text-service-left{
+          h4, p{
+            padding-left: 20px;
+            padding-right: 20px;
+            overflow: hidden;
+          }
+          h4{
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px){
+  .service-section {
+    .content{
+      .service-row{
+        height: 280px;
+        .service-img{
+          float: none;
+          width: 150px;
+          height: 150px;
+          margin: auto;
+        }
+        .service-right{
+          float: none;
+          margin-left: 0px;
+          margin: auto;
+        }
+        .text-service-right, .text-service-left{
+          h4, p{
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            overflow: hidden;
+          }
+          h4{
+            margin-top: 20px;
+          }
         }
       }
     }
