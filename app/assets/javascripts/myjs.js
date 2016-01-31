@@ -14,12 +14,16 @@ $('document').ready(function() {
 
 
     //Set height auto for slider
-    var heightSlider = $('.image:nth-child(1)').height();
+    var heightSlider = $('.image:nth-child(1)').height() - 150;
     $('.slider').css('height', heightSlider + 'px');
+
+    //Set height auto for portfolio
+    var heightPortfolio = $('.work-section > .content').height() + 160;
+    $('.bg-portfolio').css('height', heightPortfolio + 'px');
 
     //Auto slider
     var autoNext = setInterval(setAuto,10000); 
-    $('.image-slider > .image:nth-child(1) > img').css({'transform':'scale(1)','opacity':'0.4'});
+    $('.image-slider > .image:nth-child(1) > img').css({'transform':'scale(1)','opacity':'0.3'});
 
     
     //Scroll
@@ -40,7 +44,7 @@ $('document').ready(function() {
         }
       }
 
-      //Animation Scroll
+      //Animation Service Scroll
       var header = $('.header-section').height();
       var top = header + $(this).scrollTop();
       var mql = window.matchMedia("screen and (min-width: 861px)");
@@ -50,18 +54,40 @@ $('document').ready(function() {
         }
       }else {
         for(var i = 1; i <= 4; i++){
-          var position = $('.service-row:nth-child(' + i + ')').offset().top + 100;
-          if (top > position){
+          var positionService = $('.service-row:nth-child(' + i + ')').offset().top + 100;
+          if (top > positionService){
             $('.service-row:nth-child(' + i + ') > .service-img').css({'transform':'scale(1)','top':'0px','left':'0px'});
             $('.service-row:nth-child(' + i + ') > .text-service').delay(500).animate({'opacity':'1'}, 500);
+          }
+        }
+      }
+
+      //Animation About Scroll
+      for(var i = 1; i <= 4; i++){
+        var positionSkill = $('.about-skill:nth-child(' + i + ')').offset().top + 100;
+        if (top > positionSkill){
+          if(i === 1){
+            $('.about-skill:nth-child(' + i + ') > .skill').css({'width':'85%'});
+          }
+          if(i === 2){
+            $('.about-skill:nth-child(' + i + ') > .skill').css({'width':'70%'});
+          }
+          if(i === 3){
+            $('.about-skill:nth-child(' + i + ') > .skill').css({'width':'80%'});
+          }
+          if(i === 4){
+            $('.about-skill:nth-child(' + i + ') > .skill').css({'width':'90%'});
           }
         }
       }
       
       //Check to see if the window is top if not then display button
       if ($(this).scrollTop() > 0) {
-         $('.scrollToTop').fadeIn();
-         $('.navigation').css('position','fixed');
+        $('.scrollToTop').fadeIn();
+        var navbar = window.matchMedia("screen and (min-width: 987px)");
+        if(navbar.matches){
+          $('.navigation').css('position','fixed');
+        }
       } else {
          $('.scrollToTop').fadeOut();
          $('.navigation').css('position','static');

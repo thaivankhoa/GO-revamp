@@ -1,21 +1,33 @@
-.content
+.content.container-fluid
   .h3.title.team-title
-    span TEAM
-  .col-xs-1.col-xs-offset-1.team-text-l
-    h4 JUSTIN
-    p Founder - CEO
-    div 9+ years in IT
-        Experienced project manager with agile method. 
-        Specialist in Ruby on Rails, PHP, JavaScript,..
-        Former Tech Lead at Tech In Asia. 
-  .col-xs-4.team-img-l
-    img.img-circle src="#{asset_path('team-lead-thang.jpg')}" alt=""/ 
-  .col-xs-4.team-img-r
-    img.img-circle src="#{asset_path('team-lead.jpg')}" alt=""/
-  .col-xs-1.team-text-r
-    h4 Mark Tran 
-    p CTO
-    div 9+ years in IT
-        Experienced project manager with agile method.
-        Specialist in .NET, Jquery,..
-        Delivery Service Manager at Niteco vietnam
+    span TEAM MEMBER
+  .line
+  .team
+    .member
+      .member-image
+        = image_tag 'team-lead-thang.jpg'
+      .member-info
+        h3 Justin
+        h4 CEO
+    .member
+      .member-image
+        = image_tag 'ronan.jpg'
+    .member
+      .member-image
+        = image_tag 'irene.jpg'
+    .member
+      .member-image
+        = image_tag 'jessica.jpg'
+    .member
+      .member-image
+        = image_tag 'libra.jpg'
+    .member
+      .member-image
+        = image_tag 'maggie.jpg'
+    .member
+      .member-image
+        = image_tag 'tony.jpg'
+    .member
+      .member-image
+        = image_tag 'rose.jpg'
+  
