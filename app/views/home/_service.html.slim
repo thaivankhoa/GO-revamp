@@ -1,30 +1,33 @@
 .content
 	h3.title
 		span SERVICE
+	.line
 	.container.service-center
-		.service-box
-			.service-header.textlong
-				| OUTSOURCING SERVICE
-			.service-body
-				img	src="#{asset_path('serviceoutsourcing.png')}" width="130px" height="130px"
-				p We provide IT outsourcing service for companies. Our team is built from outstanding developers who have 6+ years experienced in website/software/mobile application development. 
-		#section-box-2.service-box
-			.service-header.textlong
-				| WEB DESIGN AND DEVELOPMENT
-			.service-body
-				img	src="#{asset_path('webruby.png')}" width="130px" height="130px"
-				p We have been doing on developing website for years. 
-					We develop with only the latest 
-					technology : CSS3, HTML5 and Ruby On Rails.
-		.service-box
-			.service-header
-				| AUTOMATION TEST
-			.service-body
-				img	src="#{asset_path('automation.png')}" width="130px" height="130px"
-				p Manual testing increases exponentially as the project grows; that's why we do automated testing. Automated tests keep costs down and gives us the confidence to make changes.
-		.service-box.last
-			.service-header.textlong
-				| CONTENT OUTSOURCING
-			.service-body
-				img	src="#{asset_path('contentourcing.png')}" width="130px" height="130px"
-				p Building nice content for your website is take times and money. So why not outsource it to experienced company to make it convenient and cheaper. We offer professional content outsource service which will help you not to worry anymore. 
+		.service-row
+			.service-img.service-right
+				=image_tag 'serviceoutsourcing.png'
+			.text-service.text-service-right
+				h4 Outsourcing Service
+				p
+				 | We provide IT outsourcing service for companies. Our team is built from outstanding developers who have 6+ years experienced in website/software/mobile application development. 
+		.service-row
+			.service-img
+				=image_tag 'webdesign.png'
+			.text-service.text-service-left
+				h4 Web Design And Development
+				p
+				 | We have been doing on developing website for years. We develop with only the latest technology: CSS3, HTML5 and Ruby On Rails.
+		.service-row
+			.service-img.service-right
+				=image_tag 'automation.png'
+			.text-service.text-service-right
+				h4 Automation Test
+				p
+				 | Manual testing increases exponentially as the project grows; that's why we do automated testing. Automated tests keep costs down and gives us the confidence to make changes.
+		.service-row
+			.service-img
+				=image_tag 'seo.png'
+			.text-service.text-service-left
+				h4 SEO (Search Engine Optimization)
+				p
+				 | Building nice content for your website is take times and money. So why not outsource it to experienced company to make it convenient and cheaper. We offer professional content outsource service.
