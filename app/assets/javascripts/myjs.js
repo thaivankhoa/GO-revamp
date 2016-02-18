@@ -88,7 +88,7 @@ $('document').ready(function() {
       var about = window.matchMedia("screen and (min-width: 987px)");
       if(about.matches){
         for(var i = 1; i <= 4; i++){
-          var positionSkill = $('.about-skill:nth-child(' + i + ')').offset().top;
+          var positionSkill = $('.about-skill:nth-child(' + i + ')').offset().top - 100;
           if (top > positionSkill){
             if(i === 1){
               $('.about-skill:nth-child(' + i + ') > .skill').css({'width':'85%'});
@@ -100,7 +100,7 @@ $('document').ready(function() {
               $('.about-skill:nth-child(' + i + ') > .skill').css({'width':'80%'});
             }
             if(i === 4){
-              $('.about-skill:nth-child(' + i + ') > .skill').css({'width':'90%'});
+              $('.about-skill:nth-child(' + i + ') > .skill').css({'width':'100%'});
             }
           }
         }
@@ -110,7 +110,7 @@ $('document').ready(function() {
           $('.about-skill:nth-child(1) > .skill').css({'width':'85%'});
           $('.about-skill:nth-child(2) > .skill').css({'width':'70%'});
           $('.about-skill:nth-child(3) > .skill').css({'width':'80%'});
-          $('.about-skill:nth-child(4) > .skill').css({'width':'90%'});
+          $('.about-skill:nth-child(4) > .skill').css({'width':'100%'});
         }
       }
       

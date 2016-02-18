@@ -11,6 +11,9 @@ body {
   height: 100%;
   font-family: "Open Sans";
 }
+a:visited{
+  text-decoration: none;
+}
 //Structure
 .content{
   padding: 60px 0px;
@@ -39,14 +42,14 @@ body {
 .header-section{
   .slider{
     width: 100%;
-    height: 600px;
+    // height: 600px;
     background-color: black;
     position: relative;
     overflow: hidden;
     .content-slider{
       position: absolute;
       z-index: 1;
-      margin-top: 100px;
+      margin-top: 15%;
       .content-element{
         h1{
           color: #f7c31b;
@@ -112,6 +115,10 @@ body {
         img{
           opacity: 0;
         }
+      }
+      #img-header{
+        position: static;
+        opacity: 0;
       }
     }
   }
@@ -253,7 +260,6 @@ body {
   .header-section{
     .slider{
       .content-slider{
-        margin-top: 50px;
         .content-element{
           p{
             font-size: 18px;
@@ -273,7 +279,6 @@ body {
   .header-section{
     .slider{
       .content-slider{
-        margin-top: 50px;
         .content-element{
           p{
             opacity: 0;
@@ -456,7 +461,7 @@ body {
   .service-section {
     .content{
       .service-row{
-        height: 280px;
+        height: 320px;
         .service-img{
           float: none;
           width: 150px;
@@ -498,22 +503,26 @@ body {
     }
     .content-work{         
       width: 90%;
-      margin: 50px auto;
+      margin: 20px auto;
       overflow: hidden;
       .content-element {
-        width: 25%;
+        width: 23%;
         height: 200px;
         float: left;
         position: relative;
         overflow: hidden;
         z-index: 1;
+        margin: 40px 1% 0px;
+        background-color: white;
         .content-image{
           width: 90%;
-          height: 100%;
+          height: 88%;
           margin-left: 5%;
+          margin-top: 4.5%;
           position: absolute;
           overflow: hidden;
           z-index: -1;
+          border: 1px solid #dfdfdf;
           img{
             width: 100%;
             height: 100%;
@@ -522,13 +531,13 @@ body {
         }
         .content-hover{
           width: 90%;
-          height: 100%;
+          height: 88%;
           margin-left: 5%;
           background-color: black;
           opacity: 0.9;
           transform: rotateY(90deg);
           transition: 0.5s;
-          margin-top: -15px;
+          margin-top: -4px;
           .line{
             width: 88%;
             height: 1px;
@@ -537,28 +546,29 @@ body {
           }
           .line:nth-child(1), .line:nth-child(3){
             width: 1px;
-            height: 85%;
+            height: 84%;
           }
           .line:nth-child(1){
             margin-left: 6%;
-            top: 16px;
+            top: 14px;
           }
           .line:nth-child(2){
-            top: -169px;
+            top: -150px;
             margin-left: 6%;
           }
           .line:nth-child(3){
-            top: -184px;
+            top: -165px;
             margin-left: 94%;
+            height: 85%;
           }
           .line:nth-child(4){
-            top: -200px;
+            top: -181px;
             margin-left: 6%;
           }
           h2{
             color: white;
             text-align: center;
-            margin-top: -340px;
+            margin-top: -310px;
             opacity: 0;
             transition: 0.5s;
             transition-delay: 0.5s;
@@ -612,10 +622,11 @@ body {
   .work-section {
     .content{
       .content-work{         
-        width: 500px;
+        width: 550px;
         max-width: 100%;
         .content-element{
-          width: 50%;
+          width: 46%;
+          margin: 40px 2% 0px;
         }
       }
     }
@@ -626,9 +637,16 @@ body {
     .content{
       .content-work{ 
         width: 300px;
-        max-width: 100%;
+        max-width: 90%;
         .content-element{
           width: 100%;
+          .content-image{
+            margin-top: 4%;
+            margin-left: 4%;
+          }
+          .content-hover{
+            margin-left: 4%;
+          }
         }
       }
     }
@@ -763,20 +781,36 @@ body {
     .member{
       background-color: transparent;
       width: 250px;
-      //margin-bottom: 80px;
       height: 450px;
       float: left;
       margin-left: 20px;
       .member-image{
-        width: 100%;
-        height: 82%;
+        width: 90%;
+        height: 75%;
+        margin: auto;
+        position: relative;
         img{
           width: 100%;
           height: 90%;
           margin-top: 5%;
+          position: absolute;
+          transition: 0.3s;
+        }
+        img:last-child{
+          opacity: 0;
+        }
+        &:hover{
+          img:first-child{
+            opacity: 0;
+          }
+          img:last-child{
+            opacity: 1;
+            transform: scale(1.05);
+          }
         }
       }
       .member-info{
+        margin-left: 5%;
         h3{
           text-transform: uppercase;
           font-size: 17px;
@@ -820,14 +854,21 @@ body {
     }
   }
 }
-@media screen and (max-width: 986px){
+@media screen and (max-width: 1058px){
   .team-section {
     .team{
       width: 790px;
     }
   }
 }
-@media screen and (max-width: 786px){
+@media screen and (max-width: 860px){
+  .team-section {
+    .team{
+      width: 520px;
+    }
+  }
+}
+@media screen and (max-width: 565px){
   .team-section {
     .team{
       width: 250px;
@@ -1107,6 +1148,7 @@ footer{
     bottom: 10px;
     color: white;
     cursor: pointer;
+    z-index: 10;
     i{
       margin-left: 7px;
       margin-top: 5px;
