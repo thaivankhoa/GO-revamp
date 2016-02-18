@@ -12,13 +12,6 @@ $('document').ready(function() {
     var current_menu = $('.menu-content > li:nth-child(1) > .inside');
     var numService = $('.service-row').size();
 
-    //Set team default
-    var left = 0;
-    $('.member:nth-child(1)').css('margin-left',left + 'px');
-    for(var team = 2; team <= $('.member').size(); team++){
-      left = left + 300;
-      $('.member:nth-child(' + team + ')').css('margin-left',left + 'px');
-    }
 
     //Set height auto for slider
     // var heightSlider = $('.image:nth-child(1)').height() - 150;
@@ -73,6 +66,24 @@ $('document').ready(function() {
         }
       }
 
+      //Animation Portfolio Scroll
+      var header = $('.work-section').height();
+      var top = header + $(this).scrollTop();
+      var mql = window.matchMedia("screen and (min-width: 861px)");
+      if(mql.matches){
+        if (top > $('.content-work').offset().top){ 
+          // $('.content-element').css({'margin-top':'0px','opacity':'1'});
+        }
+      }else {
+        // for(var i = 1; i <= 4; i++){
+        //   var positionService = $('.service-row:nth-child(' + i + ')').offset().top;
+        //   if (top > positionService){
+        //     $('.service-row:nth-child(' + i + ') > .service-img').css({'transform':'scale(1)','top':'0px','left':'0px'});
+        //     $('.service-row:nth-child(' + i + ') > .text-service').delay(500).animate({'opacity':'1'}, 500);
+        //   }
+        // }
+      }
+
       //Animation About Scroll
       var about = window.matchMedia("screen and (min-width: 987px)");
       if(about.matches){
@@ -107,7 +118,7 @@ $('document').ready(function() {
       var contact = window.matchMedia("screen and (min-width: 846px)");
       if(contact.matches){
         for(var j = 1; j <= 2; j++){
-          var positionContact = $('.contact-col:nth-child(' + j + ')').offset().top + 300;
+          var positionContact = $('.contact-col:nth-child(' + j + ')').offset().top + 200;
           if (top > positionContact){
             $('.contact-col:nth-child(' + j + ') > .contact-form').css({'animation':'contact 1s forwards'});
           }
