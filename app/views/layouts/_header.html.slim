@@ -1,46 +1,22 @@
 .navigation
   .logo
-    = image_tag 'logo.png', :alt => "Golden Owl Consulting"
-    .title
-      h1 Golden
-      h2 Owl Consulting
+    .image-logo
+      = image_tag 'logo.png', :alt => "Golden Owl Consulting"
+    .title-logo
+      h1.title-main Golden Owl
+      .line-logo
   .navbar
     = image_tag 'iconbar.png'
   ul.menu-content
-    li#header
-      .outside
-      .inside.active HOME
+    li#header.active
+      | Home
     li#service
-      .outside
-      .inside SERVICE
+      | Service
     li#work
-      .outside
-      .inside PORTFOLIO
+      | Porfolio
     li#about
-      .outside
-      .inside ABOUT
+      | About
     li#team
-      .outside
-      .inside TEAM
+      | Team
     li#contact
-      .outside
-      .inside CONTACT
-.slider
-  .content-slider
-    .content-element
-      h1 Welcome to
-      h1 Golden Owl Consulting
-      p We provide IT outsourcing service for companies. Our team is built from outstanding developers who have 6+ years experienced in website/software/mobile application development.
-      .btn-view
-        .hover-btnview
-        .text-btnview View About Us
-  .image-slider
-    .image
-	     = image_tag 'slider01.jpg'
-    .image
-       = image_tag 'slider02.jpg'
-    .image
-       = image_tag 'slider03.jpg'
-    #img-header.image
-       = image_tag 'slider01.jpg'
-
+      | Contact

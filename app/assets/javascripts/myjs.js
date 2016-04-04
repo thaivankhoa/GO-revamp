@@ -199,7 +199,6 @@ $('document').ready(function() {
     var current_team2 = 2;
     var current_team3 = 3;
     var numTeam = $('.member').size();
-    $('.btn-left').css('display','none');
 
     //Button Right
     $('.btn-right').click(function(){
