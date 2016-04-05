@@ -1,0 +1,59 @@
+footer.container-fluid
+	.footer-col
+		h4 
+		 	span Golden Owl 
+		 	| Consulting
+		p We committed to provide impactful solution for your company's technical problems. We focus on helping our customers.
+		.infomation
+			i.fa.fa-phone
+			p.first-info +84 912 878985
+		.infomation
+			i.fa.fa-envelope
+			p admin@goldenowl.asia
+		.infomation
+			i.fa.fa-map-marker
+			p.location 4F, 63B Calmete, District 1, Ho Chi Minh City
+		.infomation.icon-share
+			= link_to "https://facebook.com/goldenowl.asia/" do
+				button
+					i.fa.fa-facebook
+			end
+			= link_to "https://twitter.com/company_golden" do
+				button
+					i.fa.fa-twitter
+			end
+			= link_to "https://linkedin.com/company/golden-owl-consulting" do
+				button
+					i.fa.fa-linkedin
+			end
+	.footer-col
+		h5 Latest Post
+		.post-element
+			.image-post
+				= image_tag 'slider01.jpg'
+			.content-post
+				h6 Blog Post 01
+				.line
+				.time-post
+					.time-element
+						i.fa.fa-calendar
+						span 25/11/2015
+					.time-element
+						i.fa.fa-commenting-o
+						span 25 comments
+		.post-element
+			.image-post
+				= image_tag 'slider01.jpg'
+			.content-post
+				h6 Blog Post 02
+				.line
+				.time-post
+					.time-element
+						i.fa.fa-calendar
+						span 25/11/2015
+					.time-element
+						i.fa.fa-commenting-o
+						span 25 comments
+	.footer-col
+		h5 Location
+		= image_tag 'map.png', :class => 'image_map'

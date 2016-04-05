@@ -1,21 +1,75 @@
 $('document').ready(function() {
-    var mn = $('.menu-section');
-    var mns_01 = 'menu-section-scroll-01';
-    var mns_02 = 'menu-section-scroll-02';
-    var service = $('.service-section').offset().top - 100;
-    var current_slider = 1;
-
-    var stt = $('.scrollToTop');
-    var stt_1 = 'scrollToTop-1';
-    var stt_2 = 'scrollToTop-2';
-
-    var current_menu = $('.menu-content > li:nth-child(1) > .inside');
+    var current_menu = $('.menu-content > li:nth-child(2)');
     var numService = $('.service-row').size();
 
+    //Set position project element
+    var left = 60;
+    var numProject = $('.project-element').size();
+    for(var i = 1; i <= numProject; i++){
+      $('.project-element:nth-child(' + i + ')').css('left',left + 'px');
+      left = left + 110;
+    }
+
+    //Button left project
+    var btn_left = 0;
+    var first_left = 60;
+    // $('.btn-left').click(function(){
+    //   btn_left = btn_left + 110;
+    //   var current_left = first_left;
+    //   for(var i = 1; i <= numProject; i++){
+    //     var project_left = current_left + btn_left;
+    //     $('.project-element:nth-child(' + i + ')').animate({'left':project_left + 'px'},500);
+    //     current_left = current_left + 110;
+    //     if(i === 1){
+    //       first_left = project_left - 110;
+    //     }
+    //   }
+    //   alert(first_left);
+    //   if(btn_left === 0){
+    //     current_left = 60;
+    //     for(var i = 1; i <= numProject; i++){
+    //       $('.project-element:nth-child(' + i + ')').animate({'left':current_left + 'px'},500);
+    //       current_left = current_left + 110;
+    //     }
+    //   }
+    // });
+
+    //Button left project
+    // $('.btn-right').click(function(){
+    //   btn_left = btn_left + 110;
+    //   var current_left = first_left;
+    //   for(var i = 1; i <= numProject; i++){
+    //     var project_left = current_left - btn_left;
+    //     $('.project-element:nth-child(' + i + ')').animate({'left':project_left + 'px'},500);
+    //     current_left = current_left + 110;
+    //     if(i === 1){
+    //       first_left = project_left;
+    //     }
+    //   }
+    //   if(btn_left > current_left){
+    //     current_left = 60;
+    //     for(var i = 1; i <= numProject; i++){
+    //       $('.project-element:nth-child(' + i + ')').animate({'left':current_left + 'px'},500);
+    //       current_left = current_left + 110;
+    //     }
+    //   }
+    // });
 
     //Set height auto for slider
-    // var heightSlider = $('.image:nth-child(1)').height() - 150;
-    // $('.slider').css('height', heightSlider + 'px');
+    var current_portfolio = $('#ideaburn_project');
+    var current_id_project = $('.project-page > .project-element:first-child');
+    $('.project-page > .project-element').click(function() {
+      current_portfolio.animate({'margin-left':'-100%'},500);
+      current_id_project.removeClass('active');
+
+      var id = $(this).attr('id');
+      current_portfolio = $('#' + id + '_project');
+      current_id_project = $(this);
+
+      current_id_project.addClass('active');
+      current_portfolio.css({'margin-left':'100%'});
+      current_portfolio.animate({'margin-left':'0%'},500);
+    });
 
     //Set height auto for portfolio
     var heightPortfolio = $('.work-section > .content').height() + 160;
@@ -33,115 +87,16 @@ $('document').ready(function() {
     //Scroll
     $(window).scroll(function(){
 
-      //Active menu
-      if($(this).scrollTop() >= $('.header-section').offset().top - 80){
-        current_menu.removeClass('active');
-        current_menu = $('.menu-content > li:nth-child(1) > .inside');
-        current_menu.addClass('active');
-      }
-      for(var i = 1; i <= $('.menu-content > li').size(); i++){
-        if($(this).scrollTop() >= $('.body-content > section:nth-child(' + i + ')').offset().top - 80){
-          current_menu.removeClass('active');
-          var y = i + 1;
-          current_menu = $('.menu-content > li:nth-child(' + y + ') > .inside')
-          current_menu.addClass('active');
-        }
-      }
-
-      //Animation Service Scroll
-      var header = $('.header-section').height();
-      var top = header + $(this).scrollTop();
-      var mql = window.matchMedia("screen and (min-width: 861px)");
-      if(mql.matches){
-        if (top > $('.service-row').offset().top){ 
-          animateService_01();
-        }
-      }else {
-        for(var i = 1; i <= 4; i++){
-          var positionService = $('.service-row:nth-child(' + i + ')').offset().top;
-          if (top > positionService){
-            $('.service-row:nth-child(' + i + ') > .service-img').css({'transform':'scale(1)','top':'0px','left':'0px'});
-            $('.service-row:nth-child(' + i + ') > .text-service').delay(500).animate({'opacity':'1'}, 500);
-          }
-        }
-      }
-
-      //Animation Portfolio Scroll
-      var header = $('.work-section').height();
-      var top = header + $(this).scrollTop();
-      var mql = window.matchMedia("screen and (min-width: 861px)");
-      if(mql.matches){
-        if (top > $('.content-work').offset().top){ 
-          // $('.content-element').css({'margin-top':'0px','opacity':'1'});
-        }
-      }else {
-        // for(var i = 1; i <= 4; i++){
-        //   var positionService = $('.service-row:nth-child(' + i + ')').offset().top;
-        //   if (top > positionService){
-        //     $('.service-row:nth-child(' + i + ') > .service-img').css({'transform':'scale(1)','top':'0px','left':'0px'});
-        //     $('.service-row:nth-child(' + i + ') > .text-service').delay(500).animate({'opacity':'1'}, 500);
-        //   }
-        // }
-      }
-
-      //Animation About Scroll
-      var about = window.matchMedia("screen and (min-width: 987px)");
-      if(about.matches){
-        for(var i = 1; i <= 4; i++){
-          var positionSkill = $('.about-skill:nth-child(' + i + ')').offset().top - 100;
-          if (top > positionSkill){
-            if(i === 1){
-              $('.about-skill:nth-child(' + i + ') > .skill').css({'width':'85%'});
-            }
-            if(i === 2){
-              $('.about-skill:nth-child(' + i + ') > .skill').css({'width':'70%'});
-            }
-            if(i === 3){
-              $('.about-skill:nth-child(' + i + ') > .skill').css({'width':'80%'});
-            }
-            if(i === 4){
-              $('.about-skill:nth-child(' + i + ') > .skill').css({'width':'100%'});
-            }
-          }
-        }
-      }else{
-        var positionSkill = $('.about-skill:nth-child(1)').offset().top - 200;
-        if (top > positionSkill){
-          $('.about-skill:nth-child(1) > .skill').css({'width':'85%'});
-          $('.about-skill:nth-child(2) > .skill').css({'width':'70%'});
-          $('.about-skill:nth-child(3) > .skill').css({'width':'80%'});
-          $('.about-skill:nth-child(4) > .skill').css({'width':'100%'});
-        }
-      }
-      
-      //Animation Contact Scroll
-      var contact = window.matchMedia("screen and (min-width: 846px)");
-      if(contact.matches){
-        for(var j = 1; j <= 2; j++){
-          var positionContact = $('.contact-col:nth-child(' + j + ')').offset().top + 200;
-          if (top > positionContact){
-            $('.contact-col:nth-child(' + j + ') > .contact-form').css({'animation':'contact 1s forwards'});
-          }
-        }
-      }else{
-        for(var j = 1; j <= 2; j++){
-          var positionContact = $('.contact-col:nth-child(' + j + ')').offset().top - 300;
-          if (top > positionContact){
-            $('.contact-col:nth-child(' + j + ') > .contact-form').css({'animation':'contact 1s forwards'});
-          }
-        }
-      }
-
       //Check to see if the window is top if not then display button
-      if ($(this).scrollTop() > 0) {
+      var height_slider = $('.slider-section').height() - 100;
+      if ($(this).scrollTop() > height_slider) {
         $('.scrollToTop').fadeIn();
-        var navbar = window.matchMedia("screen and (min-width: 987px)");
-        if(navbar.matches){
-          $('.navigation').css('position','fixed');
-        }
+        $('.header-section').css('position','fixed');
+        $('.header-section').addClass('header-fixed');
       } else {
          $('.scrollToTop').fadeOut();
-         $('.navigation').css('position','static');
+         $('.header-section').css('position','absolute');
+         $('.header-section').removeClass('header-fixed');
       }
     });
 
@@ -162,10 +117,14 @@ $('document').ready(function() {
     //Navigation
     $('.menu-content > li').click(function(){
       var index = $(this).attr('id');
-      var current_top = $('.' + index + '-section').offset().top - 80;
-      $('html, body').animate({ scrollTop: current_top }, 1000);
+      if (index === 'home') {
+        $('html, body').animate({ scrollTop: 0 }, 1000);
+      } else{
+        var current_top = $('.' + index + '-section').offset().top - 60;
+        $('html, body').animate({ scrollTop: current_top }, 1000);
+      }
       current_menu.removeClass('active');
-      current_menu = $('#' + index + ' > .inside');
+      current_menu = $('#' + index);
       current_menu.addClass('active');
     });
 
@@ -194,123 +153,7 @@ $('document').ready(function() {
     });
 
 
-
-    var current_team1 = 1;
-    var current_team2 = 2;
-    var current_team3 = 3;
-    var numTeam = $('.member').size();
-
-    //Button Right
-    $('.btn-right').click(function(){
-      $('.btn-left').css('display','block');
-
-      var team1 = window.matchMedia("screen and (min-width: 987px)");
-      if(team1.matches){
-        $('.member:nth-child(' + current_team1 + ')').css('margin-left','-900px');
-        $('.member:nth-child(' + current_team2 + ')').css('margin-left','-600px');
-        $('.member:nth-child(' + current_team3 + ')').css('margin-left','-300px');
-        current_team1 = current_team1 + 3;
-        current_team2 = current_team2 + 3;
-        current_team3 = current_team3 + 3;
-        if(current_team1 > numTeam || current_team2 > numTeam || current_team3 > numTeam){
-          $('.btn-right').css('display','none');
-        }
-        $('.member:nth-child(' + current_team1 + ')').css('margin-left','0px');
-        $('.member:nth-child(' + current_team2 + ')').css('margin-left','300px');
-        $('.member:nth-child(' + current_team3 + ')').css('margin-left','600px');
-
-        var status = current_team1 + 3;
-        if(status > numTeam){
-          $('.btn-right').css('display','none');
-        }
-      }
-      var team2 = window.matchMedia("screen and (max-width: 986px) and (min-width: 787px)");
-      if(team2.matches){
-        $('.member:nth-child(' + current_team1 + ')').css('margin-left','-600px');
-        $('.member:nth-child(' + current_team2 + ')').css('margin-left','-300px');
-        current_team1 = current_team1 + 2;
-        current_team2 = current_team2 + 2;
-        if(current_team1 > numTeam || current_team2 > numTeam){
-          $('.btn-right').css('display','none');
-        }
-        $('.member:nth-child(' + current_team1 + ')').css('margin-left','0px');
-        $('.member:nth-child(' + current_team2 + ')').css('margin-left','300px');
-
-        var status = current_team1 + 2;
-        if(status > numTeam){
-          $('.btn-right').css('display','none');
-        }
-      }
-      var team3 = window.matchMedia("screen and (max-width: 786px)");
-      if(team3.matches){
-        $('.member:nth-child(' + current_team1 + ')').css('margin-left','-300px');
-        current_team1 = current_team1 + 1;
-        if(current_team1 > numTeam){
-          $('.btn-right').css('display','none');
-        }
-        $('.member:nth-child(' + current_team1 + ')').css('margin-left','0px');
-
-        var status = current_team1 + 1;
-        if(status > numTeam){
-          $('.btn-right').css('display','none');
-        }
-      }
-    });
-
-    //Button Left
-    $('.btn-left').click(function(){
-      $('.btn-right').css('display','block');
-
-      var team1 = window.matchMedia("screen and (min-width: 987px)");
-      if(team1.matches){
-        $('.member:nth-child(' + current_team1 + ')').css('margin-left','900px');
-        $('.member:nth-child(' + current_team2 + ')').css('margin-left','1200px');
-        $('.member:nth-child(' + current_team3 + ')').css('margin-left','1500px');
-        current_team1 = current_team1 - 3;
-        current_team2 = current_team2 - 3;
-        current_team3 = current_team3 - 3;
-        if(current_team1 < 1 || current_team2 < 1 || current_team3 < 1){
-          $('.btn-left').css('display','none');
-        }
-        $('.member:nth-child(' + current_team1 + ')').css('margin-left','0px');
-        $('.member:nth-child(' + current_team2 + ')').css('margin-left','300px');
-        $('.member:nth-child(' + current_team3 + ')').css('margin-left','600px');
-        var status = current_team3 - 3;
-        if(status < 1){
-          $('.btn-left').css('display','none');
-        }
-      }
-      var team1 = window.matchMedia("screen and (max-width: 986px) and (min-width: 787px)");
-      if(team1.matches){
-        $('.member:nth-child(' + current_team1 + ')').css('margin-left','600px');
-        $('.member:nth-child(' + current_team2 + ')').css('margin-left','900px');
-        current_team1 = current_team1 - 2;
-        current_team2 = current_team2 - 2;
-        if(current_team1 < 1 || current_team2 < 1){
-          $('.btn-left').css('display','none');
-        }
-        $('.member:nth-child(' + current_team1 + ')').css('margin-left','0px');
-        $('.member:nth-child(' + current_team2 + ')').css('margin-left','300px');
-        var status = current_team2 - 2;
-        if(status < 1){
-          $('.btn-left').css('display','none');
-        }
-      }
-      var team1 = window.matchMedia("screen and (max-width: 786px)");
-      if(team1.matches){
-        $('.member:nth-child(' + current_team1 + ')').css('margin-left','300px');
-        current_team1 = current_team1 - 1;
-        if(current_team1 < 1){
-          $('.btn-left').css('display','none');
-        }
-        $('.member:nth-child(' + current_team1 + ')').css('margin-left','0px');
-        var status = current_team1 - 1;
-        if(status < 1){
-          $('.btn-left').css('display','none');
-        }
-      }
-    });
-
+    
     //Function
     function setAuto(){
       current_slider = current_slider + 1;

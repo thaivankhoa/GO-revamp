@@ -1,16 +1,163 @@
 .porfolio-section
-  h3.title-section Our Latest Demos
-  h4.sub-title-section Praesent dignissim viverra est, sed bibendum ligula congue non. Sed ac nisl et felis gravida commod? Suspendisse eget ullamcorper ipsum. Suspendisse diam amet.
+  .title-portfolio 
+    h2.title-small 
+      span Project
+    h3.title-section 
+      | See 
+      span the best 
+      | our projects
+    .line-title
+    h4.sub-title-section Lorem ipsum dolor sit amet, consectetur adipiscing elit integer nibh risus hendrerit eget sem ut, tempor condimentum felis
+    .caret
   .control.container-fluid
-    button.btn-left <
-    .text-page 1 / 5
-    button.btn-right >
+    button#btn-left-project.btn-left 
+      i.fa.fa-chevron-circle-left
+    .project-page 
+      #ideaburn.project-element.active
+        i.fa.fa-lightbulb-o
+        h6 Ideaburn
+      #warehouse.project-element
+        i.fa.fa-shopping-cart
+        h6 Ware house
+      #serumi.project-element
+        i.fa.fa-cart-arrow-down
+        h6 Serumi
+      #luxify.project-element
+        i.fa.fa-diamond
+        h6 Luxify
+      #slc.project-element
+        i.fa.fa-graduation-cap
+        h6 SLC
+      #cpd.project-element
+        i.fa.fa-search-plus
+        h6 CPD
+      #artfolo.project-element
+        i.fa.fa-picture-o
+        h6 Artfolo
+    button.btn-right 
+      i.fa.fa-chevron-circle-right
   .portfolio-content
-    .portfolio-element.container-fluid
+    #ideaburn_project.portfolio-element.container-fluid
       = image_tag 'portfolio-image.png'
       .portfolio-info
-        h6.title-project Ideaburn Project
-        button View demo
+        h6.title-project Ideaburn
+        = link_to 'http://ideaburn-goldenowl.herokuapp.com/' do
+          button View demo
+        end
+        p Maecenas porta porta augue nec. Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut. Porta porta augue nec. . Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut.
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 HTML5, CSS3 ..
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Ruby on Rails, Angularjs ..
+    #warehouse_project.portfolio-element.container-fluid
+      = image_tag 'warehouse.png'
+      .portfolio-info
+        h6.title-project Ware House
+        = link_to 'http://serene-anchorage-3366.herokuapp.com/' do
+          button View demo
+        end
+        p Maecenas porta porta augue nec. Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut. Porta porta augue nec. . Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut.
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 HTML5, CSS3 ..
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Ruby on Rails, Angularjs ..
+    #serumi_project.portfolio-element.container-fluid
+      = image_tag 'serumi.png'
+      .portfolio-info
+        h6.title-project Serumi
+        = link_to 'http://www.naturion.com/' do
+          button View demo
+        end
+        p Maecenas porta porta augue nec. Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut. Porta porta augue nec. . Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut.
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 HTML5, CSS3 ..
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Ruby on Rails, Angularjs ..
+    #luxify_project.portfolio-element.container-fluid
+      = image_tag 'luxify.png'
+      .portfolio-info
+        h6.title-project Luxify
+        = link_to 'http://luxify.com/' do
+          button View demo
+        end
+        p Maecenas porta porta augue nec. Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut. Porta porta augue nec. . Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut.
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 HTML5, CSS3 ..
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Ruby on Rails, Angularjs ..
+    #slc_project.portfolio-element.container-fluid
+      = image_tag 'slc.png'
+      .portfolio-info
+        h6.title-project SLC
+        = link_to 'https://sleepy-coast-4486.herokuapp.com/' do
+          button View demo
+        end
+        p Maecenas porta porta augue nec. Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut. Porta porta augue nec. . Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut.
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 HTML5, CSS3 ..
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Ruby on Rails, Angularjs ..
+    #cpd_project.portfolio-element.container-fluid
+      = image_tag 'cpd.png'
+      .portfolio-info
+        h6.title-project CPD
+        = link_to 'https://cpd-goldenowl.herokuapp.com/' do
+          button View demo
+        end
+        p Maecenas porta porta augue nec. Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut. Porta porta augue nec. . Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut.
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 HTML5, CSS3 ..
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Ruby on Rails, Angularjs ..
+    #artfolo_project.portfolio-element.container-fluid
+      = image_tag 'artfolo.png'
+      .portfolio-info
+        h6.title-project Artfolo
+        = link_to 'http://artfolo-goldenowl.herokuapp.com/' do
+          button View demo
+        end
         p Maecenas porta porta augue nec. Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut. Porta porta augue nec. . Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut.
         ul.line-square
           li
