@@ -728,10 +728,11 @@ button{
           }
         }
         p{
-          margin-top: 60px;
+          margin-top: 55px;
           clear: both;
           color: #888;
           font-size: 12px;
+          letter-spacing: 0.3px;
         }
         .line-square{
           list-style: none;
@@ -1088,12 +1089,12 @@ button{
   .team-element{
     width: 25%;
     float: left;
-    padding: 0px 20px;
+    padding: 0px 35px;
     margin-top: 40px;
     text-align: center;
     img{
       width: 100%;
-      height: 250px;
+      height: 220px;
     }
     .name-customer {
       font-size: 16px;
@@ -1140,10 +1141,6 @@ button{
 .partner-section{
   padding: 60px 40px;
   background: #f7f7f7;
-  .title-section{
-    color: #efb200;
-    font-size: 31px;
-  }
   .partner-element{
     width: 18%;
     padding: 10px 0px;
@@ -1152,8 +1149,20 @@ button{
     background: #f1f1f1;
     margin-left: 2.5%;
     text-align: center;
+    height: 60px;
+    transition: 0.4s;
+    transform: scale(1);
     &:first-of-type{
       margin-left: 0px;
+    }
+    &:hover{
+      background-color: #e0e0e0;
+      transform: scale(1.05);
+    }
+    img{
+      width: 80%;
+      height: 80%;
+      margin-top: 2%;
     }
   }
   &.container-fluid{
