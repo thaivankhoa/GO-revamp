@@ -82,7 +82,7 @@ button{
     width: 100%;
 }
 .video-container video {
-    position: absolute;
+    position: static;
     z-index: 0;
     bottom: 0;
 }
@@ -306,9 +306,9 @@ button{
         height: 55px;
         float: left;
         .title-main{
-          margin-top: 9px !important;
+          margin-top: 13px !important;
           padding: 0px 0px 6px 8px !important;
-          font-size: 20px !important;
+          font-size: 26px !important;
         }
         .line-logo{
           width: 102%;
@@ -321,7 +321,7 @@ button{
       img{
         width: 80% !important;
         height: 80% !important;
-        margin-top: 30px !important;
+        margin-top: 15px !important;
       }
     }
   }
@@ -346,9 +346,10 @@ button{
 .slider-section{
   height: 700px;
   width: 100%;
-  //background-image: url(asset_path('bg-header1.jpg'));
-  background-size: 130%;  
   opacity: 0.5; 
+  .homepage-hero-module{
+    height: 100% !important;
+  }
 }
 .slider-content{
   margin-top: 230px;
@@ -546,18 +547,31 @@ button{
     }
   }
 }
-@media screen and (max-width: 748px){
+@media screen and (max-width: 768px){
   .service-section{
     .service-element{
       padding: 0px 20px 20px;
       width: 48%;
       margin-left: 2%;
+      opacity: 1;
       &:nth-of-type(2n+1){
         margin-left: 0px;
+      }
+      &:nth-child(5){
+        margin-left: 0px;
+      }
+      &:nth-child(6),&:nth-child(7){
+        margin-top: 100px;
+      }
+      &:nth-child(8){
+        position: static;
       }
       .image-service{
         width: 130px;
         height: 130px;
+      }
+      .content-service{
+        height: 50px;
       }
     }
   }
@@ -780,22 +794,39 @@ button{
   .porfolio-section{
     padding: 0px 0px 20px;
     .portfolio-content{
-      padding: 0px 20px 30px 40px;
+      padding: 0px 20px 30px;
     }
   }
 }
 @media screen and (max-width: 768px){
   .porfolio-section{
-    padding: 60px 40px 20px;
+    .control{
+      margin: 50px 100px 40px;
+      .project-page{
+        .project-element{
+          opacity: 1;
+        }
+      }
+    }
     .portfolio-content{
+      height: 650px;
       .portfolio-element{
+        opacity: 1;
         img, .portfolio-info{
           width: 100%;
+        }
+        &:first-of-type{
+          .image-first{
+            margin-left: 0px;
+            opacity: 1;
+          }
         }
         .portfolio-info{
           margin-top: 10px;
           margin-left: 0px;
           height: auto;
+          opacity: 1;
+          position: static;
         }
       }
     }
@@ -803,10 +834,11 @@ button{
 }
 @media screen and (max-width: 468px){
   .porfolio-section{
-    padding: 60px 20px 20px;
+    .control{
+      margin: 50px 50px 40px;
+    }
   }
 }
-
 .introduce-section{
   background: #efb200;
   padding: 60px 140px;
@@ -1170,7 +1202,32 @@ button{
     padding-right: 80px;
   }
 }
-
+@media screen and (max-width: 768px){
+  .partner-section{
+    .partner-element{
+      width: 32%;
+      margin-left: 2%;
+      &:nth-child(3n+2){
+        margin-left: 0px;
+      }
+    }
+    &.container-fluid{
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}
+@media screen and (max-width: 486px){
+  .partner-section{
+    .partner-element{
+      width: 48%;
+      margin-left: 4%;
+      &:nth-child(2n){
+        margin-left: 0px;
+      }
+    }
+  }
+}
 @media screen and (max-width: 860px){
   .service-section {
     .content{

@@ -49,25 +49,29 @@ $('document').ready(function() {
     var scroll_body = 0;
     var count_scroll = 0;
     $(window).scroll(function(){
+      var navbar = window.matchMedia("screen and (min-width: 768px)");
       
       //Check to see if the window is top if not then display button
       var height_slider = $('.slider-section').height() - 100;
-      if ($(this).scrollTop() > height_slider) {
-        $('.scrollToTop').fadeIn();
-        $('.header-section').css('position','fixed');
-        $('.header-section').addClass('header-fixed');
+      if(navbar.matches){
+        if ($(this).scrollTop() > height_slider) {
+          $('.scrollToTop').fadeIn();
+          $('.header-section').css('position','fixed');
+          $('.header-section').addClass('header-fixed');
 
-        scroll_header = scroll_header + 1;
-        if(scroll_header === 1){
-          $('.header-section').css({'margin-top':'-50px','opacity':'0'});
-          $('.header-section').animate({'margin-top':'0px','opacity':'1'},500);
+          scroll_header = scroll_header + 1;
+          if(scroll_header === 1){
+            $('.header-section').css({'margin-top':'-50px','opacity':'0'});
+            $('.header-section').animate({'margin-top':'0px','opacity':'1'},500);
+          }
+        } else {
+          scroll_header = 0;
+          $('.scrollToTop').fadeOut();
+          $('.header-section').css('position','absolute');
+          $('.header-section').removeClass('header-fixed');
         }
-      } else {
-        scroll_header = 0;
-        $('.scrollToTop').fadeOut();
-        $('.header-section').css('position','absolute');
-        $('.header-section').removeClass('header-fixed');
       }
+      
 
       if ($(this).scrollTop() > $('.slider-section').offset().top - 60){
         
@@ -77,27 +81,33 @@ $('document').ready(function() {
       }
 
       if ($(this).scrollTop() > $('.service-section').offset().top - 60){
-        $('.service-element:nth-child(5)').css({'margin-left':'0px','opacity':'1','transition':'1s'});
-        $('.service-element:nth-child(6)').css({'margin-top':'100px','opacity':'1','transition':'1s 0.5s'});
-        $('.service-element:nth-child(7)').css({'margin-top':'100px','opacity':'1','transition':'1s 0.5s'});
-        $('.service-element:nth-child(8)').css({'margin-right':'50px','opacity':'1','transition':'1s'});
+        if(navbar.matches){
+          $('.service-element:nth-child(5)').css({'margin-left':'0px','opacity':'1','transition':'1s'});
+          $('.service-element:nth-child(6)').css({'margin-top':'100px','opacity':'1','transition':'1s 0.5s'});
+          $('.service-element:nth-child(7)').css({'margin-top':'100px','opacity':'1','transition':'1s 0.5s'});
+          $('.service-element:nth-child(8)').css({'margin-right':'50px','opacity':'1','transition':'1s'});
+        }
+        
         current_menu.removeClass('active');
         current_menu = $('#service');
         current_menu.addClass('active');
       }
 
       if ($(this).scrollTop() > $('.porfolio-section').offset().top - 60){
-        for(var i = 1; i <= 7; i++){
-          $('.project-element:nth-child(1)').delay(0).animate({'opacity':'1'}, 500);
-            $('.project-element:nth-child(7)').delay(0).animate({'opacity':'1'}, 500);
-            $('.project-element:nth-child(2)').delay(200).animate({'opacity':'1'}, 500);
-            $('.project-element:nth-child(6)').delay(200).animate({'opacity':'1'}, 500);
-            $('.project-element:nth-child(3)').delay(400).animate({'opacity':'1'}, 500);
-            $('.project-element:nth-child(5)').delay(400).animate({'opacity':'1'}, 500);
-            $('.project-element:nth-child(4)').delay(600).animate({'opacity':'1'}, 500);
+        if(navbar.matches){
+          for(var i = 1; i <= 7; i++){
+            $('.project-element:nth-child(1)').delay(0).animate({'opacity':'1'}, 500);
+              $('.project-element:nth-child(7)').delay(0).animate({'opacity':'1'}, 500);
+              $('.project-element:nth-child(2)').delay(200).animate({'opacity':'1'}, 500);
+              $('.project-element:nth-child(6)').delay(200).animate({'opacity':'1'}, 500);
+              $('.project-element:nth-child(3)').delay(400).animate({'opacity':'1'}, 500);
+              $('.project-element:nth-child(5)').delay(400).animate({'opacity':'1'}, 500);
+              $('.project-element:nth-child(4)').delay(600).animate({'opacity':'1'}, 500);
+          }
+          $('.image-first').delay(600).animate({'margin-left':'0px','opacity':'1'}, 500);
+          $('.portfolio-info').delay(600).animate({'right':'0px','opacity':'1'}, 500);
         }
-        $('.image-first').delay(600).animate({'margin-left':'0px','opacity':'1'}, 500);
-        $('.portfolio-info').delay(600).animate({'right':'0px','opacity':'1'}, 500);
+        
         current_menu.removeClass('active');
         current_menu = $('#porfolio');
         current_menu.addClass('active');
