@@ -7,10 +7,11 @@ html
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => false
     = csrf_meta_tags
-
+    script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
+    script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"
   body data-spy="scroll"
-      
-        .header-section
-          = render "layouts/header"
-        .body-content
-          = yield
+    .header-section
+      = render "layouts/header"
+    .body-content
+      = yield
+
