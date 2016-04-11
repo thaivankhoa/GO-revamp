@@ -10,7 +10,7 @@
     h4.sub-title-section This is all projects we have done. Please take a look at each project and give us your opinion.
     .caret
   .control.container-fluid
-    button#btn-left-project.btn-left 
+    button.btn-left 
       i.fa.fa-chevron-circle-left
     .project-page 
       #ideaburn.project-element.active
@@ -41,11 +41,9 @@
       = image_tag 'portfolio-image.png', :class => 'image-first'
       .portfolio-info
         h6.title-project Ideaburn
-        = link_to 'http://ideaburn-goldenowl.herokuapp.com/' do
-          button 
-            | View demo
-            i.fa.fa-commenting-o
-        end
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
         p IdeaBurns is not actaully a webplatform. It's sates of mind. Changing the Sates of mind drive the matter of scales economic development to fetch jobs, raise the economy. Need for that message to get out leading the systems,leading the governments & leading the communites.
         ul.line-square
           li
@@ -62,11 +60,9 @@
       = image_tag 'warehouse.png'
       .portfolio-info
         h6.title-project Ware House
-        = link_to 'http://serene-anchorage-3366.herokuapp.com/' do
-          button 
-            | View demo
-            i.fa.fa-commenting-o
-        end
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
         p Maecenas porta porta augue nec. Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut. Porta porta augue nec. . Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut.
         ul.line-square
           li
@@ -83,11 +79,9 @@
       = image_tag 'serumi.png'
       .portfolio-info
         h6.title-project Serumi
-        = link_to 'http://www.naturion.com/' do
-          button 
-            | View demo
-            i.fa.fa-commenting-o
-        end
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
         p Maecenas porta porta augue nec. Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut. Porta porta augue nec. . Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut.
         ul.line-square
           li
@@ -104,11 +98,9 @@
       = image_tag 'luxify.png'
       .portfolio-info
         h6.title-project Luxify
-        = link_to 'http://luxify.com/' do
-          button 
-            | View demo
-            i.fa.fa-commenting-o
-        end
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
         p Luxify is your local online marketplace for buying and selling new, vintage, and pre-owned luxury items. We connect buyers to dealers, collectors, and sellers in your country. Professional retailers as well as private clients use Luxify to transact successful sales of a wide selection of luxury goods.
         ul.line-square
           li
@@ -125,11 +117,9 @@
       = image_tag 'slc.png'
       .portfolio-info
         h6.title-project SLC
-        = link_to 'https://sleepy-coast-4486.herokuapp.com/' do
-          button 
-            | View demo
-            i.fa.fa-commenting-o
-        end
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
         p Maecenas porta porta augue nec. Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut. Porta porta augue nec. . Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut.
         ul.line-square
           li
@@ -146,11 +136,9 @@
       = image_tag 'cpd.png'
       .portfolio-info
         h6.title-project CPD
-        = link_to 'https://cpd-goldenowl.herokuapp.com/' do
-          button 
-            | View demo
-            i.fa.fa-commenting-o
-        end
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
         p Maecenas porta porta augue nec. Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut. Porta porta augue nec. . Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut.
         ul.line-square
           li
@@ -167,11 +155,9 @@
       = image_tag 'artfolo.png'
       .portfolio-info
         h6.title-project Artfolo
-        = link_to 'http://artfolo-goldenowl.herokuapp.com/' do
-          button 
-            | View demo
-            i.fa.fa-commenting-o
-        end
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
         p Maecenas porta porta augue nec. Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut. Porta porta augue nec. . Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut.
         ul.line-square
           li
@@ -184,3 +170,13 @@
         .skill-section.container-fluid
           = image_tag 'icon-heart.png'
           h6 Ruby on Rails 
+.detail-project
+  .bg-project
+  .image-large 
+    = image_tag 'ideaburn-large.png'
+    = image_tag 'warehouse-large.png'
+    = image_tag 'naturion-large.png'
+    = image_tag 'luxify-large.png'
+    = image_tag 'slc-large.png'
+    = image_tag 'cpd-large.png'
+    = image_tag 'artfolo-large.png'
