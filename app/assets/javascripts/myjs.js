@@ -153,7 +153,7 @@ $('document').ready(function() {
       if (index === 'home') {
         $('html, body').animate({ scrollTop: 0 }, 1000);
       } else{
-        var current_top = $('.' + index + '-section').offset().top - 60;
+        var current_top = $('.' + index + '-section').offset().top - 59;
         $('html, body').animate({ scrollTop: current_top }, 1000);
 
         if(index === 'service'){

@@ -940,7 +940,7 @@ button{
     }
   }
   .rule-content{
-    padding: 0px 20px 0px 40px;
+    padding: 20px 20px 0px 40px;
     width: 30%;
     float: left;
     .rule-element{
@@ -1197,12 +1197,12 @@ button{
 }
 
 .partner-section{
-  padding: 60px 40px;
+  padding: 40px 40px 100px;
   background: #f7f7f7;
   .partner-element{
     width: 18%;
     padding: 10px 0px;
-    margin-top: 60px;
+    margin-top: 50px;
     float: left; 
     background: #f1f1f1;
     margin-left: 2.5%;
@@ -1219,8 +1219,8 @@ button{
     }
     img{
       width: 80%;
-      height: 80%;
-      margin-top: 2%;
+      height: 50%;
+      margin-top: 6%;
     }
   }
   &.container-fluid{
