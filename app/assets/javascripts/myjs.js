@@ -33,17 +33,18 @@ $('document').ready(function() {
     var current_id_project = $('.project-page > .project-element:first-child');
     var current_pro = 1;
     $('.project-page > .project-element').click(function() {
-      $('.portfolio-content > .portfolio-element:nth-child(' + current_pro + ')').animate({'margin-left':'-100%'},500);
-      $('.project-page > .project-element:nth-child(' + current_pro + ')').removeClass('active');
+      $('.portfolio-content > .portfolio-element:nth-of-type(' + current_pro + ')').animate({'margin-left':'-100%'},500);
+      $('.project-page > .project-element:nth-of-type(' + current_pro + ')').removeClass('active');
+      current_id_project.removeClass('active');
 
       var id = $(this).attr('id');
       current_portfolio = $('#' + id + '_project');
       current_id_project = $(this);
 
-      current_pro = current_portfolio.index() + 1;
+      current_pro = current_portfolio.index();
       current_id_project.addClass('active');
       current_portfolio.css({'margin-left':'100%'});
-      current_portfolio.animate({'margin-left':'0%'},500);
+      current_portfolio.animate({'margin-left':'5%'},500);
     });
 
     //Scroll
@@ -193,31 +194,37 @@ $('document').ready(function() {
       $('html, body').animate({ scrollTop: about_section }, 1000);
     });
 
+    //Btn more project
+    $('.btn-more-project').click(function() {
+      $('.project-element').css('opacity','1');
+      $('.project-element').css('display','block');
+      $('.project-page').css('height','auto');
+    });
 
     //Btn left portfolio
     $('.btn-left ').click(function() {
-      $('.project-page > .project-element:nth-child(' + current_pro + ')').removeClass('active');
-      $('.portfolio-content > .portfolio-element:nth-child(' + current_pro + ')').animate({'margin-left':'-100%'},500);
+      $('.project-page > .project-element:nth-of-type(' + current_pro + ')').removeClass('active');
+      $('.portfolio-content > .portfolio-element:nth-of-type(' + current_pro + ')').animate({'margin-left':'-100%'},500);
       current_pro = current_pro - 1;
       if(current_pro < 1){
         current_pro = numProject;
       }
-      $('.project-page > .project-element:nth-child(' + current_pro + ')').addClass('active');
-      $('.portfolio-content > .portfolio-element:nth-child(' + current_pro + ')').css({'margin-left':'100%'});
-      $('.portfolio-content > .portfolio-element:nth-child(' + current_pro + ')').animate({'margin-left':'0%'},500);
+      $('.project-page > .project-element:nth-of-type(' + current_pro + ')').addClass('active');
+      $('.portfolio-content > .portfolio-element:nth-of-type(' + current_pro + ')').css({'margin-left':'100%'});
+      $('.portfolio-content > .portfolio-element:nth-of-type(' + current_pro + ')').animate({'margin-left':'5%'},500);
     });
 
     //Btn right portfolio
     $('.btn-right ').click(function() {
-      $('.project-page > .project-element:nth-child(' + current_pro + ')').removeClass('active');
-      $('.portfolio-content > .portfolio-element:nth-child(' + current_pro + ')').animate({'margin-left':'-100%'},500);
+      $('.project-page > .project-element:nth-of-type(' + current_pro + ')').removeClass('active');
+      $('.portfolio-content > .portfolio-element:nth-of-type(' + current_pro + ')').animate({'margin-left':'-100%'},500);
       current_pro = current_pro + 1;
       if(current_pro > numProject){
         current_pro = 1;
       }
-      $('.project-page > .project-element:nth-child(' + current_pro + ')').addClass('active');
-      $('.portfolio-content > .portfolio-element:nth-child(' + current_pro + ')').css({'margin-left':'100%'});
-      $('.portfolio-content > .portfolio-element:nth-child(' + current_pro + ')').animate({'margin-left':'0%'},500);
+      $('.project-page > .project-element:nth-of-type(' + current_pro + ')').addClass('active');
+      $('.portfolio-content > .portfolio-element:nth-of-type(' + current_pro + ')').css({'margin-left':'100%'});
+      $('.portfolio-content > .portfolio-element:nth-of-type(' + current_pro + ')').animate({'margin-left':'5%'},500);
     });
 
     //Btn view demo project

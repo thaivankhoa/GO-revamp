@@ -8,10 +8,8 @@
     .line-title
     h4.sub-title-section These are all projects we have done. Please take a look at each project and give us your opinion.
     .caret
-  .control.container-fluid
-    button.btn-left 
-      i.fa.fa-chevron-circle-left
-    .project-page 
+  .control
+    .project-page.container-fluid
       #ideaburn.project-element.active
         i.fa.fa-lightbulb-o
         h6 Ideaburn
@@ -33,9 +31,25 @@
       #artfolo.project-element
         i.fa.fa-picture-o
         h6 Artfolo
-    button.btn-right 
-      i.fa.fa-chevron-circle-right
+      #luxe.project-element
+        = image_tag asset_path 'logo-luxe.png'
+        h6 The Luxe Nomad
+      #fitday.project-element
+        = image_tag asset_path 'logo-fitday.png'
+        h6 FitDay
+      #techlist.project-element
+        = image_tag asset_path 'logo-techlist.png'
+        h6 Techlist
+      #blix.project-element
+        = image_tag asset_path 'logo-blix.png'
+        h6 Blix
+      #built.project-element
+        = image_tag asset_path 'logo-built.png'
+        h6 Built
+    button.btn-more-project More Project
   .portfolio-content
+    button.btn-left 
+      i.fa.fa-chevron-circle-left
     #ideaburn_project.portfolio-element.container-fluid
       = image_tag 'portfolio-image.png', :class => 'image-first'
       .portfolio-info
@@ -169,6 +183,103 @@
         .skill-section.container-fluid
           = image_tag 'icon-heart.png'
           h6 Ruby on Rails 
+    #luxe_project.portfolio-element.container-fluid
+      = image_tag 'luxenomad.png'
+      .portfolio-info
+        h6.title-project The Luxe Nomad
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
+        p Maecenas porta porta augue nec. Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut. Porta porta augue nec. . Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut.
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 HTML5, CSS3 ..
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Ruby on Rails 
+    #fitday_project.portfolio-element.container-fluid
+      = image_tag 'fitday.png'
+      .portfolio-info
+        h6.title-project FitDay
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
+        p Maecenas porta porta augue nec. Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut. Porta porta augue nec. . Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut.
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 HTML5, CSS3 ..
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Ruby on Rails 
+    #techlist_project.portfolio-element.container-fluid
+      = image_tag 'techlist.png'
+      .portfolio-info
+        h6.title-project Techlist
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
+        p Maecenas porta porta augue nec. Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut. Porta porta augue nec. . Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut.
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 HTML5, CSS3 ..
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Ruby on Rails 
+    #blix_project.portfolio-element.container-fluid
+      = image_tag 'Blix.png'
+      .portfolio-info
+        h6.title-project Techlist
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
+        p Maecenas porta porta augue nec. Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut. Porta porta augue nec. . Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut.
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 HTML5, CSS3 ..
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Ruby on Rails 
+    #built_project.portfolio-element.container-fluid
+      = image_tag 'built.png'
+      .portfolio-info
+        h6.title-project Built
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
+        p Maecenas porta porta augue nec. Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut. Porta porta augue nec. . Lai ex mi, quis eu, ac nunc. in turpis, gravida turpis ut. n turpis, gravida turpis ut.
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 HTML5, CSS3 ..
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Ruby on Rails 
+    button.btn-right 
+      i.fa.fa-chevron-circle-right
 .detail-project
   .bg-project
   .image-large 
@@ -179,3 +290,8 @@
     = image_tag 'slc-large.png'
     = image_tag 'cpd-large.png'
     = image_tag 'artfolo-large.png'
+    = image_tag 'luxenomad-large.png'
+    = image_tag 'fitday-large.png'
+    = image_tag 'techlist-large.png'
+    = image_tag 'Blix-large.png'
+    = image_tag 'built-large.png'
