@@ -943,13 +943,16 @@ button{
   padding: 60px 140px;
   h1{
     font-weight: 400;
-    text-transform: uppercase;
+    font-style: italic;
     color: white;
     font-size: 27px;
     letter-spacing: 1px;
     text-align: center;
     line-height: 40px;
     margin-top: 0px;
+    strong{
+      text-transform: uppercase;
+    }
   }
   .line{
     width: 150px;
