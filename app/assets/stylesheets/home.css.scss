@@ -1192,6 +1192,7 @@ button{
       .image-customer{
         float: none;
         text-align: center;
+        width: 100%;
       }
       .caret{
         display: none;
@@ -1272,7 +1273,7 @@ button{
 }
 
 .partner-section{
-  padding: 40px 40px 100px;
+  padding: 40px;
   background: #f7f7f7;
   .partner-element{
     width: 18%;
@@ -1308,7 +1309,7 @@ button{
     .partner-element{
       width: 32%;
       margin-left: 2%;
-      &:nth-child(3n+2){
+      &:nth-of-type(3n+1){
         margin-left: 0px;
       }
     }
@@ -1323,7 +1324,10 @@ button{
     .partner-element{
       width: 48%;
       margin-left: 4%;
-      &:nth-child(2n){
+      &:nth-of-type(3n+1){
+        margin-left: 4%;
+      }
+      &:nth-of-type(2n+1){
         margin-left: 0px;
       }
     }
