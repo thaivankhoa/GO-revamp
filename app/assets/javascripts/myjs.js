@@ -203,19 +203,21 @@ $('document').ready(function() {
     //Btn left portfolio
     $('.btn-left ').click(function() {
       $('.project-page > .project-element:nth-of-type(' + current_pro + ')').removeClass('active');
-      $('.portfolio-content > .portfolio-element:nth-of-type(' + current_pro + ')').animate({'margin-left':'-100%'},500);
+      $('.portfolio-content > .portfolio-element:nth-of-type(' + current_pro + ')').css({'margin-left':'5%'});
+      $('.portfolio-content > .portfolio-element:nth-of-type(' + current_pro + ')').animate({'margin-left':'100%'},500);
       current_pro = current_pro - 1;
       if(current_pro < 1){
         current_pro = numProject;
       }
       $('.project-page > .project-element:nth-of-type(' + current_pro + ')').addClass('active');
-      $('.portfolio-content > .portfolio-element:nth-of-type(' + current_pro + ')').css({'margin-left':'100%'});
+      $('.portfolio-content > .portfolio-element:nth-of-type(' + current_pro + ')').css({'margin-left':'-100%'});
       $('.portfolio-content > .portfolio-element:nth-of-type(' + current_pro + ')').animate({'margin-left':'5%'},500);
     });
 
     //Btn right portfolio
     $('.btn-right ').click(function() {
       $('.project-page > .project-element:nth-of-type(' + current_pro + ')').removeClass('active');
+      $('.portfolio-content > .portfolio-element:nth-of-type(' + current_pro + ')').css({'margin-left':'5%'});
       $('.portfolio-content > .portfolio-element:nth-of-type(' + current_pro + ')').animate({'margin-left':'-100%'},500);
       current_pro = current_pro + 1;
       if(current_pro > numProject){
