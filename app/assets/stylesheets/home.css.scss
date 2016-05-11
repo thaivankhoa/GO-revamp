@@ -12,6 +12,7 @@ body {
   height: 100%;
   font-family: "Open Sans";
   background: black;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 a:visited{
@@ -359,7 +360,7 @@ button{
   .slider-title{
     padding: 0px 12%;
     font-weight: 400;
-    font-size: 60px;
+    font-size: 49px;
     line-height: 75px;
     color: white;
     text-transform: uppercase;
@@ -465,7 +466,7 @@ button{
 }
 //Service
 .service-section {
-  padding: 30px 40px;
+  padding: 30px 80px;
   background: #efb200;
   .sub-title-section{
     margin-bottom: 0px;
@@ -488,8 +489,7 @@ button{
     }
   }
   .service-element{
-    width: 24%;
-    margin-left: 1.33%;
+    width: 33.3%;
     padding: 0px 20px 20px;
     margin-top: 100px;
     float: left;
@@ -498,10 +498,10 @@ button{
     &:nth-child(5){
       margin-left: -40px;
     }
-    &:nth-child(6),&:nth-child(7){
+    &:nth-child(6){
       margin-top: 50px;
     }
-    &:nth-child(8){
+    &:nth-child(7){
       position: absolute;
       right: 0;
       margin-right: 0px;
@@ -549,10 +549,9 @@ button{
 }
 @media screen and (max-width: 768px){
   .service-section{
+    padding: 30px 40px;
     .service-element{
       padding: 0px 20px 20px;
-      width: 48%;
-      margin-left: 2%;
       opacity: 1;
       &:nth-of-type(2n+1){
         margin-left: 0px;
@@ -560,10 +559,10 @@ button{
       &:nth-child(5){
         margin-left: 0px;
       }
-      &:nth-child(6),&:nth-child(7){
+      &:nth-child(6){
         margin-top: 100px;
       }
-      &:nth-child(8){
+      &:nth-child(7){
         position: static;
       }
       .image-service{
@@ -579,7 +578,7 @@ button{
     width: 98%;
   }
 }
-@media screen and (max-width: 468px){
+@media screen and (max-width: 650px){
   .title-section{
     font-size: 24px;
   }
@@ -591,6 +590,9 @@ button{
       margin-top: 60px;
       &:nth-of-type(2n+1){
         margin-left: 0px;
+      }
+      &:nth-child(6){
+        margin-top: 50px;
       }
       &:nth-child(8){
         position: static;

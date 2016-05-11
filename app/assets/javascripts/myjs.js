@@ -92,8 +92,7 @@ $('document').ready(function() {
         if(navbar.matches){
           $('.service-element:nth-child(5)').css({'margin-left':'0px','opacity':'1','transition':'1s'});
           $('.service-element:nth-child(6)').css({'margin-top':'100px','opacity':'1','transition':'1s 0.5s'});
-          $('.service-element:nth-child(7)').css({'margin-top':'100px','opacity':'1','transition':'1s 0.5s'});
-          $('.service-element:nth-child(8)').css({'margin-right':'50px','opacity':'1','transition':'1s'});
+          $('.service-element:nth-child(7)').css({'margin-right':'50px','opacity':'1','transition':'1s'});
         }
       }
 
