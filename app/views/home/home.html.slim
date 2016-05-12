@@ -1,23 +1,14 @@
-section#service.service-section
-	.inner-container
-		= render "service"
-section#work.work-section
-		= render "work"
-section#about.about-section
-	.inner-container
-		= render "about"
-/ section#about.carousel-section
-/ 		= render "carousel"
-section#team.team-section
-	.inner-container
-		= render "team"
-section#contact.contact-section
-	.inner-container
-		= render "contact"
+= render "slider"
+section#service.service-section.container-fluid
+	= render "service"
+= render "work"
+= render "introduce"
+= render "about"
+= render "team"
+= render "contact"
 section#footer.footer-section
-	.inner-container
-		= render "footer"
-section#menu.scrollToTop
-	i.fa.fa-chevron-up.fa-2x
+	= render "footer"
+/ section#menu.scrollToTop
+/ 	i.fa.fa-chevron-up.fa-2x
 	
 

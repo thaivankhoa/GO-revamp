@@ -1,51 +1,296 @@
-/ .bg-portfolio
-/   .bg-black
-.content.container-fluid
-  .h3.title
-    span PORTFOLIO
-  .line
-  .content-work
-    .content-element
-      .content-image
-        = image_tag 'artfolio.png'
-      .content-hover
-        .line
-        .line
-        .line
-        .line
-        h2 Artfolio
-        p
-          a href="http://artfolo-goldenowl.herokuapp.com" View
-    .content-element
-      .content-image
-        = image_tag 'techlist.png'
-      .content-hover
-        .line
-        .line
-        .line
-        .line
-        h2 SLC
-        p
-          a href="https://sleepy-coast-4486.herokuapp.com/" View
-    .content-element
-      .content-image
-        = image_tag 'serumi.png'
-      .content-hover
-        .line
-        .line
-        .line
-        .line
-        h2 Serumi
-        p
-          a href="http://www.naturion.com/" View
-    .content-element
-      .content-image
-        = image_tag 'warehouse.png'
-      .content-hover
-        .line
-        .line
-        .line
-        .line
-        h2 Warehouse
-        p
-          a href="http://serene-anchorage-3366.herokuapp.com/" View
+.porfolio-section
+  .title-portfolio 
+    h2.title-small 
+      span Project
+    h3.title-section 
+      | Featured projects
+    .line-title
+    h4.sub-title-section These are all projects we have done. Please take a look at each project and give us your opinion.
+    .caret
+  .control
+    .project-page.container-fluid
+      #ideaburn.project-element.active
+        i.fa.fa-lightbulb-o
+        h6 Ideaburn
+      #warehouse.project-element
+        i.fa.fa-shopping-cart
+        h6 Ware house
+      #serumi.project-element
+        i.fa.fa-cart-arrow-down
+        h6 Serumi
+      #luxify.project-element
+        i.fa.fa-diamond
+        h6 Luxify
+      #slc.project-element
+        i.fa.fa-graduation-cap
+        h6 SLC
+      #cpd.project-element
+        i.fa.fa-search-plus
+        h6 CPD
+      #artfolo.project-element
+        i.fa.fa-picture-o
+        h6 Artfolo
+      #luxe.project-element
+        = image_tag asset_path 'logo-luxe.png'
+        h6 The Luxe Nomad
+      #fitday.project-element
+        = image_tag asset_path 'logo-fitday.png'
+        h6 FitDay
+      #techlist.project-element
+        = image_tag asset_path 'logo-techlist.png'
+        h6 Techlist
+      #blix.project-element
+        = image_tag asset_path 'logo-blix.png'
+        h6 Blix
+      #built.project-element
+        = image_tag asset_path 'logo-built.png'
+        h6 Built
+    button.btn-more-project More Project
+  .portfolio-content
+    button.btn-left 
+      i.fa.fa-chevron-circle-left
+    #ideaburn_project.portfolio-element.container-fluid
+      = image_tag 'portfolio-image.png', :class => 'image-first'
+      .portfolio-info
+        h6.title-project Ideaburn
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
+        p IdeaBurns is not actually a webplatform. It's sates of mind. Changing the Sates of mind drives the matter of scales economic development to fetch jobs and raises the economy. Need for that message to get out leading the systems,leading the governments & leading the communities.
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Ruby on Rails
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 PostgreSQL, Web socket 
+    #warehouse_project.portfolio-element.container-fluid
+      = image_tag 'warehouse.png'
+      .portfolio-info
+        h6.title-project Ware House
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
+        p Don't worry, all the products you purchase are delivered fresh. Check out our FAQ page for detailed information on how we work!
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Ruby on Rails (Spree Commerce)
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 PostgreSQL
+    #serumi_project.portfolio-element.container-fluid
+      = image_tag 'serumi.png'
+      .portfolio-info
+        h6.title-project Serumi
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
+        p Naturion is dedicated to guiding people towards adopting healthier lifestyles. We are constantly looking for innovative ideas and technologies to develop reliable products to support your wellbeing.
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Ruby on Rails
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 PostgreSQL
+    #luxify_project.portfolio-element.container-fluid
+      = image_tag 'luxify.png'
+      .portfolio-info
+        h6.title-project Luxify
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
+        p Luxify is your local online marketplace for buying and selling new, vintage, and pre-owned luxury items. We connect buyers to dealers, collectors, and sellers in your country. Professional retailers as well as private clients use Luxify to transact successful sales of a wide selection of luxury goods.
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Angularjs, Node.js
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 MongoDB, Express
+    #slc_project.portfolio-element.container-fluid
+      = image_tag 'slc.png'
+      .portfolio-info
+        h6.title-project SLC
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
+        p We support you in studying abroad orientation, integration when studying and help grow your career. Other than that, we provide you scholarship information from famous universities, events and other incentives from Student Life Care partners.
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Ruby on Rails
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 PostgreSQL
+    #cpd_project.portfolio-element.container-fluid
+      = image_tag 'cpd.png'
+      .portfolio-info
+        h6.title-project CPD
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
+        p We help you connect to the artists, see and buy their paintings. Also, if you have beautiful paintings and want to sell it, please come to us as soon as possible. We promise to bring out the best to you.
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Ruby on Rails
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 PostgreSQL
+    #artfolo_project.portfolio-element.container-fluid
+      = image_tag 'artfolo.png'
+      .portfolio-info
+        h6.title-project Artfolo
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
+        p We help you connect to the artists, see and buy their paintings. Also, if you have beautiful paintings and want to sell it, please come to us as soon as possible. We promise to bring out the best to you.
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Ruby on Rails
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 PostgreSQL
+    #luxe_project.portfolio-element.container-fluid
+      = image_tag 'luxenomad.png'
+      .portfolio-info
+        h6.title-project The Luxe Nomad
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
+        p As Asia-Pacific's leading luxury villa and hotel booking portal, we aim to make booking that holiday, easy/ So you can forget about spending hours searching fot that right place, as our team of travel - centric Nomads has curated a list you can trust.
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Ruby on Rails
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 PostgreSQL
+    #fitday_project.portfolio-element.container-fluid
+      = image_tag 'fitday.png'
+      .portfolio-info
+        h6.title-project FitDay
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
+        p As Asia-Pacific's leading luxury villa and hotel booking portal, we aim to make booking that holiday, easy/ So you can forget about spending hours searching fot that right place, as our team of travel - centric Nomads has curated a list you can trust.
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 React Native
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 D3
+    #techlist_project.portfolio-element.container-fluid
+      = image_tag 'techlist.png'
+      .portfolio-info
+        h6.title-project Techlist
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
+        p Techlist -a product of Techinasia -  is a startup database platform which has more than 20000 startups info.
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Ruby on Rails, Angularjs
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 PostgreSQL
+    #blix_project.portfolio-element.container-fluid
+      = image_tag 'Blix.png'
+      .portfolio-info
+        h6.title-project Blix
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
+        p As Asia-Pacific's leading luxury villa and hotel booking portal, we aim to make booking that holiday, easy/ So you can forget about spending hours searching fot that right place, as our team of travel - centric Nomads has curated a list you can trust.
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Ruby on Rails
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 MongoDB, Ember
+    #built_project.portfolio-element.container-fluid
+      = image_tag 'built.png'
+      .portfolio-info
+        h6.title-project Built
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
+        p As Asia-Pacific's leading luxury villa and hotel booking portal, we aim to make booking that holiday, easy/ So you can forget about spending hours searching fot that right place, as our team of travel - centric Nomads has curated a list you can trust.
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 React Native
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 D3 
+    button.btn-right 
+      i.fa.fa-chevron-circle-right
+.detail-project
+  .bg-project
+  .image-large 
+    = image_tag 'ideaburn-large.png'
+    = image_tag 'warehouse-large.png'
+    = image_tag 'naturion-large.png'
+    = image_tag 'luxify-large.png'
+    = image_tag 'slc-large.png'
+    = image_tag 'cpd-large.png'
+    = image_tag 'artfolo-large.png'
+    = image_tag 'luxenomad-large.png'
+    = image_tag 'fitday-large.png'
+    = image_tag 'techlist-large.png'
+    = image_tag 'Blix-large.png'
+    = image_tag 'built-large.png'
