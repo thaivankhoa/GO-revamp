@@ -488,6 +488,10 @@ button{
       color: white;
     }
   }
+  .service-content{
+    width: 100%;
+    position: relative;
+  }
   .service-element{
     width: 33.3%;
     padding: 0px 20px 20px;
@@ -495,16 +499,16 @@ button{
     float: left;
     text-align: center;
     opacity: 0;
-    &:nth-child(5){
+    &:nth-child(1){
       margin-left: -40px;
     }
-    &:nth-child(6){
+    &:nth-child(2){
       margin-top: 50px;
     }
-    &:nth-child(7){
+    &:nth-child(3){
       position: absolute;
       right: 0;
-      margin-right: 0px;
+      margin-right: -50px;
     }
     .image-service{
       margin: -50px auto;
@@ -529,9 +533,10 @@ button{
       color: #444;
       text-align: center;
       margin-top: 20px;
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 400;
       letter-spacing: 0.8px;
+      font-family: 'Arial';
     }
   }
 }
@@ -952,8 +957,13 @@ button{
     text-align: center;
     line-height: 40px;
     margin-top: 0px;
+    font-family: 'Arial';
     strong{
       text-transform: uppercase;
+    }
+    &.title{
+      text-transform: uppercase;
+      font-weight: 600;
     }
   }
   .line{
@@ -1013,6 +1023,8 @@ button{
       font-size: 13px;
       letter-spacing: 0.5px;
       line-height: 21px;
+      font-weight: 300;
+      font-family: "Open Sans";
     }
   }
   .rule-content{
@@ -1020,7 +1032,7 @@ button{
     width: 30%;
     float: left;
     .rule-element{
-      margin-bottom: 10px;
+      margin-bottom: 5px;
       width: 100%;
       img{
         margin-right: 20px;
@@ -1146,10 +1158,11 @@ button{
       }
       p{
         color: #444;
-        font-size: 13px;
+        font-size: 12px;
         padding: 10px 25px 0px 15px;
         overflow: hidden;
         font-family: "Open Sans";
+        font-style: italic;
       }
     }
   }

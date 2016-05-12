@@ -90,9 +90,9 @@ $('document').ready(function() {
       }
       if ($(this).scrollTop() > $('.service-section').offset().top - 300){
         if(navbar.matches){
-          $('.service-element:nth-child(5)').css({'margin-left':'0px','opacity':'1','transition':'1s'});
-          $('.service-element:nth-child(6)').css({'margin-top':'100px','opacity':'1','transition':'1s 0.5s'});
-          $('.service-element:nth-child(7)').css({'margin-right':'50px','opacity':'1','transition':'1s'});
+          $('.service-element:nth-child(1)').css({'margin-left':'0px','opacity':'1','transition':'1s'});
+          $('.service-element:nth-child(2)').css({'margin-top':'100px','opacity':'1','transition':'1s 0.5s'});
+          $('.service-element:nth-child(3)').css({'margin-right':'0px','opacity':'1','transition':'1s'});
         }
       }
 
@@ -157,10 +157,9 @@ $('document').ready(function() {
         $('html, body').animate({ scrollTop: current_top }, 1000);
 
         if(index === 'service'){
-          $('.service-element:nth-child(5)').css({'margin-left':'0px','opacity':'1','transition':'1s 1.2s'});
-          $('.service-element:nth-child(6)').css({'margin-top':'100px','opacity':'1','transition':'1s 1.7s'});
-          $('.service-element:nth-child(7)').css({'margin-top':'100px','opacity':'1','transition':'1s 1.7s'});
-          $('.service-element:nth-child(8)').css({'margin-right':'50px','opacity':'1','transition':'1s 1.2s'});
+          $('.service-element:nth-child(1)').css({'margin-left':'0px','opacity':'1','transition':'1s 1.2s'});
+          $('.service-element:nth-child(2)').css({'margin-top':'100px','opacity':'1','transition':'1s 1.7s'});
+          $('.service-element:nth-child(3)').css({'margin-right':'0px','opacity':'1','transition':'1s 1.2s'});
         }
         if(index === 'porfolio'){
           for(var i = 1; i <= 7; i++){
