@@ -1,55 +1,61 @@
 footer.container-fluid
 	.footer-col
-		h4 About Us
-		p At GoldenOwl, we committed to provide impactful solution for your company's technical problems. We focus on helping our customers turning their ideas into a website/ mobile application and satisfy every requirement. 
-	.footer-col
-		h4 Our Services
-		.footer-service
-			.image
-				= image_tag 'serviceoutsourcing.png'
-			p Outsourcing Service
-		.footer-service
-			.image
-				= image_tag 'webdesign.png'
-			p Web Design And Development
-		.footer-service
-			.image
-				= image_tag 'automation.png'
-			p Automation Test
-		.footer-service
-			.image
-				= image_tag 'seo.png'
-			p SEO (Search Engine Optimization)
-	.footer-col
-		h4 Our Blogs
-		.footer-service
-			.image
-				= image_tag 'serviceoutsourcing.png'
-			p Blog 1
-		.footer-service
-			.image
-				= image_tag 'webdesign.png'
-			p Blog 2
-		.footer-service
-			.image
-				= image_tag 'automation.png'
-			p Blog 3
-	.footer-col
-		h4 Contact Info
-		.footer-contact
+		h1 
+		 	span 
+		 		strong Golden Owl 
+		 	| Consulting
+		p We committed to provide impactful solution for your company's technical problems. We focus on helping our customers.
+		.infomation
 			i.fa.fa-phone
-			p +84 912 878985
-		.footer-contact
+			p.first-info +84 912 878985
+		.infomation
 			i.fa.fa-envelope
 			p admin@goldenowl.asia
-		.footer-contact
+		.infomation
 			i.fa.fa-map-marker
-			p 4F, 63B Calmete, District 1, Ho Chi Minh City	
-		.footer-contact
- 			a.icon-share href="https://facebook.com/goldenowl.asia/"
- 				i.fa.fa-facebook.fa-lg
- 			a.icon-share href="https://twitter.com/company_golden"
- 				i.fa.fa-twitter.fa-lg
- 			a.icon-share href="https://linkedin.com/company/golden-owl-consulting"
- 				i.fa.fa-linkedin.fa-lg
-
+			p.location 7, Tran Xuan Hoa Street, Ward 7, District 5, Ho Chi Minh City
+		.infomation.icon-share
+			= link_to "https://facebook.com/goldenowl.asia/" do
+				button
+					i.fa.fa-facebook
+			end
+			= link_to "https://twitter.com/company_golden" do
+				button
+					i.fa.fa-twitter
+			end
+			= link_to "https://linkedin.com/company/golden-owl-consulting" do
+				button
+					i.fa.fa-linkedin
+			end
+	.footer-col
+		h5 Latest Post
+		.post-element
+			.image-post
+				= image_tag 'blog.jpg'
+			.content-post
+				h6 Blog Post 01
+				.line
+				.time-post
+					.time-element
+						i.fa.fa-calendar
+						span 25/11/2015
+					.time-element
+						i.fa.fa-commenting-o
+						span 25 comments
+		.post-element
+			.image-post
+				= image_tag 'blog.jpg'
+			.content-post
+				h6 Blog Post 02
+				.line
+				.time-post
+					.time-element
+						i.fa.fa-calendar
+						span 25/11/2015
+					.time-element
+						i.fa.fa-commenting-o
+						span 25 comments
+	.footer-col
+		h5 Location
+		/ = image_tag 'map.png', :class => 'image_map'
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.760258743546!2d106.66490661426651!3d10.75295116256817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752efa2a21a447%3A0x35208d28f01f61f7!2zNyBUcuG6p24gWHXDom4gSG_DoCwgUGjGsOG7nW5nIDcsIFF14bqtbiA1LCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1460036676085" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
