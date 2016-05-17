@@ -1,12 +1,29 @@
 Rails.application.routes.draw do
 
+  mount Ckeditor::Engine => '/ckeditor'
+  devise_for :users, :controllers => { :sessions => 'users/sessions', registrations: 'registrations' }, :path_prefix => ''
+  # scope "/admin" do
+  #   resources :users
+  # end
+  resources :users
   resources :contacts
-  resources :contacts
-  resources :contacts
-  get 'home/home'
+  namespace :admin do
+    resources :users
+  end
 
+  get 'home/home'
   get 'home/about'
   get 'home/sitemap'
+
+  namespace :blogs do
+    get '/' => 'toppage#index'
+    get ':name' => 'categories#show', as: 'category_show'
+    resources :categories
+    resources :posts do
+      resources :comments
+    end
+    get ':seo_name/:id' => 'posts#show', as: 'post_detail'
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

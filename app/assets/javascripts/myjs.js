@@ -26,7 +26,7 @@ $('document').ready(function() {
       $('.project-element:nth-child(' + i + ')').css('left',left + 'px');
       left = left + 110;
     }
-    
+
 
     //Set height auto for slider
     var current_portfolio = $('#ideaburn_project');
@@ -53,7 +53,7 @@ $('document').ready(function() {
     var count_scroll = 0;
     $(window).scroll(function(){
       var navbar = window.matchMedia("screen and (min-width: 768px)");
-      
+
       //Check to see if the window is top if not then display button
       var height_slider = $('.slider-section').height() - 100;
       if(navbar.matches){
@@ -74,10 +74,10 @@ $('document').ready(function() {
           $('.header-section').removeClass('header-fixed');
         }
       }
-      
+
 
       if ($(this).scrollTop() > $('.slider-section').offset().top - 60){
-        
+
         current_menu.removeClass('active');
         current_menu = $('#home');
         current_menu.addClass('active');
@@ -117,19 +117,19 @@ $('document').ready(function() {
         }
       }
       if ($(this).scrollTop() > $('.about-section').offset().top - 60){
-        
+
         current_menu.removeClass('active');
         current_menu = $('#about');
         current_menu.addClass('active');
       }
       if ($(this).scrollTop() > $('.team-section').offset().top - 60){
-        
+
         current_menu.removeClass('active');
         current_menu = $('#team');
         current_menu.addClass('active');
       }
       if ($(this).scrollTop() > $('.partner-section').offset().top - 60){
-        
+
         current_menu.removeClass('active');
         current_menu = $('#partner');
         current_menu.addClass('active');
@@ -146,7 +146,7 @@ $('document').ready(function() {
     $('.navbar').click(function(){
       $('.menu-content').slideToggle();
     });
-    
+
     //Navigation
     $('.menu-content > li').click(function(){
       var index = $(this).attr('id');
@@ -248,7 +248,7 @@ $('document').ready(function() {
     //Function
     function setAuto(){
     }
-    // 
+    //
 });
 
 //Video Loop BackGround
@@ -298,28 +298,27 @@ function scaleBannerVideoSize(element){
 
 //Smooth Scroll Mouse
 $(function(){
-  
+
   var $window = $(window);    //Window object
-  
+
   var scrollTime = 0.5;     //Scroll time
   var scrollDistance = 150;   //Distance. Use smaller value for shorter scroll and greater value for longer scroll
-    
+
   $window.on("mousewheel DOMMouseScroll", function(event){
-    
-    event.preventDefault(); 
-                    
+
+    event.preventDefault();
+
     var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
     var scrollTop = $window.scrollTop();
     var finalScroll = scrollTop - parseInt(delta*scrollDistance);
-      
+
     TweenMax.to($window, scrollTime, {
       scrollTo : { y: finalScroll, autoKill:true },
         ease: Power1.easeOut, //For more easing functions see http://api.greensock.com/js/com/greensock/easing/package-detail.html
         autoKill: true,
-        overwrite: 5              
+        overwrite: 5
       });
-          
+
   });
-  
 });
 
