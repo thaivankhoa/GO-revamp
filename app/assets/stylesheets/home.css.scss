@@ -1290,18 +1290,19 @@ button{
 .partner-section{
   padding: 40px;
   background: #f7f7f7;
+  position: relative;
   .partner-element{
     width: 18%;
     padding: 10px 0px;
     margin-top: 50px;
     float: left; 
     background: #f1f1f1;
-    margin-left: 2.5%;
+    margin-left: 1%;
     text-align: center;
     height: 60px;
     transition: 0.4s;
     transform: scale(1);
-    &:first-of-type, &:nth-of-type(5n+1){
+    &:first-of-type{
       margin-left: 0px;
     }
     &:hover{
@@ -1314,40 +1315,75 @@ button{
       margin-top: 6%;
     }
   }
+  .partner{
+    display: flex;
+  }
+  .partner-content{
+    overflow: hidden;
+  }
   &.container-fluid{
     padding-left: 80px;
     padding-right: 80px;
   }
-}
-@media screen and (max-width: 768px){
-  .partner-section{
-    .partner-element{
-      width: 32%;
-      margin-left: 2%;
-      &:nth-of-type(3n+1){
-        margin-left: 0px;
-      }
+  .btn-group{
+    position: absolute;
+    top: 225px;
+    left: 0;
+    width: 100%;
+    button{
+      font-size: 20px;
+      color: #888;
     }
-    &.container-fluid{
-      padding-left: 40px;
-      padding-right: 40px;
+    .btn-left{
+      float: left;
+      margin-left: 20px;
+    }
+    .btn-right{
+      float: right;
+      margin-right: 20px;
     }
   }
 }
 @media screen and (max-width: 486px){
   .partner-section{
     .partner-element{
-      width: 48%;
-      margin-left: 4%;
-      &:nth-of-type(3n+1){
-        margin-left: 4%;
-      }
-      &:nth-of-type(2n+1){
-        margin-left: 0px;
-      }
+      margin-left: 2%;
+    }
+    .partner-content{
+      width: 240px;
+      margin: 0px auto;
     }
   }
 }
+// @media screen and (max-width: 768px){
+//   .partner-section{
+//     .partner-element{
+//       width: 32%;
+//       margin-left: 2%;
+//       &:nth-of-type(3n+1){
+//         margin-left: 0px;
+//       }
+//     }
+//     &.container-fluid{
+//       padding-left: 40px;
+//       padding-right: 40px;
+//     }
+//   }
+// }
+// @media screen and (max-width: 486px){
+//   .partner-section{
+//     .partner-element{
+//       width: 48%;
+//       margin-left: 4%;
+//       &:nth-of-type(3n+1){
+//         margin-left: 4%;
+//       }
+//       &:nth-of-type(2n+1){
+//         margin-left: 0px;
+//       }
+//     }
+//   }
+// }
 @media screen and (max-width: 860px){
   .service-section {
     .content{
