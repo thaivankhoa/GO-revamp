@@ -15,11 +15,7 @@ html
     script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
     script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"
   body data-spy="scroll"
-
-    .header-section
-      = render "layouts/header"
-    .body-content
-      = yield
+    = yield
     .footer
       = render 'layouts/footer'
 

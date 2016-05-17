@@ -1,9 +1,11 @@
 .content
-  .logo
-    = image_tag 'logo.png', :alt => "Golden Owl Consulting"
-    .title
-      h1 Golden
-      h2 Owl Consulting
+  = link_to root_path do
+    .logo
+      .image-logo
+        = image_tag 'logo.png', :alt => "Golden Owl Consulting"
+      .title-logo
+        h1.title-main Golden Owl
+  end
   .category
     ul
       // - @categories.each do |cate|

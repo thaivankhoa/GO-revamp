@@ -6,18 +6,48 @@
 @import "bootstrap";
 
 
+.logo{
+  padding-left: 20px;
+  float: left;
+  width: auto;
+  .image-logo{
+    width: 40px;
+    height: 38px;
+    float: left;
+    background: transparent;
+  }
+  .title-logo{
+    height: 55px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 5px;
+    .title-main{
+      margin-top: 8px;
+      padding: 0px 0px 10px 5px;
+      color: #333;
+      text-transform: none;
+      font-size: 26px;
+      margin-bottom: 0px;
+      font-family: 'Pacifico', cursive;
+    }
+    .line-logo{
+      display: none;
+    }
+  }
+}
 .form-group{
   min-width: 250px !important;
 }
 //navigate section
 .navigate-section{
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 30px;
   position: static;
   width: 100%;
   height: 75px;
   background-color: white;
   z-index: 2;
+  box-shadow: 0px 1px 4px #d7d7d7;
   .content{
     padding: 0px 10px;
     .category{
@@ -28,7 +58,7 @@
         color: #09c;
         background: #fff;
         padding-left: 20px;
-        font: 30px VNFQuicksandRegular,sans-serif;
+        font: 25px VNFQuicksandRegular,sans-serif;
       }
       .active{
         a{
@@ -44,10 +74,11 @@
         }
       }
       ul {
-        // float: right;
+        overflow: inherit;
         li{
-          padding: 15px 40px;
+          padding: 15px 20px;
           display: inline-block;
+          margin-top: 12px;
           p{
             display: none;
           }
@@ -66,37 +97,17 @@
           &:nth-child(4):hover {
             color: #09c;
           }
-          // &:nth-child(1):hover ~ li > .blog{
-          //   display: block;
-          // }
-          // &:nth-child(2):hover ~ li > .sharing{
-          //   display: block;
-          // }
-          // &:nth-child(3):hover ~ li > .fontend{
-          //   display: block;
-          // }
-          // &:nth-child(4):hover ~ li > .ror{
-          //   display: block;
-          // }
+          a{
+            i{
+              font-size: 25px;
+            }
+          }
           a:hover{
             text-decoration: none;
             color: #09c;
             border: none;
             background-color: white;
           }
-
-        //   .i-1:hover  ~ .blog {
-        //    display: block;
-        //   }
-        //   .i-2:hover  ~ .sharing{
-        //    display: block;
-        //   }
-        //   .i-3:hover  ~ .fontend{
-        //    display: block;
-        //   }
-        //   .i-4:hover  ~ .ror{
-        //    display: block;
-        //   }
       }
       li:nth-child(5){
         width: 150px;
@@ -109,8 +120,9 @@
     padding-left: 10px;
     padding-right: 10px;
     img{
-      width: 50px;
-      height: 50px;
+      width: 45px;
+      height: 45px;
+      margin-top: 3px;
       float: left;
     }
     .title{
@@ -148,7 +160,7 @@
     .user{
       float: right;
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 15px;
       .dropdown{
         display: inline-block;
       }
@@ -200,7 +212,7 @@
 .latestpost-section{
   .content{
     padding: 0px;
-
+    margin-bottom: 60px;
     .navigation li {
       width: 100%;
       border-left: 5px solid #666;
