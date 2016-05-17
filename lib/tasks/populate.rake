@@ -19,7 +19,7 @@ namespace :db do
           post.created_at = Time.now
           post.user_id = 1
         end
-        User.create(:id => 1, :email => 'admin@gmail.com', :password => '12345678', :password_confirmation => '12345678', sign_in_count: 1, current_sign_in_at: "2016-02-05 05:03:36", last_sign_in_at: "2016-02-05 05:03:36", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1", user_type: 1, avatar: nil, username: "Patrick")
+        User.create(:email => 'admin@gmail.com', :password => '12345678', :password_confirmation => '12345678', sign_in_count: 1, current_sign_in_at: "2016-02-05 05:03:36", last_sign_in_at: "2016-02-05 05:03:36", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1", user_type: 1, avatar: nil, username: "Patrick")
         # User.populate 10 do |user|
         #   user.username = Faker::Name.name
         #   user.email = Faker::Internet.email
