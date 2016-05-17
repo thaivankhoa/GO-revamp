@@ -12,6 +12,7 @@ section#navigate.navigate-section
         p
           strong #{@post.title.titleize}
       .content
+        =image_tag @post.picture
         p #{@post.body.html_safe}
 
       div class="fb-like" data-href= "https://protected-mountain-41572.herokuapp.com/blogs/suong-mu-huyen-ao-o-dubai/11" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"
