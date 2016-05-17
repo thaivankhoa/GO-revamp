@@ -1301,7 +1301,7 @@ button{
     height: 60px;
     transition: 0.4s;
     transform: scale(1);
-    &:first-of-type{
+    &:first-of-type, &:nth-of-type(5n+1){
       margin-left: 0px;
     }
     &:hover{
