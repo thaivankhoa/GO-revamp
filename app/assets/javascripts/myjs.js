@@ -7,34 +7,35 @@ $('document').ready(function() {
     var width = 20.5 * $('.partner-element').size();
     var navbar = window.matchMedia("screen and (min-width: 768px)");
     var navbar_01 = window.matchMedia("screen and (max-width: 767px)");
+    var left_partner = 0;
     if(navbar_01.matches){
-      width = 410;
+      width = 430;
     }
     var navbar_02 = window.matchMedia("screen and (max-width: 586px)");
     if(navbar_02.matches){
-      width = 620;
+      width = 630;
     }
-    var navbar_03 = window.matchMedia("screen and (max-width: 368px)");
+    var navbar_03 = window.matchMedia("screen and (max-width: 400px)");
     if(navbar_03.matches){
-      width = 1200;
+      width = 1500;
     }
 
     $('.partner').css('width',width + '%');
 
-    var left_partner = 0;
+    
     $('.btn-right').click(function(){
       var sreen = 0;
       if(navbar.matches){
         sreen = 105;
       }
       if(navbar_01.matches){
-        sreen = 103;
+        sreen = 66;
       }
       if(navbar_02.matches){
-        sreen = 104;
+        sreen = 96;
       }
       if(navbar_03.matches){
-        sreen = 102;
+        sreen = 117;
       }
       left_partner = left_partner - sreen;
       var width_partner = 0 - width;
@@ -50,13 +51,13 @@ $('document').ready(function() {
         sreen = 105;
       }
       if(navbar_01.matches){
-        sreen = 103;
+        sreen = 66;
       }
       if(navbar_02.matches){
-        sreen = 104;
+        sreen = 96;
       }
       if(navbar_03.matches){
-        sreen = 102;
+        sreen = 116;
       }
       left_partner = left_partner + sreen;
       if(left_partner <= 0){
@@ -116,7 +117,7 @@ $('document').ready(function() {
     var scroll_body = 0;
     var count_scroll = 0;
     $(window).scroll(function(){
-      var navbar = window.matchMedia("screen and (min-width: 768px)");
+      var navbar = window.matchMedia("screen and (min-width: 650px)");
 
       //Check to see if the window is top if not then display button
       var height_slider = $('.slider-section').height() - 100;
@@ -214,10 +215,17 @@ $('document').ready(function() {
     //Navigation
     $('.menu-content > li').click(function(){
       var index = $(this).attr('id');
+      var navbar = window.matchMedia("screen and (max-width: 1024px)");
       if (index === 'home') {
         $('html, body').animate({ scrollTop: 0 }, 1000);
       } else{
-        var current_top = $('.' + index + '-section').offset().top - 59;
+        var current_top = 0;
+        if(navbar.matches){
+          $('.menu-content').css('display','none');
+          current_top = $('.' + index + '-section').offset().top;
+        }else{
+          current_top = $('.' + index + '-section').offset().top - 59;
+        }
         $('html, body').animate({ scrollTop: current_top }, 1000);
 
         if(index === 'service'){
@@ -242,6 +250,8 @@ $('document').ready(function() {
       current_menu.removeClass('active');
       current_menu = $('#' + index);
       current_menu.addClass('active');
+
+      
     });
 
     //Btn View About Us

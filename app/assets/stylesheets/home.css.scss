@@ -497,6 +497,7 @@ button{
   .service-content{
     width: 100%;
     position: relative;
+    padding-bottom: 50px;
   }
   .service-element{
     width: 33.3%;
@@ -609,6 +610,9 @@ button{
         position: static;
         margin-left: 0px;
         margin-right: 0px;
+      }
+      &:nth-child(3){
+        position: static;
       }
       .image-service{
         width: 130px;
@@ -864,6 +868,7 @@ button{
         padding: 10px 60px 0px;
         .project-element{
           width: 20%;
+          height: 70px;
           &:nth-child(n+6){
             display: none;
           }
