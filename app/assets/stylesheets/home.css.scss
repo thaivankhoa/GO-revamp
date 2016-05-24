@@ -473,16 +473,16 @@ button{
 //Service
 .service-section {
   padding: 30px 80px;
-  background: #efb200;
+  background: white;
   .sub-title-section{
     margin-bottom: 0px;
     color: #444;
   }
   .title-small{
     span{
-      border-left: 1px solid white;
-      border-right: 1px solid white;
-      color: white;
+      border-left: 1px solid #efb200;
+      border-right: 1px solid #efb200;
+      color: #efb200;
     }
   }
   .line-title{
@@ -491,7 +491,7 @@ button{
   .title-section{
     color: #222;
     span{
-      color: white;
+      color: #efb200;
     }
   }
   .service-content{
@@ -521,9 +521,9 @@ button{
       margin: -50px auto;
       width: 150px;
       height: 150px;
-      background: white;
+      background: #efb200;
       border-radius: 50%;
-      box-shadow: -4px 5px 0px #df9f01;
+      // box-shadow: -4px 5px 0px #df9f01;
       img{
 
       }
@@ -636,7 +636,7 @@ button{
   background: #f7f7f7;
   padding: 0px 0px 50px;
   .title-portfolio{
-    background: white;
+    background: #f7f7f7;
     margin-top: 0px;
     padding: 20px 0px;
     position: relative;
@@ -647,6 +647,7 @@ button{
       border-left: 12px solid transparent;
       bottom: -15px;
       left: 50%;
+      display: none;
     }
   }
   .control{
@@ -957,12 +958,12 @@ button{
   }
 }
 .introduce-section{
-  background: #efb200;
+  background: white;
   padding: 60px 140px;
   h1{
     font-weight: 400;
     font-style: italic;
-    color: white;
+    color: black;
     font-size: 27px;
     letter-spacing: 1px;
     text-align: center;
