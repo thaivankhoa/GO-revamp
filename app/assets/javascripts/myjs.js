@@ -4,7 +4,7 @@ $('document').ready(function() {
 
     //Set width for partner-section
 
-    var width = 20.5 * $('.partner-element').size();
+    var width = 260;
     var navbar = window.matchMedia("screen and (min-width: 768px)");
     var navbar_01 = window.matchMedia("screen and (max-width: 767px)");
     var left_partner = 0;
@@ -26,7 +26,7 @@ $('document').ready(function() {
     $('.btn-right').click(function(){
       var sreen = 0;
       if(navbar.matches){
-        sreen = 105;
+        sreen = 100;
       }
       if(navbar_01.matches){
         sreen = 66;
@@ -48,7 +48,7 @@ $('document').ready(function() {
     $('.btn-left').click(function(){
       var sreen = 0;
       if(navbar.matches){
-        sreen = 105;
+        sreen = 100;
       }
       if(navbar_01.matches){
         sreen = 66;
@@ -262,7 +262,13 @@ $('document').ready(function() {
 
     //Btn See Details
     $('.btn-details ').click(function() {
-      var about_section = $('.about-section').offset().top - 60;
+      var navbar = window.matchMedia("screen and (max-width: 1024px)");
+      var about_section = 0;
+      if(navbar.matches){
+        about_section = $('.about-section').offset().top;
+      }else{
+        about_section = $('.about-section').offset().top - 60;
+      }
       $('html, body').animate({ scrollTop: about_section }, 1000);
     });
 
