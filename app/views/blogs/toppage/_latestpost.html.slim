@@ -6,8 +6,10 @@
     .title
       - if @category != nil
         h3 #{@category.name.capitalize}
+        p In this section you will find in-depth how-tos involving common web development and web design techniques.
       - else
         h3 Blogs
+        p In this section you will find in-depth how-tos involving common web development and web design techniques.
     .secondblog
       = image_tag(@most_views.first.picture)
       = link_to @most_views.first.title, blogs_post_detail_path(@most_views.first.title.to_url, @most_views.first.id)

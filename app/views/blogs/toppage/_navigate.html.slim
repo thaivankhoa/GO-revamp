@@ -21,12 +21,15 @@
         li.category-menu
           = link_to blogs_path
             i class="fa fa-pencil fa-3x"
+            .circle
         li.category-menu
           = link_to blogs_category_show_path("sharing")
             i class="fa fa-heart-o fa-3x"
+            .circle
         li.category-menu
           = link_to blogs_category_show_path("frontend")
             i class="fa fa-mobile fa-3x"
+            .circle
         li.category-menu
           = link_to blogs_category_show_path("ror")
             i class="fa fa-diamond fa-3x"
@@ -36,30 +39,37 @@
           li.category-menu.active
             = link_to blogs_path, title: "Blogs"
               i class="fa fa-pencil fa-3x"
+              .circle
         - else
           li.category-menu
             = link_to blogs_path, title: "Blogs"
               i class="fa fa-pencil fa-3x"
+              .circle
         - if @category.name == @categories.second.name
           li.category-menu.active
             = link_to blogs_category_show_path(@categories.second.name), title: "Sharing"
               i class="fa fa-heart-o fa-3x"
+              .circle
         - else
           li.category-menu
             = link_to blogs_category_show_path(@categories.second.name), title: "Sharing"
               i class="fa fa-heart-o fa-3x"
+              .circle
         - if @category.name == @categories.third.name
           li.category-menu.active
             = link_to blogs_category_show_path(@categories.third.name), title: "Frontend"
               i class="fa fa-laptop fa-3x"
+              .circle
         - else
           li.category-menu
             = link_to blogs_category_show_path(@categories.third.name), title: "Frontend"
               i class="fa fa-laptop fa-3x"
+              .circle
         - if  @category.name == @categories.fourth.name
           li.category-menu.active
             = link_to blogs_category_show_path(@categories.fourth.name), title: "Ruby on Rails"
               i class="fa fa-diamond fa-3x"
+              .circle
         - else
           li.category-menu
             = link_to blogs_category_show_path(@categories.fourth.name), title: "Ruby on Rails"
@@ -91,7 +101,7 @@
         - if user_signed_in?
           = link_to "Hi " + current_user.email, edit_user_registration_path, :class => "btn btn-purple btn-border-rev"
           div class="btn-group"
-            button class="btn btn-blue btn-border-rev" data-toggle="dropdown"
+            button class="btn btn-blue btn-signup" data-toggle="dropdown"
                 i class="fa fa-caret-down"
             ul class="dropdown-menu pull-right" role="menu"
               li
@@ -108,7 +118,7 @@
                   i class="fa fa-sign-out" title = "Sign Out"
                   | Sign Out
           div class="btn-group"
-            button class="btn btn-red btn-border-rev" data-toggle="dropdown"
+            button class="btn btn-red btn-signup" data-toggle="dropdown"
                 i class="fa fa-plus-circle"
             ul class="dropdown-menu pull-right" role="menu"
               li
@@ -117,9 +127,9 @@
                   | New Post
 
         - else
-          = link_to "Sign Up", new_user_registration_path, :class => "btn btn-purple btn-border-rev"
+          = link_to "Sign Up", new_user_registration_path, :class => "btn btn-purple btn-signup"
           .dropdown
-            button class="btn btn-blue btn-border-rev" data-toggle="dropdown" Sign In
+            button class="btn btn-blue btn-signup" data-toggle="dropdown" Sign In
             ul class="dropdown-menu pull-right" role="menu"
               li
                 = form_for(:user, :url => session_path(:user), html: { role: "form" }) do |f|
