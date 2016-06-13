@@ -4,22 +4,42 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 #
-default: &default
-  adapter: postgresql
-  pool: 5
-  timeout: 5000
-
 development:
-  <<: *default
-  database: goldenowl
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  database: goldenowl_development
+  pool:     5
+  username: root
+  password: root
+  template: template0
 
-# Warning: The database defined as "test" will be erased and
-# re-generated from your development database when you run "rake".
-# Do not set this db to the same as development or production.
 test:
-  <<: *default
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
   database: goldenowl_test
+  pool:     5
+  username: root
+  password: root
+  template: template0
+
+staging:
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  database: goldenowl_staging
+  pool:     5
+  username: root
+  password: root
+  template: template0
 
 production:
-  <<: *default
-  database: goldenowl
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  database: goldenowl_production
+  pool:     5
+  username: root
+  password: root
+  template: template0

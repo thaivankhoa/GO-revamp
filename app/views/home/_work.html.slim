@@ -3,13 +3,19 @@
     h2.title-small 
       span Project
     h3.title-section 
-      | Featured projects
+      | Featured Projects
     .line-title
     h4.sub-title-section These are all projects we have done. Please take a look at each project and give us your opinion.
     .caret
   .control
     .project-page.container-fluid
-      #ideaburn.project-element.active
+      #luxify.project-element.active
+        i.fa.fa-diamond
+        h6 Luxify
+      #luxe.project-element
+        = image_tag asset_path 'logo-luxe.png'
+        h6 The Luxe Nomad
+      #ideaburn.project-element
         i.fa.fa-lightbulb-o
         h6 Ideaburn
       #warehouse.project-element
@@ -18,9 +24,6 @@
       #serumi.project-element
         i.fa.fa-cart-arrow-down
         h6 Serumi
-      #luxify.project-element
-        i.fa.fa-diamond
-        h6 Luxify
       #slc.project-element
         i.fa.fa-graduation-cap
         h6 SLC
@@ -30,9 +33,6 @@
       #artfolo.project-element
         i.fa.fa-picture-o
         h6 Artfolo
-      #luxe.project-element
-        = image_tag asset_path 'logo-luxe.png'
-        h6 The Luxe Nomad
       #fitday.project-element
         = image_tag asset_path 'logo-fitday.png'
         h6 FitDay
@@ -49,6 +49,44 @@
   .portfolio-content
     button.btn-left 
       i.fa.fa-chevron-circle-left
+    #luxify_project.portfolio-element.container-fluid
+      = image_tag 'luxify.png'
+      .portfolio-info
+        h6.title-project Luxify
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
+        p Luxify is your local online marketplace for buying and selling new, vintage, and pre-owned luxury items. We connect buyers to dealers, collectors, and sellers in your country. Professional retailers as well as private clients use Luxify to transact successful sales of a wide selection of luxury goods.
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Angularjs, Node.js
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 MongoDB, Express
+    #luxe_project.portfolio-element.container-fluid
+      = image_tag 'luxenomad.png'
+      .portfolio-info
+        h6.title-project The Luxe Nomad
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
+        p As Asia-Pacific's leading luxury villa and hotel booking portal, we aim to make booking that holiday, easy/ So you can forget about spending hours searching fot that right place, as our team of travel - centric Nomads has curated a list you can trust.
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Ruby on Rails
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 PostgreSQL
     #ideaburn_project.portfolio-element.container-fluid
       = image_tag 'portfolio-image.png', :class => 'image-first'
       .portfolio-info
@@ -106,25 +144,6 @@
         .skill-section.container-fluid
           = image_tag 'icon-heart.png'
           h6 PostgreSQL
-    #luxify_project.portfolio-element.container-fluid
-      = image_tag 'luxify.png'
-      .portfolio-info
-        h6.title-project Luxify
-        button.btn-viewdemo
-          | View demo
-          i.fa.fa-commenting-o
-        p Luxify is your local online marketplace for buying and selling new, vintage, and pre-owned luxury items. We connect buyers to dealers, collectors, and sellers in your country. Professional retailers as well as private clients use Luxify to transact successful sales of a wide selection of luxury goods.
-        ul.line-square
-          li
-          li
-          li
-        h6.subtitle-skill Project's skill
-        .skill-section.container-fluid
-          = image_tag 'icon-heart.png'
-          h6 Angularjs, Node.js
-        .skill-section.container-fluid
-          = image_tag 'icon-heart.png'
-          h6 MongoDB, Express
     #slc_project.portfolio-element.container-fluid
       = image_tag 'slc.png'
       .portfolio-info
@@ -151,7 +170,7 @@
         button.btn-viewdemo
           | View demo
           i.fa.fa-commenting-o
-        p We help you connect to the artists, see and buy their paintings. Also, if you have beautiful paintings and want to sell it, please come to us as soon as possible. We promise to bring out the best to you.
+        p CPD is a search engine to look for variable online courses which mainly held in Australia
         ul.line-square
           li
           li
@@ -182,25 +201,6 @@
         .skill-section.container-fluid
           = image_tag 'icon-heart.png'
           h6 PostgreSQL
-    #luxe_project.portfolio-element.container-fluid
-      = image_tag 'luxenomad.png'
-      .portfolio-info
-        h6.title-project The Luxe Nomad
-        button.btn-viewdemo
-          | View demo
-          i.fa.fa-commenting-o
-        p As Asia-Pacific's leading luxury villa and hotel booking portal, we aim to make booking that holiday, easy/ So you can forget about spending hours searching fot that right place, as our team of travel - centric Nomads has curated a list you can trust.
-        ul.line-square
-          li
-          li
-          li
-        h6.subtitle-skill Project's skill
-        .skill-section.container-fluid
-          = image_tag 'icon-heart.png'
-          h6 Ruby on Rails
-        .skill-section.container-fluid
-          = image_tag 'icon-heart.png'
-          h6 PostgreSQL
     #fitday_project.portfolio-element.container-fluid
       = image_tag 'fitday.png'
       .portfolio-info
@@ -208,7 +208,7 @@
         button.btn-viewdemo
           | View demo
           i.fa.fa-commenting-o
-        p As Asia-Pacific's leading luxury villa and hotel booking portal, we aim to make booking that holiday, easy/ So you can forget about spending hours searching fot that right place, as our team of travel - centric Nomads has curated a list you can trust.
+        p Educate and interact with club members on a personal level.Calculate health risks, show members their body’s current health age and collect data digitally to help reduce member’s health risk factors
         ul.line-square
           li
           li
@@ -246,7 +246,7 @@
         button.btn-viewdemo
           | View demo
           i.fa.fa-commenting-o
-        p As Asia-Pacific's leading luxury villa and hotel booking portal, we aim to make booking that holiday, easy/ So you can forget about spending hours searching fot that right place, as our team of travel - centric Nomads has curated a list you can trust.
+        p Blix TV gives you the cost per response for your TV advertising so your spend decisions can be based on solid numbers.
         ul.line-square
           li
           li
@@ -265,7 +265,7 @@
         button.btn-viewdemo
           | View demo
           i.fa.fa-commenting-o
-        p As Asia-Pacific's leading luxury villa and hotel booking portal, we aim to make booking that holiday, easy/ So you can forget about spending hours searching fot that right place, as our team of travel - centric Nomads has curated a list you can trust.
+        p Built is an iOS and Android app geared towards tracking the workouts of dedicated, serious, and professional strength athletes. It is a no frills app that gets straight to the point: tracking workouts and providing valuable metrics that can be used to improve an athlete’s performance and workout programming.
         ul.line-square
           li
           li
@@ -282,14 +282,14 @@
 .detail-project
   .bg-project
   .image-large 
+    = image_tag 'luxify-large.png'
+    = image_tag 'luxenomad-large.png'
     = image_tag 'ideaburn-large.png'
     = image_tag 'warehouse-large.png'
     = image_tag 'naturion-large.png'
-    = image_tag 'luxify-large.png'
     = image_tag 'slc-large.png'
     = image_tag 'cpd-large.png'
     = image_tag 'artfolo-large.png'
-    = image_tag 'luxenomad-large.png'
     = image_tag 'fitday-large.png'
     = image_tag 'techlist-large.png'
     = image_tag 'Blix-large.png'

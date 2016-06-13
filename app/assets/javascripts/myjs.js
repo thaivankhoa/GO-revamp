@@ -1,6 +1,71 @@
 $('document').ready(function() {
     var current_menu = $('.menu-content > li:nth-child(2)');
     var numMenu = $('.menu-content > li').size();
+
+    //Set width for partner-section
+
+    var width = 260;
+    var navbar = window.matchMedia("screen and (min-width: 768px)");
+    var navbar_01 = window.matchMedia("screen and (max-width: 767px)");
+    var left_partner = 0;
+    if(navbar_01.matches){
+      width = 430;
+    }
+    var navbar_02 = window.matchMedia("screen and (max-width: 586px)");
+    if(navbar_02.matches){
+      width = 630;
+    }
+    var navbar_03 = window.matchMedia("screen and (max-width: 400px)");
+    if(navbar_03.matches){
+      width = 1500;
+    }
+
+    $('.partner').css('width',width + '%');
+
+    
+    $('.btn-right').click(function(){
+      var sreen = 0;
+      if(navbar.matches){
+        sreen = 100;
+      }
+      if(navbar_01.matches){
+        sreen = 66;
+      }
+      if(navbar_02.matches){
+        sreen = 96;
+      }
+      if(navbar_03.matches){
+        sreen = 117;
+      }
+      left_partner = left_partner - sreen;
+      var width_partner = 0 - width;
+      if(left_partner > width_partner){
+        $('.partner').animate({'margin-left': left_partner + '%'},500);
+      }else{
+        left_partner = left_partner + sreen;
+      }
+    });
+    $('.btn-left').click(function(){
+      var sreen = 0;
+      if(navbar.matches){
+        sreen = 100;
+      }
+      if(navbar_01.matches){
+        sreen = 66;
+      }
+      if(navbar_02.matches){
+        sreen = 96;
+      }
+      if(navbar_03.matches){
+        sreen = 116;
+      }
+      left_partner = left_partner + sreen;
+      if(left_partner <= 0){
+        $('.partner').animate({'margin-left': left_partner + '%'},500);
+      }else{
+        left_partner = left_partner - sreen;
+      }
+    });
     //jQuery for video loop background
     scaleVideoContainer();
 
@@ -26,7 +91,7 @@ $('document').ready(function() {
       $('.project-element:nth-child(' + i + ')').css('left',left + 'px');
       left = left + 110;
     }
-    
+
 
     //Set height auto for slider
     var current_portfolio = $('#ideaburn_project');
@@ -52,8 +117,8 @@ $('document').ready(function() {
     var scroll_body = 0;
     var count_scroll = 0;
     $(window).scroll(function(){
-      var navbar = window.matchMedia("screen and (min-width: 768px)");
-      
+      var navbar = window.matchMedia("screen and (min-width: 650px)");
+
       //Check to see if the window is top if not then display button
       var height_slider = $('.slider-section').height() - 100;
       if(navbar.matches){
@@ -74,10 +139,10 @@ $('document').ready(function() {
           $('.header-section').removeClass('header-fixed');
         }
       }
-      
+
 
       if ($(this).scrollTop() > $('.slider-section').offset().top - 60){
-        
+
         current_menu.removeClass('active');
         current_menu = $('#home');
         current_menu.addClass('active');
@@ -117,19 +182,19 @@ $('document').ready(function() {
         }
       }
       if ($(this).scrollTop() > $('.about-section').offset().top - 60){
-        
+
         current_menu.removeClass('active');
         current_menu = $('#about');
         current_menu.addClass('active');
       }
       if ($(this).scrollTop() > $('.team-section').offset().top - 60){
-        
+
         current_menu.removeClass('active');
         current_menu = $('#team');
         current_menu.addClass('active');
       }
       if ($(this).scrollTop() > $('.partner-section').offset().top - 60){
-        
+
         current_menu.removeClass('active');
         current_menu = $('#partner');
         current_menu.addClass('active');
@@ -146,14 +211,21 @@ $('document').ready(function() {
     $('.navbar').click(function(){
       $('.menu-content').slideToggle();
     });
-    
+
     //Navigation
     $('.menu-content > li').click(function(){
       var index = $(this).attr('id');
+      var navbar = window.matchMedia("screen and (max-width: 1024px)");
       if (index === 'home') {
         $('html, body').animate({ scrollTop: 0 }, 1000);
       } else{
-        var current_top = $('.' + index + '-section').offset().top - 59;
+        var current_top = 0;
+        if(navbar.matches){
+          $('.menu-content').css('display','none');
+          current_top = $('.' + index + '-section').offset().top;
+        }else{
+          current_top = $('.' + index + '-section').offset().top - 59;
+        }
         $('html, body').animate({ scrollTop: current_top }, 1000);
 
         if(index === 'service'){
@@ -178,6 +250,8 @@ $('document').ready(function() {
       current_menu.removeClass('active');
       current_menu = $('#' + index);
       current_menu.addClass('active');
+
+      
     });
 
     //Btn View About Us
@@ -188,7 +262,13 @@ $('document').ready(function() {
 
     //Btn See Details
     $('.btn-details ').click(function() {
-      var about_section = $('.about-section').offset().top - 60;
+      var navbar = window.matchMedia("screen and (max-width: 1024px)");
+      var about_section = 0;
+      if(navbar.matches){
+        about_section = $('.about-section').offset().top;
+      }else{
+        about_section = $('.about-section').offset().top - 60;
+      }
       $('html, body').animate({ scrollTop: about_section }, 1000);
     });
 
@@ -248,7 +328,7 @@ $('document').ready(function() {
     //Function
     function setAuto(){
     }
-    // 
+    //
 });
 
 //Video Loop BackGround
@@ -298,28 +378,27 @@ function scaleBannerVideoSize(element){
 
 //Smooth Scroll Mouse
 $(function(){
-  
+
   var $window = $(window);    //Window object
-  
+
   var scrollTime = 0.5;     //Scroll time
   var scrollDistance = 150;   //Distance. Use smaller value for shorter scroll and greater value for longer scroll
-    
+
   $window.on("mousewheel DOMMouseScroll", function(event){
-    
-    event.preventDefault(); 
-                    
+
+    event.preventDefault();
+
     var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
     var scrollTop = $window.scrollTop();
     var finalScroll = scrollTop - parseInt(delta*scrollDistance);
-      
+
     TweenMax.to($window, scrollTime, {
       scrollTo : { y: finalScroll, autoKill:true },
         ease: Power1.easeOut, //For more easing functions see http://api.greensock.com/js/com/greensock/easing/package-detail.html
         autoKill: true,
-        overwrite: 5              
+        overwrite: 5
       });
-          
+
   });
-  
 });
 

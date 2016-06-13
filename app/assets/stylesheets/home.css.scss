@@ -116,10 +116,15 @@ button{
     color: #efb200;
   }
 }
+.title-testominal{
+  color: #efb200;
+  text-align: center;
+  margin-top: 40px;
+}
 
 .line-title{
   width: 90px;
-  height: 2px; 
+  height: 2px;
   background-color: #efb200;
   margin: 10px auto;
 }
@@ -135,6 +140,13 @@ button{
   letter-spacing: 0.5px;
   line-height: 24px;
 }
+
+@media screen and (max-width: 550px){
+  .sub-title-section{
+    font-size: 13px;
+  }
+}
+
 
 //Header
 //Navbar
@@ -162,6 +174,7 @@ button{
       .title-logo{
         height: 55px;
         float: left;
+        margin-top: 0px;
         .title-main{
           margin-top: 8px;
           padding: 0px 0px 10px 5px;
@@ -252,7 +265,7 @@ button{
         img{
           width: 100%;
           height: 100%;
-          margin-top: 35px;
+          margin-top: 0px;
         }
       }
       .menu-content{
@@ -280,7 +293,6 @@ button{
             position: absolute;
             z-index: 0;
             background: #efb200;
-            opacity: 0.95;
           }
           &.active, &:hover{
             color: black;
@@ -329,7 +341,29 @@ button{
 }
 @media screen and (max-width: 550px){
   .header-section{
-    padding: 10px 20px 0px;
+    padding: 20px 20px 0px;
+    .logo{
+      .image-logo{
+        width: 30px !important;
+        height: 30px !important;
+        margin-top: 4px;
+      }
+      .title-logo{
+        height: 55px;
+        float: left;
+        .title-main{
+          font-size: 22px !important;
+        }
+        .line-logo{
+          width: 102%;
+          height: 3px;
+          background: black;
+        }
+      }
+    }
+    .navbar{
+      width: 25px !important;
+    }
   }
 }
 .row{
@@ -347,7 +381,7 @@ button{
 .slider-section{
   height: 700px;
   width: 100%;
-  opacity: 0.5; 
+  opacity: 0.5;
   .homepage-hero-module{
     height: 100% !important;
   }
@@ -409,7 +443,9 @@ button{
     background-size: 130%;
   }
   .slider-content{
-    margin-top: 190px;
+    margin-top: 0px;
+    top: 50%;
+    transform: translateY(-62%);
     .slider-title{
       font-size: 40px;
       line-height: 60px;
@@ -423,9 +459,15 @@ button{
   .slider-section{
     height: 450px;
     background-size: 150%;
+    background-image: url(asset_path('bg-slider.jpg'));
+    .video-container{
+      display: none;
+    }
   }
   .slider-content{
-    margin-top: 150px;
+    margin-top: 0px;
+    top: 50%;
+    transform: translateY(-62%);
     .slider-title{
       font-size: 30px;
       padding: 0px 10%;
@@ -438,45 +480,42 @@ button{
 }
 @media screen and (max-width: 550px){
   .slider-section{
-    background-size: 180%;
+    // background-size: 180%;
   }
   .slider-content{
-    margin-top: 150px;
-    // .slider-title{
-    //   font-size: 25px;
-    //   padding: 0px 10%;
-    //   line-height: 35px;
-    // }
-    // button{
-    //   margin-top: 30px;
-    //   padding: 5px 15px;
-    //   font-size: 12px;
-    // }
+    margin-top: 0px;
+    top: 50%;
+    transform: translateY(-62%);
+    button{
+      padding: 7px 15px;
+    }
   }
 }
 @media screen and (max-width: 468px){
   .slider-section{
-    height: 500px;
-    background-size: 105%;
-    background-image: url(asset_path('bg-header2.jpg'));
+    height: 450px;
+    background-size: 200%;
+    background-image: url(asset_path('bg-slider.jpg'));
   }
   .slider-content{
-    margin-top: 160px;
+    margin-top: 0px;
+    top: 50%;
+    transform: translateY(-62%);
   }
 }
 //Service
 .service-section {
   padding: 30px 80px;
-  background: #efb200;
+  background: white;
   .sub-title-section{
     margin-bottom: 0px;
     color: #444;
   }
   .title-small{
     span{
-      border-left: 1px solid white;
-      border-right: 1px solid white;
-      color: white;
+      border-left: 1px solid #efb200;
+      border-right: 1px solid #efb200;
+      color: #efb200;
     }
   }
   .line-title{
@@ -485,12 +524,13 @@ button{
   .title-section{
     color: #222;
     span{
-      color: white;
+      color: #efb200;
     }
   }
   .service-content{
     width: 100%;
     position: relative;
+    padding-bottom: 50px;
   }
   .service-element{
     width: 33.3%;
@@ -514,15 +554,15 @@ button{
       margin: -50px auto;
       width: 150px;
       height: 150px;
-      background: white;
+      background: #efb200;
       border-radius: 50%;
-      box-shadow: -4px 5px 0px #df9f01;
+      // box-shadow: -4px 5px 0px #df9f01;
       img{
 
       }
     }
     .title-service{
-      color: white;
+      color: #EFB200;
       text-transform: uppercase;
       margin-top: 80px;
       font-size: 18px;
@@ -581,6 +621,7 @@ button{
   }
   .sub-title-section{
     width: 98%;
+    padding: 0px 20px;
   }
 }
 @media screen and (max-width: 650px){
@@ -604,19 +645,28 @@ button{
         margin-left: 0px;
         margin-right: 0px;
       }
+      &:nth-child(3){
+        position: static;
+      }
       .image-service{
-        width: 130px;
-        height: 130px;
+        width: 90px;
+        height: 90px;
         margin: -15px 0px;
         float: left;
+        .img-web{
+          width: 60px !important;
+        }
       }
       .title-service,.content-service{
         overflow: hidden;
         text-align: left;
         padding-left: 20px;
+        margin-top: 13px;
+        font-size: 11px;
       }
       .title-service{
         margin-top: 0px;
+        font-size: 14px;
       }
     }
   }
@@ -626,7 +676,7 @@ button{
   background: #f7f7f7;
   padding: 0px 0px 50px;
   .title-portfolio{
-    background: white;
+    background: #f7f7f7;
     margin-top: 0px;
     padding: 20px 0px;
     position: relative;
@@ -637,6 +687,7 @@ button{
       border-left: 12px solid transparent;
       bottom: -15px;
       left: 50%;
+      display: none;
     }
   }
   .control{
@@ -684,7 +735,7 @@ button{
   }
   .portfolio-content{
     padding: 30px 0px 30px 0px;
-    height: 400px; 
+    height: 400px;
     width: 100%;
     margin: auto;
     position: relative;
@@ -840,6 +891,14 @@ button{
   }
 }
 
+@media screen and (max-width: 600px){
+  .detail-project{
+    .image-large{
+      width: 80%;
+    }
+  }
+}
+
 @media screen and (max-width: 980px){
   .porfolio-section{
     padding: 0px 0px 20px;
@@ -858,6 +917,7 @@ button{
         padding: 10px 60px 0px;
         .project-element{
           width: 20%;
+          height: 70px;
           &:nth-child(n+6){
             display: none;
           }
@@ -877,13 +937,16 @@ button{
       }
     }
     .portfolio-content{
-      height: 750px;
+      height: 680px;
       .portfolio-element{
         opacity: 1;
         width: 90%;
         padding: 0px 20px;
         img, .portfolio-info{
           width: 100%;
+        }
+        img{
+          height: 230px;
         }
         &:first-of-type{
           .image-first{
@@ -904,8 +967,41 @@ button{
 }
 @media screen and (max-width: 620px){
   .porfolio-section{
+    .portfolio-content{
+      padding-top: 5px;
+      .portfolio-element {
+        .portfolio-info{ 
+          .title-project{
+            font-size: 22px;
+          }
+          .subtitle-skill{
+            font-size: 12px;
+          }
+          .skill-section{
+            h6{
+              font-size: 11px;
+            }
+            img{
+              width: 13px;
+              height: 10px;
+            }
+          }
+          button{
+            font-size: 11px;
+            padding: 4px 8px;
+          }
+          p{
+            font-size: 11px;
+          }
+        }
+      }
+      .btn-left, .btn-right{
+        top: 100px;
+      }
+    }
     .control{
       width: 90%;
+      display: none;
       .project-page{
         width: 100%;
         margin-left: 5px;
@@ -946,12 +1042,12 @@ button{
   }
 }
 .introduce-section{
-  background: #efb200;
+  background: white;
   padding: 60px 140px;
   h1{
     font-weight: 400;
     font-style: italic;
-    color: white;
+    color: black;
     font-size: 27px;
     letter-spacing: 1px;
     text-align: center;
@@ -981,24 +1077,24 @@ button{
 @media screen and (max-width: 720px){
   .introduce-section{
     padding: 60px 100px;
-    h4{
-      font-size: 24px;
-      line-height: 35px;
+    h1{
+      font-size: 22px;
+      line-height: 38px;
     }
   }
 }
 @media screen and (max-width: 568px){
   .introduce-section{
-    padding: 60px 70px;
-    h4{
-      font-size: 24px;
-      line-height: 35px;
-    }
+    padding: 55px 70px;
   }
 }
 @media screen and (max-width: 468px){
   .introduce-section{
-    padding: 60px 20px;
+    padding: 45px 20px;
+    h1{
+      font-size: 18px;
+      line-height: 29px;
+    }
   }
 }
 
@@ -1010,7 +1106,6 @@ button{
     width: 30%;
     padding: 0px 50px 0px 40px;
     float: left;
-    border-right: 1px solid #efb200;
     h4{
       font-size: 29px;
       color: #333;
@@ -1031,6 +1126,7 @@ button{
     padding: 20px 20px 0px 40px;
     width: 30%;
     float: left;
+    border-left: 1px solid #efb200;
     .rule-element{
       margin-bottom: 5px;
       width: 100%;
@@ -1079,6 +1175,7 @@ button{
     .rule-content{
       width: 50%;
       margin-top: 30px;
+      margin-bottom: 50px;
       padding-right: 30px;
       .rule-element{
         margin-bottom: 5px;
@@ -1093,9 +1190,27 @@ button{
   .about-section{
     .rule-content{
       width: 100%;
+      .rule-element{
+        img{
+          width: 45px;
+        }
+        .rule-info {
+          .title-rule{
+            font-size: 17px;
+          }
+          p{
+            font-size: 12px;
+          }
+        }
+      }
     }
     .image-about{
       display: none;
+    }
+    .about-element{
+      p{
+        font-size: 12px;
+      }
     }
   }
 }
@@ -1202,19 +1317,83 @@ button{
 }
 @media screen and (max-width: 468px){
   .feedback-section{
-    padding: 0px 20px 60px;
     .feedback-element{
+      width: 100%;
+      padding: 0px 6px;
+      margin-top: 30px;
       .image-customer{
-        float: none;
-        text-align: center;
-        width: 100%;
+        float: left;
+        text-align: left;
+        img{
+          width: 80px;
+          height: 80px;
+        }
+        .name-customer, .company-customer{
+          font-size: 11px;
+          margin-left: -10px;
+          width: 100px;
+        }
       }
       .caret{
-        display: none;
+        display: block;
+        left: 109px;
       }
       .feeback-content{
-        margin-left: 0px;
+        margin-left: 100px;
+        img{
+          width: 15px;
+        }
+        p{
+          font-size: 10px;
+        }
       }
+    }
+    .title-testominal{
+      font-size: 20px;
+      margin-top: 20px;
+    }
+  }
+}
+@media screen and (max-width: 400px){
+  .feedback-section{
+    .feedback-element{
+      width: 100%;
+      padding: 0px 6px;
+      margin-top: 30px;
+      .image-customer{
+        float: left;
+        text-align: left;
+        width: 75px;
+        img{
+          width: 60px;
+          height: 60px;
+        }
+        .name-customer, .company-customer{
+          font-size: 11px;
+          margin-left: -20px;
+          width: 100px;
+        }
+      }
+      .caret{
+        display: block;
+        left: 75px;
+        top: 20px;
+      }
+      .feeback-content{
+        margin-left: 85px;
+        img{
+          width: 10px;
+        }
+        p{
+          font-size: 10px;
+          padding: 10px 15px 0px 2px;
+          margin-bottom: 0px;
+        }
+      }
+    }
+    .title-testominal{
+      font-size: 20px;
+      margin-top: 20px;
     }
   }
 }
@@ -1271,17 +1450,42 @@ button{
     .team-element{
       width: 50%;
       padding: 0px 20px;
+      img{
+        height: 150px;
+        width: 160px;
+      }
     }
   }
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 468px){
   .team-section{
     .team-element{
-      width: 100%;
-      margin: 20px auto;
-      padding: 0px 20px;
       img{
-        width: 210px;
+        height: 120px;
+        width: 135px;
+      }
+      .name-customer{
+        font-size: 13px;
+      }
+      .company-customer{
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px){
+  .team-section{
+    .team-element{
+      padding: 0px 0px;
+      img{
+        height: 108px;
+        width: 120px;
+      }
+      .name-customer{
+        font-size: 13px;
+      }
+      .company-customer{
+        font-size: 12px;
       }
     }
   }
@@ -1290,13 +1494,14 @@ button{
 .partner-section{
   padding: 40px;
   background: #f7f7f7;
+  position: relative;
   .partner-element{
     width: 18%;
     padding: 10px 0px;
     margin-top: 50px;
-    float: left; 
+    float: left;
     background: #f1f1f1;
-    margin-left: 2.5%;
+    margin-left: 1%;
     text-align: center;
     height: 60px;
     transition: 0.4s;
@@ -1314,37 +1519,43 @@ button{
       margin-top: 6%;
     }
   }
+  .partner{
+    display: flex;
+  }
+  .partner-content{
+    overflow: hidden;
+  }
   &.container-fluid{
     padding-left: 80px;
     padding-right: 80px;
   }
-}
-@media screen and (max-width: 768px){
-  .partner-section{
-    .partner-element{
-      width: 32%;
-      margin-left: 2%;
-      &:nth-of-type(3n+1){
-        margin-left: 0px;
-      }
+  .btn-group{
+    position: absolute;
+    top: 216px;
+    left: 0;
+    width: 100%;
+    button{
+      font-size: 20px;
+      color: #888;
     }
-    &.container-fluid{
-      padding-left: 40px;
-      padding-right: 40px;
+    .btn-left{
+      float: left;
+      margin-left: 20px;
+    }
+    .btn-right{
+      float: right;
+      margin-right: 20px;
     }
   }
 }
 @media screen and (max-width: 486px){
   .partner-section{
     .partner-element{
-      width: 48%;
-      margin-left: 4%;
-      &:nth-of-type(3n+1){
-        margin-left: 4%;
-      }
-      &:nth-of-type(2n+1){
-        margin-left: 0px;
-      }
+      margin-left: 2%;
+    }
+    .partner-content{
+      width: 85%;
+      margin: 0px auto;
     }
   }
 }
@@ -1448,12 +1659,10 @@ footer{
     float: left;
     padding: 0px 2%;
     h1{
-      text-transform: uppercase;
       color: white;
       font-size: 25px;
       font-weight: 300;
-      font-family: "Open Sans";
-      letter-spacing: -1px;
+      font-family: 'Pacifico', cursive;
       span{
         font-weight: 600;
         color: #efb200;
@@ -1529,6 +1738,8 @@ footer{
         overflow: hidden;
         padding-left: 20px;
         h6{
+          width: 250px;
+          white-space: nowrap;
           text-transform: uppercase;
           color: white;
           font-size: 20px;
@@ -1594,7 +1805,42 @@ footer{
   footer{
     .footer-col{
       width: 100%;
-      margin-top: 20px;
+      margin-top: 35px;
+      p{
+        font-size: 13px;
+      }
+      h5{
+        font-size: 18px;
+      }
+      .infomation{
+        &:first-of-type{
+          margin-top: 15px;
+        }
+      }
+      .post-element{
+        margin-top: 25px;
+        .image-post{
+          width: 70px !important;
+          height: 70px !important;
+        }
+        .content-post{
+          h6{
+            font-size: 16px !important;
+          }
+          .time-post{
+            .time-element{
+              span{
+                font-size: 11px !important;
+              }
+            }
+          }
+        }
+      }
+      &:last-child{
+        h5{
+          margin-bottom: 25px;
+        }
+      }
     }
   }
 }

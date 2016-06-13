@@ -3,8 +3,8 @@ html
   head
     title Golden Owl Consulting - Ruby on Rails
     meta name="viewport" content="width=device-width, initial-scale=1"
-    meta name="google-site-verification" content="N_qR6-efA-BOE-NPwuBG69fmJ-UG_wDHG34i4ixSlug" 
-    meta name="description" content="Golden Owl Company is professional and famous for Ruby On Rails. Our team is hard-working, creative and pro-active in every single task. We are heading to satisfy customers by our best projects"
+    meta name="google-site-verification" content="N_qR6-efA-BOE-NPwuBG69fmJ-UG_wDHG34i4ixSlug"
+    meta name="description" content="We provide fast, reliable and reasonable software outsourcing & consulting services using latest Ruby on Rails and Javascript technologies. We focus on both web & mobile development, web designing and communication to build what people need."
     <meta content='Golden Owl Consulting - Ruby on Rails' property='og:title'/>
     <meta content='Golden Owl Company is professional and famous for Ruby On Rails. Our team is hard-working, creative and pro-active in every single task. We are heading to satisfy customers by our best projects' property='og:description'/>
     <meta property='og:image' content='http://www.goldenowl.asia/assets/bg-about-41d7bb39ad7342dc39d205fed43cfda6918199646f693d4f07ff8e1cbec0e780.jpg'/>
@@ -15,10 +15,7 @@ html
     script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
     script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"
   body data-spy="scroll"
-    .header-section
-      = render "layouts/header"
-    .body-content
-      = yield
+    = yield
     .footer
       = render 'layouts/footer'
 
