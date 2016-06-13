@@ -124,13 +124,15 @@ body {
 
 .profile-userpic img {
   float: none;
-  display: flex;
+  display: inline-block;
   margin: 0 auto;
-  width: 50%;
-  height: 50%;
+  width: 50px;
+  height: 50px;
   -webkit-border-radius: 50% !important;
   -moz-border-radius: 50% !important;
   border-radius: 50% !important;
+  position: relative;
+  top: -10px;
 }
 
 .profile-usertitle {
@@ -220,4 +222,24 @@ a{
     background-color: #fff;
   }
 }
-
+.content-user{
+  display: inline-block;
+  padding-left: 10px;
+  a{
+    font: 14px 'Varela Round', sans-serif;
+    color: #079BCE;
+  }
+  p{
+    font: 12px 'Varela Round', sans-serif;
+    color: #A0A7AD;
+    margin-top: 5px;
+    span{
+      color: #079BCE;
+      font-weight: 700;
+    }
+  }
+}
+.panel-default{
+  width: 600px;
+  margin: auto;
+}

@@ -1,10 +1,11 @@
 .navigation
-  .logo
-    .image-logo
-      = image_tag 'logo.png', :alt => "Golden Owl Consulting"
-    .title-logo
-      h1.title-main Golden Owl
-      .line-logo
+  = link_to root_path do
+    .logo
+      .image-logo
+        = image_tag 'logo.png', :alt => "Golden Owl Consulting"
+      .title-logo
+        h1.title-main Golden Owl
+  end
   .navbar
     = image_tag 'iconbar.png'
   ul.menu-content

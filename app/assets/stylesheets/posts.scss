@@ -1,6 +1,8 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,800,900);
+
 .artical{
   height: 100%;
   width: 100%;
@@ -79,4 +81,64 @@
       }
     }
   }
+}
+.post-detail{
+  background-color: #fff;
+  padding: 60px;
+  .title{
+    margin-top: 20px;
+    p{
+      strong{
+        color: #414A51;
+        font: 40px 'Varela Round', sans-serif;
+        font-weight: 700;
+      }
+      border-bottom: 1px solid #f0f0f0;
+      padding-bottom: 5px;
+    }
+  }
+  .content-blog{
+    margin-top: 30px;
+    img{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    p{
+      font: 16px 'Raleway', sans-serif;
+      color: #414A51;
+      line-height: 1.5;
+      word-spacing: 0.5px;
+      margin-bottom: 30px;
+      padding-left: 5px;
+    }
+  }
+}
+.fb_iframe_widget{
+  margin-bottom: 30px;
+}
+.view{
+  strong{
+    font: 15px 'Varela Round', sans-serif;
+    font-weight: 700;
+  }
+}
+.title-comment{
+  font: 15px 'Varela Round', sans-serif;
+  font-weight: 700;
+}
+.form-group{
+  label{
+    font: 15px 'Varela Round', sans-serif;
+    font-weight: 700;
+  }
+  textarea{
+    height: 250px;
+  }
+}
+.well{
+  background-color: #fff !important;
+}
+#footer{
+  background-color: #282828;
+  margin-top: 60px;
 }

@@ -1,7 +1,7 @@
 footer.container-fluid
 	.footer-col
-		h1 
-		 	span 
+		h1
+		 	span
 		 		strong Golden Owl 
 		 	| Consulting
 		p We committed to provide impactful solution for your company's technical problems. We focus on helping our customers.
@@ -31,30 +31,33 @@ footer.container-fluid
 		h5 Latest Post
 		.post-element
 			.image-post
-				= image_tag 'blog.jpg'
+				= image_tag @posts.last.picture
 			.content-post
-				h6 Blog Post 01
+				= link_to blogs_post_path(@posts.last) do
+					h6 #{@posts.last.title}
 				.line
 				.time-post
 					.time-element
 						i.fa.fa-calendar
-						span 25/11/2015
+						span #{@posts.last.created_at.strftime("%d/%m/%Y")}
 					.time-element
 						i.fa.fa-commenting-o
-						span 25 comments
+						span #{@posts.last.comments.count} comments
 		.post-element
 			.image-post
-				= image_tag 'blog.jpg'
+				= image_tag @posts.first.picture
 			.content-post
-				h6 Blog Post 02
+				= link_to blogs_post_path(@posts.first) do
+					h6 #{@posts.first.title}
 				.line
 				.time-post
 					.time-element
 						i.fa.fa-calendar
-						span 25/11/2015
+						span #{@posts.first.created_at.strftime("%d/%m/%Y")}
 					.time-element
 						i.fa.fa-commenting-o
-						span 25 comments
+						span #{@posts.first.comments.count} comments
+
 	.footer-col
 		h5 Location
 		/ = image_tag 'map.png', :class => 'image_map'
