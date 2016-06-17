@@ -49,6 +49,10 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   # gem 'spring'
+  gem 'seed_dump', '~> 3.2', '>= 3.2.4'
+  gem 'populator'
+  gem 'faker'
+  gem 'annotate', github: 'ctran/annotate_models'
 end
 
 gem 'rails_12factor', group: :production
@@ -63,12 +67,10 @@ gem "ckeditor"
 gem 'simple_form'
 gem 'stringex'
 gem 'nokogiri'
-gem 'annotate', github: 'ctran/annotate_models'
 gem 'impressionist'
-gem 'seed_dump', '~> 3.2', '>= 3.2.4'
+
 gem 'devise-bootstrap-views'
-gem 'populator'
-gem 'faker'
+
 
 
 
