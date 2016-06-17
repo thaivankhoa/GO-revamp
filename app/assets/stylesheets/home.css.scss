@@ -1504,37 +1504,30 @@ button{
   position: relative;
   padding-bottom: 150px;
   .partner-element{
-    width: 22%;
+    width: 20%;
     // padding: 10px 0px;
     margin-top: 70px;
     float: left;
-    background: #f1f1f1;
-    margin-left: 3.33%;
+    margin-left: 6.33%;
     text-align: center;
     height: 70px;
-    transition: 0.4s;
-    transform: scale(1);
     &:first-of-type{
       margin-left: 0px;
     }
     &:nth-of-type(4n+1){
       margin-left: 0px;
     }
-    &:hover{
-      background-color: #e0e0e0;
-      transform: scale(1.05);
-    }
     img{
-      width: 100%;
+      width: 90%;
       height: 100%;
     }
   }
-  .partner{
-    // display: flex;
+  .partner-small{
+    img{
+      height: 60%;
+      margin-top: 8%;
+    }
   }
-  // .partner-content{
-  //   overflow: hidden;
-  // }
   &.container-fluid{
     padding-left: 80px;
     padding-right: 80px;
