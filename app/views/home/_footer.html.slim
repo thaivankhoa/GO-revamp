@@ -29,34 +29,37 @@ footer.container-fluid
 			end
 	.footer-col
 		h5 Latest Post
-		.post-element
-			.image-post
-				= image_tag @posts.last.picture
-			.content-post
-				= link_to blogs_post_path(@posts.last) do
-					h6 #{@posts.last.title}
-				.line
-				.time-post
-					.time-element
-						i.fa.fa-calendar
-						span #{@posts.last.created_at.strftime("%d/%m/%Y")}
-					.time-element
-						i.fa.fa-commenting-o
-						span #{@posts.last.comments.count} comments
-		.post-element
-			.image-post
-				= image_tag @posts.first.picture
-			.content-post
-				= link_to blogs_post_path(@posts.first) do
-					h6 #{@posts.first.title}
-				.line
-				.time-post
-					.time-element
-						i.fa.fa-calendar
-						span #{@posts.first.created_at.strftime("%d/%m/%Y")}
-					.time-element
-						i.fa.fa-commenting-o
-						span #{@posts.first.comments.count} comments
+		- if @posts.count > 0
+			- if @firstPost.present?
+				.post-element
+					.image-post
+						= image_tag @posts.last.picture
+					.content-post
+						= link_to blogs_post_path(@posts.last) do
+							h6 #{@posts.last.title}
+						.line
+						.time-post
+							.time-element
+								i.fa.fa-calendar
+								span #{@posts.last.created_at.strftime("%d/%m/%Y")}
+							.time-element
+								i.fa.fa-commenting-o
+								span #{@posts.last.comments.count} comments
+			- if @lastPost.present?
+				.post-element
+					.image-post
+						= image_tag @posts.first.picture
+					.content-post
+						= link_to blogs_post_path(@posts.first) do
+							h6 #{@posts.first.title}
+						.line
+						.time-post
+							.time-element
+								i.fa.fa-calendar
+								span #{@posts.first.created_at.strftime("%d/%m/%Y")}
+							.time-element
+								i.fa.fa-commenting-o
+								span #{@posts.first.comments.count} comments
 
 	.footer-col
 		h5 Location
