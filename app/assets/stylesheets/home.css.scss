@@ -1437,6 +1437,13 @@ button{
     }
   }
 }
+@media screen and (min-width: 1280px){
+  .team-section{
+    .team-element{
+      width: 305px;
+    }
+  }
+}
 @media screen and (max-width: 986px){
   .team-section{
     .team-element{

@@ -1,71 +1,6 @@
 $('document').ready(function() {
     var current_menu = $('.menu-content > li:nth-child(2)');
     var numMenu = $('.menu-content > li').size();
-
-    //Set width for partner-section
-
-    // var width = 260;
-    // var navbar = window.matchMedia("screen and (min-width: 768px)");
-    // var navbar_01 = window.matchMedia("screen and (max-width: 767px)");
-    // var left_partner = 0;
-    // if(navbar_01.matches){
-    //   width = 430;
-    // }
-    // var navbar_02 = window.matchMedia("screen and (max-width: 586px)");
-    // if(navbar_02.matches){
-    //   width = 630;
-    // }
-    // var navbar_03 = window.matchMedia("screen and (max-width: 400px)");
-    // if(navbar_03.matches){
-    //   width = 1500;
-    // }
-
-    // $('.partner').css('width',width + '%');
-
-    
-    // $('.btn-right').click(function(){
-    //   var sreen = 0;
-    //   if(navbar.matches){
-    //     sreen = 100;
-    //   }
-    //   if(navbar_01.matches){
-    //     sreen = 66;
-    //   }
-    //   if(navbar_02.matches){
-    //     sreen = 96;
-    //   }
-    //   if(navbar_03.matches){
-    //     sreen = 117;
-    //   }
-    //   left_partner = left_partner - sreen;
-    //   var width_partner = 0 - width;
-    //   if(left_partner > width_partner){
-    //     $('.partner').animate({'margin-left': left_partner + '%'},500);
-    //   }else{
-    //     left_partner = left_partner + sreen;
-    //   }
-    // });
-    // $('.btn-left').click(function(){
-    //   var sreen = 0;
-    //   if(navbar.matches){
-    //     sreen = 100;
-    //   }
-    //   if(navbar_01.matches){
-    //     sreen = 66;
-    //   }
-    //   if(navbar_02.matches){
-    //     sreen = 96;
-    //   }
-    //   if(navbar_03.matches){
-    //     sreen = 116;
-    //   }
-    //   left_partner = left_partner + sreen;
-    //   if(left_partner <= 0){
-    //     $('.partner').animate({'margin-left': left_partner + '%'},500);
-    //   }else{
-    //     left_partner = left_partner - sreen;
-    //   }
-    // });
     //jQuery for video loop background
     scaleVideoContainer();
 
@@ -377,28 +312,28 @@ function scaleBannerVideoSize(element){
 }
 
 //Smooth Scroll Mouse
-$(function(){
+// $(function(){
 
-  var $window = $(window);    //Window object
+//   var $window = $(window);    //Window object
 
-  var scrollTime = 0.5;     //Scroll time
-  var scrollDistance = 150;   //Distance. Use smaller value for shorter scroll and greater value for longer scroll
+//   var scrollTime = 0.5;     //Scroll time
+//   var scrollDistance = 150;   //Distance. Use smaller value for shorter scroll and greater value for longer scroll
 
-  $window.on("mousewheel DOMMouseScroll", function(event){
+//   $window.on("mousewheel DOMMouseScroll", function(event){
 
-    event.preventDefault();
+//     event.preventDefault();
 
-    var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
-    var scrollTop = $window.scrollTop();
-    var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+//     var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+//     var scrollTop = $window.scrollTop();
+//     var finalScroll = scrollTop - parseInt(delta*scrollDistance);
 
-    TweenMax.to($window, scrollTime, {
-      scrollTo : { y: finalScroll, autoKill:true },
-        ease: Power1.easeOut, //For more easing functions see http://api.greensock.com/js/com/greensock/easing/package-detail.html
-        autoKill: true,
-        overwrite: 5
-      });
+//     TweenMax.to($window, scrollTime, {
+//       scrollTo : { y: finalScroll, autoKill:true },
+//         ease: Power1.easeOut, //For more easing functions see http://api.greensock.com/js/com/greensock/easing/package-detail.html
+//         autoKill: true,
+//         overwrite: 5
+//       });
 
-  });
-});
+//   });
+// });
 
