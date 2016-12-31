@@ -1,8 +1,8 @@
 .porfolio-section
-  .title-portfolio 
-    h2.title-small 
+  .title-portfolio
+    h2.title-small
       span Project
-    h3.title-section 
+    h3.title-section
       | Featured Projects
     .line-title
     h4.sub-title-section These are all projects we have done. Please take a look at each project and give us your opinion.
@@ -29,7 +29,7 @@
         h6 SLC
       #cpd.project-element
         i.fa.fa-search-plus
-        h6 CPD
+        h6 Neclex
       #artfolo.project-element
         i.fa.fa-picture-o
         h6 Artfolo
@@ -51,9 +51,21 @@
       #tone.project-element
         = image_tag asset_path 'icon-yoga.png'
         h6 Tone
+      #mywork.project-element
+        = image_tag asset_path 'icon-company.png'
+        h6 MyWork
+      #fawm.project-element
+        i.fa.fa-search-plus
+        h6 Find A Wealth Management
+      #flatturtle.project-element
+        i.fa.fa-mobile
+        h6 Flatturtle
+      #narratrs.project-element
+        = image_tag asset_path 'icon-outsource.png'
+        h6 Narratrs
     button.btn-more-project More Project
   .portfolio-content
-    button.btn-left 
+    button.btn-left
       i.fa.fa-chevron-circle-left
     #luxify_project.portfolio-element.container-fluid
       = image_tag 'luxify.jpg'
@@ -111,7 +123,7 @@
           h6 Ruby on Rails
         .skill-section.container-fluid
           = image_tag 'icon-heart.png'
-          h6 PostgreSQL, Web socket 
+          h6 PostgreSQL, Web socket
     #warehouse_project.portfolio-element.container-fluid
       = image_tag 'warehouse.jpg'
       .portfolio-info
@@ -282,7 +294,7 @@
           h6 React Native
         .skill-section.container-fluid
           = image_tag 'icon-heart.png'
-          h6 D3 
+          h6 D3
     #corpzap_project.portfolio-element.container-fluid
       = image_tag 'corpzap.jpg', :class => 'image-first'
       .portfolio-info
@@ -301,7 +313,7 @@
           h6 Ruby on Rails
         .skill-section.container-fluid
           = image_tag 'icon-heart.png'
-          h6 PostgreSQL, Web socket 
+          h6 PostgreSQL, Web socket
     #tone_project.portfolio-element.container-fluid
       = image_tag 'tone.jpg', :class => 'image-first'
       .portfolio-info
@@ -320,12 +332,88 @@
           h6 Ruby on Rails
         .skill-section.container-fluid
           = image_tag 'icon-heart.png'
-          h6 PostgreSQL, Web socket 
-    button.btn-right 
+          h6 PostgreSQL, Web socket
+    #mywork_project.portfolio-element.container-fluid
+      = image_tag 'mywork-app.png', :class => 'image-first'
+      .portfolio-info
+        h6.title-project Mywork
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
+        p MyWork means mobile, on-the-go convenience built into one simple, easy-to-use app. With MyWork, you can find exactly the kind of qualified personnel you’re looking for.
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Laravel, Cordova, Ruby
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 MySQL
+    #fawm_project.portfolio-element.container-fluid
+      = image_tag 'fawm-web.png', :class => 'image-first'
+      .portfolio-info
+        h6.title-project Find A Wealth Management
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
+        p We use smart technology combined with human expertise to get you direct access to the best professionals from the leading firms who commit to best practice and better value fees
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Ruby
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 PostgreSQL
+    #flatturtle_project.portfolio-element.container-fluid
+      = image_tag 'flatturtle-web.png', :class => 'image-first'
+      .portfolio-info
+        h6.title-project FlatTurtle
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
+        p FlatTurtle is a new type of tech for commercial real estate. While other technology solutions can help to increase property viewings or manage the leasing process, FlatTurtle aims to convert viewers into tenants by making your space more attractive, responsive and innovative
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Reactjs, Nodejs, Redux
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Mongo, Docker, Gitlabci
+    #narratrs_project.portfolio-element.container-fluid
+      = image_tag 'narratrs-web.png', :class => 'image-first'
+      .portfolio-info
+        h6.title-project Narratrs
+        button.btn-viewdemo
+          | View demo
+          i.fa.fa-commenting-o
+        p Get paid to tell brand stories and grow your influence. Become a Narratr today.
+        ul.line-square
+          li
+          li
+          li
+        h6.subtitle-skill Project's skill
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Web: Ruby, PostgreSQL
+        .skill-section.container-fluid
+          = image_tag 'icon-heart.png'
+          h6 Mobile apps: Ionic, Cordova
+    button.btn-right
       i.fa.fa-chevron-circle-right
 .detail-project
   .bg-project
-  .image-large 
+  .image-large
     = image_tag 'luxify-large.jpg'
     = image_tag 'luxenomad-large.jpg'
     = image_tag 'ideaburn-large.jpg'
@@ -340,3 +428,7 @@
     = image_tag 'built-large.jpg'
     = image_tag 'corpzap-large.jpg'
     = image_tag 'tone-large.jpg'
+    = image_tag 'mywork-app-large.png'
+    = image_tag 'fawm-large.png'
+    = image_tag 'flatturtle-large.png'
+    = image_tag 'narratrs-large.png'
