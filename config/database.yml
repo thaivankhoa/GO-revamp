@@ -10,8 +10,6 @@ development:
   encoding: unicode
   database: goldenowl_development
   pool:     5
-  username: root
-  password: root
   template: template0
 
 test:
@@ -20,26 +18,4 @@ test:
   encoding: unicode
   database: goldenowl_test
   pool:     5
-  username: root
-  password: root
-  template: template0
-
-staging:
-  adapter:  postgresql
-  host:     localhost
-  encoding: unicode
-  database: goldenowl_staging
-  pool:     5
-  username: root
-  password: root
-  template: template0
-
-production:
-  adapter:  postgresql
-  host:     localhost
-  encoding: unicode
-  database: goldenowl_production
-  pool:     5
-  username: root
-  password: root
   template: template0

@@ -725,7 +725,7 @@ button{
         }
         &.active{
           color: #efb200;
-          
+
         }
         &:nth-child(n+8){
           display: none;
@@ -977,7 +977,7 @@ button{
     .portfolio-content{
       padding-top: 5px;
       .portfolio-element {
-        .portfolio-info{ 
+        .portfolio-info{
           .title-project{
             font-size: 22px;
           }
@@ -1441,6 +1441,7 @@ button{
   .team-section{
     .team-element{
       width: 305px;
+      margin-left: 30px;
     }
   }
 }
