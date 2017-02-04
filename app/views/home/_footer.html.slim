@@ -1,68 +1,69 @@
 footer.container-fluid
-	.footer-col
-		h1
-		 	span
-		 		strong Golden Owl 
-		 	| Consulting
-		p We committed to provide impactful solution for your company's technical problems. We focus on helping our customers.
-		.infomation
-			i.fa.fa-phone
-			p.first-info +84 912 878985
-		.infomation
-			i.fa.fa-envelope
-			p justin@goldenowl.asia
-		.infomation
-			i.fa.fa-map-marker
-			p.location 7, Tran Xuan Hoa Street, Ward 7, District 5, Ho Chi Minh City
-		.infomation.icon-share
-			= link_to "https://facebook.com/goldenowl.asia/" do
-				button
-					i.fa.fa-facebook
-			end
-			= link_to "https://twitter.com/company_golden" do
-				button
-					i.fa.fa-twitter
-			end
-			= link_to "https://linkedin.com/company/golden-owl-consulting" do
-				button
-					i.fa.fa-linkedin
-			end
-	.footer-col
-		h5 Latest Post
-		- if @posts.count > 0
-			- if @firstPost.present?
-				.post-element
-					.image-post
-						= image_tag @posts.last.picture
-					.content-post
-						= link_to blogs_post_path(@posts.last) do
-							h6 #{@posts.last.title}
-						.line
-						.time-post
-							.time-element
-								i.fa.fa-calendar
-								span #{@posts.last.created_at.strftime("%d/%m/%Y")}
-							.time-element
-								i.fa.fa-commenting-o
-								span #{@posts.last.comments.count} comments
-			- if @lastPost.present?
-				.post-element
-					.image-post
-						= image_tag @posts.first.picture
-					.content-post
-						= link_to blogs_post_path(@posts.first) do
-							h6 #{@posts.first.title}
-						.line
-						.time-post
-							.time-element
-								i.fa.fa-calendar
-								span #{@posts.first.created_at.strftime("%d/%m/%Y")}
-							.time-element
-								i.fa.fa-commenting-o
-								span #{@posts.first.comments.count} comments
+  .footer-col
+    h1
+       span
+         strong Golden Owl
+       | Consulting
+    p We committed to provide impactful solution for your company's technical problems. We focus on helping our customers.
+    .infomation
+      i.fa.fa-phone
+      p.first-info +84 912 878985
+    .infomation
+      i.fa.fa-envelope
+      p justin@goldenowl.asia
+    .infomation
+      i.fa.fa-map-marker
+      p.location 7, Tran Xuan Hoa Street, Ward 7, District 5, Ho Chi Minh City
+    .infomation.icon-share
+      = link_to "https://facebook.com/goldenowl.asia/" do
+        button
+          i.fa.fa-facebook
+      end
+      = link_to "https://twitter.com/company_golden" do
+        button
+          i.fa.fa-twitter
+      end
+      = link_to "https://linkedin.com/company/golden-owl-consulting" do
+        button
+          i.fa.fa-linkedin
+      end
+  .footer-col
+    .post-element
+  /   h5 Latest Post
+  /   - if @posts.count > 0
+  /     - if @firstPost.present?
+  /       .post-element
+  /         .image-post
+  /           = image_tag @posts.last.picture
+  /         .content-post
+  /           = link_to blogs_post_path(@posts.last) do
+  /             h6 #{@posts.last.title}
+  /           .line
+  /           .time-post
+  /             .time-element
+  /               i.fa.fa-calendar
+  /               span #{@posts.last.created_at.strftime("%d/%m/%Y")}
+  /             .time-element
+  /               i.fa.fa-commenting-o
+  /               span #{@posts.last.comments.count} comments
+  /     - if @lastPost.present?
+  /       .post-element
+  /         .image-post
+  /           = image_tag @posts.first.picture
+  /         .content-post
+  /           = link_to blogs_post_path(@posts.first) do
+  /             h6 #{@posts.first.title}
+  /           .line
+  /           .time-post
+  /             .time-element
+  /               i.fa.fa-calendar
+  /               span #{@posts.first.created_at.strftime("%d/%m/%Y")}
+  /             .time-element
+  /               i.fa.fa-commenting-o
+  /               span #{@posts.first.comments.count} comments
 
-	.footer-col
-		h5 Location
-		/ = image_tag 'map.png', :class => 'image_map'
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.760258743546!2d106.66490661426651!3d10.75295116256817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752efa2a21a447%3A0x35208d28f01f61f7!2zNyBUcuG6p24gWHXDom4gSG_DoCwgUGjGsOG7nW5nIDcsIFF14bqtbiA1LCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1460036676085" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-	p.text-footer Giấy phép Kinh doanh số 0313605444 do Sở Kế hoạch & Đầu tư TPHCM cấp ngày 07/01/2016
+  .footer-col
+    h5 Location
+    / = image_tag 'map.png', :class => 'image_map'
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.760258743546!2d106.66490661426651!3d10.75295116256817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752efa2a21a447%3A0x35208d28f01f61f7!2zNyBUcuG6p24gWHXDom4gSG_DoCwgUGjGsOG7nW5nIDcsIFF14bqtbiA1LCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1460036676085" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  p.text-footer Giấy phép Kinh doanh số 0313605444 do Sở Kế hoạch & Đầu tư TPHCM cấp ngày 07/01/2016
