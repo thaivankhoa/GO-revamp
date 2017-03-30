@@ -120,6 +120,7 @@ button{
   color: #efb200;
   text-align: center;
   margin-top: 40px;
+  text-transform: uppercase;
 }
 
 .line-title{
@@ -528,7 +529,7 @@ button{
 }
 //Service
 .service-section {
-  padding: 30px 80px;
+  padding: 100px 80px;
   background: white;
   .sub-title-section{
     margin-bottom: 0px;
@@ -546,6 +547,7 @@ button{
   }
   .title-section{
     color: #222;
+    font-size: 18px;
     span{
       color: #efb200;
     }
