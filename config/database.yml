@@ -4,18 +4,30 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 #
-development:
-  adapter:  postgresql
-  host:     localhost
-  encoding: unicode
-  database: goldenowl_development
-  pool:     5
-  template: template0
+# development:
+#   adapter:  postgresql
+#   host:     localhost
+#   encoding: unicode
+#   database: goldenowl_development
+#   pool:     5
+#   template: template0
 
-test:
-  adapter:  postgresql
-  host:     localhost
+# test:
+#   adapter:  postgresql
+#   host:     localhost
+#   encoding: unicode
+#   database: goldenowl_test
+#   pool:     5
+#   template: template0
+
+default: &default
+  adapter: postgresql
   encoding: unicode
-  database: goldenowl_test
-  pool:     5
-  template: template0
+  username: myapp
+  password: password1
+  host: localhost
+  pool: 5
+
+development:
+  <<: *default
+  database: all4hr_development
