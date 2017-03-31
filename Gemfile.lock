@@ -247,7 +247,7 @@ DEPENDENCIES
   font-awesome-rails
   font-awesome-sass (~> 4.4.0)
   impressionist
-  jbuilder (~> 2.0)
+  jbuilder
   jquery-rails
   mini_magick
   paperclip!
@@ -269,4 +269,4 @@ RUBY VERSION
    ruby 2.3.0p0
 
 BUNDLED WITH
-   1.13.2
+   1.14.6
