@@ -29,7 +29,7 @@ button{
 //Modified Scroll Bar
 ::-webkit-scrollbar {
     width: 8px;
-    background-color: #efb200;
+    background-color: #FCB829;
 }
 //background scroll
 ::-webkit-scrollbar-track {
@@ -38,7 +38,7 @@ button{
 }
 //scroll
 ::-webkit-scrollbar-thumb {
-    background-color: #efb200;
+    background-color: #FCB829;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -100,7 +100,7 @@ button{
   text-align: center;
   margin-bottom: 20px;
   span{
-    color: #efb200;
+    color: #FCB829;
     font-weight: 700;
   }
 }
@@ -108,25 +108,26 @@ button{
   text-align: center;
   margin-bottom: 0px;
   span{
-    font-size: 12px;
+    font-size: 17px;
     padding: 0px 15px;
-    border-left: 1px solid #efb200;
-    border-right: 1px solid #efb200;
+    border-left: 1px solid #FCB829;
+    border-right: 1px solid #FCB829;
     text-transform: uppercase;
-    color: #efb200;
+    color: #FCB829;
   }
 }
 .title-testominal{
-  color: #efb200;
+  color: #FCB829;
   text-align: center;
   margin-top: 40px;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .line-title{
   width: 90px;
   height: 2px;
-  background-color: #efb200;
+  background-color: #FCB829;
   margin: 10px auto;
 }
 
@@ -180,7 +181,8 @@ button{
         .title-main{
           margin-top: 8px;
           padding: 0px 0px 10px 5px;
-          color: #efb200;
+          /*color: #FCB829;*/
+          color: black;
           text-transform: none;
           font-size: 30px;
           margin-bottom: 0px;
@@ -295,7 +297,7 @@ button{
             height: 100%;
             position: absolute;
             z-index: 0;
-            background: #efb200;
+            background: #FCB829;
           }
           &.active, &:hover{
             color: black;
@@ -390,11 +392,11 @@ button{
   }
 }
 .slider-content{
-  margin-top: 230px;
+  margin-top: 300px;
   margin-bottom: 0px;
-  margin-left: 25%;
-  margin-right: 25%;
-  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
   padding: 0px;
   text-align: center;
   position: absolute;
@@ -402,9 +404,9 @@ button{
   .slider-title{
     padding: 0px 10%;
     /*font-weight: 400;*/
-    font-size: 25px;
+    font-size: 27px;
     font-weight: bold;
-    line-height: 30px;
+    line-height: 35px;
     color: #f3c339;
     text-transform: uppercase;
     transform: scale(0);
@@ -421,15 +423,17 @@ button{
     margin-top: 30px;
     opacity: 0;
     transition: 0.2s;
-    border-radius: 12px;
+    border-radius: 17px;
     border: 1px solid white;
+    font-size: 13px;
+    /*font-weight: 600;*/
     &:hover{
-      background-color: #efb200;
+      background-color: #FCB829;
       box-shadow: 0px 1px 2px transparent;
     }
     i{
       margin-right: 10px;
-      font-size: 18px;
+      font-size: 13px;
       margin-top: 2px;
     }
   }
@@ -533,13 +537,14 @@ button{
   background: white;
   .sub-title-section{
     margin-bottom: 0px;
-    color: #444;
+    /*color: #444;*/
+    color: black;
   }
   .title-small{
     span{
-      border-left: 1px solid #efb200;
-      border-right: 1px solid #efb200;
-      color: #efb200;
+      border-left: 1px solid #FCB829;
+      border-right: 1px solid #FCB829;
+      color: #FCB829;
     }
   }
   .line-title{
@@ -549,13 +554,13 @@ button{
     color: #222;
     font-size: 18px;
     span{
-      color: #efb200;
+      color: #FCB829;
     }
   }
   .service-content{
     width: 100%;
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
   }
   .service-element{
     width: 33.3%;
@@ -579,23 +584,25 @@ button{
       margin: -50px auto;
       width: 150px;
       height: 150px;
-      background: #efb200;
+      background: white;
+      border: 1px solid #e6e6e6;
       border-radius: 50%;
-      // box-shadow: -4px 5px 0px #df9f01;
+      box-shadow: 0px 5px 2px #bfbfbf;
       img{
 
       }
     }
     .title-service{
-      color: #EFB200;
+      color: #FCB829;
       text-transform: uppercase;
       margin-top: 80px;
-      font-size: 18px;
-      font-weight: 400;
+      font-size: 15px;
+      font-weight: 500;
       letter-spacing: 1px;
     }
     .content-service{
-      color: #444;
+      /*color: #444;*/
+      color: black;
       text-align: center;
       margin-top: 20px;
       font-size: 13px;
@@ -740,7 +747,7 @@ button{
           height: 35px;
         }
         &.active{
-          color: #efb200;
+          color: #FCB829;
 
         }
         &:nth-child(n+8){
@@ -806,11 +813,11 @@ button{
           padding: 5px 20px;
           float: right;
           color: white;
-          background: #efb200;
+          background: #FCB829;
           font-size: 14px;
           transition: 0.2s;
           &:hover{
-            color: #efb200;
+            color: #FCB829;
             background-color: black;
           }
           i{
@@ -834,7 +841,7 @@ button{
             height: 6px;
             margin-right: 10px;
             display: inline-block;
-            background: #efb200;
+            background: #FCB829;
             border-radius: 50%;
           }
         }
@@ -884,6 +891,16 @@ button{
       right: 10px;
     }
   }
+}
+.btn-section-cirlce
+{
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
 }
 .detail-project{
   width: 100%;
@@ -1149,7 +1166,7 @@ button{
     padding: 20px 20px 0px 40px;
     width: 30%;
     float: left;
-    border-left: 1px solid #efb200;
+    border-left: 1px solid #FCB829;
     .rule-element{
       margin-bottom: 5px;
       width: 100%;
@@ -1161,7 +1178,7 @@ button{
       .rule-info{
         overflow: hidden;
         .title-rule{
-          color: #efb200;
+          color: #FCB829;
           font-size: 20px;
           font-weight: 600;
           margin-top: 0px;
@@ -1267,6 +1284,7 @@ button{
         margin-top: -5px;
         margin-bottom: 10px;
         border-radius: 50%;
+        border: 3px solid #bfbfbf;
       }
     }
     .caret{
@@ -1284,7 +1302,7 @@ button{
       margin-left: 130px;
       padding: 10px;
       overflow: hidden;
-      background: white;
+      background: #FCB829;
       border-radius: 4px;
       img{
         width: 20px;
@@ -1295,7 +1313,7 @@ button{
         }
       }
       p{
-        color: #444;
+        color: white;
         font-size: 12px;
         padding: 10px 25px 0px 15px;
         overflow: hidden;
@@ -1372,7 +1390,8 @@ button{
       }
     }
     .title-testominal{
-      font-size: 20px;
+      font-size: 15px;
+      font-weight: 500;
       margin-top: 20px;
     }
   }
@@ -1422,15 +1441,16 @@ button{
 }
 .name-customer, .company-customer{
   margin-top: 10px;
-  color: #444;
+  color: #FCB829;
   text-align: center;
   font-size: 13px;
+  font-weight: 600;
 }
 .company-customer{
   margin-top: 5px;
-  color: #efb200;
+  color: black;
   font-style: italic;
-  font-weight: 300;
+  font-weight: 400;
   font-family: "Open Sans";
 }
 
@@ -1796,7 +1816,7 @@ footer{
       font-family: 'Pacifico', cursive;
       span{
         font-weight: 600;
-        color: #efb200;
+        color: #FCB829;
       }
     }
     h5{
@@ -1816,7 +1836,7 @@ footer{
       width: 100%;
       i{
         float: left;
-        color: #efb200;
+        color: #FCB829;
         width: 30px;
         margin-top: 3px;
       }
@@ -1827,7 +1847,7 @@ footer{
         button{
           width: 30px;
           height: 30px;
-          color: #efb200;
+          color: #FCB829;
           background-color: white;
           border-radius: 50%;
           margin-right: 10px;
@@ -1890,7 +1910,7 @@ footer{
           .time-element{
             width: 50%;
             float: left;
-            color: #efb200;
+            color: #FCB829;
             i{
               float: left;
               width: 25px;
