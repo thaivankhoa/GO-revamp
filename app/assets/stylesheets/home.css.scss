@@ -1267,7 +1267,8 @@ button{
 }
 .feedback-section{
   background: #f7f7f7;
-  padding: 0px 40px 60px;
+  padding: 0px 40px 40px;
+  margin-right: 10px;
   .feedback.element{
     vertical-align: text-top;
     position: relative;
@@ -1276,8 +1277,7 @@ button{
     margin-right: 10px;
     margin-bottom: 10px;
     display: inline-block;
-    width: 35%;
-    height: 190px;
+    width: 45%;
     .image-customer{
       margin-top: 5px;
       margin-right: 5px;
@@ -1300,6 +1300,7 @@ button{
         border-radius: 1px;
         margin: 0px;
         p{
+          margin-right: 0px;
           text-align: left;
           color: white;
           font-size: 12px;
@@ -1311,6 +1312,14 @@ button{
     }
   }
 }
+
+.item{
+  width: 100%;
+  margin: auto;
+  padding: 10px 5px;
+  text-align: center;
+}
+
 @media screen and (max-width: 868px){
   .feedback-section{
     .feedback-element{
@@ -1429,7 +1438,7 @@ button{
 }
 .name-customer, .company-customer{
   margin-top: 0px;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
   color: #FCB829;
   text-align: left;
   font-size: 12px;
@@ -2044,11 +2053,24 @@ footer{
 .carousel-inner{
 
 }
-.item{
-  width: 90%;
-  height: 250px;
-  text-align: center;
-  margin: auto;
-  padding: 10px 5px;
+
+
+ol.carousel-indicators {
+  bottom: 0;
+  margin: 30px;
+  left: 0;
+  right: 0;
+  width: auto;
+  position: relative;
 }
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+  background: #444;
+}
+
+ol.carousel-indicators li.active {
+  background: #FCB829;
+}
+
 
