@@ -384,11 +384,12 @@ button{
 }
 //Slider
 .slider-section{
-  height: 700px;
+  height: 750px;
   width: 100%;
-  opacity: 0.5;
   .homepage-hero-module{
     height: 100% !important;
+    background-image: url(asset_path('background-home.png'));
+    background-size: cover;
   }
 }
 .slider-content{
@@ -403,8 +404,9 @@ button{
   z-index: 1;
   .slider-title{
     padding: 0px 10%;
+    margin-top: 35px;
     /*font-weight: 400;*/
-    font-size: 27px;
+    font-size: 26px;
     font-weight: bold;
     line-height: 35px;
     color: #f3c339;
@@ -416,7 +418,7 @@ button{
       color: white;
     }
   }
-  button{
+  button.btn-details{
     background-color: transparent;
     color: white;
     padding: 10px 25px;
@@ -424,9 +426,9 @@ button{
     opacity: 0;
     transition: 0.2s;
     border-radius: 17px;
-    border: 1px solid white;
+    border: 2px solid white;
     font-size: 13px;
-    /*font-weight: 600;*/
+    font-weight: 500;
     &:hover{
       background-color: #FCB829;
       box-shadow: 0px 1px 2px transparent;
@@ -533,11 +535,12 @@ button{
 }
 //Service
 .service-section {
-  padding: 100px 80px;
+  padding: 80px 60px;
   background: white;
   .sub-title-section{
     margin-bottom: 0px;
     /*color: #444;*/
+    font-weight: 400;
     color: black;
   }
   .title-small{
@@ -597,14 +600,14 @@ button{
       text-transform: uppercase;
       margin-top: 80px;
       font-size: 15px;
-      font-weight: 500;
+      font-weight: 600;
       letter-spacing: 1px;
     }
     .content-service{
       /*color: #444;*/
       color: black;
       text-align: center;
-      margin-top: 20px;
+      margin-top: 10px;
       font-size: 13px;
       font-weight: 400;
       letter-spacing: 0.8px;
@@ -708,10 +711,30 @@ button{
   background: #f7f7f7;
   padding: 0px 0px 50px;
   .title-portfolio{
-    background: #f7f7f7;
+    height: 225px;
+    background-image: url(asset_path('portfolio.png'));
+    background-position: center;
+    background-size: 100%;
     margin-top: 0px;
     padding: 20px 0px;
     position: relative;
+    .title-small{
+      margin-top: 45px;
+      span{
+        border-left: none;
+        border-right: none;
+        font-weight: 700;
+        font-size: 18px;
+      }
+    }
+    .sub-title-section{
+      padding-top: 10px;
+      color: white;
+      width: 30%;
+      text-align: center;
+      margin: auto;
+      line-height: 20px;
+    }
     .caret{
       position: absolute;
       border-top: 15px solid white;
@@ -892,6 +915,28 @@ button{
     }
   }
 }
+
+.btn-customs{
+  text-align: center;
+  display: block;
+  border: 3px double #e8e8e8;
+  border-radius: 50%;
+  background: transparent;
+  text-align: center;
+  margin: auto;
+  margin-top: 90px;
+  height: 40px;
+  width: 40px;
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+  transition: 5s;
+  &:hover{
+    background-color: #FCB829;
+  }
+}
+
+
 .btn-section-cirlce
 {
   width: 30px;
