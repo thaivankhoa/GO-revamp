@@ -1740,9 +1740,35 @@ button{
 
 .partner-section{
   padding: 40px;
+  padding-top: 50px;
   background: #f7f7f7;
   position: relative;
-  padding-bottom: 150px;
+  padding-bottom: 80px;
+  .title-clients{
+    margin-bottom: 15px;
+    margin-top: 30px;
+    text-align: center;
+    span{
+      color: #FCB829;
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+  .introduce-clients{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+    p{
+      color: #444;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      line-height: 21px;
+      font-weight: 400;
+      font-family: "Open Sans";
+    }
+  }
+
   .partner-content{
     width: 80%;
     margin: auto;
