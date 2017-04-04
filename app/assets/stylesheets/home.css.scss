@@ -1475,7 +1475,7 @@ button{
     width: 45%;
     .image-customer{
       margin-top: 5px;
-      margin-right: 5px;
+      margin-right: 8px;
       float: left;
       width: 90px;
       img{
@@ -1489,16 +1489,17 @@ button{
     }
     .info-customer{
       .feedback-content{
-        padding: 10px 8px 10px 8px;
+        padding: 10px 10px 10px 10px;
         overflow: hidden;
         background: #FCB829;
         border-radius: 1px;
         margin: 0px;
+        font-weight: 500;
         p{
           margin-right: 0px;
           text-align: left;
           color: white;
-          font-size: 12px;
+          font-size: 13px;
           overflow: hidden;
           font-family: "Open Sans";
           font-style: italic;
@@ -1513,6 +1514,7 @@ button{
   margin: auto;
   padding: 10px 5px;
   text-align: center;
+  text-transform: none;
 }
 
 @media screen and (max-width: 868px){
@@ -1633,15 +1635,15 @@ button{
 }
 .name-customer, .company-customer{
   margin-top: 0px;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   color: #FCB829;
   text-align: left;
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 700;
 }
 .company-customer{
   margin-top: 0px;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   color: black;
   font-style: italic;
   font-weight: 400;
@@ -1741,57 +1743,60 @@ button{
   background: #f7f7f7;
   position: relative;
   padding-bottom: 150px;
-  .partner-element{
-    width: 20%;
-    // padding: 10px 0px;
-    margin-top: 70px;
-    float: left;
-    margin-left: 6.33%;
-    text-align: center;
-    height: 70px;
-    &:first-of-type{
-      margin-left: 0px;
-    }
-    &:nth-of-type(4n+1){
-      margin-left: 0px;
-    }
-    img{
-      width: 90%;
-      height: 100%;
-    }
-    a:hover{
-      background-color: transparent;
-    }
-  }
-  .partner-small{
-    img{
-      height: 60%;
-      margin-top: 8%;
-    }
-  }
-  &.container-fluid{
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-  .btn-group{
-    position: absolute;
-    top: 216px;
-    left: 0;
-    width: 100%;
-    button{
-      font-size: 20px;
-      color: #888;
-    }
-    .btn-left{
+  .partner-content{
+    width: 80%;
+    margin: auto;
+    .partner-element{
+      width: 25%;
       float: left;
-      margin-left: 20px;
+      text-align: center;
+      height: 70px;
+      padding-left: 10px;
+      &:first-of-type{
+        margin-left: 0px;
+      }
+      &:nth-of-type(4n+1){
+        margin-left: 0px;
+      }
+      img{
+        width: 90%;
+        height: 100%;
+      }
+      a:hover{
+        background-color: transparent;
+      }
     }
-    .btn-right{
-      float: right;
-      margin-right: 20px;
+    .partner-small{
+      img{
+        height: 60%;
+        margin-top: 8%;
+      }
+    }
+    &.container-fluid{
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+    .btn-group{
+      position: absolute;
+      top: 216px;
+      left: 0;
+      width: 100%;
+      button{
+        font-size: 20px;
+        color: #888;
+      }
+      .btn-left{
+        float: left;
+        margin-left: 20px;
+      }
+      .btn-right{
+        float: right;
+        margin-right: 20px;
+      }
     }
   }
 }
+
 @media screen and (max-width: 920px){
   .partner-section{
     .partner-element{
