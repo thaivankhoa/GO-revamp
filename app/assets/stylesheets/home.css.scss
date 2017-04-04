@@ -122,6 +122,9 @@ button{
   margin-top: 40px;
   text-transform: uppercase;
   font-weight: 700;
+  span{
+    font-size: 18px;
+  }
 }
 
 .line-title{
@@ -709,7 +712,7 @@ button{
 
 .porfolio-section{
   background: #f7f7f7;
-  padding: 0px 0px 50px;
+  padding: 0px 0px 0px;
   .title-portfolio{
     height: 225px;
     background-image: url(asset_path('portfolio.png'));
@@ -919,12 +922,12 @@ button{
 .btn-customs{
   text-align: center;
   display: block;
-  border: 3px double #e8e8e8;
+  border: 3px double #a1a1a1;
   border-radius: 50%;
   background: transparent;
   text-align: center;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 110px;
   height: 40px;
   width: 40px;
   color: white;
@@ -1182,11 +1185,20 @@ button{
     }
   }
 }
-
+/*
 .about-section{
   padding: 50px 20px 60px;
   background: #ffffff;
   position: relative;
+  .title-section{
+    span{
+      color: #FCB829;
+      font-weight: 700;
+      font-size: 18px;
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+  }
   .about-element{
     width: 30%;
     padding: 0px 50px 0px 40px;
@@ -1246,6 +1258,144 @@ button{
       height: 330px;
     }
   }
+}
+*/
+
+.about-section{
+  padding: 50px 20px 60px;
+  background: #ffffff;
+  position: relative;
+  .title-section{
+    margin-bottom: 0px;
+    margin-top: 30px;
+    span{
+      color: #FCB829;
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+  .about-info{
+    width: 90%;
+    margin: auto;
+    .introduce-element{
+      width: 33.3%;
+      margin: auto;
+      text-align: center;
+      margin-bottom: 50px;
+      p{
+        color: #444;
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        line-height: 21px;
+        font-weight: 400;
+        font-family: "Open Sans";
+      }
+    }
+
+    .about-element{
+      width: 33.3%;
+      padding: 0px 20px;
+      float: left;
+      h4{
+        font-size: 14px;
+        font-weight: 600;
+        color: black;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .line{
+        width: 40px;
+        height: 3px;
+        background: #FCB829;
+        margin-top: 7px;
+      }
+      p{
+        margin-top: 30px;
+        color: #444;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        line-height: 20px;
+        font-weight: 300;
+        font-family: "Open Sans";
+      }
+    }
+    .rule-content{
+      padding: 0px 20px 0px 20px;
+      width: 33.3%;
+      float: left;
+      border-left: 1px solid #FCB829;
+      border-right: 1px solid #FCB829;
+      h4{
+        font-size: 14px;
+        font-weight: 600;
+        color: black;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .line{
+        width: 40px;
+        height: 3px;
+        background: #FCB829;
+        margin-top: 7px;
+        margin-bottom: 32px;
+      }
+      .rule-element{
+        margin-bottom: 5px;
+        width: 100%;
+        img{
+          margin-right: 20px;
+          width: 50px;
+          float: left;
+        }
+        .rule-info{
+          overflow: hidden;
+          .title-rule{
+            color: #FCB829;
+            font-size: 15px;
+            font-weight: 600;
+            margin-top: 0px;
+            margin-bottom: 5px;
+          }
+          p{
+            font-family: "Open Sans";
+            font-weight: 300;
+            color: #444;
+            margin-top: 0px;
+            font-size: 12px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+    .mission-content{
+      width: 33.3%;
+      padding: 0px 20px;
+      float: right;
+      h4{
+      font-size: 14px;
+      font-weight: 600;
+      color: black;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      }
+      .line{
+        width: 40px;
+        height: 3px;
+        background: #FCB829;
+        margin-top: 7px;
+      }
+      p{
+        margin-top: 30px;
+        color: #444;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        line-height: 20px;
+        font-weight: 300;
+        font-family: "Open Sans";
+      }
+    }
+  }
+
 }
 
 @media screen and (max-width: 968px){
