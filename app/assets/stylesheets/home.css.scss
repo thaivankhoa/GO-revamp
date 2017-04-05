@@ -2077,149 +2077,64 @@ button{
     }
   }
 }
-footer{
-  width: 100%;
-  height: auto;
-  padding: 50px;
-  .footer-col{
-    width: 33.3%;
-    float: left;
-    padding: 0px 2%;
-    h1{
-      color: white;
-      font-size: 25px;
-      font-weight: 300;
-      font-family: 'Pacifico', cursive;
-      span{
-        font-weight: 600;
-        color: #FCB829;
-      }
-    }
-    h5{
-      color: white;
-      font-size: 20px;
-      font-weight: 300;
-      font-family: "Open Sans";
-    }
-    p{
-      color: #a5a5a5;
-      font-weight: 300;
-      font-family: "Open Sans";
-      font-size: 15px;
-      margin-top: 30px;
-    }
-    .infomation{
+
+/*Footer_new*/
+
+  .footer-upper{
+    width: 100%;
+    height: auto;
+    .footer-part{
       width: 100%;
-      i{
-        float: left;
-        color: #FCB829;
-        width: 30px;
-        margin-top: 3px;
-      }
-      p{
-        margin-top: 10px;
-      }
-      a{
-        button{
-          width: 30px;
-          height: 30px;
-          color: #FCB829;
-          background-color: white;
-          border-radius: 50%;
-          margin-right: 10px;
-          transition: 0.5s;
-          i{
-            width: 0px;
-            float: none;
-            margin-left: -8px;
-          }
-          &:hover{
-            background-color: black;
-            color: white;
-          }
-        }
-        &:hover{
-          background-color: transparent;
-        }
-      }
-      &:first-of-type{
-        margin-top: 30px;
-      }
-      &.icon-share{
-        margin-top: 20px;
-      }
-    }
-    .post-element{
-      width: 100%;
-      margin-top: 40px;
-      .image-post{
-        width: 75px;
-        height: 75px;
-        float: left;
-        img{
-          width: 100%;
-          height: 100%;
-        }
-      }
-      .content-post{
-        overflow: hidden;
-        padding-left: 20px;
-        h6{
-          width: 250px;
-          white-space: nowrap;
-          text-transform: uppercase;
-          color: white;
-          font-size: 20px;
-          font-weight: 300;
-          font-family: "Open Sans";
-          margin: 0px;
-        }
-        .line{
-          width: 100%;
-          height: 1px;
-          background-color: #7d7d7d;
-          margin-top: 15px;
-        }
-        .time-post{
-          width: 100%;
-          margin-top: 10px;
-          .time-element{
-            width: 50%;
-            float: left;
-            color: #FCB829;
-            i{
-              float: left;
-              width: 25px;
-              margin-top: 3px;
+      .footer-banner{
+        position: relative;
+        width: 100%;
+        background-image: url(asset_path('ending-bg.png'));
+        background-position: center;
+        .footer-group{
+          width: 30%;
+          margin: auto;
+          .footer-item{
+            background: transparent;
+            display: inline-block;
+            padding-top: 45px;
+            padding-bottom: 45px;
+            width: 25%;
+            .icon-frame{
+              height: 50px;
+              width: 50px;
+              border-radius: 50%;
+              border: 2px solid white;
+              text-align: center;
+              margin: auto;
+                .helper{
+                  height: 100%;
+                  img{
+                    margin-top: 13px;
+                    height: 40%;
+                    width: auto;
+                }
+              }
             }
-            span{
-              color: #a5a5a5;
-              font-size: 15px;
-              font-weight: 300;
-              font-family: "Open Sans";
+            .icon-frame:hover{
+              background: #FCB829
             }
           }
         }
       }
     }
-    .image_map{
-      margin-top: 30px;
-      width: 100%;
-    }
-    iframe{
-      width: 100%;
-      height: 280px;
+  }
+  .footer-content{
+    width: 80%;
+    .footer-col{
+      background-color: red;
     }
   }
-  &.container-fluid{
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-.footer-section{
-  padding: 30px 0px;
-  background-color: #282828;
-}
+
+
+
+/* */
+
+
 @media screen and (max-width: 1068px){
   footer{
     .footer-col{
@@ -2351,3 +2266,6 @@ ol.carousel-indicators li.active {
 }
 
 
+#footer.footer-section{
+  padding: 0px !important;
+}
