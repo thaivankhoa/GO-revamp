@@ -564,7 +564,7 @@ button{
     }
   }
   .service-content{
-    width: 100%;
+    width: 80%;
     position: relative;
     padding-bottom: 0px;
   }
@@ -588,8 +588,8 @@ button{
     }
     .image-service{
       margin: -50px auto;
-      width: 150px;
-      height: 150px;
+      width: 120px;
+      height: 120px;
       background: white;
       border: 1px solid #e6e6e6;
       border-radius: 50%;
@@ -602,7 +602,7 @@ button{
       color: #FCB829;
       text-transform: uppercase;
       margin-top: 80px;
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 600;
       letter-spacing: 1px;
     }
@@ -611,7 +611,7 @@ button{
       color: black;
       text-align: center;
       margin-top: 10px;
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 400;
       letter-spacing: 0.8px;
       font-family: 'Arial';
@@ -1262,7 +1262,7 @@ button{
 */
 
 .about-section{
-  padding: 50px 20px 60px;
+  padding: 50px 20px 115px;
   background: #ffffff;
   position: relative;
   .title-section{
@@ -1275,7 +1275,7 @@ button{
     }
   }
   .about-info{
-    width: 90%;
+    width: 80%;
     margin: auto;
     .introduce-element{
       width: 33.3%;
@@ -1395,7 +1395,55 @@ button{
       }
     }
   }
+}
 
+.about-banner{
+  padding: 0px;
+  width: 100%;
+  margin: auto;
+  .banner-bottom{
+  width: 100%;
+  margin: auto;
+  height: 180px;
+  background-image: url(asset_path('about-banner.png'));
+  background-position: center;
+  background-size: 100%;
+  position: relative;
+  text-align: center;
+    .banner-group{
+      width: 60%;
+      margin: auto;
+      .banner-item{
+      width: 25%;
+      text-align: center;
+      color: white;
+      padding-top: 25px;
+      padding-bottom: 30px;
+      display: inline-block;
+      font-style: 'rubocop';
+        .item-icon{
+          height: 35px;
+          margin: auto;
+          margin-bottom: 10px;
+          margin-top: 10px;
+          img{
+            width: 35px;
+            height: 35px;
+          }
+        }
+        .item-number{
+          font-size: 33px;
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+        .item-title{
+          font-size: 12px;
+          margin-top: 0px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 968px){
@@ -1463,46 +1511,50 @@ button{
 .feedback-section{
   background: #f7f7f7;
   padding: 0px 40px 40px;
-  margin-right: 10px;
-  .feedback.element{
-    vertical-align: text-top;
-    position: relative;
-    margin-top: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    display: inline-block;
-    width: 45%;
-    .image-customer{
-      margin-top: 5px;
-      margin-right: 8px;
-      float: left;
-      width: 90px;
-      img{
-        width: 80px;
-        height: 80px;
-        margin-top: -5px;
-        margin-bottom: 10px;
-        border-radius: 50%;
-        border: 3px solid #bfbfbf;
+  width: 100%;
+  .feedback-group{
+    width: 80%;
+    margin: auto;
+    .feedback.element{
+      vertical-align: text-top;
+      position: relative;
+      margin-top: 50px;
+      margin-right: 10px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      display: inline-block;
+      width: 45%;
+      .image-customer{
+        margin-top: 5px;
+        margin-right: 8px;
+        float: left;
+        width: 90px;
+        img{
+          width: 80px;
+          height: 80px;
+          margin-top: -5px;
+          margin-bottom: 10px;
+          border-radius: 50%;
+          border: 3px solid #bfbfbf;
+        }
       }
-    }
-    .info-customer{
-      .feedback-content{
-        padding: 10px 10px 10px 10px;
-        overflow: hidden;
-        background: #FCB829;
-        border-radius: 1px;
-        margin: 0px;
-        font-weight: 500;
-        p{
-          margin-right: 0px;
-          text-align: left;
-          color: white;
-          font-size: 13px;
+      .info-customer{
+        .feedback-content{
+          padding: 10px 10px 10px 10px;
           overflow: hidden;
-          font-family: "Open Sans";
-          font-style: italic;
+          background: #FCB829;
+          border-radius: 1px;
+          margin: 0px;
+          font-weight: 500;
+          p{
+            margin-right: 0px;
+            text-align: left;
+            color: white;
+            font-size: 13px;
+            overflow: hidden;
+            font-family: "Open Sans";
+            font-style: italic;
+          }
         }
       }
     }
@@ -1768,7 +1820,6 @@ button{
       font-family: "Open Sans";
     }
   }
-
   .partner-content{
     width: 80%;
     margin: auto;
