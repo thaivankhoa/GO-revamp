@@ -1410,6 +1410,7 @@ button{
   background-size: 100%;
   position: relative;
   text-align: center;
+  font-family: "Open Sans";
     .banner-group{
       width: 70%;
       margin: auto;
@@ -2123,13 +2124,72 @@ button{
       }
     }
   }
+
+.footer-main{
+  background-color: white;
+  font-family: "Open Sans";
+  position: relative;
   .footer-content{
-    width: 80%;
+    width: 70%;
+    background: white;
+    margin: auto;
     .footer-col{
-      background-color: red;
+      vertical-align: top;
+      text-align: left;
+      background-color: white;
+      width: 20%;
+      margin-left: 2.5%;
+      margin-right: 2.5%;
+      display: inline-block;
+      margin-top: 90px;
+      margin-bottom: 40px;
+      .item-title{
+        span{
+          color: #444;
+          font-weight: 700;
+          font-size: 13px;
+          text-align: left;
+        }
+      }
+      .line{
+        width: 40px;
+        height: 3px;
+        background-color: #FCB829;
+        margin: 0px 0px 30px 0px;
+      }
+      .item-content{
+        display: block;
+        margin-top: 10px;
+        .position{
+          font-size: 12px;
+          font-weight: bold;
+          margin-top: 5px;
+          margin-bottom: 10px;
+        }
+        .phone{
+          display: block;
+          font-size: 12px;
+          margin-bottom: 10px;
+          img{
+            margin-right: 13px;
+            height: 15px;
+            width: auto;
+          }
+        }
+        .email
+        {
+          display: block;
+          font-size: 12px;
+          img{
+            margin-right: 12px;
+            height: 15px;
+            width: auto;
+          }
+        }
+      }
     }
   }
-
+}
 
 
 /* */
