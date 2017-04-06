@@ -5,19 +5,23 @@
         .footer-item
           .icon-frame
             .helper
-              = image_tag 'fb.png', :alt => "Golden Owl Consulting"
+              = link_to 'https://www.facebook.com/goldenowl.asia/?fref=ts', :target => '_blank'
+                = image_tag 'fb.png', :alt => "Golden Owl Consulting"
         .footer-item
           .icon-frame
             .helper
-              = image_tag 'twitter.png', :alt => "Golden Owl Consulting"
+              = link_to 'https://twitter.com/goldenowlasia', :target => '_blank'
+                = image_tag 'twitter.png', :alt => "Golden Owl Consulting"
         .footer-item
           .icon-frame
             .helper
-              = image_tag 'linkendin.png', :alt => "Golden Owl Consulting"
+              = link_to 'https://www.w3schools.com', :target => '_blank'
+                = image_tag 'linkendin.png', :alt => "Golden Owl Consulting"
         .footer-item
           .icon-frame
             .helper
-              = image_tag 'google-plus.png', :alt => "Golden Owl Consulting"
+              = link_to 'https://www.google.com', :target => '_blank'
+                = image_tag 'google-plus.png', :alt => "Golden Owl Consulting"
 
 .footer-main
     .footer-content
@@ -33,19 +37,38 @@
               |  +84 912 878985
           .email
               = image_tag 'mail.png'
-              |  justin@goldenowl.asia
+              |  admin@goldenowl.asia
       .footer-col
         .item-title
           span RECENT TWEETS
         .line
         .item-content
+            blockquote.twitter-tweet[data-cards="hidden" data-lang="vi"]
+              p[lang="en" dir="ltr"]
+                | Outsourcing realities: what business executives need to know
+                a[href="https://t.co/1dcJWRRvOi"]
+                  | https://t.co/1dcJWRRvOi
+              | — GoldenOwl Consulting (@goldenowlasia)
+              a[href="https://twitter.com/goldenowlasia/status/849426425199431680"]
+                | Ngày 05 tháng 04 năm 2017
+            script[async src="//platform.twitter.com/widgets.js" charset="utf-8"]
       .footer-col
         .item-title
           span ACCREDITATIONS
         .line
         .item-content
+          p Business license no.0313605444 by Department of Planning & Investment, HCMC
       .footer-col
         .item-title
           span NEW LETTER SUBSCRIBE
         .line
         .item-content
+          .subs-input
+            input name="newsubs" type="text" value="" /
+          br/
+          .subs-submit
+            input type="submit" value="SUBSCRIBE" /
+    .copyright
+      p Copyright &#9400 2017, Golden Owl
+
+

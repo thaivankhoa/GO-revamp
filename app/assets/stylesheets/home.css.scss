@@ -10,7 +10,7 @@
 body {
   width: 100%;
   height: 100%;
-  font-family: "Open Sans";
+  font-family: "Open-sans";
   background: black;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -141,7 +141,7 @@ button{
   text-align: center;
   font-size: 15px;
   font-weight: 300;
-  font-family: "Open Sans";
+  font-family: "Open-sans";
   letter-spacing: 0.5px;
   line-height: 24px;
 }
@@ -213,7 +213,7 @@ button{
         font-weight: 600;
         /*font-weight: 300;*/
         text-transform: uppercase;
-        font-family: "Open Sans";
+        font-family: "Open-sans";
         &:hover, &.active{
           text-decoration: underline;
         }
@@ -1216,7 +1216,7 @@ button{
       letter-spacing: 0.5px;
       line-height: 21px;
       font-weight: 300;
-      font-family: "Open Sans";
+      font-family: "Open-sans";
     }
   }
   .rule-content{
@@ -1241,7 +1241,7 @@ button{
           margin-top: 0px;
         }
         p{
-          font-family: "Open Sans";
+          font-family: "Open-sans";
           font-weight: 300;
           color: #444;
           margin-top: 5px;
@@ -1284,11 +1284,11 @@ button{
       margin-bottom: 50px;
       p{
         color: #444;
-        font-size: 13px;
+        font-size: 14px;
         letter-spacing: 0.5px;
         line-height: 21px;
         font-weight: 400;
-        font-family: "Open Sans";
+        font-family: "Open-sans";
       }
     }
 
@@ -1312,11 +1312,11 @@ button{
       p{
         margin-top: 30px;
         color: #444;
-        font-size: 12px;
+        font-size: 13px;
         letter-spacing: 0.5px;
         line-height: 20px;
         font-weight: 300;
-        font-family: "Open Sans";
+        font-family: "Open-sans";
       }
     }
     .rule-content{
@@ -1326,7 +1326,7 @@ button{
       border-left: 1px solid #FCB829;
       border-right: 1px solid #FCB829;
       h4{
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 600;
         color: black;
         margin-top: 0px;
@@ -1357,11 +1357,11 @@ button{
             margin-bottom: 5px;
           }
           p{
-            font-family: "Open Sans";
+            font-family: "Open-sans";
             font-weight: 300;
             color: #444;
             margin-top: 0px;
-            font-size: 12px;
+            font-size: 13px;
             line-height: 20px;
           }
         }
@@ -1387,11 +1387,11 @@ button{
       p{
         margin-top: 30px;
         color: #444;
-        font-size: 12px;
+        font-size: 13px;
         letter-spacing: 0.5px;
         line-height: 20px;
         font-weight: 300;
-        font-family: "Open Sans";
+        font-family: "Open-sans";
       }
     }
   }
@@ -1410,7 +1410,7 @@ button{
   background-size: 100%;
   position: relative;
   text-align: center;
-  font-family: "Open Sans";
+  font-family: 'Open-sans';
     .banner-group{
       width: 70%;
       margin: auto;
@@ -1421,7 +1421,7 @@ button{
       padding-top: 25px;
       padding-bottom: 30px;
       display: inline-block;
-      font-style: 'rubocop';
+      font-style: 'Open-sans';
         .item-icon{
           height: 35px;
           margin: auto;
@@ -1433,12 +1433,12 @@ button{
           }
         }
         .item-number{
-          font-size: 33px;
+          font-size: 34px;
           font-weight: bold;
           margin-bottom: 5px;
         }
         .item-title{
-          font-size: 12px;
+          font-size: 14px;
           margin-top: 0px;
           margin-bottom: 30px;
         }
@@ -1553,7 +1553,7 @@ button{
             color: white;
             font-size: 13px;
             overflow: hidden;
-            font-family: "Open Sans";
+            font-family: "Open-sans";
             font-style: italic;
           }
         }
@@ -1617,7 +1617,7 @@ button{
           height: 80px;
         }
         .name-customer, .company-customer{
-          font-size: 11px;
+          font-size: 12px;
           margin-left: -10px;
           width: 100px;
         }
@@ -1632,7 +1632,7 @@ button{
           width: 15px;
         }
         p{
-          font-size: 10px;
+          font-size: 11px;
         }
       }
     }
@@ -1700,25 +1700,77 @@ button{
   color: black;
   font-style: italic;
   font-weight: 400;
-  font-family: "Open Sans";
+  font-family: "Open-sans";
 }
 
 .team-section{
+  width: 100%;
   background: #fff;
-  padding: 40px;
-  .team-element{
-    width: 25%;
-    float: left;
-    padding: 0px 35px;
-    margin-top: 40px;
+  padding: 80px;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  .team-title{
     text-align: center;
-    img{
-      width: 100%;
-      height: 220px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FCB829;
+    margin-bottom: 10px;
+  }
+  .team-slogan{
+    text-align: center;
+    margin-bottom: 60px;
+    p{
+      color: #444;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      line-height: 21px;
+      font-weight: 400;
+      font-family: "Open-sans";
     }
-    .name-customer {
-      font-size: 16px;
-      color: #333;
+  }
+  .team-content{
+    width: 65%;
+    margin: auto;
+    margin-top: 40px;
+    .team-element{
+      width: 22%;
+      margin-left: 1.5%;
+      margin-right: 1.5%;
+      text-align: center;
+      display: inline-block;
+      .avatar{
+        position: relative;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        img{
+          width: 100%;
+          height: auto;
+          border: 2px solid #e6e6e6;
+        }
+        .icon1{
+          position: absolute;
+          top: 10px;
+          left: 2px;
+          z-index: 2;
+          display: none;
+        }
+      }
+      .avatar:hover{
+        .icon1{
+          display: block;
+        }
+      }
+
+      .name-member {
+        font-size: 14px;
+        font-weight: 600;
+        color: #333;
+      }
+      .role-member{
+        font-size: 12px;
+        color: #FCB829;
+      }
     }
   }
 }
@@ -1818,7 +1870,7 @@ button{
       letter-spacing: 0.5px;
       line-height: 21px;
       font-weight: 400;
-      font-family: "Open Sans";
+      font-family: "Open-sans";
     }
   }
   .partner-content{
@@ -2078,7 +2130,74 @@ button{
     }
   }
 }
+/* Get in touch */
+.touch-section{
+  width: 100%;
+  background: white;
+  padding: 50px 0px;
+  .touch-content{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    .touch-title{
+      color: #FCB829;
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 15px;
+      margin-top: 30px;
+    }
+    .touch-introduce{
+      margin-top: 50px;
+      margin-bottom: 50px;
+      font-family: "Open-sans";
+      color: #444;
+      font-size: 11px;
+      width: 40%;
+      text-align: center;
+      margin: auto;
+    }
+    .touch-form{
+      margin-top: 50px;
+      .input-1, .input-2 {
+        width: 48%;
+        margin-left: 1%;
+        margin-right: 1%;
+        display: inline-block;
+        margin-bot: 20px;
+        input{
+        width: 100%;
+        padding: 10px 5px 5px 5px;
+        color: #e6e6e6;
+        font-size: 12px;
+        }
+      }
+      .input-3{
+        margin-top: 60px;
+        margin-bottom: 20px;
+        margin-left: 1%;
+        margin-top: 1%;
+        width: 98%;
+        color: #e6e6e6;
+        textarea{width: 100%; margin-bottom: 0px; margin-top: 15px;}
+      }
+      .submit-button{
+        margin-top: 10px;
+        padding: 5px 10px 5px 10px;
+        margin-bottom: 30px;
+        input{
+          background: white;
+          color: black;
+          font-weight: 700;
+          font-size: 10px;
+          border: 1px solid black;
+          padding: 5px 15px 5px 15px;
+        }
+      }
+    }
+  }
+}
 
+/* */
 /*Footer_new*/
 
   .footer-upper{
@@ -2101,19 +2220,20 @@ button{
             padding-bottom: 45px;
             width: 25%;
             .icon-frame{
-              height: 50px;
-              width: 50px;
+              height: 55px;
+              width: 55px;
               border-radius: 50%;
               border: 2px solid white;
               text-align: center;
               margin: auto;
-                .helper{
-                  height: 100%;
-                  img{
-                    margin-top: 13px;
-                    height: 40%;
-                    width: auto;
+              .helper{
+                height: 100%;
+                img{
+                  margin-top: 16px;
+                  height: 40%;
+                  width: auto;
                 }
+                a:hover{background: transparent;}
               }
             }
             .icon-frame:hover{
@@ -2127,8 +2247,16 @@ button{
 
 .footer-main{
   background-color: white;
-  font-family: "Open Sans";
+  font-family: "Open-sans";
   position: relative;
+  .copyright{
+    margin-top: 35px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #a1a1a1;
+    font-weight: 500;
+    p{font-size: 12px;}
+  }
   .footer-content{
     width: 70%;
     background: white;
@@ -2143,6 +2271,7 @@ button{
       display: inline-block;
       margin-top: 90px;
       margin-bottom: 40px;
+      color: #444;
       .item-title{
         span{
           color: #444;
@@ -2160,11 +2289,22 @@ button{
       .item-content{
         display: block;
         margin-top: 10px;
+
+          .twitter-tweet{
+            width: 170px !important;
+            max-width: 200px !important;
+            width: 190px !important;
+            min-width: 150px !important;
+          }
+         }
         .position{
           font-size: 12px;
           font-weight: bold;
           margin-top: 5px;
           margin-bottom: 10px;
+        }
+        p{
+          font-size: 12px;
         }
         .phone{
           display: block;
@@ -2186,10 +2326,20 @@ button{
             width: auto;
           }
         }
+        iframe{
+          height: 50%;
+          width: 100%;
+        }
+        .subs-input{
+          input{background-color: #e6e6e6;}
+        }
+        .subs-submit{
+          input{background-color: #FCB829; color: white; font-size: 11px; border: none;width: 100px; height: 25px;}
+        }
       }
     }
   }
-}
+
 
 
 /* */
