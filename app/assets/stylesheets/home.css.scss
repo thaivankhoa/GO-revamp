@@ -1750,15 +1750,40 @@ button{
         }
         .icon1{
           position: absolute;
-          top: 10px;
-          left: 2px;
+          top: 25px;
           z-index: 2;
           display: none;
+          img{
+            height: 40px;
+            width: 40px;
+            transition: opacity 2s ease-in;
+          }
+        }
+        .icon2{
+          position: absolute;
+          top: 80px;
+          z-index: 2;
+          display: none;
+          img{
+            height: 40px;
+            width: 40px;
+          }
+         }
+        .icon3{
+          position: absolute;
+          top: 135px;
+          z-index: 2;
+          display: none;
+          img{
+            height: 40px;
+            width: 40px;
+          }
         }
       }
       .avatar:hover{
-        .icon1{
+        .icon1, .icon2, .icon3{
           display: block;
+          animation: fadein 2s;
         }
       }
 
@@ -2478,4 +2503,9 @@ ol.carousel-indicators li.active {
 
 #footer.footer-section{
   padding: 0px !important;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
