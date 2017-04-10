@@ -1,0 +1,36 @@
+.portfolio-details
+  .navigation-bar
+    ul
+      .nav-element
+        li.active[id="all"]
+          | All
+      .nav-element
+        li.deactive[id="ruby"]
+          | Ruby
+      .nav-element
+        li.deactive[id="nodejs"]
+          | NodeJS
+      .nav-element
+        li.deactive[id="ios"]
+          | iOS
+
+javascript:
+  var elAll = document.getElementById('all');
+  var elRuby = document.getElementById('ruby');
+  var elNodejs = document.getElementById('nodejs');
+  var eliOS = document.getElementById('ios');
+
+
+  function changeState() {
+    var elNav = document.getElementsByTagName('li');
+    elAll.className = 'deactive';
+    elRuby.className = 'deactive';
+    elNodejs.className = 'deactive';
+    eliOS.className = 'deactive';
+    this.className = "active";
+  }
+
+  elAll.addEventListener('click', changeState, false);
+  elRuby.addEventListener('click', changeState, false);
+  elNodejs.addEventListener('click', changeState, false);
+  eliOS.addEventListener('click', changeState, false);

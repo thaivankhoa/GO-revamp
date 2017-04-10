@@ -709,8 +709,47 @@ button{
     }
   }
 }
+/* portfolio details */
+.portfolio-details{
+  width: 100%;
+  background-color: white;
+  .navigation-bar{
+    width: 30%;
+    margin: auto;
+    .nav-element{
+      text-align: center;
+      text-align: center;
+      width: 15%;
+      margin-right: 5%;
+      margin-left: 5%;
+      display: inline-block;
+      li{
+        margin-top: 25px;
+        margin-bottom: 30px;
+        padding: 5px 0px 5px 0px;
+        list-style: none;
+        display: inline-block;
+        color: black;
+        font-size: 12px;
+        font-weight: 600;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      li.active{
+        border-bottom: 4px solid #FCB829;
+      }
+      li.deactive{
+        border: none;
+      }
+      li:hover {
+        text-decoration: none;
+        color: #e6e6e6;
+      }
+    }
+  }
+}
 
-.porfolio-section{
+.portfolio-section{
   background: #f7f7f7;
   padding: 0px 0px 0px;
   .title-portfolio{
@@ -988,12 +1027,12 @@ button{
 }
 
 @media screen and (max-width: 980px){
-  .porfolio-section{
+  .portfolio-section{
     padding: 0px 0px 20px;
   }
 }
 @media screen and (max-width: 886px){
-  .porfolio-section{
+  .portfolio-section{
     .control{
       margin: 30px auto;
       width: 600px;
@@ -1016,7 +1055,7 @@ button{
 }
 
 @media screen and (max-width: 768px){
-  .porfolio-section{
+  .portfolio-section{
     .control{
       .project-page{
         .project-element{
@@ -1054,7 +1093,7 @@ button{
   }
 }
 @media screen and (max-width: 620px){
-  .porfolio-section{
+  .portfolio-section{
     .portfolio-content{
       padding-top: 5px;
       .portfolio-element {
@@ -1100,7 +1139,7 @@ button{
   }
 }
 @media screen and (max-width: 468px){
-  .porfolio-section{
+  .portfolio-section{
     .control{
       .project-page{
         width: 100%;
@@ -1115,7 +1154,7 @@ button{
   }
 }
 @media screen and (max-width: 368px){
-  .porfolio-section{
+  .portfolio-section{
     .control{
       .project-page{
         width: 100%;
@@ -1275,7 +1314,7 @@ button{
     }
   }
   .about-info{
-    width: 80%;
+    width: 75%;
     margin: auto;
     .introduce-element{
       width: 33.3%;
@@ -1769,7 +1808,7 @@ button{
     }
   }
   .team-content{
-    width: 65%;
+    width: 70%;
     margin: auto;
     margin-top: 70px;
     .team-element{
@@ -2003,7 +2042,7 @@ button{
     }
   }
   .partner-content{
-    width: 80%;
+    width: 70%;
     margin: auto;
     .partner-element{
       width: 25%;
