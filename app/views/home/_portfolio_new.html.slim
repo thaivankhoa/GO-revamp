@@ -1,17 +1,17 @@
 .portfolio-details
   .navigation-bar
     ul
-      .nav-element
-        li.active[id="all"]
+      .nav-element[id="all"]
+        li.active
           | All
-      .nav-element
-        li.deactive[id="ruby"]
+      .nav-element[id="ruby"]
+        li.deactive
           | Ruby
-      .nav-element
-        li.deactive[id="nodejs"]
+      .nav-element[id="nodejs"]
+        li.deactive
           | NodeJS
-      .nav-element
-        li.deactive[id="ios"]
+      .nav-element[id="ios"]
+        li.deactive
           | iOS
 
 javascript:
@@ -23,11 +23,11 @@ javascript:
 
   function changeState() {
     var elNav = document.getElementsByTagName('li');
-    elAll.className = 'deactive';
-    elRuby.className = 'deactive';
-    elNodejs.className = 'deactive';
-    eliOS.className = 'deactive';
-    this.className = "active";
+    elAll.firstChild.className = 'deactive';
+    elRuby.firstChild.className = 'deactive';
+    elNodejs.firstChild.className = 'deactive';
+    eliOS.firstChild.className = 'deactive';
+    this.firstChild.className = "active";
   }
 
   elAll.addEventListener('click', changeState, false);
