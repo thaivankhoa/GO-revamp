@@ -1704,11 +1704,50 @@ button{
 }
 
 .team-section{
+
   width: 100%;
   background: #fff;
   padding: 80px;
   padding-left: 0px !important;
   padding-right: 0px !important;
+
+  button.btn-details{
+    display: block;
+    width: 10%;
+    margin-left: 45%;
+    margin-left: 45%;
+    background-color: transparent;
+    color: black;
+    padding: 5px 5px;
+    margin-top: 25px;
+    transition: 0.2s;
+    border-radius: 17px;
+    border: 1px solid black;
+    font-size: 12px;
+    font-weight: 500;
+    &:hover{
+      background-color: #FCB829;
+      box-shadow: 0px 1px 2px transparent;
+    }
+    i{
+      margin-right: 10px;
+      font-size: 13px;
+      margin-top: 2px;
+    }
+  }
+  #default{
+
+  }
+  #show-more-team{
+    display: block;
+  }
+  #show-less-team{
+    display: none;
+  }
+  #hidden-team{
+    display: none;
+  }
+
   .team-title{
     text-align: center;
     font-size: 18px;
@@ -1746,7 +1785,7 @@ button{
         img{
           width: 100%;
           height: auto;
-          border: 2px solid #e6e6e6;
+          /*border: 2px solid #e6e6e6;*/
         }
         .icon1{
           position: absolute;
@@ -1779,11 +1818,14 @@ button{
             width: 40px;
           }
         }
+        .icon1:hover, .icon2:hover, .icon3:hover {
+          opacity: 0.7;
+        }
       }
       .avatar:hover{
         .icon1, .icon2, .icon3{
           display: block;
-          animation: fadein 2s;
+          animation: fadein 1s;
         }
       }
 

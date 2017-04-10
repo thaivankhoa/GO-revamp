@@ -4,47 +4,171 @@
   .team-slogan
     p We grow up, improve and build a friendly professional team
   .team-content
-    .team-element
-      .avatar
-        = image_tag 'boss.jpg'
-        .icon1
-          = image_tag 'fb-icon.png'
-        .icon2
-          = image_tag 'twitter-icon.png'
-        .icon3
-          = image_tag 'linkendin-icon.png'
-      h5.name-member Justin Nguyen
-      h6.role-member CEO & Founder
-    .team-element
-      .avatar
-        = image_tag 'phil.jpg'
-        .icon1
-          = image_tag 'fb-icon.png'
-        .icon2
-          = image_tag 'twitter-icon.png'
-        .icon3
-          = image_tag 'linkendin-icon.png'
-      h5.name-member Phil On
-      h6.role-member Tech Lead
-    .team-element
-      .avatar
-        = image_tag 'michale.jpg'
-        .icon1
-          = image_tag 'fb-icon.png'
-        .icon2
-          = image_tag 'twitter-icon.png'
-        .icon3
-          = image_tag 'linkendin-icon.png'
-      h5.name-member Michelle Tran
-      h6.role-member Project Manager
-    .team-element
-      .avatar
-        = image_tag 'rose.jpg'
-        .icon1
-          = image_tag 'fb-icon.png'
-        .icon2
-          = image_tag 'twitter-icon.png'
-        .icon3
-          = image_tag 'linkendin-icon.png'
-      h5.name-member Rose Dao
-      h6.role-member HR & Media
+    #default
+      .team-element
+        .avatar
+          = image_tag 'boss.jpg'
+          .icon1
+            = image_tag 'fb-icon.png'
+          .icon2
+            = image_tag 'twitter-icon.png'
+          .icon3
+            = image_tag 'linkendin-icon.png'
+        h5.name-member Justin Nguyen
+        h6.role-member CEO & Founder
+      .team-element
+        .avatar
+          = image_tag 'phil.jpg'
+          .icon1
+            = image_tag 'fb-icon.png'
+          .icon2
+            = image_tag 'twitter-icon.png'
+          .icon3
+            = image_tag 'linkendin-icon.png'
+        h5.name-member Phil On
+        h6.role-member Tech Lead
+      .team-element
+        .avatar
+          = image_tag 'michale.jpg'
+          .icon1
+            = image_tag 'fb-icon.png'
+          .icon2
+            = image_tag 'twitter-icon.png'
+          .icon3
+            = image_tag 'linkendin-icon.png'
+        h5.name-member Michelle Tran
+        h6.role-member Project Manager
+      .team-element
+        .avatar
+          = image_tag 'rose.jpg'
+          .icon1
+            = image_tag 'fb-icon.png'
+          .icon2
+            = image_tag 'twitter-icon.png'
+          .icon3
+            = image_tag 'linkendin-icon.png'
+        h5.name-member Rose Dao
+        h6.role-member HR & Media
+    #hidden-team
+      //tom
+      .team-element
+        .avatar
+          = image_tag 'tom.jpg'
+          .icon1
+            = image_tag 'fb-icon.png'
+          .icon2
+            = image_tag 'twitter-icon.png'
+          .icon3
+            = image_tag 'linkendin-icon.png'
+        h5.name-member Tom Dang
+        h6.role-member Back-end developer
+      //jason
+      .team-element
+        .avatar
+          = image_tag 'jason.jpg'
+          .icon1
+            = image_tag 'fb-icon.png'
+          .icon2
+            = image_tag 'twitter-icon.png'
+          .icon3
+            = image_tag 'linkendin-icon.png'
+        h5.name-member Jason Nguyen
+        h6.role-member Back-end developer
+        //jon
+      .team-element
+        .avatar
+          = image_tag 'john.jpg'
+          .icon1
+            = image_tag 'fb-icon.png'
+          .icon2
+            = image_tag 'twitter-icon.png'
+          .icon3
+            = image_tag 'linkendin-icon.png'
+        h5.name-member Jonh Nguyen
+        h6.role-member iOS developer
+        //luke
+      .team-element
+        .avatar
+          = image_tag 'luke.jpg'
+          .icon1
+            = image_tag 'fb-icon.png'
+          .icon2
+            = image_tag 'twitter-icon.png'
+          .icon3
+            = image_tag 'linkendin-icon.png'
+        h5.name-member Luke Nguyen
+        h6.role-member iOS developer
+        //richard
+      .team-element
+        .avatar
+          = image_tag 'Richard.jpg'
+          .icon1
+            = image_tag 'fb-icon.png'
+          .icon2
+            = image_tag 'twitter-icon.png'
+          .icon3
+            = image_tag 'linkendin-icon.png'
+        h5.name-member Richard Nguyen
+        h6.role-member Back-end developer
+        //ken
+      .team-element
+        .avatar
+          = image_tag 'ken.jpg'
+          .icon1
+            = image_tag 'fb-icon.png'
+          .icon2
+            = image_tag 'twitter-icon.png'
+          .icon3
+            = image_tag 'linkendin-icon.png'
+        h5.name-member Ken Nguyen
+        h6.role-member Back-end developer
+        //lucas
+      .team-element
+        .avatar
+          = image_tag 'lucas.jpg'
+          .icon1
+            = image_tag 'fb-icon.png'
+          .icon2
+            = image_tag 'twitter-icon.png'
+          .icon3
+            = image_tag 'linkendin-icon.png'
+        h5.name-member Lucas Nguyen
+        h6.role-member Back-end developer
+        //patrick
+      .team-element
+        .avatar
+          = image_tag 'patrick.jpg'
+          .icon1
+            = image_tag 'fb-icon.png'
+          .icon2
+            = image_tag 'twitter-icon.png'
+          .icon3
+            = image_tag 'linkendin-icon.png'
+        h5.name-member Patrick Nguyen
+        h6.role-member Back-end developer
+
+  button.btn-details[id="show-more-team"] Show more
+  button.btn-details[id="show-less-team"] Show less
+
+javascript:
+  var elShowmore = document.getElementById('show-more-team');
+  var elShowless = document.getElementById('show-less-team');
+
+  function showMoreMember() {
+    var elHidden = document.getElementById('hidden-team');
+    elHidden.style.display = "block";
+    elShowmore.style.display = "none";
+    elShowless.style.display = "block";
+  }
+
+  function showLessMember() {
+    var elHidden = document.getElementById('hidden-team');
+    elHidden.style.display = "none";
+    elShowmore.style.display = "block";
+    elShowless.style.display = "none";
+  }
+
+  elShowmore.addEventListener('click', showMoreMember, false);
+  elShowless.addEventListener('click', showLessMember, false);
+
+
