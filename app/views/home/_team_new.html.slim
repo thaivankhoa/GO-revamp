@@ -147,8 +147,19 @@
         h5.name-member Patrick Nguyen
         h6.role-member Back-end developer
 
-  button.btn-details[id="show-more-team"] Show more
-  button.btn-details[id="show-less-team"] Show less
+  button[id="show-more-team"] Show more
+  button[id="show-less-team"] Show less
+
+  .team-banner
+    #triangle-down
+    .banner-content
+      .logo
+        = image_tag 'logo-with-text-white.png'
+      .title
+        | JOIN OUR TEAM
+      .slogan
+        p We grow up, improve and build a friendly professional team. We're eager to learn new technologies and make them into real life.
+      button[id="Career-Opp"] CAREER OPPORTUNITIES
 
 javascript:
   var elShowmore = document.getElementById('show-more-team');
