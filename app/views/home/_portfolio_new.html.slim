@@ -4,15 +4,12 @@
       .nav-element[id="all"]
         li.active
           | All
-      .nav-element[id="ruby"]
+      .nav-element[id="web"]
         li.deactive
-          | Ruby
-      .nav-element[id="nodejs"]
+          | Web
+      .nav-element[id="mobile"]
         li.deactive
-          | NodeJS
-      .nav-element[id="ios"]
-        li.deactive
-          | iOS
+          | Mobile
 
   .portfolio-content
     .portfolio-group[id="all-group"]
@@ -42,7 +39,7 @@
             .description
               p Don't worry, all the products you purchase are delivered fresh. Check out our FAQ page for detailed information on how we work!
 
-    .portfolio-group[id="ruby-group"]
+    .portfolio-group[id="web-group"]
 
         .portfolio-element[id="idea"]
           .introduction
@@ -69,7 +66,7 @@
             .description
               p Don't worry, all the products you purchase are delivered fresh. Check out our FAQ page for detailed information on how we work!
 
-    .portfolio-group[id="nodejs-group"]
+    .portfolio-group[id="mobile-group"]
 
         .portfolio-element[id="luxufy"]
           .introduction
@@ -95,93 +92,48 @@
               span Ware House NODE
             .description
               p Don't worry, all the products you purchase are delivered fresh. Check out our FAQ page for detailed information on how we work!
-
-    .portfolio-group[id="ios-group"]
-
-        .portfolio-element[id="built"]
-          .introduction
-            .title
-              span Ware House IOS
-            .description
-              p Don't worry, all the products you purchase are delivered fresh. Check out our FAQ page for detailed information on how we work!
-        .portfolio-element[id="built"]
-          .introduction
-            .title
-              span Ware House IOS
-            .description
-              p Don't worry, all the products you purchase are delivered fresh. Check out our FAQ page for detailed information on how we work!
-        .portfolio-element[id="built"]
-          .introduction
-            .title
-              span Ware House IOS
-            .description
-              p Don't worry, all the products you purchase are delivered fresh. Check out our FAQ page for detailed information on how we work!
-        .portfolio-element[id="built"]
-          .introduction
-            .title
-              span Ware House IOS
-            .description
-              p Don't worry, all the products you purchase are delivered fresh. Check out our FAQ page for detailed information on how we work!
-
-
-
 
 javascript:
   var elAll = document.getElementById('all');
-  var elRuby = document.getElementById('ruby');
-  var elNodejs = document.getElementById('nodejs');
-  var eliOS = document.getElementById('ios');
+  var elWeb = document.getElementById('web');
+  var elMobile = document.getElementById('mobile');
   var elAllGroup = document.getElementById('all-group');
-  var elRubyGroup = document.getElementById('ruby-group');
-  var elNodejsGroup = document.getElementById('nodejs-group');
-  var elIOSGroup = document.getElementById('ios-group');
+  var elWebGroup = document.getElementById('web-group');
+  var elMobileGroup = document.getElementById('mobile-group');
 
   elAllGroup.style.display = 'block';
-  elRubyGroup.style.display = 'none';
-  elNodejsGroup.style.display = 'none';
-  elIOSGroup.style.display = 'none';
+  elWebGroup.style.display = 'none';
+  elMobileGroup.style.display = 'none';
+
   function changeState() {
     var elNav = document.getElementsByTagName('li');
     elAll.firstChild.className = 'deactive';
-    elRuby.firstChild.className = 'deactive';
-    elNodejs.firstChild.className = 'deactive';
-    eliOS.firstChild.className = 'deactive';
+    elWeb.firstChild.className = 'deactive';
+    elMobile.firstChild.className = 'deactive';
     this.firstChild.className = "active";
 
     if (elAll.firstChild.className == 'active')
     {
         elAllGroup.style.display = 'block';
-        elRubyGroup.style.display = 'none';
-        elNodejsGroup.style.display = 'none';
-        elIOSGroup.style.display = 'none';
+        elWebGroup.style.display = 'none';
+        elMobileGroup.style.display = 'none';
     }
 
-        if (elRuby.firstChild.className == 'active')
+        if (elWeb.firstChild.className == 'active')
     {
         elAllGroup.style.display = 'none';
-        elRubyGroup.style.display = 'block';
-        elNodejsGroup.style.display = 'none';
-        elIOSGroup.style.display = 'none';
+        elWebGroup.style.display = 'block';
+        elMobileGroup.style.display = 'none';
     }
 
-        if (elNodejs.firstChild.className == 'active')
+        if (elMobile.firstChild.className == 'active')
     {
         elAllGroup.style.display = 'none';
-        elRubyGroup.style.display = 'none';
-        elNodejsGroup.style.display = 'block';
-        elIOSGroup.style.display = 'none';
-    }
-
-        if (eliOS.firstChild.className == 'active')
-    {
-        elAllGroup.style.display = 'none';
-        elRubyGroup.style.display = 'none';
-        elNodejsGroup.style.display = 'none';
-        elIOSGroup.style.display = 'block';
+        elWebGroup.style.display = 'none';
+        elMobileGroup.style.display = 'block';
     }
   }
 
   elAll.addEventListener('click', changeState, false);
-  elRuby.addEventListener('click', changeState, false);
-  elNodejs.addEventListener('click', changeState, false);
-  eliOS.addEventListener('click', changeState, false);
+  elMobile.addEventListener('click', changeState, false);
+  elWeb.addEventListener('click', changeState, false);
