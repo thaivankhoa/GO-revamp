@@ -729,7 +729,7 @@ button{
   width: 100%;
   background-color: white;
   .navigation-bar{
-    width: 30%;
+    width: 25%;
     margin: auto;
     ul{
         padding: 0px !important;
@@ -790,7 +790,7 @@ button{
           text-align: center;
           height: 100%;
           .title{
-            margin-top: 100px;
+            margin-top: 80px;
             font-weight: 600;
             color: white;
             margin-bottom: 15px;
@@ -811,7 +811,7 @@ button{
         .introduction{
           position: absolute;
           display: inline-block;
-          background: rgba(0, 0, 0, 0.9);
+          background: rgba(0, 0, 0, 0.8);
           .title{
             opacity: 1;
           }
@@ -2797,7 +2797,7 @@ ol.carousel-indicators li.active {
 #mywork{
   background-image: url(asset_path('mobile-mywork.png'));
   background-size: cover;
-  background-position: center;
+  background-position: 0px -150px;
 }
 
 #app2rist{
@@ -2808,13 +2808,17 @@ ol.carousel-indicators li.active {
 #nattrart{
   background-image: url(asset_path('mobile-nattrart.png'));
   background-size: cover;
-  background-position: center;
+  background-position: 0px -150px;
 }
 
 #built{
   background-image: url(asset_path('mobile-built.jpg'));
   background-size: cover;
-  background-position: center;
+  background-position: 50px 50px;
 }
 
+#booqed{
+  background-image: url(asset_path('mobile-booqed.png'));
+  background-size: cover;
+}
 
