@@ -810,7 +810,7 @@ button{
         .introduction{
           position: absolute;
           display: inline-block;
-          background: rgba(0, 0, 0, 0.5);
+          background: rgba(0, 0, 0, 0.8);
           .title{
             opacity: 1;
           }
@@ -2739,27 +2739,66 @@ ol.carousel-indicators li.active {
   margin-bottom: 5px;
 }
 
-#ware-house{
-  background-image: url(asset_path('ideaburn-large.jpg'));
+#giveasia{
+  background-image: url(asset_path('all-GIVE.asia-all.png'));
+  background-size: cover;
 }
 
-#luxufy{
-  background-image: url(asset_path('luxenomad.jpg'));
+#idea-burn{
+  background-image: url(asset_path('all-ideaburn-all.jpg'));
+  background-size: cover;
 }
 
-#idea{
- background-image: url(asset_path('tone.jpg'));
-}
-
-#built{
-  background-image: url(asset_path('bg-slider.jpg'));
+#techlist{
+  background-image: url(asset_path('all-techlist-all.jpg'));
   background-position: center;
 }
 
-.hidden-port{
-
+#weath{
+  background-image: url(asset_path('all-weath.png'));
+  background-size: cover;
 }
 
-.show-port{
+/*Web*/
 
+#iaodai{
+  background-image: url(asset_path('web-iaodai.png'));
+  background-size: cover;
 }
+
+#corpzap{
+  background-image: url(asset_path('web-CorpZap.png'));
+  background-size: cover;
+}
+
+#student{
+  background-image: url(asset_path('web-StudentLifeCare.png'));
+  background-size: cover;
+}
+
+#luxenomad{
+  background-image: url(asset_path('web-luxenomad.jpg'));
+  background-size: cover;
+}
+
+/*mobile*/
+#gllu{
+  background-image: url(asset_path('mobile-GLLU.png'));
+  background-size: cover;
+}
+
+#mywork{
+  background-image: url(asset_path('mobile-mywork.png'));
+  background-size: cover;
+}
+
+#app2rist{
+  background-image: url(asset_path('mobile-2ristApp.png'));
+  background-size: cover;
+}
+
+#nattrart{
+  background-image: url(asset_path('mobile-nattrart.png'));
+  background-size: cover;
+}
+
