@@ -119,11 +119,26 @@ button{
 .title-testominal{
   color: #FCB829;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 80px;
   text-transform: uppercase;
   font-weight: 700;
   span{
     font-size: 18px;
+  }
+}
+.testominal-slogan {
+  margin-top: 20px;
+  text-align: center;
+  p{
+    color: #444;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 21px;
+    font-weight: 400;
+    font-family: "Open-sans";
+    text-transform: none;
+    width: 350px;
+    margin: auto;
   }
 }
 
@@ -745,6 +760,60 @@ button{
       }
       li.deactive{
         border: none;
+      }
+    }
+  }
+  /*portfolio-content*/
+  .portfolio-content{
+    width: 100%;
+    height: 350px;
+    .portfolio-group{
+      width: 100%;
+      height: 100%;
+      .portfolio-element{
+        width: 25%;
+        height: 100%;
+        display: inline-block;
+        position: relative;
+        /*background-image: url(asset_path('fawm-web.png'));*/
+        .introduction{
+          transition: opacity 2s ease-in;
+          display: none;
+          background: transparent;
+          /*opacity: 0.3;*/
+          padding: 15px 10px 15px 10px;
+          color: white;
+          text-align: center;
+          height: 100%;
+          .title{
+            margin-top: 100px;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 15px;
+            font-size: 20px;
+            text-transform: uppercase;
+          }
+          .description{
+            p{
+              font-size: 15px;
+              width: 90%;
+              margin: auto;
+            }
+          }
+        }
+      }
+      .portfolio-element:hover {
+        .introduction{
+          position: absolute;
+          display: inline-block;
+          background: rgba(0, 0, 0, 0.5);
+          .title{
+            opacity: 1;
+          }
+          .description{
+            opacity: 1;
+          }
+        }
       }
     }
   }
@@ -1587,6 +1656,7 @@ button{
           border-radius: 1px;
           margin: 0px;
           font-weight: 500;
+          min-height: 120px;
           p{
             margin-right: 0px;
             text-align: left;
@@ -2663,4 +2733,29 @@ ol.carousel-indicators li.active {
   width: 0%;
   margin: auto;
   margin-bottom: 5px;
+}
+
+#ware-house{
+  background-image: url(asset_path('ideaburn-large.jpg'));
+}
+
+#luxufy{
+  background-image: url(asset_path('luxenomad.jpg'));
+}
+
+#idea{
+ background-image: url(asset_path('tone.jpg'));
+}
+
+#built{
+  background-image: url(asset_path('bg-slider.jpg'));
+  background-position: center;
+}
+
+.hidden-port{
+
+}
+
+.show-port{
+
 }
