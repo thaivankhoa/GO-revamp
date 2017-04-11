@@ -799,9 +799,10 @@ button{
           }
           .description{
             p{
-              font-size: 15px;
-              width: 90%;
+              font-size: 14px;
+              width: 85%;
               margin: auto;
+              font-family: 'rubocop';
             }
           }
         }
@@ -810,7 +811,7 @@ button{
         .introduction{
           position: absolute;
           display: inline-block;
-          background: rgba(0, 0, 0, 0.8);
+          background: rgba(0, 0, 0, 0.9);
           .title{
             opacity: 1;
           }
@@ -2761,13 +2762,13 @@ ol.carousel-indicators li.active {
 
 /*Web*/
 
-#iaodai{
-  background-image: url(asset_path('web-iaodai.png'));
+#blix{
+  background-image: url(asset_path('web-blix.jpg'));
   background-size: cover;
 }
 
 #corpzap{
-  background-image: url(asset_path('web-CorpZap.png'));
+  background-image: url(asset_path('web-corzp.jpg'));
   background-size: cover;
 }
 
@@ -2781,6 +2782,12 @@ ol.carousel-indicators li.active {
   background-size: cover;
 }
 
+#luxufy{
+  background-image: url(asset_path('web-luxyfy.png'));
+  background-size: cover;
+}
+
+
 /*mobile*/
 #gllu{
   background-image: url(asset_path('mobile-GLLU.png'));
@@ -2790,6 +2797,7 @@ ol.carousel-indicators li.active {
 #mywork{
   background-image: url(asset_path('mobile-mywork.png'));
   background-size: cover;
+  background-position: center;
 }
 
 #app2rist{
@@ -2800,5 +2808,13 @@ ol.carousel-indicators li.active {
 #nattrart{
   background-image: url(asset_path('mobile-nattrart.png'));
   background-size: cover;
+  background-position: center;
 }
+
+#built{
+  background-image: url(asset_path('mobile-built.jpg'));
+  background-size: cover;
+  background-position: center;
+}
+
 
