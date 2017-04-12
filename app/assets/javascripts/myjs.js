@@ -76,7 +76,7 @@ $('document').ready(function() {
       }
 
 
-      if ($(this).scrollTop() > $('.slider-section').offset().top - 60){
+      if ($(this).scrollTop() > $('.slider-content').offset().top - 60){
 
         current_menu.removeClass('active');
         current_menu = $('#home');
