@@ -94,6 +94,22 @@
             .description
               p Get paid to tell brand stories and grow your influence. Become a Narratr today.
 
+#detail-project
+  #bg-project
+  .image-large
+    = image_tag 'details-techlist.png'
+    = image_tag 'details-ideaburn.jpg'
+    = image_tag 'details-give.png'
+    = image_tag 'details-weath.png'
+    = image_tag 'details-corpzap.png'
+    = image_tag 'details-luxufy.png'
+    = image_tag 'details-student.png'
+    = image_tag 'details-luxenomad.jpg'
+    = image_tag 'details-booqed.png'
+    = image_tag 'details-mywork.png'
+    = image_tag 'details-2rist.png'
+    = image_tag 'details-narratrs.png'
+
 javascript:
   var elAll = document.getElementById('all');
   var elWeb = document.getElementById('web');
@@ -136,5 +152,112 @@ javascript:
   }
 
   elAll.addEventListener('click', changeState, false);
+
   elMobile.addEventListener('click', changeState, false);
   elWeb.addEventListener('click', changeState, false);
+
+  // show details
+  var all = document.getElementById('all-group');
+  var details = document.getElementById('detail-project');
+
+  var elAll1 = document.getElementById('techlist');
+  var elAll2 = document.getElementById('idea-burn');
+  var elAll3 = document.getElementById('giveasia');
+  var elAll4 = document.getElementById('weath');
+
+  var elWeb1 = document.getElementById('corpzap');
+  var elWeb2 = document.getElementById('luxufy');
+  var elWeb3 = document.getElementById('student');
+  var elWeb4 = document.getElementById('luxenomad');
+
+  var elMobile1 = document.getElementById('booqed');
+  var elMobile2 = document.getElementById('mywork');
+  var elMobile3 = document.getElementById('app2rist');
+  var elMobile4 = document.getElementById('nattrart');
+
+  function all1Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[0].style.display = "block"
+  }
+
+  function all2Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[1].style.display = "block"
+  }
+
+  function all3Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[2].style.display = "block"
+  }
+
+  function all4Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[3].style.display = "block"
+  }
+
+  function web1Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[4].style.display = "block"
+  }
+
+  function web2Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[5].style.display = "block"
+  }
+
+  function web3Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[6].style.display = "block"
+  }
+
+  function web4Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[7].style.display = "block"
+  }
+
+  function mobile1Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[8].style.display = "block"
+  }
+
+  function mobile2Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[9].style.display = "block"
+  }
+
+  function mobile3Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[10].style.display = "block"
+  }
+
+  function mobile4Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[11].style.display = "block"
+  }
+
+
+  elAll1.addEventListener('click', all1Click, false);
+  elAll2.addEventListener('click', all2Click, false);
+  elAll3.addEventListener('click', all3Click, false);
+  elAll4.addEventListener('click', all4Click, false);
+
+  elWeb1.addEventListener('click', web1Click, false);
+  elWeb2.addEventListener('click', web2Click, false);
+  elWeb3.addEventListener('click', web3Click, false);
+  elWeb4.addEventListener('click', web4Click, false);
+
+  elMobile1.addEventListener('click', mobile1Click, false);
+  elMobile2.addEventListener('click', mobile2Click, false);
+  elMobile3.addEventListener('click', mobile3Click, false);
+  elMobile4.addEventListener('click', mobile4Click, false);
+  //return page
+  var bg = document.getElementById('bg-project');
+  function returnClick (){
+    details.style.display = "none";
+    for (var i =0; i<details.lastChild.childNodes.length;i++)
+    {
+      details.lastChild.childNodes[i].style.display = "none";
+    }
+  }
+
+  bg.addEventListener('click', returnClick, false);

@@ -96,7 +96,7 @@ $('document').ready(function() {
         }
       }
 
-      if ($(this).scrollTop() > $('.porfolio-section').offset().top - 60){
+      if ($(this).scrollTop() > $('.portfolio-details').offset().top - 60){
         current_menu.removeClass('active');
         current_menu = $('#porfolio');
         current_menu.addClass('active');
@@ -186,7 +186,7 @@ $('document').ready(function() {
       current_menu = $('#' + index);
       current_menu.addClass('active');
 
-      
+
     });
 
     //Btn View About Us
@@ -196,7 +196,7 @@ $('document').ready(function() {
     });
 
     //Btn See Details
-    $('.btn-details ').click(function() {
+    $('.btn-details').click(function() {
       var navbar = window.matchMedia("screen and (max-width: 1024px)");
       var about_section = 0;
       if(navbar.matches){
