@@ -4,6 +4,8 @@
 @import "font-awesome";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+
 // Place all the styles related to the Home controller here.
 // They will automatically be extendd in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
@@ -466,7 +468,7 @@ button{
 }
 @media screen and (max-width: 968px){
   .slider-section{
-    height: 600px;
+    height: 760px;
   }
   .slider-content{
     margin-top: 200px;
@@ -739,6 +741,7 @@ button{
         text-decoration: none;
         color: #e6e6e6;
         li{color: #8a8a8a;}
+
     }
     .nav-element{
       text-align: center;
@@ -2103,6 +2106,26 @@ button{
       font-size: 18px;
     }
   }
+
+  .carousel-control:hover{
+    color: #FCB829;
+    text-decoration: none;
+    background: transparent;
+  }
+  .carousel-control.right{
+    background: transparent;
+    background-image: none;
+    color: #FCB829;
+    text-align: right;
+    opacity: 1;
+  }
+  .carousel-control.left{
+    background: transparent;
+    background-image: none;
+    color: #FCB829;
+    opacity: 1;
+  }
+
   .introduce-clients{
     width: 50%;
     margin: auto;
@@ -2118,7 +2141,7 @@ button{
     }
   }
   .partner-content{
-    width: 70%;
+    width: 100%;
     margin: auto;
     .partner-element{
       width: 25%;
@@ -2140,6 +2163,11 @@ button{
         background-color: transparent;
       }
     }
+    .carousel-inner{
+      width: 70%;
+      margin: auto;
+    }
+
     .partner-small{
       img{
         height: 60%;
