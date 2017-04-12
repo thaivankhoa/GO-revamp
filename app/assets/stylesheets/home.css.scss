@@ -782,7 +782,41 @@ button{
         height: 100%;
         display: inline-block;
         position: relative;
+        z-index: 1;
         /*background-image: url(asset_path('fawm-web.png'));*/
+        .icon1{
+          position: absolute;
+          top: 25px;
+          z-index: 2;
+          display: none;
+          img{
+            height: 40px;
+            width: 40px;
+            opacity: 0.7;
+          }
+        }
+        .icon2{
+          position: absolute;
+          top: 80px;
+          z-index: 2;
+          display: none;
+          img{
+            height: 40px;
+            width: 40px;
+            opacity: 0.7;
+          }
+        }
+        .icon3{
+          position: absolute;
+          top: 135px;
+          z-index: 2;
+          display: none;
+          img{
+            height: 40px;
+            width: 40px;
+            opacity: 0.7;
+          }
+        }
         .introduction{
           transition: opacity 2s ease-in;
           display: none;
@@ -812,6 +846,7 @@ button{
       }
       .portfolio-element:hover {
         .introduction{
+          animation: fadein 0.5s;
           position: absolute;
           display: inline-block;
           background: rgba(0, 0, 0, 0.8);
@@ -821,6 +856,10 @@ button{
           .description{
             opacity: 1;
           }
+        }
+        .icon1, .icon2, .icon3 {
+          display: block;
+          animation: fadein 1.5s;
         }
       }
     }
@@ -1928,7 +1967,7 @@ button{
             height: 40px;
             width: 40px;
           }
-         }
+        }
         .icon3{
           position: absolute;
           top: 135px;

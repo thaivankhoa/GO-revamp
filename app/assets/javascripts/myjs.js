@@ -96,7 +96,7 @@ $('document').ready(function() {
         }
       }
 
-      if ($(this).scrollTop() > $('.portfolio-details').offset().top - 60){
+      if ($(this).scrollTop() > $('.portfolio-section').offset().top - 60){
         current_menu.removeClass('active');
         current_menu = $('#porfolio');
         current_menu.addClass('active');
@@ -116,7 +116,7 @@ $('document').ready(function() {
           $('.portfolio-info').delay(600).animate({'right':'0px','opacity':'1'}, 500);
         }
       }
-      if ($(this).scrollTop() > $('.about-section').offset().top - 60){
+      if ($(this).scrollTop() > $('.about-element').offset().top - 60){
 
         current_menu.removeClass('active');
         current_menu = $('#about');
