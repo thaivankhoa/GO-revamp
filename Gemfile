@@ -65,7 +65,7 @@ gem "font-awesome-rails"
 #add image to user gem
 gem 'carrierwave'
 gem 'mini_magick'
-gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
+gem "paperclip", '<= 4.3.0'
 gem "aws-sdk", '>= 2.0.0'
 gem "ckeditor"
 gem 'simple_form'
