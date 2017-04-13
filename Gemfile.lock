@@ -254,6 +254,7 @@ PLATFORMS
 DEPENDENCIES
   aws-sdk (>= 2.0.0)
   bootstrap-sass (~> 3.3.5)
+  bundler (~> 1.14.6)
   byebug
   carrierwave
   ckeditor
