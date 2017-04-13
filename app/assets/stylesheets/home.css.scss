@@ -592,6 +592,15 @@ button{
     position: relative;
     padding-bottom: 0px;
   }
+  .service-element:hover{
+    .title-service{
+      color: #FCB829;
+    }
+    .image-service{
+      border: 1px solid #fdd47e;
+      box-shadow: 0px 5px 2px #fdd47e;
+    }
+  }
   .service-element{
     width: 20%;
     padding: 0px 10px 10px;
@@ -634,11 +643,13 @@ button{
       }
     }
     .title-service{
-      color: #FCB829;
+/*      color: #FCB829;
+*/
+      color: #444;
       text-transform: uppercase;
       margin-top: 80px;
       font-size: 12px;
-      font-weight: 500;
+      font-weight: 600;
     }
     .content-service{
       /*color: #444;*/
