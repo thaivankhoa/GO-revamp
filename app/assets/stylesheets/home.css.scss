@@ -12,7 +12,7 @@
 body {
   width: 100%;
   height: 100%;
-  font-family: "Roboto";
+  font-family: 'Roboto', 'Open Sans';
   background: black;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -137,7 +137,7 @@ button{
     letter-spacing: 0.5px;
     line-height: 21px;
     font-weight: 400;
-    font-family: "Roboto";
+    font-family: 'Roboto', 'Open Sans';
     text-transform: none;
     width: 350px;
     margin: auto;
@@ -158,7 +158,7 @@ button{
   text-align: center;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Roboto";
+  font-family: 'Roboto', 'Open Sans';
   line-height: 20px;
 }
 
@@ -173,7 +173,7 @@ button{
 //Navbar
 .header-section{
   width: 100%;
-  padding: 10px 250px 10px 150px;
+  padding: 5px 250px 0px 150px;
   z-index: 10;
   position: absolute;
   background-color: #f3c339;
@@ -229,7 +229,7 @@ button{
         font-weight: 600;
         /*font-weight: 300;*/
         text-transform: uppercase;
-        font-family: "Roboto";
+        font-family: 'Roboto', 'Open Sans';
         &:hover, &.active{
           text-decoration: underline;
         }
@@ -421,7 +421,7 @@ button{
   }
 }
 .slider-content{
-  margin-top: 300px;
+  margin-top: 290px;
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
@@ -444,7 +444,7 @@ button{
       color: white;
       padding: 0px 10%;
       /*font-weight: 400;*/
-      font-size: 26px;
+      font-size: 30px;
       font-weight: bold;
       color: #f3c339;
 
@@ -454,7 +454,7 @@ button{
     background-color: transparent;
     color: white;
     padding: 8px 20px;
-    margin-top: 25px;
+    margin-top: 35px;
     opacity: 0;
     transition: 0.2s;
     border-radius: 17px;
@@ -668,7 +668,7 @@ button{
       font-size: 12px;
       font-weight: 400;
       letter-spacing: 0.8px;
-      font-family: 'Arial';
+      font-family: 'Roboto', 'Open Sans';
     }
   }
 }
@@ -880,7 +880,7 @@ button{
               font-weight: 500;
               width: 85%;
               margin: auto;
-              font-family: 'rubocop';
+              font-family: 'Roboto', 'Open Sans';
             }
           }
         }
@@ -1340,7 +1340,7 @@ button{
     text-align: center;
     line-height: 40px;
     margin-top: 0px;
-    font-family: 'Arial';
+    font-family: 'Roboto', 'Open Sans';
     strong{
       text-transform: uppercase;
     }
@@ -1487,7 +1487,7 @@ button{
         letter-spacing: 0.5px;
         line-height: 21px;
         font-weight: 400;
-        font-family: "Roboto";
+        font-family: 'Roboto', 'Open Sans';
       }
     }
 
@@ -1515,7 +1515,7 @@ button{
         letter-spacing: 0.5px;
         line-height: 20px;
         font-weight: 300;
-        font-family: "Roboto";
+        font-family: 'Roboto', 'Open Sans';
       }
     }
     .rule-content{
@@ -1556,7 +1556,7 @@ button{
             margin-bottom: 5px;
           }
           p{
-            font-family: "Roboto";
+            font-family: 'Roboto', 'Open Sans';
             font-weight: 300;
             color: #444;
             margin-top: 0px;
@@ -1590,7 +1590,7 @@ button{
         letter-spacing: 0.5px;
         line-height: 20px;
         font-weight: 300;
-        font-family: "Roboto";
+        font-family: 'Roboto', 'Open Sans';
       }
     }
   }
@@ -1609,7 +1609,7 @@ button{
   background-size: 100%;
   position: relative;
   text-align: center;
-  font-family: 'Roboto';
+  font-family: 'Roboto', 'Open Sans';
     .banner-group{
       width: 70%;
       margin: auto;
@@ -1753,7 +1753,7 @@ button{
             color: white;
             font-size: 13px;
             overflow: hidden;
-            font-family: "Roboto";
+            font-family: 'Roboto', 'Open Sans';
             font-style: italic;
             a{
               color:  #296dfc;
@@ -1904,11 +1904,11 @@ button{
 }
 .company-customer{
   margin-top: 0px;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   color: black;
   font-style: italic;
   font-weight: 400;
-  font-family: "Roboto";
+  font-family: 'Roboto', 'Open Sans';
 }
 
 .team-section{
@@ -1975,7 +1975,7 @@ button{
       letter-spacing: 0.5px;
       line-height: 20px;
       font-weight: 400;
-      font-family: "Roboto";
+      font-family: 'Roboto', 'Open Sans';
     }
   }
   .team-content{
@@ -2091,7 +2091,7 @@ button{
           letter-spacing: 0.5px;
           line-height: 21px;
           font-weight: 400;
-          font-family: "Roboto";
+          font-family: 'Roboto', 'Open Sans';
         }
       }
       button{
@@ -2229,7 +2229,7 @@ button{
       letter-spacing: 0.5px;
       line-height: 20px;
       font-weight: 400;
-      font-family: "Roboto";
+      font-family: 'Roboto', 'Open Sans';
     }
   }
   .partner-content{
@@ -2513,7 +2513,7 @@ button{
     .touch-introduce{
       margin-top: 50px;
       margin-bottom: 50px;
-      font-family: "Roboto";
+      font-family: 'Roboto', 'Open Sans';
       width: 40%;
       text-align: center;
       margin: auto;
@@ -2699,7 +2699,7 @@ button{
           width: 100%;
         }
         .subs-input{
-          input{background-color: #e6e6e6;}
+          input{background-color: #e6e6e6; border-radius: 5px;}
         }
         .subs-submit{
           input{background-color: #FCB829; color: white; font-size: 11px; border: none;width: 100px; height: 25px;}
@@ -2946,3 +2946,50 @@ ol.carousel-indicators li.active {
   background-size: cover;
 }
 
+.tech-section{
+  width: 100%;
+  text-align: center;
+  background-image: url(asset_path('portfolio.png'));
+  background-position: bottom;
+  background-size: cover;
+  #triangle-down{
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid #f7f7f7;
+    width: 0%;
+    margin: auto;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  #triangle-up{
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid white;
+    width: 0%;
+    margin: auto;
+  }
+  .tech-title{
+    font-weight: 700;
+    font-size: 18px;
+    color: #FCB829;
+  }
+  .tech-introduce{
+    margin-bottom: 5px;
+  }
+  .tech-group{
+    margin-top: 10px;
+    width: 70%;
+    margin: auto;
+    .tech-elements{
+      width: 16%;
+      display: inline-block;
+      margin-left: 2%;
+      margin-right: 2%;
+      margin-bottom: 15px;
+      img{
+      }
+    }
+  }
+}
