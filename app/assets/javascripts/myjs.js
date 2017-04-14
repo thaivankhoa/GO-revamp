@@ -18,6 +18,7 @@ $('document').ready(function() {
     //Animation Content Slider
     $('.slider-title').css({'animation':'slider_content 0.5s forwards','animation-delay':'0.8s'});
     $('.slider-content > button').delay(1500).animate({'opacity':'1'},1000);
+    $('.slider-content > button.btn-customs').delay(1500).animate({'opacity':'1'},1000);
 
     //Set position project element
     var left = 60;
@@ -91,16 +92,16 @@ $('document').ready(function() {
       if ($(this).scrollTop() > $('.service-section').offset().top - 300){
         if(navbar.matches){
           $('.service-element:nth-child(1)').css({'margin-left':'0px','opacity':'1','transition':'1s'});
-          $('.service-element:nth-child(2)').css({'margin-top':'100px','opacity':'1','transition':'1s'});
+          $('.service-element:nth-child(2)').css({'margin-top':'100px','opacity':'1','transition':'1s 0.25s'});
           $('.service-element:nth-child(3)').css({'margin-top': '100px','opacity':'1','transition':'1s 0.5s'});
-          $('.service-element:nth-child(4)').css({'margin-top':'100px', 'margin-left': '0px', 'opacity':'1','transition':'1s'});
+          $('.service-element:nth-child(4)').css({'margin-top':'100px', 'margin-left': '0px', 'opacity':'1','transition':'1s 0.25s'});
           $('.service-element:nth-child(5)').css({'margin-right':'0px','opacity':'1','transition':'1s'});
         }
       }
 
       if ($(this).scrollTop() > $('.portfolio-section').offset().top - 60){
         current_menu.removeClass('active');
-        current_menu = $('#porfolio');
+        current_menu = $('#portfolio');
         current_menu.addClass('active');
       }
       // if ($(this).scrollTop() > $('.porfolio-section').offset().top - 300){
@@ -118,7 +119,7 @@ $('document').ready(function() {
       //     $('.portfolio-info').delay(600).animate({'right':'0px','opacity':'1'}, 500);
       //   }
       //}
-      if ($(this).scrollTop() > $('.about-element').offset().top - 60){
+      if ($(this).scrollTop() > $('.about-section').offset().top - 60){
 
         current_menu.removeClass('active');
         current_menu = $('#about');
@@ -194,6 +195,11 @@ $('document').ready(function() {
     //Btn View About Us
     $('.btn-view').click(function(){
       var current_top = $('.about-section').offset().top - 100;
+      $('html, body').animate({ scrollTop: current_top }, 1000);
+    });
+    //down-btn-custom
+    $('.btn-customs').click(function(){
+      var current_top = $('.service-section').offset().top - 60;
       $('html, body').animate({ scrollTop: current_top }, 1000);
     });
 
