@@ -801,12 +801,35 @@ button{
   .portfolio-content{
     width: 100%;
     height: 350px;
+    .carousel-inner{
+      width: 100%;
+      height: 350px;
+      padding: 0px;
+    }
+  .carousel-control, .carousel-control:hover{
+    text-decoration: none;
+    background: transparent;
+    width: 10%;
+  }
+  .carousel-control.right{
+    background: transparent;
+    background-image: none;
+  }
+  .carousel-control.left{
+    background: transparent;
+    background-image: none;
+  }
+    .item{
+      padding: 0px;
+      height: 350px;
+    }
     .portfolio-group{
       width: 100%;
       height: 100%;
       .portfolio-element{
         width: 25%;
         height: 100%;
+
         display: inline-block;
         position: relative;
         z-index: 1;
@@ -856,6 +879,8 @@ button{
           color: white;
           text-align: center;
           height: 100%;
+          z-index: 2;
+          position: absolute;
           .title{
             margin-top: 70px;
             font-weight: 600;
@@ -879,7 +904,8 @@ button{
         .introduction{
           animation: fadein 0.5s;
           position: absolute;
-          display: inline-block;
+          z-index: 2;
+          display: block;
           background: rgba(0, 0, 0, 0.8);
           .title{
             opacity: 1;
@@ -2874,8 +2900,6 @@ ol.carousel-indicators li.active {
   background-size: cover;
 }
 
-/*Web*/
-
 #blix{
   background-image: url(asset_path('web-blix.jpg'));
   background-size: cover;
@@ -2901,8 +2925,6 @@ ol.carousel-indicators li.active {
   background-size: cover;
 }
 
-
-/*mobile*/
 #gllu{
   background-image: url(asset_path('mobile-GLLU.png'));
   background-size: cover;
@@ -2924,17 +2946,144 @@ ol.carousel-indicators li.active {
   background-size: cover;
   background-position: 0px -150px;
 }
-
-#built{
-  background-image: url(asset_path('mobile-built.jpg'));
+/*web*/
+#corpzap-w{
+  background-image: url(asset_path('web-corzp.jpg'));
   background-size: cover;
-  background-position: 50px 50px;
 }
 
+#student-w{
+  background-image: url(asset_path('web-StudentLifeCare.png'));
+  background-size: cover;
+}
+
+#luxenomad-w{
+  background-image: url(asset_path('web-luxenomad.jpg'));
+  background-size: cover;
+}
+
+#luxufy-w{
+  background-image: url(asset_path('web-luxyfy.png'));
+  background-size: cover;
+}
+
+
+/*mobile*/
+#gllu-m{
+  background-image: url(asset_path('mobile-GLLU.png'));
+  background-size: cover;
+}
+
+#mywork-m{
+  background-image: url(asset_path('mobile-mywork.png'));
+  background-size: cover;
+  background-position: 0px -150px;
+}
+
+#app2rist-m{
+  background-image: url(asset_path('mobile-2ristApp.png'));
+  background-size: cover;
+}
+
+#nattrart-m{
+  background-image: url(asset_path('mobile-nattrart.png'));
+  background-size: cover;
+  background-position: 0px -150px;
+
+}
+
+#booqed-m{
+  background-image: url(asset_path('mobile-booqed.png'));
+  background-size: cover;
+}
+/* */
 #booqed{
   background-image: url(asset_path('mobile-booqed.png'));
   background-size: cover;
 }
+
+#artfolo{
+  background-image: url(asset_path('details-artfolo.jpg'));
+  background-size: cover;
+}
+
+#built{
+  background-image: url(asset_path('mobile-built.jpg'));
+  background-size: cover;
+
+}
+
+#cpd{
+  background-image: url(asset_path('details-cpd.jpg'));
+  background-size: cover;
+}
+
+#stage{
+  background-image: url(asset_path('details-stage.png'));
+  background-size: cover;
+}
+
+#fitday{
+  background-image: url(asset_path('details-fit1.jpg'));
+  background-size: cover;
+
+}
+
+#flat{
+  background-image: url(asset_path('details-flat2.png'));
+  background-size: cover;
+}
+
+#gllu{
+  background-image: url(asset_path('details-gllu.png'));
+  background-size: cover;
+  background-position: -25px 0;
+}
+
+#scope{
+  background-image: url(asset_path('details-scope1.png'));
+  background-size: cover;
+  background-position: -175px 0;
+}
+
+#iadoa{
+  background-image: url(asset_path('details-iadoa.png'));
+  background-size: cover;
+}
+
+#serumi{
+  background-image: url(asset_path('details-serumi.jpg'));
+  background-size: cover;
+}
+
+#study{
+  background-image: url(asset_path('details-study.png'));
+  background-size: cover;
+}
+
+#toned{
+  background-image: url(asset_path('details-toned.png'));
+  background-size: cover;
+}
+
+#tyk{
+  background-image: url(asset_path('details-tyk.png'));
+  background-size: cover;
+}
+
+#war{
+  background-image: url(asset_path('details-war.png'));
+  background-size: cover;
+}
+
+#natt{
+  background-image: url(asset_path('details-narr.png'));
+  background-size: cover;
+  background-position: -175px 0;
+}
+
+
+
 
 .tech-section{
   width: 100%;
