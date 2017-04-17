@@ -104,6 +104,12 @@ $('document').ready(function() {
         current_menu = $('#portfolio');
         current_menu.addClass('active');
       }
+      if ($(this).scrollTop() > $('.feedback-section').offset().top - 60){
+
+        current_menu.removeClass('active');
+        current_menu = $('#feedback');
+        current_menu.addClass('active');
+      }
       // if ($(this).scrollTop() > $('.porfolio-section').offset().top - 300){
       //   if(navbar.matches){
       //     for(var i = 1; i <= 7; i++){
