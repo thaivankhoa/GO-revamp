@@ -374,7 +374,56 @@
                 = image_tag 'cordova-icon.png'
               .icon3
                 = image_tag 'pos-icon.png'
-
+          //ALL GROUP 8
+          .item[id="all-8"]
+            .portfolio-element[id="allstart"]
+              .introduction
+                .title
+                  span Allstartups
+                .description
+                  p This platform is helping community leaders across the world create customised, branded online ecosystems (just like this one in Mongolia and this one for EdTech startups in Asia).
+              .icon1
+                = image_tag 'ruby-icon.png'
+              .icon2
+                = image_tag 'angularjs-icon.png'
+              .icon3
+                = image_tag 'pos-icon.png'
+            .portfolio-element[id="view360"]
+              .introduction
+                .title
+                  span 360 view
+                .description
+                  p 360 view is an app that can view object in paranoma image.
+              .icon1
+                /= image_tag 'laravel-icon.png'
+              .icon2
+                = image_tag 'react-icon.png'
+              .icon3
+                /= image_tag 'mysql-icon.png'
+            .portfolio-element[id="a21"]
+              .introduction
+                .title
+                  span Alex.world
+                .description
+                  p The online marketplace for affordable, direct-from-source, fresh and seasonal premium products from Japan and online networking platform that connects Alliance 21's global partners.
+              .icon1
+                = image_tag 'ruby-icon.png'
+              .icon2
+                = image_tag 'react-icon.png'
+              .icon3
+                = image_tag 'pos-icon.png'
+            .portfolio-element[id="dbs"]
+              .introduction
+                .title
+                  span DBS
+                .description
+                  p DBS app is a property search platform. And DBS is a leading financial services group in Asia, with over 280 branches across 18 markets.
+              .icon1
+                /= image_tag 'ruby-icon.png'
+              .icon2
+                = image_tag 'react-icon.png'
+              .icon3
+                /= image_tag 'pos-icon.png'
         .control
           a.left.carousel-control data-slide="prev" href="#myCarousel-port1" role="button"
             span.glyphicon.glyphicon-chevron-left aria-hidden="true"
@@ -791,7 +840,10 @@
     = image_tag 'details-toned.png'
     = image_tag 'details-tyk.png'
     = image_tag 'details-war.png'
-
+    = image_tag 'details-allstartup.png'
+    = image_tag 'details-360.png'
+    = image_tag 'details-A21.png'
+    = image_tag 'details-dbs2.jpeg'
 
 javascript:
   var elAll = document.getElementById('all');
@@ -854,6 +906,10 @@ javascript:
   var elAll26 = document.getElementById('tyk');
   var elAll27 = document.getElementById('war');
   var elAll28 = document.getElementById('natt');
+  var elAll29 = document.getElementById('allstart');
+  var elAll30 = document.getElementById('view360');
+  var elAll31 = document.getElementById('a21');
+  var elAll32 = document.getElementById('dbs');
   var elAll5 = document.getElementById('corpzap');
   var elAll6 = document.getElementById('luxufy');
   var elAll7 = document.getElementById('student');
@@ -1006,6 +1062,22 @@ javascript:
     details.style.display = "block";
     details.lastChild.childNodes[11].style.display = "block"
   }
+  function all29Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[27].style.display = "block"
+  }
+  function all30Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[28].style.display = "block"
+  }
+  function all31Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[29].style.display = "block"
+  }
+  function all32Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[30].style.display = "block"
+  }
   function mobile1Click(){
     details.style.display = "block";
     details.lastChild.childNodes[8].style.display = "block"
@@ -1150,6 +1222,10 @@ javascript:
   elAll26.addEventListener('click', all26Click, false);
   elAll27.addEventListener('click', all27Click, false);
   elAll28.addEventListener('click', all28Click, false);
+  elAll29.addEventListener('click', all29Click, false);
+  elAll30.addEventListener('click', all30Click, false);
+  elAll31.addEventListener('click', all31Click, false);
+  elAll32.addEventListener('click', all32Click, false);
 
   elMobile1.addEventListener('click', mobile1Click, false);
   elMobile2.addEventListener('click', mobile2Click, false);

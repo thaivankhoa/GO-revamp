@@ -2949,6 +2949,25 @@ ol.carousel-indicators li.active {
   background-size: cover;
   background-position: 0px -150px;
 }
+
+#allstart{
+  background-image: url(asset_path('details-allstartup.png'));
+  background-size: cover;
+  background-position: center;
+}
+#view360{
+  background-image: url(asset_path('details-360.png'));
+  background-size: cover;
+}
+#a21{
+  background-image: url(asset_path('details-A21.png'));
+  background-size: cover;
+}
+#dbs{
+  background-image: url(asset_path('details-dbs.jpeg'));
+  background-size: cover;
+}
+
 /*web*/
 #corpzap-w{
   background-image: url(asset_path('web-corzp.jpg'));
