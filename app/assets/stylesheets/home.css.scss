@@ -2219,22 +2219,20 @@ button{
     }
   }
 
-  .carousel-control:hover{
-    color: #FCB829;
+  .carousel-control, .carousel-control:hover{
     text-decoration: none;
     background: transparent;
+    opacity: 1;
+/*    width: 10%;*/
   }
   .carousel-control.right{
     background: transparent;
     background-image: none;
-    color: #FCB829;
-    text-align: right;
     opacity: 1;
   }
   .carousel-control.left{
     background: transparent;
     background-image: none;
-    color: #FCB829;
     opacity: 1;
   }
 
