@@ -828,6 +828,8 @@ button{
     .portfolio-group{
       width: 100%;
       height: 100%;
+      border-top: 1px solid #e6e6e6;
+      border-bottom: 1px splid #e6e6e6;
       .portfolio-element{
         width: 25%;
         height: 100%;
@@ -2882,27 +2884,27 @@ ol.carousel-indicators li.active {
   margin-bottom: 5px;
 }
 
-#giveasia{
+#giveasia, #giveasia-w{
   background-image: url(asset_path('all-GIVE.asia-all.png'));
   background-size: cover;
 }
 
-#idea-burn{
+#idea-burn, #idea-burn-w{
   background-image: url(asset_path('all-ideaburn-all.jpg'));
   background-size: cover;
 }
 
-#techlist{
+#techlist, #techlist-w{
   background-image: url(asset_path('all-techlist-all.jpg'));
   background-position: center;
 }
 
-#weath{
+#weath, #weath-w{
   background-image: url(asset_path('all-weath.png'));
   background-size: cover;
 }
 
-#blix{
+#blix, #blix-w{
   background-image: url(asset_path('web-blix.jpg'));
   background-size: cover;
 }
@@ -2930,6 +2932,7 @@ ol.carousel-indicators li.active {
 #gllu{
   background-image: url(asset_path('mobile-GLLU.png'));
   background-size: cover;
+  background-position: -25px 0;
 }
 
 #mywork{
@@ -2971,10 +2974,6 @@ ol.carousel-indicators li.active {
 
 
 /*mobile*/
-#gllu-m{
-  background-image: url(asset_path('mobile-GLLU.png'));
-  background-size: cover;
-}
 
 #mywork-m{
   background-image: url(asset_path('mobile-mywork.png'));
@@ -2998,87 +2997,88 @@ ol.carousel-indicators li.active {
   background-image: url(asset_path('mobile-booqed.png'));
   background-size: cover;
 }
+
+#gllu-m{
+  background-image: url(asset_path('mobile-GLLU.png'));
+  background-size: cover;
+  background-position: -25px 0;
+}
+
 /* */
 #booqed{
   background-image: url(asset_path('mobile-booqed.png'));
   background-size: cover;
 }
 
-#artfolo{
+#artfolo, #artfolo-w{
   background-image: url(asset_path('details-artfolo.jpg'));
   background-size: cover;
 }
 
-#built{
+#built, #built-m{
   background-image: url(asset_path('mobile-built.jpg'));
   background-size: cover;
 
 }
 
-#cpd{
+#cpd, #cpd-w{
   background-image: url(asset_path('details-cpd.jpg'));
   background-size: cover;
 }
 
-#stage{
+#stage, #stage-w{
   background-image: url(asset_path('details-stage.png'));
   background-size: cover;
 }
 
-#fitday{
+#fitday, #fitday-m{
   background-image: url(asset_path('details-fit1.jpg'));
   background-size: cover;
-
+  background-position: -40px 0;
 }
 
-#flat{
+#flat, #flat-w{
   background-image: url(asset_path('details-flat2.png'));
   background-size: cover;
 }
 
-#gllu{
-  background-image: url(asset_path('details-gllu.png'));
-  background-size: cover;
-  background-position: -25px 0;
-}
-
-#scope{
+#scope, #scope-m{
   background-image: url(asset_path('details-scope1.png'));
   background-size: cover;
   background-position: -175px 0;
 }
 
-#iadoa{
+#iadoa, #iadoa-w{
   background-image: url(asset_path('details-iadoa.png'));
   background-size: cover;
 }
 
-#serumi{
+#serumi, #serumi-w{
   background-image: url(asset_path('details-serumi.jpg'));
   background-size: cover;
 }
 
-#study{
+#study, #study-w{
   background-image: url(asset_path('details-study.png'));
   background-size: cover;
 }
 
-#toned{
+#toned, #toned-w{
   background-image: url(asset_path('details-toned.png'));
   background-size: cover;
 }
 
-#tyk{
+#tyk, #tyk-w{
   background-image: url(asset_path('details-tyk.png'));
   background-size: cover;
 }
 
-#war{
+#war, #war-w{
   background-image: url(asset_path('details-war.png'));
   background-size: cover;
 }
 
-#natt{
+#natt, #natt-w{
   background-image: url(asset_path('details-narr.png'));
   background-size: cover;
   background-position: -175px 0;
