@@ -23,11 +23,11 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: myapp
-  password: password1
+  username: postgres
+  password: postgres
   host: localhost
   pool: 5
 
 development:
   <<: *default
-  database: all4hr_development
+  database: goldenowl_development
