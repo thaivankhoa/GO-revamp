@@ -531,8 +531,8 @@ button{
       border-top: 1px solid #e6e6e6;
       border-bottom: 1px splid #e6e6e6;
       .portfolio-element{
-        width: 50%;
-        height: 50%;
+        width: 25%;
+        height: 100%;
 
         display: inline-block;
         position: relative;
@@ -704,134 +704,6 @@ button{
       padding: 5px 10px;
       border-radius: 2px;
       margin-top: 40px;
-    }
-  }
-  .portfolio-content{
-    padding: 30px 0px 30px 0px;
-    height: 400px;
-    width: 100%;
-    margin: auto;
-    position: relative;
-    overflow: hidden;
-    .portfolio-element{
-      position: absolute;
-      width: 90%;
-      margin-left: 100%;
-      &:nth-child(2){
-        margin-left: 5%;
-        .image-first{
-          margin-left: -500px;
-          opacity: 0;
-        }
-      }
-      img{
-        width: 50%;
-        height: 300px;
-        float: left;
-        box-shadow: 0px 0px 4px #d7d7d7;
-        &.icon-heart{
-          box-shadow: none;
-        }
-      }
-      .portfolio-info{
-        width: 49%;
-        height: 300px;
-        padding: 20px 30px 20px 20px;
-        margin-left: 1%;
-        float: left;
-        background-color: white;
-        box-shadow: 0px 0px 4px #d7d7d7;
-        position: absolute;
-        right: -500px;
-        opacity: 0;
-        .title-project{
-          float: left;
-          font-weight: 400;
-          font-size: 30px;
-          color: #333;
-          letter-spacing: -0.5px;
-          margin-top: 0px;
-        }
-        button{
-          padding: 5px 20px;
-          float: right;
-          color: white;
-          background: #FCB829;
-          font-size: 14px;
-          transition: 0.2s;
-          &:hover{
-            color: #FCB829;
-            background-color: black;
-          }
-          i{
-            margin-left: 10px;
-          }
-        }
-        p{
-          margin-top: 55px;
-          clear: both;
-          color: #888;
-          font-size: 12px;
-          letter-spacing: 0.3px;
-        }
-        .line-square{
-          list-style: none;
-          width: 48px;
-          margin: 15px auto;
-          padding-left: 0px;
-          li{
-            width: 6px;
-            height: 6px;
-            margin-right: 10px;
-            display: inline-block;
-            background: #FCB829;
-            border-radius: 50%;
-          }
-        }
-        .subtitle-skill{
-          color: #444;
-          font-weight: 700;
-          font-size: 14px;
-          margin-top: 20px;
-          margin-bottom: 18px;
-        }
-        .skill-section{
-          margin-top: 5px;
-          width: 100%;
-          img{
-            width: 15px;
-            margin: 1px 10px 8px 0px;
-            height: 13px;
-            float: left;
-            box-shadow: none;
-          }
-          h6{
-            color: #333;
-            font-size: 13px;
-            margin-top: 0px;
-          }
-        }
-      }
-    }
-    .btn-left, .btn-right{
-      color: #a5a5a5;
-      text-align: center;
-      width: 30px;
-      height: 30px;
-      font-size: 30px;
-      position: absolute;
-      top: 180px;
-      z-index: 2;
-    }
-    .btn-left{
-      margin-right: 30px;
-      float: left;
-      left: 0px;
-    }
-    .btn-right{
-      margin-left: 30px;
-      float: right;
-      right: 10px;
     }
   }
 }
@@ -2421,31 +2293,44 @@ ol.carousel-indicators li.active {
         }
       }
     }
+  }
+  .portfolio-details {
     .portfolio-content{
       height: 680px;
-      .portfolio-element{
-        opacity: 1;
-        width: 90%;
-        padding: 0px 20px;
-        img, .portfolio-info{
-          width: 100%;
-        }
-        img{
-          height: 230px;
-        }
-        &:first-of-type{
-          .image-first{
-            margin-left: 0px;
-            opacity: 1;
+      width: 100%;
+      .portfolio-group {
+        .carousel-inner {
+          height: 550px;
+          .item {
+            height: 100%;
+            .portfolio-element{
+              opacity: 1;
+              width: 50%;
+              height: 50%;
+              padding: 0px 20px;
+              img, .portfolio-info{
+                width: 100%;
+              }
+              img{
+                height: 230px;
+              }
+              &:first-of-type{
+                .image-first{
+                  margin-left: 0px;
+                  opacity: 1;
+                }
+              }
+              .portfolio-info{
+                margin-top: 10px;
+                margin-left: 0px;
+                height: auto;
+                opacity: 1;
+                position: static;
+              }
+            }
           }
         }
-        .portfolio-info{
-          margin-top: 10px;
-          margin-left: 0px;
-          height: auto;
-          opacity: 1;
-          position: static;
-        }
+
       }
     }
   }
