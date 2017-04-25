@@ -1065,6 +1065,12 @@ button{
   .feedback-group{
     width: 80%;
     margin: auto;
+    #mobile-view {
+      display: none;
+      .mobile {
+        width: 100%;
+      }
+    }
     .feedback.element{
       vertical-align: text-top;
       position: relative;
