@@ -811,7 +811,7 @@ button{
       margin-bottom: 30px;
     }
   }
-  .about-element{
+  .experience-content{
     width: 30%;
     padding: 0px 50px 0px 40px;
     float: left;
@@ -889,6 +889,13 @@ button{
   .about-info{
     width: 75%;
     margin: auto;
+    .line{
+      width: 40px;
+      height: 3px;
+      background: #FCB829;
+      margin-top: 7px;
+      margin-bottom: 32px;
+    }
     .introduce-element{
       width: 33.3%;
       margin: auto;
@@ -904,7 +911,7 @@ button{
       }
     }
 
-    .about-element{
+    .experience-content{
       width: 33.3%;
       padding: 0px 20px;
       float: left;
@@ -914,12 +921,6 @@ button{
         color: black;
         margin-top: 0px;
         margin-bottom: 0px;
-      }
-      .line{
-        width: 40px;
-        height: 3px;
-        background: #FCB829;
-        margin-top: 7px;
       }
       p{
         margin-top: 30px;
@@ -943,13 +944,6 @@ button{
         color: black;
         margin-top: 0px;
         margin-bottom: 0px;
-      }
-      .line{
-        width: 40px;
-        height: 3px;
-        background: #FCB829;
-        margin-top: 7px;
-        margin-bottom: 32px;
       }
       .rule-element{
         margin-bottom: 5px;
@@ -984,17 +978,11 @@ button{
       padding: 0px 20px;
       float: right;
       h4{
-      font-size: 14px;
-      font-weight: 600;
-      color: black;
-      margin-top: 0px;
-      margin-bottom: 0px;
-      }
-      .line{
-        width: 40px;
-        height: 3px;
-        background: #FCB829;
-        margin-top: 7px;
+        font-size: 14px;
+        font-weight: 600;
+        color: black;
+        margin-top: 0px;
+        margin-bottom: 0px;
       }
       p{
         margin-top: 30px;
@@ -2005,6 +1993,15 @@ ol.carousel-indicators li.active {
   }
 }
 
+//===============
+// Mobile element
+//===============
+.mobile-element {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
 //=================
 // Responsive style
 //=================
@@ -2143,25 +2140,18 @@ ol.carousel-indicators li.active {
   .introduce-section{
     padding: 60px 100px;
   }
-  .about-section{
-    .about-element{
-      width: 100%;
-      border-right: 1px solid transparent;
-      p{
-        margin-top: 30px;
+  .about-section {
+    .about-info {
+      .introduce-element {
+        width: 80%;
       }
-    }
-    .rule-content{
-      width: 50%;
-      margin-top: 30px;
-      margin-bottom: 50px;
-      padding-right: 30px;
-      .rule-element{
-        margin-bottom: 5px;
+      .experience-content,.rule-content,.mission-content{
+        display: block;
+        width: 100%;
+        p, .rule-element {
+          //display: none;
+        }
       }
-    }
-    .image-about{
-      width: 50%;
     }
   }
   .feedback-section{
@@ -2367,7 +2357,7 @@ ol.carousel-indicators li.active {
     .image-about{
       display: none;
     }
-    .about-element{
+    .experience-content{
       p{
         font-size: 12px;
       }

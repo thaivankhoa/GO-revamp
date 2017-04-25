@@ -1,8 +1,23 @@
 $('document').ready(function() {
-  // Change testominal section on smal devices
+  // Change on small devices
   if ($(window).width() < 992) {
+    // Update testominal section
     $("#myCarousel").css("display", "none");
     $("#mobile-view").css("display", "block");
+
+    /* Update about section */
+    // Hide element content in mobile view
+    $(".experience-content p, .rule-content .rule-list, .mission-content p").addClass("mobile-element");
+    // Show element content on click
+    $(".about-info .title-content").click(function() {
+      this.classList.toggle("active");
+      var hideContent = this.nextElementSibling;
+      if (hideContent.style.maxHeight){
+        hideContent.style.maxHeight = null;
+      } else {
+        hideContent.style.maxHeight = hideContent.scrollHeight + "px";
+      }
+    });
   }
 
   var current_menu = $('.menu-content > li:nth-child(2)');
