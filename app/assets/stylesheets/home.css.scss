@@ -1290,7 +1290,7 @@ button{
       .logo{
         display: block;
         text-align: center;
-        width: 10%;
+        width: 100%;
         margin: auto;
         margin-bottom: 15px;
         padding: 0px;
@@ -2153,6 +2153,26 @@ ol.carousel-indicators li.active {
       }
     }
   }
+  .team-section {
+    .team-slogan {
+      p {
+        width: 80%;
+      }
+    }
+    .team-banner {
+      .banner-content {
+        .slogan {
+          p {
+            width: 80%;
+          }
+        }
+        button {
+          width: 35%;
+        }
+      }
+    }
+
+  }
   .feedback-section{
     .feedback-element{
       .image-customer{
@@ -2168,6 +2188,9 @@ ol.carousel-indicators li.active {
     }
   }
   .partner-section{
+    .introduce-clients {
+      width: 80%;
+    }
     .partner-element{
       width: 30%;
       margin-left: 5%;
