@@ -1,13 +1,13 @@
 $('document').ready(function() {
   // Change on small devices
-  if ($(window).width() < 992) {
+  if ($(window).width() <= 768) {
     // Update testominal section
     $("#myCarousel").css("display", "none");
-    $("#mobile-view").css("display", "block");
+    $("#testominal-mobile-carousel").css("display", "block");
 
     /* Update about section */
     // Hide element content in mobile view
-    $(".experience-content p, .rule-content .rule-list, .mission-content p").addClass("mobile-element");
+    $(".experience-content p, .mission-content p").addClass("mobile-element");
     // Show element content on click
     $(".about-info .title-content").click(function() {
       this.classList.toggle("active");

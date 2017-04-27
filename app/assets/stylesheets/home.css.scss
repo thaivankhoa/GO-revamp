@@ -650,7 +650,7 @@ button{
     .sub-title-section{
       padding-top: 10px;
       color: white;
-      width: 30%;
+      width: 50%;
       text-align: center;
       margin: auto;
       line-height: 20px;
@@ -1053,11 +1053,9 @@ button{
   .feedback-group{
     width: 80%;
     margin: auto;
-    #mobile-view {
+    feedback-element {}
+    #testominal-mobile-carousel {
       display: none;
-      .mobile {
-        width: 100%;
-      }
     }
     .feedback.element{
       vertical-align: text-top;
@@ -2016,16 +2014,14 @@ ol.carousel-indicators li.active {
       }
       .navbar{
         display: block;
-        width: 30px;
         float: right;
         margin: 0px;
         margin-top: 10px;
         cursor: pointer;
         vertical-align: middle;
         img{
-          width: 100%;
-          height: 100%;
-          margin-top: 0px;
+          width: 30px;
+          height: auto;
         }
       }
       .menu-content{
@@ -2038,6 +2034,7 @@ ol.carousel-indicators li.active {
         top: 0px;
         left: 0px;
         height: 100%;
+        background-color: #f7f7f7;
         li{
           float: none;
           padding: 10px 0px;
@@ -2069,7 +2066,7 @@ ol.carousel-indicators li.active {
 }
 
 // Small devices
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .slider-section{
     height: 760px;
   }
@@ -2173,20 +2170,6 @@ ol.carousel-indicators li.active {
     }
 
   }
-  .feedback-section{
-    .feedback-element{
-      .image-customer{
-        float: none;
-        text-align: center;
-      }
-      .caret{
-        display: none;
-      }
-      .feeback-content{
-        margin-left: 0px;
-      }
-    }
-  }
   .partner-section{
     .introduce-clients {
       width: 80%;
@@ -2215,11 +2198,11 @@ ol.carousel-indicators li.active {
 //====================
 @media screen and (max-width: 768px) {
   .header-section{
-    padding: 15px 40px 0px;
+    padding: 15px 40px 10px;
     .logo{
       .image-logo{
-        width: 45px !important;
-        height: 40px !important;
+        width: 70px !important;
+        height: 70px !important;
       }
       .title-logo{
         height: 55px;
@@ -2236,25 +2219,19 @@ ol.carousel-indicators li.active {
         }
       }
     }
-    .navbar{
-      img{
-        width: 80% !important;
-        height: 80% !important;
-        //margin-top: 5px !important;
+    .navigation {
+      .navbar{
+        img{
+          width: 40px;
+        }
       }
     }
   }
-  .slider-section{
-    height: 500px;
-    background-size: 130%;
-  }
   .slider-content{
-    margin-top: 50px;
-    top: 60%;
+    top: 100px;
     transform: translateY(-75%);
     .slider-title{
       font-size: 15px;
-      line-height: 60px;
       margin-top: 10px;
       span {
         font-size: 20px;
@@ -2268,7 +2245,7 @@ ol.carousel-indicators li.active {
     }
   }
   .slider-section {
-    height: 350px;
+    height: 500px;
   }
   .service-section{
     padding: 30px 40px;
@@ -2288,11 +2265,13 @@ ol.carousel-indicators li.active {
         }
       }
     }
+    .sub-title-section{
+      font-size: 15px;
+      width: 350px;
+      padding: 0px 10px;
+    }
   }
-  .sub-title-section{
-    width: 400px !important;
-    padding: 0px 20px;
-  }
+
   .detail-project{
     .image-large{
       width: 80%;
@@ -2347,6 +2326,29 @@ ol.carousel-indicators li.active {
       }
     }
   }
+  .feedback-section{
+    .feedback-group {
+      .feedback.element{
+        width: 100%;
+        .image-customer{
+          float: none;
+          text-align: center;
+        }
+        .caret{
+          display: none;
+        }
+        .feeback-content{
+          margin-left: 0px;
+        }
+      }
+    }
+    ol.carousel-indicators {
+      li {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
   .introduce-section{
     padding: 60px 100px;
     h1{
@@ -2357,6 +2359,7 @@ ol.carousel-indicators li.active {
   .about-section{
     .rule-content{
       width: 100%;
+      border: 0 !important;
       .rule-element{
         img{
           width: 45px;
@@ -2453,6 +2456,16 @@ ol.carousel-indicators li.active {
         h5{
           margin-bottom: 25px;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .portfolio-section {
+    .title-portfolio {
+      .sub-title-section {
+        width: 80%;
       }
     }
   }
