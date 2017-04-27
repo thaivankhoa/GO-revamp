@@ -1396,6 +1396,12 @@ button{
   .partner-content{
     width: 100%;
     margin: auto;
+    #mobile-carousel-client {
+      display: none;
+      .partner-element {
+        width: 45% !important;
+      }
+    }
     .partner-element{
       width: 25%;
       float: left;
@@ -1471,7 +1477,7 @@ button{
       margin-top: 50px;
       margin-bottom: 50px;
       font-family: 'Roboto', 'Open Sans';
-      width: 40%;
+      width: 60%;
       text-align: center;
       margin: auto;
       p{
@@ -1978,14 +1984,24 @@ ol.carousel-indicators li.active {
     margin-top: 10px;
     width: 70%;
     margin: auto;
+    .row {
+      line-height: 120px;
+    }
     .tech-elements{
-      width: 16%;
-      display: inline-block;
-      margin-left: 2%;
-      margin-right: 2%;
-      margin-bottom: 15px;
+      vertical-align: middle;
       img{
+        width: 100%;
+        height: 100%;
       }
+    }
+  }
+  #tech-mobile {
+    display: none;
+    .row {
+      line-height: 40px !important;
+    }
+    .tech-elements {
+      padding: 0px;
     }
   }
 }
@@ -2416,6 +2432,11 @@ ol.carousel-indicators li.active {
       &:nth-of-type(2n+1){
         margin-left: 0px;
       }
+    }
+  }
+  .footer-section {
+    .footer-group {
+      width: 80% !important;
     }
   }
   footer{

@@ -3,12 +3,22 @@ $('document').ready(function() {
   if ($(window).width() <= 768) {
     // Update testominal section
     $("#myCarousel").css("display", "none");
+    $("#tech-tablet").css("display", "none");
+    $("#carousel-client").css("display", "none");
     $("#testominal-mobile-carousel").css("display", "block");
+    $("#tech-mobile").css("display", "block");
+    $("#mobile-carousel-client").css("display", "block");
 
+    // Show services
+    $(".service-element").fadeTo( 1500, 1, function() {
+
+    });
     /* Update about section */
     // Hide element content in mobile view
-    $(".experience-content p, .mission-content p").addClass("mobile-element");
+    $(".experience-content p,.rule-content .rule-list, .mission-content p").addClass("mobile-element");
     // Show element content on click
+    var ruleList = $(".rule-content .rule-list")[0];
+    ruleList.style.maxHeight = ruleList.scrollHeight + "px";
     $(".about-info .title-content").click(function() {
       this.classList.toggle("active");
       var hideContent = this.nextElementSibling;
