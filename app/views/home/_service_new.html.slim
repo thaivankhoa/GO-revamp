@@ -4,37 +4,59 @@
     /.line-title
   h4.sub-title-section We are experts in IT field, we believe to bring you best solutions for your ideas.
   .container-fluid
-    .service-content
-      .service-element
+    #service-tablet.service-content.row
+      .service-element.col-md-2.col-xs-4.col-md-push-1
         .image-service.left-image
           = image_tag 'icon-outsource.png', :class => 'img-web'
         h5.title-service Web development
-
-      .service-element
+      .service-element.col-md-2.col-xs-4.col-md-push-1
         .image-service
           = image_tag 'icon-mobile.png'
           /, :width => '45%', :height => '45%', :style => 'margin-top: 30%'
         h5.title-service Mobile development
-
-      / .service-element
-      /   .image-service
-      /     = image_tag 'icon-seo.png', :width => '45%', :height => '45%', :style => 'margin-top: 27%'
-      /   h5.title-service Seo
-
-      .service-element
+      .service-element.col-md-2.col-xs-4.col-md-push-1
         .image-service
           = image_tag 'icon-design.png'
           /, :width => '50%', :height => '45%', :style => 'margin-top: 28%'
         h5.title-service Design
-
-      .service-element
+      .service-element.col-md-2.col-xs-4.col-md-push-1.col-xs-push-2
         .image-service
           = image_tag 'icon-pm.png'
           /, :width => '40%', :height => '50%', :style => 'margin-top: 22.5%'
         h5.title-service Project Management
-
-      .service-element
+      .service-element.col-md-2.col-xs-4.col-md-push-1.col-xs-push-2
         .image-service
           = image_tag 'icon-hr.png'
           /, :width => '55%', :height => '55%', :style => 'margin-top: 24%'
         h5.title-service Human resource
+    / #service-mobile.service-content
+    /   .row
+    /     .col-md-1
+    /     .service-element.col-md-2
+    /       .image-service.left-image
+    /         = image_tag 'icon-outsource.png', :class => 'img-web'
+    /       h5.title-service Web development
+    /     .col-md-2
+    /     .service-element.col-md-2
+    /       .image-service
+    /         = image_tag 'icon-mobile.png'
+    /         /, :width => '45%', :height => '45%', :style => 'margin-top: 30%'
+    /       h5.title-service Mobile development
+    /     .col-md-2
+    /     .service-element.col-md-2
+    /       .image-service
+    /         = image_tag 'icon-design.png'
+    /         /, :width => '50%', :height => '45%', :style => 'margin-top: 28%'
+    /       h5.title-service Design
+    /     .col-md-1
+    / .row
+    /   .service-element
+    /     .image-service
+    /       = image_tag 'icon-pm.png'
+    /       /, :width => '40%', :height => '50%', :style => 'margin-top: 22.5%'
+    /     h5.title-service Project Management
+    /   .service-element
+    /     .image-service
+    /       = image_tag 'icon-hr.png'
+    /       /, :width => '55%', :height => '55%', :style => 'margin-top: 24%'
+    /     h5.title-service Human resource

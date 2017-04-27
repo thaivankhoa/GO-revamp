@@ -391,11 +391,10 @@ button{
     }
   }
   .service-element{
-    width: 18%;
     display: inline-block;
     //padding: 0px 10px;
     text-align: center;
-    margin: 0px 1%;
+    margin: 0px;
     opacity: 0;
 // DON'T DELETE
 // USED FOR ANIMATION
@@ -2100,6 +2099,7 @@ ol.carousel-indicators li.active {
       }
       h5.title-service {
         font-size: 10px;
+        margin-top: 20px;
       }
     }
   }
@@ -2276,8 +2276,9 @@ ol.carousel-indicators li.active {
             height: 40px;
           }
         }
-        h5 {
-          display: none;
+        h5.title-service {
+          font-size: 5px;
+          margin-top: 10px;
         }
       }
     }
