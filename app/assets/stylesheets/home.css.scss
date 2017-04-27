@@ -1591,16 +1591,12 @@ button{
     width: 70%;
     background: white;
     margin: auto;
+    padding-top: 80px;
     .footer-col{
       vertical-align: top;
       text-align: left;
       background-color: white;
-      width: 20%;
-      margin-left: 2.5%;
-      margin-right: 2.5%;
       display: inline-block;
-      margin-top: 90px;
-      margin-bottom: 40px;
       color: #444;
       .item-title{
         span{
@@ -1618,8 +1614,6 @@ button{
       }
       .item-content{
         display: block;
-        margin-top: 10px;
-
           .twitter-tweet{
             width: 170px !important;
             max-width: 200px !important;
@@ -1669,7 +1663,6 @@ button{
       }
     }
   }
-
 
 
 /* */
@@ -2160,9 +2153,6 @@ ol.carousel-indicators li.active {
       .experience-content,.rule-content,.mission-content{
         display: block;
         width: 100%;
-        p, .rule-element {
-          //display: none;
-        }
       }
     }
   }
@@ -2438,6 +2428,16 @@ ol.carousel-indicators li.active {
   .footer-section {
     .footer-group {
       width: 80% !important;
+    }
+    .footer-main {
+      .footer-content {
+        padding-top: 40px;
+        .footer-col {
+          .line {
+            margin-bottom: 10px;
+          }
+        }
+      }
     }
   }
   footer{

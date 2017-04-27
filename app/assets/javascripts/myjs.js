@@ -15,11 +15,11 @@ $('document').ready(function() {
     });
     /* Update about section */
     // Hide element content in mobile view
-    $(".experience-content p,.rule-content .rule-list, .mission-content p").addClass("mobile-element");
+    $(".experience-content p,.rule-content .rule-list, .mission-content p, .item-content").addClass("mobile-element");
     // Show element content on click
     var ruleList = $(".rule-content .rule-list")[0];
     ruleList.style.maxHeight = ruleList.scrollHeight + "px";
-    $(".about-info .title-content").click(function() {
+    $(".about-info .title-content, .footer-main .title-content").click(function() {
       this.classList.toggle("active");
       var hideContent = this.nextElementSibling;
       if (hideContent.style.maxHeight){
