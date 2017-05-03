@@ -16,9 +16,12 @@ $('document').ready(function() {
     /* Update about section */
     // Hide element content in mobile view
     $(".experience-content p,.rule-content .rule-list, .mission-content p, .item-content").addClass("mobile-element");
-    // Show element content on click
+    // Show default element
     var ruleList = $(".rule-content .rule-list")[0];
     ruleList.style.maxHeight = ruleList.scrollHeight + "px";
+    var contact = $(".item-content.show.mobile-element")[0];
+    contact.style.maxHeight = contact.scrollHeight + "px";
+    // Show element content on click
     $(".about-info .title-content, .footer-main .title-content").click(function() {
       this.classList.toggle("active");
       var hideContent = this.nextElementSibling;
@@ -209,9 +212,9 @@ $('document').ready(function() {
       $('html, body').animate({ scrollTop: current_top }, 1000);
 
       if(index === 'service'){
-        $('.service-element:nth-child(1)').css({'margin-left':'0px','opacity':'1','transition':'1s 1.2s'});
-        $('.service-element:nth-child(2)').css({'margin-top':'100px','opacity':'1','transition':'1s 1.7s'});
-        $('.service-element:nth-child(3)').css({'margin-right':'0px','opacity':'1','transition':'1s 1.2s'});
+        //$('.service-element:nth-child(1)').css({'margin-left':'0px','opacity':'1','transition':'1s 1.2s'});
+        //$('.service-element:nth-child(2)').css({'margin-top':'100px','opacity':'1','transition':'1s 1.7s'});
+        //$('.service-element:nth-child(3)').css({'margin-right':'0px','opacity':'1','transition':'1s 1.2s'});
       }
       if(index === 'porfolio'){
         for(var i = 1; i <= 7; i++){

@@ -212,6 +212,7 @@ button{
       list-style: none;
       float: right;
       padding: 10px 20px 0px 0px;
+      background-color: #f3c339;
       li{
         padding: 10px 15px;
         float: left;
@@ -1080,6 +1081,7 @@ button{
         }
       }
       .info-customer{
+        display: inline-block;
         .feedback-content{
           padding: 10px 10px 10px 10px;
           overflow: hidden;
@@ -2042,7 +2044,7 @@ ol.carousel-indicators li.active {
         top: 0px;
         left: 0px;
         height: 100%;
-        background-color: #f7f7f7;
+        background-color: #f3c339;
         li{
           float: none;
           padding: 10px 0px;
@@ -2050,7 +2052,7 @@ ol.carousel-indicators li.active {
           z-index: 1;
           font-size: 22px;
           text-transform: uppercase;
-          margin-bottom: 15px;
+          margin-bottom: 50px;
           text-align: center;
           &.bg-menu{
             width: 100%;
@@ -2063,9 +2065,6 @@ ol.carousel-indicators li.active {
             color: black;
             font-weight: 600;
             font-size: 25px;
-          }
-          &:nth-child(2){
-            margin-top: 140px;
           }
         }
       }
@@ -2091,7 +2090,7 @@ ol.carousel-indicators li.active {
         height: 120px;
       }
       h5.title-service {
-        font-size: 10px;
+        font-size: 13px;
         margin-top: 20px;
       }
     }
@@ -2234,7 +2233,7 @@ ol.carousel-indicators li.active {
     }
   }
   .slider-content{
-    top: 100px;
+    top: 130px;
     transform: translateY(-75%);
     .slider-title{
       font-size: 15px;
@@ -2267,7 +2266,7 @@ ol.carousel-indicators li.active {
           }
         }
         h5.title-service {
-          font-size: 5px;
+          font-size: 10px;
           margin-top: 10px;
         }
       }
@@ -2294,6 +2293,9 @@ ol.carousel-indicators li.active {
     }
   }
   .portfolio-details {
+    .navigation-bar {
+      width: 50%;
+    }
     .portfolio-content{
       height: 680px;
       width: 100%;
@@ -2340,6 +2342,10 @@ ol.carousel-indicators li.active {
         .image-customer{
           float: none;
           text-align: center;
+          display: inline-block;
+        }
+        .name-customer {
+          display: inline-block;
         }
         .caret{
           display: none;
@@ -2425,6 +2431,16 @@ ol.carousel-indicators li.active {
       }
     }
   }
+  .touch-section {
+    .touch-content {
+      .touch-form {
+        .input-1, .input-2 {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
   .footer-section {
     .footer-group {
       width: 80% !important;
@@ -2433,6 +2449,7 @@ ol.carousel-indicators li.active {
       .footer-content {
         padding-top: 40px;
         .footer-col {
+          margin-bottom: 10px;
           .line {
             margin-bottom: 10px;
           }
@@ -2488,6 +2505,17 @@ ol.carousel-indicators li.active {
     .title-portfolio {
       .sub-title-section {
         width: 80%;
+      }
+    }
+  }
+  .service-section{
+    .service-content {
+      .service-element {
+        padding: 0px 5px;
+        h5.title-service {
+          font-size: 8px;
+          margin-top: 10px;
+        }
       }
     }
   }
