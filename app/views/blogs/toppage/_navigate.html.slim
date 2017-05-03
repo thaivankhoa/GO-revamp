@@ -80,6 +80,23 @@
                 p.active #{cate.name.capitalize}
             - else
                 p #{cate.name.capitalize}
+      // .blog.active
+      //   p Blog
+      // .sharing
+      //   p Sharing
+      // .fontend
+      //   p Fontend
+      // .ror
+      //   p RoR
+      // li
+      //   .searchbox
+      //     form#search action="/search" method="get"
+      //       input name="q" placeholder="Search..." type="text"
+        // .lang
+        //   =link_to "E", root_path
+        //   =link_to "V", root_path
+      // = button_to  "Login",new_user_session_path,:class =>"btn btn-purple btn-border-rev"
+      // button.btn.btn-purple.btn-border-rev Chao
       .user
         - if user_signed_in?
           = link_to "Hi " + current_user.email, edit_user_registration_path, :class => "btn btn-purple btn-border-rev"

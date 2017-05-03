@@ -4,8 +4,8 @@
   .team-slogan
     p We have grown very quickly, create a friendly work environment and continue to succeed.
   .team-content
-    #show-team.row
-      .team-element.col-xs-6.col-md-3
+    #default
+      .team-element
         .avatar
           = image_tag 'boss.jpg'
           .icon1
@@ -16,7 +16,7 @@
             = image_tag 'linkendin-icon.png'
         h5.name-member Justin Nguyen
         h6.role-member CEO & Founder
-      .team-element.col-xs-6.col-md-3
+      .team-element
         .avatar
           = image_tag 'phil.jpg'
           .icon1
@@ -27,7 +27,7 @@
             = image_tag 'linkendin-icon.png'
         h5.name-member Phil On
         h6.role-member Tech Lead
-      .team-element.col-xs-6.col-md-3
+      .team-element
         .avatar
           = image_tag 'michale.jpg'
           .icon1
@@ -38,7 +38,7 @@
             = image_tag 'linkendin-icon.png'
         h5.name-member Michelle Tran
         h6.role-member Project Manager
-      .team-element.col-xs-6.col-md-3
+      .team-element
         .avatar
           = image_tag 'rose.jpg'
           .icon1
@@ -50,104 +50,102 @@
         h5.name-member Rose Dao
         h6.role-member HR & Media
     #hidden-team
-      .row
-        //tom
-        .team-element.col-xs-6.col-md-3
-          .avatar
-            = image_tag 'tom.jpg'
-            .icon1
-              = image_tag 'fb-icon.png'
-            .icon2
-              = image_tag 'twitter-icon.png'
-            .icon3
-              = image_tag 'linkendin-icon.png'
-          h5.name-member Tom Dang
-          h6.role-member Back-end developer
-        //jason
-        .team-element.col-xs-6.col-md-3
-          .avatar
-            = image_tag 'jason.jpg'
-            .icon1
-              = image_tag 'fb-icon.png'
-            .icon2
-              = image_tag 'twitter-icon.png'
-            .icon3
-              = image_tag 'linkendin-icon.png'
-          h5.name-member Jason Nguyen
-          h6.role-member Back-end developer
-          //jon
-        .team-element.col-xs-6.col-md-3
-          .avatar
-            = image_tag 'john.jpg'
-            .icon1
-              = image_tag 'fb-icon.png'
-            .icon2
-              = image_tag 'twitter-icon.png'
-            .icon3
-              = image_tag 'linkendin-icon.png'
-          h5.name-member John Nguyen
-          h6.role-member iOS developer
-          //luke
-        .team-element.col-xs-6.col-md-3
-          .avatar
-            = image_tag 'luke.jpg'
-            .icon1
-              = image_tag 'fb-icon.png'
-            .icon2
-              = image_tag 'twitter-icon.png'
-            .icon3
-              = image_tag 'linkendin-icon.png'
-          h5.name-member Luke Nguyen
-          h6.role-member iOS developer
-      .row
+      //tom
+      .team-element
+        .avatar
+          = image_tag 'tom.jpg'
+          .icon1
+            = image_tag 'fb-icon.png'
+          .icon2
+            = image_tag 'twitter-icon.png'
+          .icon3
+            = image_tag 'linkendin-icon.png'
+        h5.name-member Tom Dang
+        h6.role-member Back-end developer
+      //jason
+      .team-element
+        .avatar
+          = image_tag 'jason.jpg'
+          .icon1
+            = image_tag 'fb-icon.png'
+          .icon2
+            = image_tag 'twitter-icon.png'
+          .icon3
+            = image_tag 'linkendin-icon.png'
+        h5.name-member Jason Nguyen
+        h6.role-member Back-end developer
+        //jon
+      .team-element
+        .avatar
+          = image_tag 'john.jpg'
+          .icon1
+            = image_tag 'fb-icon.png'
+          .icon2
+            = image_tag 'twitter-icon.png'
+          .icon3
+            = image_tag 'linkendin-icon.png'
+        h5.name-member John Nguyen
+        h6.role-member iOS developer
+        //luke
+      .team-element
+        .avatar
+          = image_tag 'luke.jpg'
+          .icon1
+            = image_tag 'fb-icon.png'
+          .icon2
+            = image_tag 'twitter-icon.png'
+          .icon3
+            = image_tag 'linkendin-icon.png'
+        h5.name-member Luke Nguyen
+        h6.role-member iOS developer
         //richard
-        .team-element.col-xs-6.col-md-3
-          .avatar
-            = image_tag 'Richard.jpg'
-            .icon1
-              = image_tag 'fb-icon.png'
-            .icon2
-              = image_tag 'twitter-icon.png'
-            .icon3
-              = image_tag 'linkendin-icon.png'
-          h5.name-member Richard Nguyen
-          h6.role-member Back-end developer
-          //ken
-        .team-element.col-xs-6.col-md-3
-          .avatar
-            = image_tag 'ken.jpg'
-            .icon1
-              = image_tag 'fb-icon.png'
-            .icon2
-              = image_tag 'twitter-icon.png'
-            .icon3
-              = image_tag 'linkendin-icon.png'
-          h5.name-member Ken Nguyen
-          h6.role-member Back-end developer
-          //lucas
-        .team-element.col-xs-6.col-md-3
-          .avatar
-            = image_tag 'lucas.jpg'
-            .icon1
-              = image_tag 'fb-icon.png'
-            .icon2
-              = image_tag 'twitter-icon.png'
-            .icon3
-              = image_tag 'linkendin-icon.png'
-          h5.name-member Lucas Nguyen
-          h6.role-member Back-end developer
-          //patrick
-        .team-element.col-xs-6.col-md-3
-          .avatar
-            = image_tag 'patrick.jpg'
-            .icon1
-              = image_tag 'fb-icon.png'
-            .icon2
-              = image_tag 'twitter-icon.png'
-            .icon3
-              = image_tag 'linkendin-icon.png'
-          h5.name-member Patrick Nguyen
-          h6.role-member Back-end developer
+      .team-element
+        .avatar
+          = image_tag 'Richard.jpg'
+          .icon1
+            = image_tag 'fb-icon.png'
+          .icon2
+            = image_tag 'twitter-icon.png'
+          .icon3
+            = image_tag 'linkendin-icon.png'
+        h5.name-member Richard Nguyen
+        h6.role-member Back-end developer
+        //ken
+      .team-element
+        .avatar
+          = image_tag 'ken.jpg'
+          .icon1
+            = image_tag 'fb-icon.png'
+          .icon2
+            = image_tag 'twitter-icon.png'
+          .icon3
+            = image_tag 'linkendin-icon.png'
+        h5.name-member Ken Nguyen
+        h6.role-member Back-end developer
+        //lucas
+      .team-element
+        .avatar
+          = image_tag 'lucas.jpg'
+          .icon1
+            = image_tag 'fb-icon.png'
+          .icon2
+            = image_tag 'twitter-icon.png'
+          .icon3
+            = image_tag 'linkendin-icon.png'
+        h5.name-member Lucas Nguyen
+        h6.role-member Back-end developer
+        //patrick
+      .team-element
+        .avatar
+          = image_tag 'patrick.jpg'
+          .icon1
+            = image_tag 'fb-icon.png'
+          .icon2
+            = image_tag 'twitter-icon.png'
+          .icon3
+            = image_tag 'linkendin-icon.png'
+        h5.name-member Patrick Nguyen
+        h6.role-member Back-end developer
 
   button[id="show-more-team"] Show more
   button[id="show-less-team"] Show less
