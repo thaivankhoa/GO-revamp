@@ -752,7 +752,7 @@ button{
     position: relative;
     z-index: 1;
     height: 100%;
-    width: 500px;
+    width: 80%;
     margin: 0px auto;
     img{
       width: 100%;
@@ -1995,6 +1995,9 @@ ol.carousel-indicators li.active {
       line-height: 40px !important;
     }
     .tech-elements {
+      display: inline-block;
+      width: 27%;
+      margin: 0 2%;
       padding: 0px;
     }
   }
@@ -2045,6 +2048,9 @@ ol.carousel-indicators li.active {
         left: 0px;
         height: 100%;
         background-color: #f7f7f7;
+        #home {
+          margin-top: 50px;
+        }
         li{
           float: none;
           padding: 10px 0px;
@@ -2053,6 +2059,7 @@ ol.carousel-indicators li.active {
           font-size: 22px;
           text-transform: uppercase;
           margin-bottom: 50px;
+          margin-top: 50px;
           text-align: center;
           &.bg-menu{
             width: 100%;
@@ -2155,6 +2162,11 @@ ol.carousel-indicators li.active {
       }
     }
   }
+  .tech-section {
+    .tech-group {
+      width: 90%;
+    }
+  }
   .team-section {
     .team-slogan {
       p {
@@ -2249,7 +2261,7 @@ ol.carousel-indicators li.active {
       margin-top: 0px;
     }
   }
-  .slider-section {
+  .slider-section{
     height: 500px;
   }
   .service-section{
@@ -2430,6 +2442,11 @@ ol.carousel-indicators li.active {
         margin-left: 0px;
       }
     }
+    .partner-content {
+      .carousel-inner {
+        width: 90%;
+      }
+    }
   }
   .touch-section {
     .touch-content {
@@ -2506,6 +2523,11 @@ ol.carousel-indicators li.active {
       .sub-title-section {
         width: 80%;
       }
+    }
+  }
+  .slider-section {
+    .homepage-hero-module{
+      background-image: url(asset_path('background-home-small.png'));
     }
   }
   .service-section{

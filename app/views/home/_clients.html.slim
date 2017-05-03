@@ -5,8 +5,11 @@
     p
       | We work closely with a wide range of clients from different sectors and regions. They trust us.
   .partner-content
-    .partner.container-fluid
+    .partner
       #mobile-carousel-client.carousel.slide data-ride="carousel"
+        a.left.carousel-control data-slide="prev" href="#mobile-carousel-client" role="button"
+          span.glyphicon.glyphicon-chevron-left aria-hidden="true"
+          span.sr-only Previous
         .carousel-inner role="list-box"
           .item.active
             .partner-element
@@ -107,14 +110,9 @@
             .partner-element
               = link_to 'https://give.asia/', :target => '_blank'
                 = image_tag 'giveasia.png', :alt => 'GiveAsia', :style => 'height: 70%; width: 70%; margin-right: 30%; margin-top: 4%;'
-
-        .control
-          a.left.carousel-control data-slide="prev" href="#mobile-carousel-client" role="button"
-            span.glyphicon.glyphicon-chevron-left aria-hidden="true"
-            span.sr-only Previous
-          a.right.carousel-control data-slide="next" href="#mobile-carousel-client" role="button"
-            span.glyphicon.glyphicon-chevron-right aria-hidden="true"
-            span.sr-only Next
+        a.right.carousel-control data-slide="next" href="#mobile-carousel-client" role="button"
+          span.glyphicon.glyphicon-chevron-right aria-hidden="true"
+          span.sr-only Next
       #carousel-client.carousel.slide data-ride="carousel"
         .carousel-inner role="list-box"
 

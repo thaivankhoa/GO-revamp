@@ -1,6 +1,6 @@
 $('document').ready(function() {
   // Change on small devices
-  if ($(window).width() <= 768) {
+  if ($(window).width() <= 1024) {
     // Update testominal section
     $("#myCarousel").css("display", "none");
     $("#tech-tablet").css("display", "none");
