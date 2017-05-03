@@ -24,12 +24,13 @@
                 = image_tag 'google-plus.png', :alt => "Golden Owl Consulting"
 
 .footer-main
-    .footer-content
-      .footer-col
-        .item-title
-          span CONTACT
-        .line
-        .item-content
+    .footer-content.row
+      .footer-col.col-xs-12.col-md-3
+        .title-content.active
+          .item-title
+            span CONTACT
+          .line
+        .item-content.show
           .position
             p Hochiminh city, Vietnam:
           .phone
@@ -38,10 +39,11 @@
           .email
               = image_tag 'mail.png'
               |  admin@goldenowl.asia
-      .footer-col
-        .item-title
-          span RECENT TWEETS
-        .line
+      .footer-col.col-xs-12.col-md-3
+        .title-content
+          .item-title
+            span RECENT TWEETS
+          .line
         .item-content
             blockquote.twitter-tweet[data-cards="hidden" data-lang="vi"]
               p[lang="en" dir="ltr"]
@@ -52,16 +54,18 @@
               a[href="https://twitter.com/goldenowlasia/status/849426425199431680"]
                 | Ngày 05 tháng 04 năm 2017
             script[async src="//platform.twitter.com/widgets.js" charset="utf-8"]
-      .footer-col
-        .item-title
-          span ACCREDITATIONS
-        .line
+      .footer-col.col-xs-12.col-md-3
+        .title-content
+          .item-title
+            span ACCREDITATIONS
+          .line
         .item-content
           p Business license no.0313605444 by Department of Planning & Investment, HCMC
-      .footer-col
-        .item-title
-          span NEW LETTER SUBSCRIBE
-        .line
+      .footer-col.col-xs-12.col-md-3
+        .title-content
+          .item-title
+            span NEWSLETTER SUBSCRIBE
+          .line
         .item-content
           .subs-input
             input name="newsubs" type="text" value="" /

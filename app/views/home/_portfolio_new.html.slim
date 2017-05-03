@@ -18,10 +18,11 @@
           | Mobile
 
   .portfolio-content
+    //ALL BIG GROUP
     .portfolio-group[id="all-group"]
-       #myCarousel-port.carousel.slide[data-ride="carousel"]
+       #myCarousel-port1.container-fluid.carousel.slide[data-ride="carousel"]
         .carousel-inner[role="list-box"]
-
+          //ALL GROUP 1
           .item.active[id="all-1"]
             .portfolio-element[id="techlist"]
               .introduction
@@ -71,7 +72,7 @@
                 = image_tag 'angularjs-icon.png'
               .icon3
                 = image_tag 'pos-icon.png'
-
+          //ALL GROUP 2
           .item[id="all-2"]
             .portfolio-element[id="corpzap"]
               .introduction
@@ -122,6 +123,7 @@
                 = image_tag 'angularjs-icon.png'
               .icon3
                 = image_tag 'pos-icon.png'
+          //ALL GROUP 3
           .item[id="all-3"]
             .portfolio-element[id="booqed"]
               .introduction
@@ -171,6 +173,7 @@
                 = image_tag 'cordova-icon.png'
               .icon3
                 = image_tag 'pos-icon.png'
+          //ALL GROUP 4
           .item[id="all-4"]
             .portfolio-element[id="artfolo"]
               .introduction
@@ -220,6 +223,7 @@
                 = image_tag 'ruby-icon.png'
               .icon3
                 = image_tag 'd3-icon.png'
+          //ALL GROUP 5
           .item[id="all-5"]
             .portfolio-element[id="flat"]
               .introduction
@@ -270,7 +274,7 @@
                 = image_tag 'react-icon.png'
               .icon3
                 = image_tag 'pos-icon.png'
-
+          //ALL GROUP 6
           .item[id="all-6"]
             .portfolio-element[id="study"]
               .introduction
@@ -320,6 +324,7 @@
                 = image_tag 'swift-icon.png'
               .icon3
                 = image_tag 'ruby-icon.png'
+          //ALL GROUP 7
           .item[id="all-7"]
             .portfolio-element[id="toned"]
               .introduction
@@ -369,115 +374,442 @@
                 = image_tag 'cordova-icon.png'
               .icon3
                 = image_tag 'pos-icon.png'
-
+          //ALL GROUP 8
+          .item[id="all-8"]
+            .portfolio-element[id="allstart"]
+              .introduction
+                .title
+                  span Allstartups
+                .description
+                  p This platform is helping community leaders across the world create customised, branded online ecosystems (just like this one in Mongolia and this one for EdTech startups in Asia).
+              .icon1
+                = image_tag 'ruby-icon.png'
+              .icon2
+                = image_tag 'angularjs-icon.png'
+              .icon3
+                = image_tag 'pos-icon.png'
+            .portfolio-element[id="view360"]
+              .introduction
+                .title
+                  span 360 view
+                .description
+                  p 360 view is an app that can view object in paranoma image.
+              .icon1
+                /= image_tag 'laravel-icon.png'
+              .icon2
+                = image_tag 'react-icon.png'
+              .icon3
+                /= image_tag 'mysql-icon.png'
+            .portfolio-element[id="a21"]
+              .introduction
+                .title
+                  span Alex.world
+                .description
+                  p The online marketplace for affordable, direct-from-source, fresh and seasonal premium products from Japan and online networking platform that connects Alliance 21's global partners.
+              .icon1
+                = image_tag 'ruby-icon.png'
+              .icon2
+                = image_tag 'react-icon.png'
+              .icon3
+                = image_tag 'pos-icon.png'
+            .portfolio-element[id="dbs"]
+              .introduction
+                .title
+                  span DBS
+                .description
+                  p DBS app is a property search platform. And DBS is a leading financial services group in Asia, with over 280 branches across 18 markets.
+              .icon1
+                /= image_tag 'ruby-icon.png'
+              .icon2
+                = image_tag 'react-icon.png'
+              .icon3
+                /= image_tag 'pos-icon.png'
         .control
-          a.left.carousel-control data-slide="prev" href="#myCarousel-port" role="button"
+          a.left.carousel-control data-slide="prev" href="#myCarousel-port1" role="button"
             span.glyphicon.glyphicon-chevron-left aria-hidden="true"
             span.sr-only Previous
-          a.right.carousel-control data-slide="next" href="#myCarousel-port" role="button"
+          a.right.carousel-control data-slide="next" href="#myCarousel-port1" role="button"
             span.glyphicon.glyphicon-chevron-right aria-hidden="true"
             span.sr-only Next
+    //WEB BIG GROUP
     .portfolio-group[id="web-group"]
-        .portfolio-element[id="corpzap-w"]
-          .introduction
-            .title
-              span corpzap
-            .description
-              p Corpzap is a startup-centric firm that knows your company’s needs better than you do.
-          .icon1
-            = image_tag 'ruby-icon.png'
-          .icon2
-            = image_tag 'pos-icon.png'
-          .icon3
-            = image_tag 'websocket-icon.png'
+      #myCarousel-port2.carousel.slide[data-ride="carousel"]
+        .carousel-inner[role="list-box"]
+          //ALL GROUP 1
+          .item.active[id="web-1"]
+            .portfolio-element[id="corpzap-w"]
+              .introduction
+                .title
+                  span corpzap
+                .description
+                  p Corpzap is a startup-centric firm that knows your company’s needs better than you do.
+              .icon1
+                = image_tag 'ruby-icon.png'
+              .icon2
+                = image_tag 'pos-icon.png'
+              .icon3
+                = image_tag 'websocket-icon.png'
 
-        .portfolio-element[id="luxufy-w"]
-          .introduction
-            .title
-              span Luxufy
-            .description
-              p Luxify is your local online marketplace for buying and selling new, vintage, and pre-owned luxury items. We connect buyers to dealers, collectors, and sellers in your country.
-          .icon1
-            = image_tag 'nodejs-icon.png'
-          .icon2
-            = image_tag 'angularjs-icon.png'
-          .icon3
-            = image_tag 'mongodb-icon.png'
-        .portfolio-element[id="student-w"]
-          .introduction
-            .title
-              span student life care
-            .description
-              p We support you in studying abroad orientation, integration when studying and help grow your career. Other than that, we provide you scholarship information from famous universities, events and other incentives from Student Life Care partners.
-          .icon1
-            = image_tag 'ruby-icon.png'
-          .icon2
-            = image_tag 'angularjs-icon.png'
-          .icon3
-            = image_tag 'pos-icon.png'
-        .portfolio-element[id="luxenomad-w"]
-          .introduction
-            .title
-              span the luxe nomad
-            .description
-              p The Luxe Nomad is an Asia-Pacific's leading luxury villa and hotel booking portal.
-          .icon1
-            = image_tag 'ruby-icon.png'
-          .icon2
-            = image_tag 'angularjs-icon.png'
-          .icon3
-            = image_tag 'pos-icon.png'
+            .portfolio-element[id="luxufy-w"]
+              .introduction
+                .title
+                  span Luxufy
+                .description
+                  p Luxify is your local online marketplace for buying and selling new, vintage, and pre-owned luxury items. We connect buyers to dealers, collectors, and sellers in your country.
+              .icon1
+                = image_tag 'nodejs-icon.png'
+              .icon2
+                = image_tag 'angularjs-icon.png'
+              .icon3
+                = image_tag 'mongodb-icon.png'
+            .portfolio-element[id="student-w"]
+              .introduction
+                .title
+                  span student life care
+                .description
+                  p We support you in studying abroad orientation, integration when studying and help grow your career. Other than that, we provide you scholarship information from famous universities, events and other incentives from Student Life Care partners.
+              .icon1
+                = image_tag 'ruby-icon.png'
+              .icon2
+                = image_tag 'angularjs-icon.png'
+              .icon3
+                = image_tag 'pos-icon.png'
+            .portfolio-element[id="luxenomad-w"]
+              .introduction
+                .title
+                  span the luxe nomad
+                .description
+                  p The Luxe Nomad is an Asia-Pacific's leading luxury villa and hotel booking portal.
+              .icon1
+                = image_tag 'ruby-icon.png'
+              .icon2
+                = image_tag 'angularjs-icon.png'
+              .icon3
+                = image_tag 'pos-icon.png'
+          //WEB GROUP 2
+          .item[id="web-2"]
+            .portfolio-element[id="artfolo-w"]
+              .introduction
+                .title
+                  span Artfolo
+                .description
+                  p We help you connect to the artists, see and buy their paintings. Also, if you have beautiful paintings and want to sell it, please come to us as soon as possible. We promise to bring out the best to you.
+              .icon1
+                = image_tag 'ruby-icon.png'
+              .icon2
+                = image_tag 'angularjs-icon.png'
+              .icon3
+                = image_tag 'pos-icon.png'
+            .portfolio-element[id="cpd-w"]
+              .introduction
+                .title
+                  span CPD
+                .description
+                  p CPD is a search engine to look for variable online courses which mainly held in Australia
+              .icon1
+                = image_tag 'ruby-icon.png'
+              .icon2
+                = image_tag 'angularjs-icon.png'
+              .icon3
+                = image_tag 'pos-icon.png'
+            .portfolio-element[id="blix-w"]
+              .introduction
+                .title
+                  span Blix
+                .description
+                  p Blix TV gives you the cost per response for your TV advertising so your spend decisions can be based on solid numbers.
+              .icon1
+                = image_tag 'ruby-icon.png'
+              .icon2
+                = image_tag 'angularjs-icon.png'
+              .icon3
+                = image_tag 'mongodb-icon.png'
+            .portfolio-element[id="flat-w"]
+              .introduction
+                .title
+                  span Flatturtle
+                .description
+                  p FlatTurtle is a new type of tech for commercial real estate. FlatTurtle aims to convert viewers into tenants by making your space more attractive, responsive and innovative.
+              .icon1
+                = image_tag 'react-icon.png'
+              .icon2
+                = image_tag 'nodejs-icon.png'
+              .icon3
+                = image_tag 'mongodb-icon.png'
+          //WEB GROUP 3
+          .item[id="web-3"]
+            .portfolio-element[id="study-w"]
+              .introduction
+                .title
+                  span Study Advisor
+                .description
+                  p Study Advisor is a website that help people get more knowledge and schedule meeting with the mentors/advisors who can help them as soon as possible.
+              .icon1
+                = image_tag 'ruby-icon.png'
+              .icon2
+                = image_tag 'react-icon.png'
+              .icon3
+                = image_tag 'pos-icon.png'
 
+            .portfolio-element[id="iadoa-w"]
+              .introduction
+                .title
+                  span iadoa
+                .description
+                  p An ecommerce site that sells all customized styles of Vietnamese tradition dress.
+              .icon1
+                /= image_tag 'laravel-icon.png'
+              .icon2
+                = image_tag 'ruby-icon.png'
+              .icon3
+                /= image_tag 'mysql-icon.png'
+
+            .portfolio-element[id="serumi-w"]
+              .introduction
+                .title
+                  span Serumi
+                .description
+                  p Naturion is dedicated to guiding people towards adopting healthier lifestyles. We are constantly looking for innovative ideas and technologies to develop reliable products to support your well-being.
+              .icon1
+                = image_tag 'angularjs-icon.png'
+              .icon2
+                = image_tag 'ruby-icon.png'
+              .icon3
+                = image_tag 'pos-icon.png'
+
+            .portfolio-element[id="stage-w"]
+              .introduction
+                .title
+                  span The Work Project
+                .description
+                  p The Work Project is a coworking spaces and offices booking platform. Our serviced offices and coworking spaces are created by hoteliers committed to delivering hospitality values and standards.
+              .icon1
+                = image_tag 'ruby-icon.png'
+              .icon2
+                = image_tag 'react-icon.png'
+              .icon3
+                = image_tag 'pos-icon.png'
+            //WEB GROUP 4
+          .item.active[id="web-4"]
+            .portfolio-element[id="techlist-w"]
+              .introduction
+                .title
+                  span Tech list
+                .description
+                  p Techlist - a product of Techinasia - is a startup database platform which has more than 20000 startups info.
+              .icon1
+                = image_tag 'ruby-icon.png'
+              .icon2
+                = image_tag 'angularjs-icon.png'
+              .icon3
+                = image_tag 'pos-icon.png'
+            .portfolio-element[id="idea-burn-w"]
+              .introduction
+                .title
+                  span Ideaburn
+                .description
+                  p IdeaBurns is not actually a webplatform. It's sates of mind. Changing the Sates of mind drives the matter of scales economic development to fetch jobs and raises the economy.
+              .icon1
+                = image_tag 'nodejs-icon.png'
+              .icon2
+                = image_tag 'angularjs-icon.png'
+              .icon3
+                = image_tag 'mongodb-icon.png'
+            .portfolio-element[id="giveasia-w"]
+              .introduction
+                .title
+                  span give.asia
+                .description
+                  p "The trusted platform for fundraising and giving. GIVE.asia is a movement for human kindness."
+              .icon1
+                /= image_tag 'nodejs-icon.png'
+              .icon2
+                = image_tag 'ruby-icon.png'
+              .icon3
+                /= image_tag 'mongodb-icon.png'
+            .portfolio-element[id="weath-w"]
+              .introduction
+                .title
+                  span Find A Wealth Manager
+                .description
+                  p We use smart technology combined with human expertise to get you direct access to the best professionals from the leading firms who commit to best practice and better value fees
+              .icon1
+                = image_tag 'ruby-icon.png'
+              .icon2
+                = image_tag 'angularjs-icon.png'
+              .icon3
+                = image_tag 'pos-icon.png'
+            //WEB GROUP 5
+          .item[id="web-5"]
+            .portfolio-element[id="toned-w"]
+              .introduction
+                .title
+                  span toned
+                .description
+                  p Toned is a platform that makes it easy to book exercise classes.
+              .icon1
+                = image_tag 'ruby-icon.png'
+              .icon2
+                = image_tag 'websocket-icon.png'
+              .icon3
+                = image_tag 'pos-icon.png'
+            .portfolio-element[id="tyk-w"]
+              .introduction
+                .title
+                  span Tykersyrus
+                .description
+                  p A website that compares the price for all products and help users choose the best fit.
+              .icon1
+                /= image_tag 'laravel-icon.png'
+              .icon2
+                = image_tag 'ruby-icon.png'
+              .icon3
+                /= image_tag 'mysql-icon.png'
+            .portfolio-element[id="war-w"]
+              .introduction
+                .title
+                  span Warehse
+                .description
+                  p Warehse is an e-commerce site that helps you buy a lot of food and delivery on the day you want
+              .icon1
+                = image_tag 'angularjs-icon.png'
+              .icon2
+                = image_tag 'ruby-icon.png'
+              .icon3
+                = image_tag 'pos-icon.png'
+            .portfolio-element[id="natt-w"]
+              .introduction
+                .title
+                  span Narratrs
+                .description
+                  p Get paid to tell brand stories and grow your influence. Become a Narratr today.
+              .icon1
+                = image_tag 'ionic-icon.png'
+              .icon2
+                = image_tag 'cordova-icon.png'
+              .icon3
+                = image_tag 'pos-icon.png'
+        .control
+          a.left.carousel-control data-slide="prev" href="#myCarousel-port2" role="button"
+            span.glyphicon.glyphicon-chevron-left aria-hidden="true"
+            span.sr-only Previous
+          a.right.carousel-control data-slide="next" href="#myCarousel-port2" role="button"
+            span.glyphicon.glyphicon-chevron-right aria-hidden="true"
+            span.sr-only Next
+
+    //MOBILE BIG GROUP
     .portfolio-group[id="mobile-group"]
+       #myCarousel-port3.carousel.slide[data-ride="carousel"]
+        .carousel-inner[role="list-box"]
+          //MOBILE GROUP 1
+          .item.active[id="mobile-1"]
+            .portfolio-element[id="booqed-m"]
+              .introduction
+                .title
+                  span booqued
+                .description
+                  p Re-imagining the way we use space. Choose venues that suit your ideal work environment and take control of your success story.
+              .icon1
+                = image_tag 'react-icon.png'
+              .icon2
+                = image_tag 'swift-icon.png'
+              .icon3
+                = image_tag 'pos-icon.png'
+            .portfolio-element[id="mywork-m"]
+              .introduction
+                .title
+                  span MyWork
+                .description
+                  p MyWork means mobile, on-the-go convenience built into one simple, easy-to-use app. With MyWork, you can find exactly the kind of qualified personnel you’re looking for.
+              .icon1
+                = image_tag 'laravel-icon.png'
+              .icon2
+                = image_tag 'cordova-icon.png'
+              .icon3
+                = image_tag 'mysql-icon.png'
+            .portfolio-element[id="app2rist-m"]
+              .introduction
+                .title
+                  span 2rist app
+                .description
+                  p Reliable, easy-to-use, convenient, and fun, 2rist App is the travel app that has got you covered from places of attractions, souvenirs, what to buy, what to eat, where to go, what to try and even down to the latest events and festivals that are happening.
+              .icon1
+                /= image_tag 'react-icon.png'
+              .icon2
+                = image_tag 'ruby-icon.png'
+              .icon3
+                /= image_tag 'pos-icon.png'
+            .portfolio-element[id="nattrart-m"]
+              .introduction
+                .title
+                  span Narratrs
+                .description
+                  p Get paid to tell brand stories and grow your influence. Become a Narratr today.
+              .icon1
+                = image_tag 'ionic-icon.png'
+              .icon2
+                = image_tag 'cordova-icon.png'
+              .icon3
+                = image_tag 'pos-icon.png'
+          //MOBILE GROUP 2
+          .item[id="mobile-2"]
+            .portfolio-element[id="gllu-m"]
+              .introduction
+                .title
+                  span gllu
+                .description
+                  p Shopping online is more popular - that's why we create Gllu for shopaholic to find,buy and share hot fashion-items,trend fashion-items to make they look more beautiful.
+              .icon1
+                /= image_tag 'ionic-icon.png'
+              .icon2
+                = image_tag 'react-icon.png'
+              .icon3
+                /= image_tag 'pos-icon.png'
+            .portfolio-element[id="fitday-m"]
+              .introduction
+                .title
+                  span fitday
+                .description
+                  p Educate and interact with club members on a personal level.Calculate health risks, show members their body’s current health age and collect data digitally to help reduce member’s health risk factors.
+              .icon1
+                = image_tag 'react-icon.png'
+              .icon2
+                = image_tag 'd3-icon.png'
+              .icon3
+                = image_tag 'pos-icon.png'
+            .portfolio-element[id="scope-m"]
+              .introduction
+                .title
+                  span Scope
+                .description
+                  p Scope is a digital diagnostic tool and aims to help provide healthcare information
+              .icon1
+                = image_tag 'react-icon.png'
+              .icon2
+                = image_tag 'swift-icon.png'
+              .icon3
+                = image_tag 'ruby-icon.png'
+            .portfolio-element[id="built-m"]
+              .introduction
+                .title
+                  span Built
+                .description
+                  p Built is an iOS and Android app geared towards tracking the workouts of dedicated, serious, and professional strength athletes.
+              .icon1
+                = image_tag 'react-icon.png'
+              .icon2
+                = image_tag 'ruby-icon.png'
+              .icon3
+                = image_tag 'd3-icon.png'
 
-        .portfolio-element[id="booqed-m"]
-          .introduction
-            .title
-              span booqued
-            .description
-              p Re-imagining the way we use space. Choose venues that suit your ideal work environment and take control of your success story.
-          .icon1
-            = image_tag 'react-icon.png'
-          .icon2
-            = image_tag 'swift-icon.png'
-          .icon3
-            = image_tag 'pos-icon.png'
-        .portfolio-element[id="mywork-m"]
-          .introduction
-            .title
-              span MyWork
-            .description
-              p MyWork means mobile, on-the-go convenience built into one simple, easy-to-use app. With MyWork, you can find exactly the kind of qualified personnel you’re looking for.
-          .icon1
-            = image_tag 'laravel-icon.png'
-          .icon2
-            = image_tag 'cordova-icon.png'
-          .icon3
-            = image_tag 'mysql-icon.png'
-        .portfolio-element[id="app2rist-m"]
-          .introduction
-            .title
-              span 2rist app
-            .description
-              p Reliable, easy-to-use, convenient, and fun, 2rist App is the travel app that has got you covered from places of attractions, souvenirs, what to buy, what to eat, where to go, what to try and even down to the latest events and festivals that are happening.
-          .icon1
-            /= image_tag 'react-icon.png'
-          .icon2
-            = image_tag 'ruby-icon.png'
-          .icon3
-            /= image_tag 'pos-icon.png'
-        .portfolio-element[id="nattrart-m"]
-          .introduction
-            .title
-              span Narratrs
-            .description
-              p Get paid to tell brand stories and grow your influence. Become a Narratr today.
-          .icon1
-            = image_tag 'ionic-icon.png'
-          .icon2
-            = image_tag 'cordova-icon.png'
-          .icon3
-            = image_tag 'pos-icon.png'
+        .control
+          a.left.carousel-control data-slide="prev" href="#myCarousel-port3" role="button"
+            span.glyphicon.glyphicon-chevron-left aria-hidden="true"
+            span.sr-only Previous
+          a.right.carousel-control data-slide="next" href="#myCarousel-port3" role="button"
+            span.glyphicon.glyphicon-chevron-right aria-hidden="true"
+            span.sr-only Next
+
 #detail-project
   #bg-project
   .image-large
@@ -492,7 +824,7 @@
     = image_tag 'details-booqed.png'
     = image_tag 'details-mywork.png'
     = image_tag 'details-2rist.png'
-    = image_tag 'details-narratrs.png'
+    = image_tag 'details-narr2.png'
     = image_tag 'details-artfolo.jpg'
     = image_tag 'details-cpd.jpg'
     = image_tag 'details-blix.jpg'
@@ -508,7 +840,10 @@
     = image_tag 'details-toned.png'
     = image_tag 'details-tyk.png'
     = image_tag 'details-war.png'
-    = image_tag 'details-narr2.png'
+    = image_tag 'details-allstartup.png'
+    = image_tag 'details-360.png'
+    = image_tag 'details-A21.png'
+    = image_tag 'details-dbs2.jpeg'
 
 javascript:
   var elAll = document.getElementById('all');
@@ -571,6 +906,10 @@ javascript:
   var elAll26 = document.getElementById('tyk');
   var elAll27 = document.getElementById('war');
   var elAll28 = document.getElementById('natt');
+  var elAll29 = document.getElementById('allstart');
+  var elAll30 = document.getElementById('view360');
+  var elAll31 = document.getElementById('a21');
+  var elAll32 = document.getElementById('dbs');
   var elAll5 = document.getElementById('corpzap');
   var elAll6 = document.getElementById('luxufy');
   var elAll7 = document.getElementById('student');
@@ -584,10 +923,32 @@ javascript:
   var elWeb2 = document.getElementById('luxufy-w');
   var elWeb3 = document.getElementById('student-w');
   var elWeb4 = document.getElementById('luxenomad-w');
+  var elWeb5 = document.getElementById('artfolo-w');
+  var elWeb6 = document.getElementById('cpd-w');
+  var elWeb7 = document.getElementById('blix-w');
+  var elWeb8 = document.getElementById('flat-w');
+  var elWeb9 = document.getElementById('study-w');
+  var elWeb10 = document.getElementById('iadoa-w');
+  var elWeb11 = document.getElementById('serumi-w');
+  var elWeb12 = document.getElementById('stage-w');
+  var elWeb13 = document.getElementById('techlist-w');
+  var elWeb14 = document.getElementById('idea-burn-w');
+  var elWeb15 = document.getElementById('giveasia-w');
+  var elWeb16 = document.getElementById('weath-w');
+  var elWeb17 = document.getElementById('toned-w');
+  var elWeb18 = document.getElementById('tyk-w');
+  var elWeb19 = document.getElementById('war-w');
+  var elWeb20 = document.getElementById('natt-w');
+
   var elMobile1 = document.getElementById('booqed-m');
   var elMobile2 = document.getElementById('mywork-m');
   var elMobile3 = document.getElementById('app2rist-m');
   var elMobile4 = document.getElementById('nattrart-m');
+  var elMobile5 = document.getElementById('gllu-m');
+  var elMobile6 = document.getElementById('fitday-m');
+  var elMobile7 = document.getElementById('scope-m');
+  var elMobile8 = document.getElementById('built-m');
+
 
   function all1Click(){
     details.style.display = "block";
@@ -604,6 +965,38 @@ javascript:
   function all4Click(){
     details.style.display = "block";
     details.lastChild.childNodes[3].style.display = "block"
+  }
+  function all5Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[4].style.display = "block"
+  }
+  function all6Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[5].style.display = "block"
+  }
+  function all7Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[6].style.display = "block"
+  }
+  function all8Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[7].style.display = "block"
+  }
+  function all9Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[8].style.display = "block"
+  }
+  function all10Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[9].style.display = "block"
+  }
+  function all11Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[10].style.display = "block"
+  }
+  function all12Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[11].style.display = "block"
   }
   function all13Click(){
     details.style.display = "block";
@@ -667,41 +1060,24 @@ javascript:
   }
   function all28Click(){
     details.style.display = "block";
-    details.lastChild.childNodes[27].style.display = "block"
-  }
-  function all5Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[4].style.display = "block"
-  }
-  function all6Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[5].style.display = "block"
-  }
-  function all7Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[6].style.display = "block"
-  }
-  function all8Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[7].style.display = "block"
-  }
-  function all9Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[8].style.display = "block"
-  }
-  function all10Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[9].style.display = "block"
-  }
-  function all11Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[10].style.display = "block"
-  }
-  function all12Click(){
-    details.style.display = "block";
     details.lastChild.childNodes[11].style.display = "block"
   }
-
+  function all29Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[27].style.display = "block"
+  }
+  function all30Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[28].style.display = "block"
+  }
+  function all31Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[29].style.display = "block"
+  }
+  function all32Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[30].style.display = "block"
+  }
   function mobile1Click(){
     details.style.display = "block";
     details.lastChild.childNodes[8].style.display = "block"
@@ -717,6 +1093,22 @@ javascript:
   function mobile4Click(){
     details.style.display = "block";
     details.lastChild.childNodes[11].style.display = "block"
+  }
+  function mobile5Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[17].style.display = "block"
+  }
+  function mobile6Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[18].style.display = "block"
+  }
+  function mobile7Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[23].style.display = "block"
+  }
+  function mobile8Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[15].style.display = "block"
   }
 
   function web1Click(){
@@ -735,6 +1127,71 @@ javascript:
     details.style.display = "block";
     details.lastChild.childNodes[7].style.display = "block"
   }
+  function web5Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[12].style.display = "block"
+  }
+  function web6Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[13].style.display = "block"
+  }
+  function web7Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[14].style.display = "block"
+  }
+  function web8Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[16].style.display = "block"
+  }
+  function web9Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[20].style.display = "block"
+  }
+  function web10Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[21].style.display = "block"
+  }
+  function web11Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[22].style.display = "block"
+  }
+  function web12Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[19].style.display = "block"
+  }
+  function web13Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[0].style.display = "block"
+  }
+  function web14Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[1].style.display = "block"
+  }
+  function web15Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[2].style.display = "block"
+  }
+  function web16Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[3].style.display = "block"
+  }
+    function web17Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[24].style.display = "block"
+  }
+  function web18Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[25].style.display = "block"
+  }
+  function web19Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[26].style.display = "block"
+  }
+  function web20Click(){
+    details.style.display = "block";
+    details.lastChild.childNodes[11].style.display = "block"
+  }
+
 
 
   elAll1.addEventListener('click', all1Click, false);
@@ -765,16 +1222,42 @@ javascript:
   elAll26.addEventListener('click', all26Click, false);
   elAll27.addEventListener('click', all27Click, false);
   elAll28.addEventListener('click', all28Click, false);
+  elAll29.addEventListener('click', all29Click, false);
+  elAll30.addEventListener('click', all30Click, false);
+  elAll31.addEventListener('click', all31Click, false);
+  elAll32.addEventListener('click', all32Click, false);
 
   elMobile1.addEventListener('click', mobile1Click, false);
   elMobile2.addEventListener('click', mobile2Click, false);
   elMobile3.addEventListener('click', mobile3Click, false);
   elMobile4.addEventListener('click', mobile4Click, false);
+  elMobile5.addEventListener('click', mobile5Click, false);
+  elMobile6.addEventListener('click', mobile6Click, false);
+  elMobile7.addEventListener('click', mobile7Click, false);
+  elMobile8.addEventListener('click', mobile8Click, false);
 
   elWeb1.addEventListener('click', web1Click, false);
   elWeb2.addEventListener('click', web2Click, false);
   elWeb3.addEventListener('click', web3Click, false);
   elWeb4.addEventListener('click', web4Click, false);
+  elWeb5.addEventListener('click', web5Click, false);
+  elWeb6.addEventListener('click', web6Click, false);
+  elWeb7.addEventListener('click', web7Click, false);
+  elWeb8.addEventListener('click', web8Click, false);
+  elWeb9.addEventListener('click', web9Click, false);
+  elWeb10.addEventListener('click', web10Click, false);
+  elWeb11.addEventListener('click', web11Click, false);
+  elWeb12.addEventListener('click', web12Click, false);
+  elWeb13.addEventListener('click', web13Click, false);
+  elWeb14.addEventListener('click', web14Click, false);
+  elWeb15.addEventListener('click', web15Click, false);
+  elWeb16.addEventListener('click', web16Click, false);
+  elWeb17.addEventListener('click', web17Click, false);
+  elWeb18.addEventListener('click', web18Click, false);
+  elWeb19.addEventListener('click', web19Click, false);
+  elWeb20.addEventListener('click', web20Click, false);
+
+
 
 
   //return page
