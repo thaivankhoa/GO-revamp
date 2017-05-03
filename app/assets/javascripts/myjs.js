@@ -1,17 +1,18 @@
 $('document').ready(function() {
   // Change on small devices
   if ($(window).width() <= 1024) {
+    if ($(window).width() <= 768) {
+      $("#tech-mobile").css("display", "block");
+      $("#tech-tablet").css("display", "none");
+    }
     // Update testominal section
     $("#myCarousel").css("display", "none");
-    $("#tech-tablet").css("display", "none");
     $("#carousel-client").css("display", "none");
     $("#testominal-mobile-carousel").css("display", "block");
-    $("#tech-mobile").css("display", "block");
     $("#mobile-carousel-client").css("display", "block");
 
     // Show services
     $(".service-element").fadeTo( 1500, 1, function() {
-
     });
     /* Update about section */
     // Hide element content in mobile view
