@@ -28,7 +28,7 @@ button{
   border: 1px solid transparent;
   outline: 0px;
 }
-//Modified Scroll Bar
+/* //Modified Scroll Bar
 ::-webkit-scrollbar {
     width: 8px;
     background-color: #FCB829;
@@ -48,7 +48,7 @@ button{
 }
 ::-webkit-scrollbar-thumb:hover {
     background-color: #aaa;
-}
+} */
 
 //CSS for video loop background
 .homepage-hero-module {
@@ -212,7 +212,6 @@ button{
       list-style: none;
       float: right;
       padding: 10px 20px 0px 0px;
-      background-color: #f3c339;
       li{
         padding: 10px 15px;
         float: left;
@@ -1464,7 +1463,7 @@ button{
   background: white;
   padding: 50px 0px;
   .touch-content{
-    width: 60%;
+    width: 80%;
     margin: auto;
     text-align: center;
     .touch-title{
@@ -2044,7 +2043,7 @@ ol.carousel-indicators li.active {
         top: 0px;
         left: 0px;
         height: 100%;
-        background-color: #f3c339;
+        background-color: #f7f7f7;
         li{
           float: none;
           padding: 10px 0px;
