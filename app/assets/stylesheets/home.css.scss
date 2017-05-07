@@ -136,6 +136,11 @@ button{
   line-height: 20px;
 }
 
+//
+.block {
+  height: 40px;
+  position: relative;
+}
 //=============
 //HEADER NAVBAR
 //=============
@@ -2389,12 +2394,13 @@ ol.carousel-indicators li.active {
 // Extra small devices
 //====================
 @media screen and (max-width: 768px) {
+  //HEADER
   .header-section{
-    padding: 15px 40px 10px;
+    padding: 5px 40px 5px;
     .logo{
       .image-logo{
-        width: 70px !important;
-        height: 70px !important;
+        width: 50px !important;
+        height: 50px !important;
       }
       .title-logo{
         height: 55px;
@@ -2413,15 +2419,18 @@ ol.carousel-indicators li.active {
     }
     .navigation {
       .navbar{
+        min-height: 30px;
         img{
-          width: 40px;
+          width: 25px;
         }
       }
     }
   }
+  //SLIDER
   .slider-content{
     top: 130px;
     transform: translateY(-75%);
+    margin-top: 230px;
     .slider-title{
       font-size: 15px;
       margin-top: 10px;
