@@ -2448,38 +2448,49 @@ ol.carousel-indicators li.active {
   .slider-section{
     height: 500px;
   }
+  //SERVICE
   .service-section{
     padding: 30px 40px;
     .service-content {
-      margin-top: 40px;
+      width: 100%;
       .service-element {
+        padding: 0px;
+        font-size: 10px;
+        h5.title-service {
+          margin-top: 75px;
+          font-size: 10px;
+        }
         .image-service {
-          width: 72px;
-          height: 72px;
+          width: 80px;
+          height: 80px;
           img {
             width: 40px;
             height: 40px;
+            margin-top: 27.5%;
           }
-        }
-        h5.title-service {
-          font-size: 10px;
-          margin-top: 10px;
+          #web-img.img {
+            margin-top: 27.5%;
+          }
         }
       }
     }
-    .sub-title-section{
-      font-size: 15px;
-      width: 350px;
-      padding: 0px 10px;
-    }
-  }
 
+  //PORTFOLIO
   .detail-project{
     .image-large{
       width: 80%;
     }
   }
   .portfolio-section{
+    .title-portfolio {
+      height: 170px;
+      .title-small {
+        margin-top: 20px;
+      }
+      .sub-title-section {
+        width: 50%;
+      }
+    }
     .control{
       .project-page{
         .project-element{
@@ -2493,37 +2504,14 @@ ol.carousel-indicators li.active {
       width: 50%;
     }
     .portfolio-content{
-      height: 680px;
-      width: 100%;
       .portfolio-group {
         .carousel-inner {
-          height: 550px;
           .item {
-            height: 100%;
+            height: 800px;
             .portfolio-element{
               opacity: 1;
               width: 50%;
               height: 50%;
-              padding: 0px 20px;
-              img, .portfolio-info{
-                width: 100%;
-              }
-              img{
-                height: 230px;
-              }
-              &:first-of-type{
-                .image-first{
-                  margin-left: 0px;
-                  opacity: 1;
-                }
-              }
-              .portfolio-info{
-                margin-top: 10px;
-                margin-left: 0px;
-                height: auto;
-                opacity: 1;
-                position: static;
-              }
             }
           }
         }
@@ -2531,6 +2519,7 @@ ol.carousel-indicators li.active {
       }
     }
   }
+  //FEEDBACK
   .feedback-section{
     .feedback-group {
       .feedback.element{
@@ -2558,6 +2547,7 @@ ol.carousel-indicators li.active {
       }
     }
   }
+  //ABOUT
   .introduce-section{
     padding: 60px 100px;
     h1{
@@ -2592,6 +2582,7 @@ ol.carousel-indicators li.active {
       }
     }
   }
+  //TESTIMONIAL
   .feedback-section{
     .feedback-element{
       width: 100%;
@@ -2612,6 +2603,7 @@ ol.carousel-indicators li.active {
       width: 50%;
     }
   }
+  //CLIENT
   .partner-section{
     .partner-element{
       width: 47%;
@@ -2632,6 +2624,7 @@ ol.carousel-indicators li.active {
       }
     }
   }
+  //GET IN TOUCH
   .touch-section {
     .touch-content {
       .touch-form {
@@ -2642,6 +2635,7 @@ ol.carousel-indicators li.active {
       }
     }
   }
+  //FOOTER
   .footer-section {
     .footer-group {
       width: 80% !important;
