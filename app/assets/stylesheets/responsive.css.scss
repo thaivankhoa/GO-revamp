@@ -389,8 +389,12 @@
     }
   }
   .about-section{
+    padding: 0px 15px 50px 0px;
     .about-info {
       padding: 0px 15px;
+      .introduce-element {
+        width: 45%;
+      }
       .about-element, .mission-content {
         width: 100%;
         p { margin: 15px 0px 15px 0px; }
@@ -428,6 +432,13 @@
       }
     }*/
   }
+  //TECH
+  .tech-section {
+    .tech-group {
+      width: 100%;
+    }
+  }
+
   //TESTIMONIAL
   .feedback-section{
     .feedback-element{
@@ -444,97 +455,71 @@
       }
     }
   }
+  //TEAM
   .team-section{
-    .team-element{
-      width: 50%;
+    padding-top: 60px;
+    .team-slogan {
+      p { width: 50%; }
+    }
+    button {
+      margin-top: 15px;
+      margin-bottom: 60px;
+    }
+    .team-banner {
+      .banner-content {
+        .slogan {
+          p { width: 50%; }
+        }
+      button { width: 25% !important; }
+      }
     }
   }
   //CLIENT
   .partner-section{
-    .partner-element{
-      width: 47%;
-      margin-left: 6%;
-      &:nth-of-type(4n+1){
-        margin-left: 6%;
-      }
-      &:nth-of-type(3n+1){
-        margin-left: 6%;
-      }
-      &:nth-of-type(2n+1){
-        margin-left: 0px;
-      }
+    .introduce-clients {
+      width: 50%;
     }
-    .partner-content {
-      .carousel-inner {
-        width: 90%;
+    .partner-content{
+      .partner-element {
+        width: 50%;
+        margin: 0px;
+        padding: 0px;
+        .partner-small {
+          width: 50%;
+          margin: 0px;
+          padding: 0px;
+        }
       }
     }
   }
   //GET IN TOUCH
   .touch-section {
     .touch-content {
+      width: 90%;
       .touch-form {
         .input-1, .input-2 {
-          width: 100%;
+          width: 48%;
           margin-bottom: 10px;
+        }
+        .input-3 {
+          textarea {
+          }
         }
       }
     }
   }
   //FOOTER
   .footer-section {
-    .footer-group {
-      width: 80% !important;
-    }
     .footer-main {
       .footer-content {
-        padding-top: 40px;
+        width: 80%;
         .footer-col {
-          margin-bottom: 10px;
-          .line {
-            margin-bottom: 10px;
-          }
+          width: 30%;
+          margin-left: 1.66%;
+          margin-right: 1.66%;
         }
-      }
-    }
-  }
-  footer{
-    .footer-col{
-      width: 100%;
-      margin-top: 35px;
-      p{
-        font-size: 13px;
-      }
-      h5{
-        font-size: 18px;
-      }
-      .infomation{
-        &:first-of-type{
-          margin-top: 15px;
-        }
-      }
-      .post-element{
-        margin-top: 25px;
-        .image-post{
-          width: 70px !important;
-          height: 70px !important;
-        }
-        .content-post{
-          h6{
-            font-size: 16px !important;
-          }
-          .time-post{
-            .time-element{
-              span{
-                font-size: 11px !important;
-              }
-            }
-          }
-        }
-      }
-      &:last-child{
-        h5{
-          margin-bottom: 25px;
+        .footer-col:nth-child(2) {
+          display: none;
         }
       }
     }
