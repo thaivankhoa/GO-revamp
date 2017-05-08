@@ -2451,6 +2451,9 @@ ol.carousel-indicators li.active {
   //SERVICE
   .service-section{
     padding: 30px 40px;
+    .sub-title-section {
+      width: 45%;
+    }
     .service-content {
       width: 100%;
       .service-element {
@@ -2466,7 +2469,7 @@ ol.carousel-indicators li.active {
           img {
             width: 40px;
             height: 40px;
-            margin-top: 27.5%;
+            margin-top: 27.5% !important;
           }
           #web-img.img {
             margin-top: 27.5%;
@@ -2474,31 +2477,21 @@ ol.carousel-indicators li.active {
         }
       }
     }
-
-  //PORTFOLIO
-  .detail-project{
-    .image-large{
-      width: 80%;
-    }
   }
-  .portfolio-section{
+  //PORTFOLIO
+
+  .portfolio-section {
     .title-portfolio {
-      height: 170px;
+      height: 190px;
       .title-small {
-        margin-top: 20px;
+        margin-top: 25px;
       }
       .sub-title-section {
         width: 50%;
       }
     }
-    .control{
-      .project-page{
-        .project-element{
-          opacity: 1;
-        }
-      }
-    }
   }
+
   .portfolio-details {
     .navigation-bar {
       width: 50%;
@@ -2515,7 +2508,6 @@ ol.carousel-indicators li.active {
             }
           }
         }
-
       }
     }
   }
