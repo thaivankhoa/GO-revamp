@@ -267,13 +267,13 @@ button{
 //===========
 
 .slider-section{
-  height: 760px;
+  height: 1080px;
   width: 100%;
   background-image: url(asset_path('background-home.png'));
   background-size: cover;
 }
 .slider-content{
-  margin-top: 300px;
+  margin-top: 450px;
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
@@ -512,7 +512,7 @@ button{
   }
     .item{
       padding: 0px;
-      height: 350px;
+      height: 480px;
     }
     .portfolio-group{
       width: 100%;
@@ -527,8 +527,8 @@ button{
         /*background-image: url(asset_path('fawm-web.png'));*/
         .icon1{
           position: absolute;
-          top: 280px;
-          left: 40px;
+          top: 80%;
+          left: 10%;
           z-index: 2;
           display: none;
           img{
@@ -539,8 +539,8 @@ button{
         }
         .icon2{
           position: absolute;
-          top: 280px;
-          left: 140px;
+          top: 80%;
+          left: 45%;
           z-index: 2;
           display: none;
           img{
@@ -551,8 +551,8 @@ button{
         }
         .icon3{
           position: absolute;
-          top: 280px;
-          left: 240px;
+          top: 80%;
+          right: 10%;
           z-index: 2;
           display: none;
           img{
@@ -1919,9 +1919,8 @@ ol.carousel-indicators li.active {
   background-image: url(asset_path('details-weath.png'));
   background-size: cover;
 }
-
 #blix, #blix-w{
-  background-image: url(asset_path('web-blix.jpg'));
+  background-image: url(asset_path('details-blix.jpg'));
   background-size: cover;
 }
 
@@ -1931,34 +1930,34 @@ ol.carousel-indicators li.active {
 }
 
 #student{
-  background-image: url(asset_path('web-StudentLifeCare.png'));
+  background-image: url(asset_path('details-student.png'));
   background-size: cover;
 }
 
 #luxenomad{
-  background-image: url(asset_path('web-luxenomad.jpg'));
+  background-image: url(asset_path('details-luxenomad.jpg'));
   background-size: cover;
 }
 
 #luxufy{
-  background-image: url(asset_path('web-luxyfy.png'));
+  background-image: url(asset_path('details-luxufy.png'));
   background-size: cover;
 }
 
 #gllu{
-  background-image: url(asset_path('mobile-GLLU.png'));
+  background-image: url(asset_path('details-gllu.png'));
   background-size: cover;
   background-position: -25px 0;
 }
 
 #mywork{
-  background-image: url(asset_path('mobile-mywork.png'));
+  background-image: url(asset_path('details-mywork.png'));
   background-size: cover;
   background-position: 0px -150px;
 }
 
 #app2rist{
-  background-image: url(asset_path('mobile-2ristApp.png'));
+  background-image: url(asset_path('details-2rist.png'));
   background-size: cover;
 }
 
@@ -1993,17 +1992,17 @@ ol.carousel-indicators li.active {
 }
 
 #student-w{
-  background-image: url(asset_path('web-StudentLifeCare.png'));
+  background-image: url(asset_path('details-student.png'));
   background-size: cover;
 }
 
 #luxenomad-w{
-  background-image: url(asset_path('web-luxenomad.jpg'));
+  background-image: url(asset_path('details-luxenomad.jpg'));
   background-size: cover;
 }
 
 #luxufy-w{
-  background-image: url(asset_path('web-luxyfy.png'));
+  background-image: url(asset_path('details-luxufy.png'));
   background-size: cover;
 }
 
@@ -2011,13 +2010,13 @@ ol.carousel-indicators li.active {
 /*mobile*/
 
 #mywork-m{
-  background-image: url(asset_path('mobile-mywork.png'));
+  background-image: url(asset_path('details-mywork.png'));
   background-size: cover;
   background-position: 0px -150px;
 }
 
 #app2rist-m{
-  background-image: url(asset_path('mobile-2ristApp.png'));
+  background-image: url(asset_path('details-2rist.png'));
   background-size: cover;
 }
 
@@ -2029,19 +2028,19 @@ ol.carousel-indicators li.active {
 }
 
 #booqed-m{
-  background-image: url(asset_path('mobile-booqed.png'));
+  background-image: url(asset_path('details-booqed.png'));
   background-size: cover;
 }
 
 #gllu-m{
-  background-image: url(asset_path('mobile-GLLU.png'));
+  background-image: url(asset_path('details-gllu.png'));
   background-size: cover;
   background-position: -25px 0;
 }
 
 /* */
 #booqed{
-  background-image: url(asset_path('mobile-booqed.png'));
+  background-image: url(asset_path('details-booqed.png'));
   background-size: cover;
 }
 
@@ -2051,7 +2050,7 @@ ol.carousel-indicators li.active {
 }
 
 #built, #built-m{
-  background-image: url(asset_path('mobile-built.jpg'));
+  background-image: url(asset_path('details-built.jpg'));
   background-size: cover;
 
 }
