@@ -89,13 +89,15 @@ $('document').ready(function() {
         current_menu = $('#service');
         current_menu.addClass('active');
       }
-      if ($(this).scrollTop() > $('.service-section').offset().top - 300){
-        if(navbar.matches){
-          $('.service-element:nth-child(1)').css({'margin-left':'0px','opacity':'1','transition':'1s'});
-          $('.service-element:nth-child(2)').css({'margin-top':'100px','opacity':'1','transition':'1s 0.25s'});
-          $('.service-element:nth-child(3)').css({'margin-top': '100px','opacity':'1','transition':'1s 0.5s'});
-          $('.service-element:nth-child(4)').css({'margin-top':'100px', 'margin-left': '0px', 'opacity':'1','transition':'1s 0.25s'});
-          $('.service-element:nth-child(5)').css({'margin-right':'0px','opacity':'1','transition':'1s'});
+      if ( $(window).width() > 767) {
+        if ($(this).scrollTop() > $('.service-section').offset().top - 300){
+          if(navbar.matches){
+            $('.service-element:nth-child(1)').css({'margin-left':'0px','opacity':'1','transition':'1s'});
+            $('.service-element:nth-child(2)').css({'margin-top':'100px','opacity':'1','transition':'1s 0.25s'});
+            $('.service-element:nth-child(3)').css({'margin-top': '100px','opacity':'1','transition':'1s 0.5s'});
+            $('.service-element:nth-child(4)').css({'margin-top':'100px', 'margin-left': '0px', 'opacity':'1','transition':'1s 0.25s'});
+            $('.service-element:nth-child(5)').css({'margin-right':'0px','opacity':'1','transition':'1s'});
+          }
         }
       }
 

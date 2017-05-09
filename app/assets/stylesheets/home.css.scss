@@ -1426,16 +1426,16 @@ button{
             width: 40px;
           }
         }
-        .icon1:hover, .icon2:hover, .icon3:hover {
+/*        .icon1:hover, .icon2:hover, .icon3:hover {
           opacity: 0.7;
-        }
+        }*/
       }
-      .avatar:hover{
+/*      .avatar:hover{
         .icon1, .icon2, .icon3{
           display: block;
           animation: fadein 1s;
         }
-      }
+      }*/
 
       .name-member {
         font-size: 14px;
@@ -1542,14 +1542,14 @@ button{
   .carousel-control.right{
     background: transparent;
     background-image: none;
-    color: #FCB829;
+    color: white;
     text-align: right;
     opacity: 1;
   }
   .carousel-control.left{
     background: transparent;
     background-image: none;
-    color: #FCB829;
+    color: white;
     opacity: 1;
   }
 

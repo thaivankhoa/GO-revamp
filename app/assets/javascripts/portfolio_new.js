@@ -99,246 +99,250 @@ $('document').ready(function(){
   var elMobile6 = document.getElementById('fitday-m');
   var elMobile7 = document.getElementById('scope-m');
   var elMobile8 = document.getElementById('built-m');
-  function all1Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[0].style.display = "block"
+
+  if ( window.innerWidth > 767 ) {
+    function all1Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[0].style.display = "block"
+    }
+    function all2Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[1].style.display = "block"
+    }
+    function all3Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[2].style.display = "block"
+    }
+    function all4Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[3].style.display = "block"
+    }
+    function all5Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[4].style.display = "block"
+    }
+    function all6Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[5].style.display = "block"
+    }
+    function all7Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[6].style.display = "block"
+    }
+    function all8Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[7].style.display = "block"
+    }
+    function all9Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[8].style.display = "block"
+    }
+    function all10Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[9].style.display = "block"
+    }
+    function all11Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[10].style.display = "block"
+    }
+    function all12Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[11].style.display = "block"
+    }
+    function all13Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[12].style.display = "block"
+    }
+    function all14Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[13].style.display = "block"
+    }
+    function all15Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[14].style.display = "block"
+    }
+    function all16Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[15].style.display = "block"
+    }
+    function all17Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[16].style.display = "block"
+    }
+    function all18Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[17].style.display = "block"
+    }
+    function all19Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[18].style.display = "block"
+    }
+    function all20Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[19].style.display = "block"
+    }
+    function all21Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[20].style.display = "block"
+    }
+    function all22Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[21].style.display = "block"
+    }
+    function all23Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[22].style.display = "block"
+    }
+    function all24Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[23].style.display = "block"
+    }
+    function all25Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[24].style.display = "block"
+    }
+    function all26Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[25].style.display = "block"
+    }
+    function all27Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[26].style.display = "block"
+    }
+    function all28Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[11].style.display = "block"
+    }
+    function all29Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[27].style.display = "block"
+    }
+    function all30Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[28].style.display = "block"
+    }
+    function all31Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[29].style.display = "block"
+    }
+    function all32Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[30].style.display = "block"
+    }
+    function mobile1Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[8].style.display = "block"
+    }
+    function mobile2Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[9].style.display = "block"
+    }
+    function mobile3Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[10].style.display = "block"
+    }
+    function mobile4Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[11].style.display = "block"
+    }
+    function mobile5Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[17].style.display = "block"
+    }
+    function mobile6Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[18].style.display = "block"
+    }
+    function mobile7Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[23].style.display = "block"
+    }
+    function mobile8Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[15].style.display = "block"
+    }
+    function web1Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[4].style.display = "block"
+    }
+    function web2Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[5].style.display = "block"
+    }
+    function web3Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[6].style.display = "block"
+    }
+    function web4Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[7].style.display = "block"
+    }
+    function web5Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[12].style.display = "block"
+    }
+    function web6Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[13].style.display = "block"
+    }
+    function web7Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[14].style.display = "block"
+    }
+    function web8Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[16].style.display = "block"
+    }
+    function web9Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[20].style.display = "block"
+    }
+    function web10Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[21].style.display = "block"
+    }
+    function web11Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[22].style.display = "block"
+    }
+    function web12Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[19].style.display = "block"
+    }
+    function web13Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[0].style.display = "block"
+    }
+    function web14Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[1].style.display = "block"
+    }
+    function web15Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[2].style.display = "block"
+    }
+    function web16Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[3].style.display = "block"
+    }
+      function web17Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[24].style.display = "block"
+    }
+    function web18Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[25].style.display = "block"
+    }
+    function web19Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[26].style.display = "block"
+    }
+    function web20Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[11].style.display = "block"
+    }
   }
-  function all2Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[1].style.display = "block"
-  }
-  function all3Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[2].style.display = "block"
-  }
-  function all4Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[3].style.display = "block"
-  }
-  function all5Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[4].style.display = "block"
-  }
-  function all6Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[5].style.display = "block"
-  }
-  function all7Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[6].style.display = "block"
-  }
-  function all8Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[7].style.display = "block"
-  }
-  function all9Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[8].style.display = "block"
-  }
-  function all10Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[9].style.display = "block"
-  }
-  function all11Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[10].style.display = "block"
-  }
-  function all12Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[11].style.display = "block"
-  }
-  function all13Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[12].style.display = "block"
-  }
-  function all14Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[13].style.display = "block"
-  }
-  function all15Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[14].style.display = "block"
-  }
-  function all16Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[15].style.display = "block"
-  }
-  function all17Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[16].style.display = "block"
-  }
-  function all18Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[17].style.display = "block"
-  }
-  function all19Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[18].style.display = "block"
-  }
-  function all20Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[19].style.display = "block"
-  }
-  function all21Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[20].style.display = "block"
-  }
-  function all22Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[21].style.display = "block"
-  }
-  function all23Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[22].style.display = "block"
-  }
-  function all24Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[23].style.display = "block"
-  }
-  function all25Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[24].style.display = "block"
-  }
-  function all26Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[25].style.display = "block"
-  }
-  function all27Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[26].style.display = "block"
-  }
-  function all28Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[11].style.display = "block"
-  }
-  function all29Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[27].style.display = "block"
-  }
-  function all30Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[28].style.display = "block"
-  }
-  function all31Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[29].style.display = "block"
-  }
-  function all32Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[30].style.display = "block"
-  }
-  function mobile1Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[8].style.display = "block"
-  }
-  function mobile2Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[9].style.display = "block"
-  }
-  function mobile3Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[10].style.display = "block"
-  }
-  function mobile4Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[11].style.display = "block"
-  }
-  function mobile5Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[17].style.display = "block"
-  }
-  function mobile6Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[18].style.display = "block"
-  }
-  function mobile7Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[23].style.display = "block"
-  }
-  function mobile8Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[15].style.display = "block"
-  }
-  function web1Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[4].style.display = "block"
-  }
-  function web2Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[5].style.display = "block"
-  }
-  function web3Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[6].style.display = "block"
-  }
-  function web4Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[7].style.display = "block"
-  }
-  function web5Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[12].style.display = "block"
-  }
-  function web6Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[13].style.display = "block"
-  }
-  function web7Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[14].style.display = "block"
-  }
-  function web8Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[16].style.display = "block"
-  }
-  function web9Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[20].style.display = "block"
-  }
-  function web10Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[21].style.display = "block"
-  }
-  function web11Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[22].style.display = "block"
-  }
-  function web12Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[19].style.display = "block"
-  }
-  function web13Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[0].style.display = "block"
-  }
-  function web14Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[1].style.display = "block"
-  }
-  function web15Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[2].style.display = "block"
-  }
-  function web16Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[3].style.display = "block"
-  }
-    function web17Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[24].style.display = "block"
-  }
-  function web18Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[25].style.display = "block"
-  }
-  function web19Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[26].style.display = "block"
-  }
-  function web20Click(){
-    details.style.display = "block";
-    details.lastChild.childNodes[11].style.display = "block"
-  }
+
   elAll1.addEventListener('click', all1Click, false);
   elAll2.addEventListener('click', all2Click, false);
   elAll3.addEventListener('click', all3Click, false);
@@ -408,5 +412,8 @@ $('document').ready(function(){
       details.lastChild.childNodes[i].style.display = "none";
     }
   }
+
+  details.addEventListener('click', returnClick, false);
   bg.addEventListener('click', returnClick, false);
+
 });
