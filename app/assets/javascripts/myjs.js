@@ -281,7 +281,43 @@ $('document').ready(function() {
     //Function
     function setAuto(){
     }
-    //
+    //responsive for about part (width < 414)
+    if( $(window).width() < 415 )
+    {
+      var experience = $('.about-section .about-element');
+      //experience-click
+      experience.click(function() {
+        if (experience.children().slice(2).css('display') == "block") {
+          experience.children().slice(2).css('display', 'none')
+        }
+        else
+        {
+          experience.children().slice(2).css('display', 'block');
+        }
+      })
+      //feature-click
+      var feature = $('.about-section .rule-content');
+      feature.click(function() {
+        if (feature.children().slice(2).css('display') == "block") {
+          feature.children().slice(2).css('display', 'none')
+        }
+        else
+        {
+          feature.children().slice(2).css('display', 'block');
+        }
+      })
+      //mission-click
+      var mission = $('.about-section .mission-content');
+      mission.click(function() {
+        if (mission.children().slice(2).css('display') == "block") {
+          mission.children().slice(2).css('display', 'none')
+        }
+        else
+        {
+          mission.children().slice(2).css('display', 'block');
+        }
+      })
+    }
 });
 
 //Video Loop BackGround
