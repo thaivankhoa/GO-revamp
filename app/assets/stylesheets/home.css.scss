@@ -1031,6 +1031,7 @@ button{
       width: 33.3%;
       padding: 0px 20px;
       float: left;
+      display: block;
       h4{
         font-size: 14px;
         font-weight: 600;
@@ -1055,13 +1056,14 @@ button{
       }
     }
     .rule-content{
+      display: block;
       padding: 0px 20px 0px 20px;
       width: 33.3%;
       float: left;
       border-left: 1px solid #FCB829;
       border-right: 1px solid #FCB829;
       h4{
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 600;
         color: black;
         margin-top: 0px;
@@ -1075,6 +1077,7 @@ button{
         margin-bottom: 32px;
       }
       .rule-element{
+        display: block;
         margin-bottom: 5px;
         width: 100%;
         img{
@@ -1797,7 +1800,6 @@ button{
       .item-content{
         display: block;
         margin-top: 10px;
-
           .twitter-tweet{
             width: 170px !important;
             max-width: 200px !important;
@@ -1813,6 +1815,7 @@ button{
         }
         p{
           font-size: 12px;
+          margin-bottom: 0 !important;
         }
         .phone{
           display: block;
