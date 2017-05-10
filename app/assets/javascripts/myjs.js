@@ -55,7 +55,7 @@ $('document').ready(function() {
     var scroll_body = 0;
     var count_scroll = 0;
     $(window).scroll(function(){
-      var navbar = window.matchMedia("screen and (min-width: 650px)");
+      var navbar = window.matchMedia("screen and (min-width: 350px)");
 
       //Check to see if the window is top if not then display button
       var height_slider = $('.slider-section').height() - 100;
@@ -282,7 +282,7 @@ $('document').ready(function() {
     function setAuto(){
     }
     //responsive for about part (width < 414)
-    if( $(window).width() < 415 )
+    if( $(window).width() < 700 )
     {
       var experience = $('.about-section .about-element');
       //experience-click
