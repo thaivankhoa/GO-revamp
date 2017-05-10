@@ -1,14 +1,48 @@
-//=================
-// Responsive style
-//=================
+//====================
+// 1920px width Screen
+//====================
 
-@media screen and (max-width: 1600px){
+@media screen and (max-width: 1920px){
+
+  .slider-content{
+    margin-top: 480px;
+    .slider-title{
+        font-size: 25px;
+        line-height: 50px;
+      span{
+        font-size: 37px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+//====================
+// Big Screen
+//====================
+
+@media screen and (max-width: 1700px){
 
   .slider-section{
     height: 900px;
   }
   .slider-content{
     margin-top: 400px;
+    .slider-title{
+        margin-top: 35px;
+        font-size: 18px;
+        font-weight: normal;
+        color: white;
+        line-height: 35px;
+        text-transform: uppercase;
+        transform: scale(0);
+      span{
+        padding: 0px 10%;
+        font-size: 30px;
+        font-weight: bold;
+        color: #f3c339;
+      }
+    }
   }
 
   .portfolio-details {
@@ -20,7 +54,11 @@
   }
 }
 
-@media screen and (max-width: 1369px){
+//===============
+// HD screen 1368
+//===============
+
+@media screen and (max-width: 1368px){
 
   .slider-section{
     height: 766px;
@@ -38,7 +76,10 @@
   }
 }
 
-// Medium devices
+//===================
+// Big tablet devices
+//===================
+
 @media screen and (max-width: 1200px){
 
 //header
@@ -118,7 +159,9 @@
 
 }
 
-// Small devices
+//========
+//Ipad pro
+//========
 @media screen and (max-width: 1024px) {
   //SERVICE
     .service-section {
@@ -231,10 +274,10 @@
   }
 }
 
-//====================
-// Extra small devices
-//====================
-@media screen and (max-width: 768px) {
+//==============================================
+// Tablet devices -Ipad mini -> Samsung glaxy tab
+//==============================================
+@media screen and (max-width: 800px) {
   //HEADER
   .header-section{
     padding: 5px 40px 5px;
@@ -513,9 +556,76 @@
     }
   }
 }*/
-//================
-// iphone6-plus
-//================
+
+//=================
+//Big Screen Mobile
+//=================
+@media screen and (max-width: 650px) {
+  //SERVICE
+
+  .service-section {
+    .service-content {
+      .service-element{
+        padding: 0px 10px 10px;
+        margin-top: 100px;
+        float: left;
+        text-align: center;
+        opacity: 1;
+
+        &:nth-child(1){
+          width: 33.3%;
+          margin-left: 0px;
+        }
+        &:nth-child(2){
+          margin-top: 100px;
+          width: 33.3%;
+        }
+        &:nth-child(3){
+          width: 33.3%;
+          margin-top: 100px;
+        }
+        &:nth-child(4){
+          margin-top: 70px !important;
+          margin-left: 10% !important;
+          margin-right: 0% !important;
+          width: 40%;
+        }
+        &:nth-child(5){
+          width: 40%;
+          margin-right: 10% !important;
+          margin-left: 0% !important;
+          margin-top: 70px !important;
+          position: relative;
+          right: 0;
+        }
+      }
+    }
+  }
+  //TESTIMONIAL
+  .feedback-section{
+    .feedback-group {
+      .feedback.element{
+        width: 100%;
+        .info-customer {
+          .feedback-content {
+            min-height: 100px;
+          }
+        }
+      }
+    }
+    ol.carousel-indicators {
+      li {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+  //
+}
+
+//=====================
+// iphone6-plus - 414px
+//=====================
 
 @media screen and (max-width: 414px) {
 
@@ -962,7 +1072,7 @@
 }
 
 //================
-// iphone6
+// iphone6 - 375px
 //================
 
 @media screen and (max-width: 375px) {
@@ -1258,104 +1368,4 @@
       }
     }
   }
-
-/*  //FEEDBACK
-  .feedback-section{
-    .title-testimonial {
-      span {
-        font-size: 16px;
-      }
-    }
-    .testimonial-slogan {
-      p {
-        font-size: 13px;
-      }
-    }
-  }
-  //ABOUT
-  .introduce-section{
-    .title-section {
-      span {
-        font-size: 16px;
-      }
-    }
-
-    .about-info {
-      .introduce-element {
-        p {
-          font-size: 13px;
-        }
-      }
-    }
-  }
-  //TECH
-  .tech-section {
-    .tech-title {
-      font-size: 16px;
-    }
-  }
-
-  //TESTIMONIAL
-  .feedback-section{
-    .feedback-element{
-      width: 100%;
-      .image-customer{
-        float: left;
-        text-align: left;
-      }
-      .caret{
-        display: block;
-      }
-      .feeback-content{
-        margin-left: 130px;
-      }
-    }
-  }
-  //TEAM
-  .team-section{
-    padding-top: 60px;
-    .team-title {
-      font-size: 16px;
-    }
-    .team-slogan {
-      p {
-        font-size: 13px;
-      }
-    }
-    .team-banner {
-      .banner-content {
-        .title {
-          font-size: 16px;
-        }
-      button { width: 5 0% !important; margin-top: 10px; }
-      }
-    }
-  }
-  //CLIENT
-  .partner-section{
-    .title-clients {
-      span { font-size: 16px; }
-    }
-    .introduce-clients {
-      width: 80%;
-      p {
-        font-size: 13px;
-      }
-    }
-  }
-  //GET IN TOUCH
-  .touch-section {
-    .touch-content {
-      .touch-title {
-        font-size: 16px;
-      }
-      .touch-introduce {
-        p {
-          font-size: 13px;
-        }
-      }
-    }
-  }
-  //FOOTER*/
 }
-

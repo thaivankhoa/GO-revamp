@@ -91,7 +91,7 @@ $('document').ready(function() {
         current_menu = $('#service');
         current_menu.addClass('active');
       }
-      if ( $(window).width() > 767) {
+      if ( $(window).width() > 414) {
         if ($(this).scrollTop() > $('.service-section').offset().top - 300){
           if(navbar.matches){
             $('.service-element:nth-child(1)').css({'margin-left':'0px','opacity':'1','transition':'1s'});
