@@ -138,7 +138,7 @@ button{
 
 //
 .block {
-  height: 40px;
+  height: 50px;
   position: relative;
 }
 //=============
@@ -156,6 +156,8 @@ button{
       padding-left: 20px;
       float: left;
       width: 30%;
+      padding-top: 5px;
+      margin-bottom: 5px;
       .image-logo{
         width: 50px;
         height: 55px;
@@ -267,7 +269,7 @@ button{
 //===========
 
 .slider-section{
-  height: 1080px;
+  height: 1280px;
   width: 100%;
   background-image: url(asset_path('background-home.png'));
   background-size: cover;

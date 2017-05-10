@@ -5,7 +5,7 @@
 @media screen and (max-width: 1920px){
 
   .slider-content{
-    margin-top: 480px;
+    margin-top: 490px;
     .slider-title{
         font-size: 25px;
         line-height: 50px;
@@ -24,10 +24,47 @@
 @media screen and (max-width: 1700px){
 
   .slider-section{
-    height: 900px;
+    height: 1180px;
   }
   .slider-content{
-    margin-top: 400px;
+    margin-top: 470px;
+    .slider-title{
+        margin-top: 35px;
+        font-size: 18px;
+        font-weight: normal;
+        color: white;
+        line-height: 35px;
+        text-transform: uppercase;
+        transform: scale(0);
+      span{
+        padding: 0px 10%;
+        font-size: 30px;
+        font-weight: bold;
+        color: #f3c339;
+      }
+    }
+  }
+
+  .portfolio-details {
+    .portfolio-content {
+      .item {
+        height: 430px;
+      }
+    }
+  }
+}
+
+//====================
+// Big Screen
+//====================
+
+@media screen and (max-width: 1600px){
+
+  .slider-section{
+    height: 1050px;
+  }
+  .slider-content{
+    margin-top: 410px;
     .slider-title{
         margin-top: 35px;
         font-size: 18px;
@@ -61,10 +98,10 @@
 @media screen and (max-width: 1368px){
 
   .slider-section{
-    height: 766px;
+    height: 880px;
   }
   .slider-content{
-    margin-top: 300px;
+    margin-top: 350px;
   }
 
   .portfolio-details {
@@ -94,7 +131,7 @@
         display: block;
         float: right;
         margin: 0px;
-        margin-top: 10px;
+        margin-top: 16px;
         cursor: pointer;
         vertical-align: middle;
         img{
@@ -564,40 +601,38 @@
   //SERVICE
 
   .service-section {
-    .service-content {
-      .service-element{
-        padding: 0px 10px 10px;
-        margin-top: 100px;
-        float: left;
-        text-align: center;
-        opacity: 1;
+    .service-element{
+      padding: 0px 10px 10px;
+      margin-top: 100px;
+      float: left;
+      text-align: center;
+      opacity: 1;
 
-        &:nth-child(1){
-          width: 33.3%;
-          margin-left: 0px;
-        }
-        &:nth-child(2){
-          margin-top: 100px;
-          width: 33.3%;
-        }
-        &:nth-child(3){
-          width: 33.3%;
-          margin-top: 100px;
-        }
-        &:nth-child(4){
-          margin-top: 70px !important;
-          margin-left: 10% !important;
-          margin-right: 0% !important;
-          width: 40%;
-        }
-        &:nth-child(5){
-          width: 40%;
-          margin-right: 10% !important;
-          margin-left: 0% !important;
-          margin-top: 70px !important;
-          position: relative;
-          right: 0;
-        }
+      &:nth-child(1){
+        width: 33.3%;
+        margin-left: 0px;
+      }
+      &:nth-child(2){
+        margin-top: 100px;
+        width: 33.3%;
+      }
+      &:nth-child(3){
+        width: 33.3%;
+        margin-top: 100px;
+      }
+      &:nth-child(4){
+        margin-top: 70px !important;
+        margin-left: 10% !important;
+        margin-right: 0% !important;
+        width: 40%;
+      }
+      &:nth-child(5){
+        width: 40%;
+        margin-right: 10% !important;
+        margin-left: 0% !important;
+        margin-top: 70px !important;
+        position: relative;
+        right: 0;
       }
     }
   }
@@ -620,7 +655,6 @@
       }
     }
   }
-  //
 }
 
 //=====================
