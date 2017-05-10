@@ -687,7 +687,9 @@
   }
   //CLIENT
   .partner-section {
-    padding-top: 35px;
+    .partner-content {
+      padding: 0px 0px !important;
+    }
   }
 }
 

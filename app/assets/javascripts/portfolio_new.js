@@ -244,7 +244,7 @@ $('document').ready(function(){
     }
     function mobile4Click(){
       details.style.display = "block";
-      details.lastChild.childNodes[11].style.display = "block"
+      details.lastChild.childNodes[31].style.display = "block"
     }
     function mobile5Click(){
       details.style.display = "block";
