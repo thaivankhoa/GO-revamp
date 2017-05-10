@@ -36,11 +36,11 @@ $('document').ready(function(){
   elAll.addEventListener('click', changeState, false);
   elMobile.addEventListener('click', changeState, false);
   elWeb.addEventListener('click', changeState, false);
+  var details = document.getElementById('detail-project');
   // show details
   if ( window.innerWidth > 767 ) {
     console.log('details');
     var all = document.getElementById('all-group');
-    var details = document.getElementById('detail-project');
     var elAll1 = document.getElementById('techlist');
     var elAll2 = document.getElementById('idea-burn');
     var elAll3 = document.getElementById('giveasia');

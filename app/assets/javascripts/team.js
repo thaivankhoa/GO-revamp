@@ -21,7 +21,6 @@ $('document').ready(function() {
           scrollTop: $('.team-section').offset().top - 50
       }, 1000);
       hiddenTeam.slideUp(500,"linear",false);
-
       showLessButton.hide();
       showMoreButton.fadeIn(500);
 
