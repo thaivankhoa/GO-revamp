@@ -278,7 +278,7 @@
   }
   //PARTNER
   .partner-section{
-    padding: 35px 0px 65px 0px;
+    padding: 40px 0px 65px 0px;
     .introduce-clients {
       width: 40%;
     }
@@ -371,7 +371,7 @@
   }
   //SERVICE
   .service-section{
-    padding: 50px 40px;
+
     .sub-title-section {
       width: 45%;
     }
@@ -455,7 +455,7 @@
     }
   }
   .about-section{
-    padding: 0px 15px 50px 0px;
+    padding: 40px 15px 60px 0px;
     .about-info {
       padding: 0px 15px;
       .introduce-element {
@@ -498,7 +498,7 @@
   }
   //TEAM
   .team-section{
-    padding-top: 60px;
+    padding-top: 70px;
     .team-slogan {
       p { width: 50%; }
     }
@@ -593,6 +593,27 @@
     }
   }
 }*/
+//========
+//
+//========
+@media screen and (max-width: 767px) {
+  .about-section{
+    .about-info {
+      .about-element {
+        .line { margin-bottom: 15px; }
+      }
+      .rule-content {
+        .line { margin-bottom: 15px; }
+        #first {
+          margin-top: 20px;
+        }
+      }
+      .mission-content {
+        .line { margin-bottom: 15px; }
+      }
+    }
+  }
+}
 
 //=================
 //Big Screen Mobile
@@ -601,6 +622,7 @@
   //SERVICE
 
   .service-section {
+    padding: 50px 40px;
     .service-element{
       padding: 0px 10px 10px;
       margin-top: 100px;
@@ -654,6 +676,18 @@
         height: 15px;
       }
     }
+  }
+  //ABOUT
+  .about-section {
+    padding: 0px 15px 50px 0px;
+  }
+  //TEAM
+  .team-section {
+    padding-top: 60px;
+  }
+  //CLIENT
+  .partner-section {
+    padding-top: 35px;
   }
 }
 
@@ -976,14 +1010,11 @@
         width: 90%;
       }
       .about-element {
-        /*p {display: none;}*/
         .line { margin-bottom: 15px; }
       }
       .rule-content {
-        .rule-element {display: none;}
       }
       .mission-content {
-        p {display: none;}
         .line { margin-bottom: 15px; }
       }
     }

@@ -1,21 +1,30 @@
 $('document').ready(function() {
-  var elShowmore = document.getElementById('show-more-team');
-  var elShowless = document.getElementById('show-less-team');
 
-  function showMoreMember() {
-    var elHidden = document.getElementById('hidden-team');
-    elHidden.style.display = "block";
-    elShowmore.style.display = "none";
-    elShowless.style.display = "block";
-  }
+  var showMoreButton = $('#show-more-team');
+  var showLessButton = $('#show-less-team');
+  var hiddenTeam = $('#hidden-team');
 
-  function showLessMember() {
-    var elHidden = document.getElementById('hidden-team');
-    elHidden.style.display = "none";
-    elShowmore.style.display = "block";
-    elShowless.style.display = "none";
-  }
+  showLessButton.hide();
+  hiddenTeam.hide();
 
-  elShowmore.addEventListener('click', showMoreMember, false);
-  elShowless.addEventListener('click', showLessMember, false);
+  showMoreButton.click(function() {
+      $('html, body').animate({
+          scrollTop: $('.team-section').offset().top + 440
+      }, 500);
+      hiddenTeam.slideDown(500,"linear",false);
+      showMoreButton.hide();
+      showLessButton.fadeIn(500);
+  });
+
+  showLessButton.click(function() {
+      $('html, body').animate({
+          scrollTop: $('.team-section').offset().top - 50
+      }, 500);
+      hiddenTeam.slideUp(500,"linear",false);
+
+      showLessButton.hide();
+      showMoreButton.fadeIn(500);
+
+  });
+
 });
