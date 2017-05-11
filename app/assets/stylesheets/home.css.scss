@@ -271,7 +271,7 @@ button{
 .slider-section{
   height: 1280px;
   width: 100%;
-  background-image: url(asset_path('background-home.png'));
+  background-image: url(asset_path('background-home.jpg'));
   background-size: cover;
 }
 .slider-content{
@@ -620,7 +620,7 @@ button{
   padding: 0px 0px 0px;
   .title-portfolio{
     height: 225px;
-    background-image: url(asset_path('portfolio.png'));
+    background-image: url(asset_path('portfolio.jpg'));
     background-position: center;
     background-size: 100%;
     margin-top: 0px;
@@ -1717,7 +1717,7 @@ button{
       .footer-banner{
         position: relative;
         width: 100%;
-        background-image: url(asset_path('ending-bg.png'));
+        background-image: url(asset_path('ending-bg.jpg'));
         background-position: center;
         .footer-group{
           width: 30%;
@@ -2126,8 +2126,8 @@ ol.carousel-indicators li.active {
 .tech-section{
   width: 100%;
   text-align: center;
-  background-image: url(asset_path('portfolio.png'));
-  background-position: bottom;
+  background-image: url(asset_path('portfolio.jpg'));
+  background-position: 0% 85%;
   background-size: cover;
   #triangle-down{
     height: 0;
