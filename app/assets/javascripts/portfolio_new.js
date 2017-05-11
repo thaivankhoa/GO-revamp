@@ -38,7 +38,7 @@ $('document').ready(function(){
   elWeb.addEventListener('click', changeState, false);
   var details = document.getElementById('detail-project');
   // show details
-  if ( window.innerWidth > 767 ) {
+  if ( window.innerWidth > 0 ) {
     console.log('details');
     var all = document.getElementById('all-group');
     var elAll1 = document.getElementById('techlist');
