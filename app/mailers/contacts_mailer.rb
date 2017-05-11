@@ -1,5 +1,4 @@
 class ContactsMailer < ApplicationMailer
-
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
   #
@@ -7,7 +6,6 @@ class ContactsMailer < ApplicationMailer
   #
   def contact_form_email(contact)
     @contact = contact
-    mail( to: "thienyglobe@gmail.com", subject: 'New visitor contact admin')
+    mail( to: "blackealge.2802@gmail.com", subject: 'New visitor contact admin')
   end
-
 end

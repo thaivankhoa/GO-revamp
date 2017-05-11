@@ -5,13 +5,46 @@
     .touch-introduce
       p Contact us for further information
     .touch-form
-      form action="/action_page.php"
-        .input-1
-          input name="name" type="text" value="Name" /
-        .input-2
-          input name="email" type="text" value="Email" /
-        .input-3
-          textarea cols="50" rows="4"
-            | Your message...
-        .submit-button
-          input type="submit" value=("SEND MESSAGE") /
+      / form action="/action_page.php"
+      /   .input-1
+      /     input name="name" type="text" value="Name" /
+      /   .input-2
+      /     input name="email" type="text" value="Email" /
+      /   .input-3
+      /     textarea cols="50" rows="4"
+      /       | Your message...
+      /   .submit-button
+      /     input type="submit" value=("SEND MESSAGE") /
+      = form_for(@contact) do |f|
+        - if @contact.errors.any?
+          #error_explanation
+            h2
+              = pluralize(@contact.errors.count, "error")
+              | prohibited this contact from being saved:
+            ul
+              - @contact.errors.full_messages.each do |message|
+                li= message
+        #contactForm.form name="sentMessage"
+          .form-group.col-xs-12
+            = f.label :Name
+            br/
+            = f.text_field :name, class: "form-control", required: "true", type: "text"
+          .form-group.col-xs-12
+            = f.label :Email
+            br/
+            = f.text_field :email, class: "form-control", required: "true", type: "email"
+          .form-group.col-xs-12
+            = f.label :Subject
+            br/
+            = f.text_field :subject, class: "form-control", required: "true", type: "text"
+          .form-group.col-xs-12
+            = f.label :Message
+            br/
+            = f.text_area :message, class: "form-control", required: "true", type: "text"
+          .row
+            .form-group.col-xs-12
+              = f.submit "EMAIL US", :class => "btn"
+              - flash.each do |key, value|
+                javascript:
+                  alert("#{value}")
+              end
