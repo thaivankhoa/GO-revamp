@@ -1,14 +1,11 @@
-h2 Hi Admin,
-
+h2  Hi Admin,
 p
-	| A person name
-	= @contact.name
-	| sent you a feedback with following content:
-	
+	| A client whose name is&nbsp;
+	b= @contact.name
+	| &nbsp;sent you a message with the following content:
 p
-	b Subject
-	= @contact.subject
-
+  em
+	  b= @contact.message
 p
-	b Content
-	= @contact.message
+  em Client's email:&nbsp;
+  b= @contact.email

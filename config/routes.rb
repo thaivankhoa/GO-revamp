@@ -5,9 +5,9 @@ Rails.application.routes.draw do
   # scope "/admin" do
   #   resources :users
   # end
+  resources :contacts
   resources "touchs", only: [:new, :create]
   resources :users
-  resources :contacts
   namespace :admin do
     resources :users
   end
