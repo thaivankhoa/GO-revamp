@@ -37,17 +37,16 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
     ContactsMailer.contact_form_email(@contact).deliver_now
+    redirect_to root_path
+    # respond_to do |format|
+    #   if @contact.save
+    #     format.html { redirect_to '#', notice: 'Contact was successfully created.' }
+    #     format.json { render :show, status: :created, location: @contact }
 
-    respond_to do |format|
-      if @contact.save
-        format.html { redirect_to '#', notice: 'Contact was successfully created.' }
-        format.json { render :show, status: :created, location: @contact }
-
-      else
-        format.html { redirect_to root_path, notice: 'Thank for your message!'}
-        format.json { render json: @contact.errors, status: :unprocessable_entity }
-      end
-    end
+    #   else
+    #     format.html { redirect_to root_path, notice: 'Thank for your message!'}
+    #     format.json { render json: @contact.errors, status: :unprocessable_entity }
+    #   end
   end
 
   # PATCH/PUT /contacts/1
