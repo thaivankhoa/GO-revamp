@@ -38,6 +38,13 @@ $('document').ready(function(){
   elWeb.addEventListener('click', changeState, false);
   var details = document.getElementById('detail-project');
   // show details
+  // var object = {
+  //   elall1: {
+  //     id: "techlist",
+  //     index: 0,
+  //   },
+
+  // }
   if ( window.innerWidth > 0 ) {
     console.log('details');
     var all = document.getElementById('all-group');
@@ -62,7 +69,7 @@ $('document').ready(function(){
     var elAll27 = document.getElementById('war');
     var elAll28 = document.getElementById('natt');
     var elAll29 = document.getElementById('allstart');
-    var elAll30 = document.getElementById('view360');
+    var elAll30 = document.getElementById('laku6');
     var elAll31 = document.getElementById('a21');
     var elAll32 = document.getElementById('dbs');
     var elAll5 = document.getElementById('corpzap');
@@ -93,6 +100,10 @@ $('document').ready(function(){
     var elWeb18 = document.getElementById('tyk-w');
     var elWeb19 = document.getElementById('war-w');
     var elWeb20 = document.getElementById('natt-w');
+    var elWeb21 = document.getElementById('allstart-w');
+    var elWeb22 = document.getElementById('laku6-w');
+    var elWeb23 = document.getElementById('a21-w');
+    var elWeb24 = document.getElementById('study-w2');
     var elMobile1 = document.getElementById('booqed-m');
     var elMobile2 = document.getElementById('mywork-m');
     var elMobile3 = document.getElementById('app2rist-m');
@@ -101,6 +112,10 @@ $('document').ready(function(){
     var elMobile6 = document.getElementById('fitday-m');
     var elMobile7 = document.getElementById('scope-m');
     var elMobile8 = document.getElementById('built-m');
+    var elMobile9 = document.getElementById('app2rist-m2');
+    var elMobile10 = document.getElementById('dbs-m');
+    var elMobile11 = document.getElementById('view360-m');
+    var elMobile12 = document.getElementById('toned-m');
 
     function all1Click(){
       details.style.display = "block";
@@ -220,7 +235,7 @@ $('document').ready(function(){
     }
     function all30Click(){
       details.style.display = "block";
-      details.lastChild.childNodes[28].style.display = "block"
+      details.lastChild.childNodes[32].style.display = "block"
     }
     function all31Click(){
       details.style.display = "block";
@@ -261,6 +276,22 @@ $('document').ready(function(){
     function mobile8Click(){
       details.style.display = "block";
       details.lastChild.childNodes[15].style.display = "block"
+    }
+    function mobile9Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[10].style.display = "block"
+    }
+    function mobile10Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[30].style.display = "block"
+    }
+    function mobile11Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[28].style.display = "block"
+    }
+    function mobile12Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[24].style.display = "block"
     }
     function web1Click(){
       details.style.display = "block";
@@ -342,7 +373,22 @@ $('document').ready(function(){
       details.style.display = "block";
       details.lastChild.childNodes[11].style.display = "block"
     }
-
+      function web21Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[27].style.display = "block"
+    }
+    function web22Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[32].style.display = "block"
+    }
+    function web23Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[29].style.display = "block"
+    }
+    function web24Click(){
+      details.style.display = "block";
+      details.lastChild.childNodes[20].style.display = "block"
+    }
     elAll1.addEventListener('click', all1Click, false);
     elAll2.addEventListener('click', all2Click, false);
     elAll3.addEventListener('click', all3Click, false);
@@ -383,6 +429,10 @@ $('document').ready(function(){
     elMobile6.addEventListener('click', mobile6Click, false);
     elMobile7.addEventListener('click', mobile7Click, false);
     elMobile8.addEventListener('click', mobile8Click, false);
+    elMobile9.addEventListener('click', mobile9Click, false);
+    elMobile10.addEventListener('click', mobile10Click, false);
+    elMobile11.addEventListener('click', mobile11Click, false);
+    elMobile12.addEventListener('click', mobile12Click, false);
     elWeb1.addEventListener('click', web1Click, false);
     elWeb2.addEventListener('click', web2Click, false);
     elWeb3.addEventListener('click', web3Click, false);
@@ -403,6 +453,10 @@ $('document').ready(function(){
     elWeb18.addEventListener('click', web18Click, false);
     elWeb19.addEventListener('click', web19Click, false);
     elWeb20.addEventListener('click', web20Click, false);
+    elWeb21.addEventListener('click', web21Click, false);
+    elWeb22.addEventListener('click', web22Click, false);
+    elWeb23.addEventListener('click', web23Click, false);
+    elWeb24.addEventListener('click', web24Click, false);
   }
   //return page
   var bg = document.getElementById('bg-project');
