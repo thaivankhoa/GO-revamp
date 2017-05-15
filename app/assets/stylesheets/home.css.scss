@@ -374,6 +374,9 @@ button{
     .image-service{
       border: 1px solid #fdd47e;
       box-shadow: 0px 5px 2px #fdd47e;
+      img {
+        animation: spinHorizontal 1s;
+      }
     }
   }
   .service-element{
@@ -2194,4 +2197,9 @@ ol.carousel-indicators li.active {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+@keyframes spinHorizontal {
+    /*0% { transform: rotateY(0deg); }*/
+    100% { transform: rotateY(360deg); }
 }
