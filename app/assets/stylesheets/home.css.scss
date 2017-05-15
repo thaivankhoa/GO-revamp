@@ -234,6 +234,9 @@ button{
       .image-logo{
         width: 50px;
         height: 55px;
+        img {
+          content: url(asset_path('logo-fixed.png'));
+        }
       }
 
     }
@@ -304,7 +307,8 @@ button{
     }
   }
   button.btn-details{
-    background-color: transparent;
+    /*background-color: transparent;*/
+    background-color: rgba(252, 184, 41, 0);
     color: white;
     padding: 8px 20px;
     margin-top: 35px;
@@ -378,6 +382,7 @@ button{
     .image-service{
       border: 1px solid #fdd47e;
       box-shadow: 0px 5px 2px #fdd47e;
+      animation: spinHorizontal 1s;
       img {
         animation: spinHorizontal 1s;
       }
@@ -394,22 +399,57 @@ button{
     &:nth-child(1){
       margin-left: -50px;
     }
+    &:nth-child(1):hover{
+      .image-service {
+        img {
+          content: url(asset_path('icon-outsource-hover.png'));
+        }
+      }
+    }
     &:nth-child(2){
       margin-top: 25px;
+    }
+    &:nth-child(2):hover{
+      .image-service {
+        img {
+          content: url(asset_path('icon-mobile-hover.png'));
+        }
+      }
     }
     &:nth-child(3){
 /*      position: absolute;
       right: 0;*/
       margin-top: 50px;
     }
+    &:nth-child(3):hover{
+      .image-service {
+        img {
+          content: url(asset_path('icon-design-hover.png'));
+        }
+      }
+    }
     &:nth-child(4){
       margin-top: 25px;
       margin-left: 100px;
+    }
+    &:nth-child(4):hover{
+      .image-service {
+        img {
+          content: url(asset_path('icon-pm-hover.png'));
+        }
+      }
     }
     &:nth-child(5){
       margin-right: -50px;
       position: absolute;
       right: 0;
+    }
+    &:nth-child(5):hover{
+      .image-service {
+        img {
+          content: url(asset_path('icon-hr-hover.png'));
+        }
+      }
     }
 
     .image-service{
@@ -834,9 +874,11 @@ button{
 .btn-customs{
   text-align: center;
   display: block;
-  border: 3px double #a1a1a1;
+  /*border: 3px double #a1a1a1;*/
+  border: 3px double white;
   border-radius: 50%;
-  background: transparent;
+  /*background: transparent;*/
+  background-color: rgba(252, 184, 41, 0);
   text-align: center;
   margin: auto;
   margin-top: 110px;
@@ -2203,29 +2245,84 @@ ol.carousel-indicators li.active {
   transition: max-height 0.2s ease-out;
 }
 
+
+// spin horizontal
 @keyframes spinHorizontal {
     /*0% { transform: rotateY(0deg); }*/
     100% { transform: rotateY(360deg); }
 }
 
+// bounce
 @keyframes bounce {
         0% {
     transform: scale(1,1) translate(0px, 0px);
   }
 
-  30%{
-    transform: scale(1,0.8) translate(0px, 10px);
+  5%{
+    transform: scale(1,0.8) translate(0px, -15px);
   }
 
-  75%{
-    transform: scale(1,1.1) translate(0px, -25px);
+  10%{
+    transform: scale(1,1.2) translate(0px, 5px);
   }
 
- 100% {
+  15% {
+    transform: scale(1,0.8) translate(0px, -5px);
+  }
+
+  20% {
+    transform: scale(1,1.2) translate(0px, 5px);
+  }
+
+  25% {
+    transform: scale(1,1) translate(0px, 0px);
+  }
+
+  100% {
     transform: scale(1,1) translate(0px, 0px);
   }
 }
 
+// heartbeat
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1,1) translate(0px, 0px);
+  }
+
+  5%{
+    transform: scale(1.05,1.05) translate(0px, 0px);
+  }
+
+  10%{
+    transform: scale(1.1,1.1) translate(0px, 0px);
+  }
+
+  15% {
+    transform: scale(1.1,1.1) translate(0px, 0px);
+  }
+
+  20% {
+    transform: scale(1.05,1.05) translate(0px, 0px);
+  }
+
+  25% {
+    transform: scale(1,1) translate(0px, 0px);
+  }
+
+  100% {
+    transform: scale(1,1) translate(0px, 0px);
+  }
+}
+
+.heartbeat {
+  animation: heartbeat 2s linear infinite;
+}
+
 .bounce {
-  animation: bounce 0.75s infinite;
+  animation: bounce 2s linear infinite;
+}
+
+.fa {
+  font-weight: bold !important;
 }
