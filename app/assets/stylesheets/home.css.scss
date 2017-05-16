@@ -569,12 +569,19 @@ button{
         position: relative;
         z-index: 1;
         /*background-image: url(asset_path('fawm-web.png'));*/
+        cursor: default;
+        /*smooth ease in out animation*/
+        box-shadow:
+          inset 0 0 0 0 rgba(252,184,41, 0.4),
+          0 1px 2px rgba(0,0,0,0.1);
+        transition: all 0.4s ease-in-out;
+        /*smooth ease in out animation*/
         .icon1{
           position: absolute;
           top: 80%;
           left: 10%;
           z-index: 2;
-          display: none;
+/*          display: none;*/
           img{
             height:50px;
             width: 50px;
@@ -586,7 +593,7 @@ button{
           top: 80%;
           left: 45%;
           z-index: 2;
-          display: none;
+/*          display: none;*/
           img{
             height: 50px;
             width: 50px;
@@ -598,18 +605,31 @@ button{
           top: 80%;
           right: 10%;
           z-index: 2;
-          display: none;
+/*          display: none;*/
           img{
             height: 50px;
             width: 50px;
             opacity: 1;
           }
         }
+        .icon1, .icon2, .icon3 {
+          display: block;
+          overflow: hidden;
+          opacity: 0;
+          transition: all 0.4s ease-in-out;
+          transform: scale(0);
+          backface-visibility: hidden;
+        }
         .introduction{
-          transition: opacity 2s ease-in;
-          display: none;
           background: transparent;
-          /*opacity: 0.3;*/
+          /*smooth ease in out animation*/
+          display: block;
+          overflow: hidden;
+          opacity: 0;
+          transition: all 0.4s ease-in-out;
+          transform: scale(0);
+          backface-visibility: hidden;
+          /*smooth ease in out animation*/
           padding: 15px 10px 15px 10px;
           color: white;
           text-align: center;
@@ -636,12 +656,20 @@ button{
         }
       }
       .portfolio-element:hover {
+        /*smooth ease in out animation*/
+        box-shadow:
+          inset 0 0 0 180px rgba(252,184,41, 0.8),
+          0 1px 2px rgba(0,0,0,0.1);
+        opacity: 1;
+        transform: scale(1);
+        /*smooth ease in out animation*/
         .introduction{
-          animation: fadein 0.5s;
           position: absolute;
           z-index: 2;
-          display: block;
-          background: rgba(0, 0, 0, 0.8);
+          /*smooth ease in out animation for introduction*/
+          opacity: 1;
+          transform: scale(1);
+          /*smooth ease in out animation for introduction*/
           .title{
             opacity: 1;
           }
@@ -650,8 +678,8 @@ button{
           }
         }
         .icon1, .icon2, .icon3 {
-          display: block;
-          animation: fadein 1.5s;
+          opacity: 1;
+          transform: scale(1);
         }
       }
     }
