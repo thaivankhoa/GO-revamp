@@ -200,7 +200,8 @@ button{
       float: right;
       padding: 10px 20px 0px 0px;
       li{
-        padding: 10px 15px;
+        padding: 10px 0px 0px 0px;
+        margin: 0px 15px;
         float: left;
         cursor: pointer;
         color: black;
@@ -209,8 +210,28 @@ button{
         /*font-weight: 300;*/
         text-transform: uppercase;
         font-family: 'Roboto', 'Open Sans';
-        &:hover, &.active{
-          text-decoration: underline;
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          /*z-index: -1;*/
+          left: 50%;
+          right: 50%;
+          bottom: 0;
+          background-color: black;
+          height: 1px;
+          -webkit-transition-property: left, right;
+          transition-property: left, right;
+          -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+          -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+        }
+      }
+      li:hover, li.active {
+        &:before {
+          left: 0;
+          right: 0;
         }
       }
     }
@@ -247,13 +268,16 @@ button{
         font-size: 12px;
         font-weight: 400;
         &.active{
-          text-decoration: underline;
-          text-decoration-color: #FCB829;
           color: #FCB829;
+          &:before{
+            background-color: #FCB829;
+          }
         }
         &:hover{
           color: #FCB829;
-          text-decoration: none;
+          &:before{
+            background-color: #FCB829;
+          }
         };
       }
     }
@@ -501,12 +525,39 @@ button{
         padding: 0px !important;
         margin: 0px !important;
     }
-    .nav-element:hover {
-        text-decoration: none;
-        color: #e6e6e6;
-        li{color: #8a8a8a;}
-
+/*    .nav-element:hover {
+      text-decoration: none;
+      color: #e6e6e6;
+      li {
+        color: #8a8a8a;
+      }
+    }*/
+    //animation
+    .nav-element {
+      li::before {
+        content: "";
+        position: absolute;
+        /*z-index: -1;*/
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        background-color: #FCB829;
+        height: 4px;
+        -webkit-transition-property: left, right;
+        transition-property: left, right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+      }
     }
+    .nav-element:hover {
+      li::before {
+        left: 0;
+        right: 0;
+      }
+    }
+    //
     .nav-element{
       text-align: center;
       text-align: center;
@@ -525,12 +576,19 @@ button{
         font-weight: 500;
         text-decoration: none;
         text-transform: uppercase;
+        position: relative;
+        /*border-bottom: 0px solid #FCB829;*/
       }
       li.active{
-        border-bottom: 4px solid #FCB829;
+        &:before{
+          left: 0;
+          right: 0;
+        }
       }
       li.deactive{
-        border: none;
+        &:before{
+
+        }
       }
     }
   }
@@ -572,7 +630,8 @@ button{
         cursor: default;
         /*smooth ease in out animation*/
         box-shadow:
-          inset 0 0 0 0 rgba(252,184,41, 0.4),
+          /*inset 0 0 0 0 rgba(252,184,41, 0.4),*/
+          inset 0 0 0 0 rgba(0,0,0, 0.4),
           0 1px 2px rgba(0,0,0,0.1);
         transition: all 0.4s ease-in-out;
         /*smooth ease in out animation*/
@@ -658,7 +717,8 @@ button{
       .portfolio-element:hover {
         /*smooth ease in out animation*/
         box-shadow:
-          inset 0 0 0 180px rgba(252,184,41, 0.8),
+          /*inset 0 0 0 180px rgba(252,184,41, 0.8),*/
+          inset 0 0 0 180px rgba(0,0,0, 0.9),
           0 1px 2px rgba(0,0,0,0.1);
         opacity: 1;
         transform: scale(1);
@@ -2353,4 +2413,71 @@ ol.carousel-indicators li.active {
 
 .fa {
   font-weight: bold !important;
+}
+
+
+/* Ripple Out */
+@-webkit-keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+@keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+.hvr-ripple-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+}
+.hvr-ripple-out:before {
+  content: '';
+  position: absolute;
+  border: #e1e1e1 solid 6px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
+  -webkit-animation-name: hvr-ripple-out;
+  animation-name: hvr-ripple-out;
+}
+
+
+/* Underline From Center */
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #2098D1;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
 }
