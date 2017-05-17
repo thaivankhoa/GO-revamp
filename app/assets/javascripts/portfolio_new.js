@@ -46,7 +46,6 @@ $('document').ready(function(){
 
   // }
   if ( window.innerWidth > 0 ) {
-    console.log('details');
     var all = document.getElementById('all-group');
     var elAll1 = document.getElementById('techlist');
     var elAll2 = document.getElementById('idea-burn');
