@@ -1,8 +1,10 @@
 doctype html
-html
+html[amp lang="en"]
   head
+    meta charset="utf-8" /
+    script async="" src="https://cdn.ampproject.org/v0.js"
     title Golden Owl - Ruby on Rails, NodeJS, ReactJS and React Native
-    link rel="amphtml" href="#{home_amp_path}"
+    link href="http://www.goldenowl.asia/amp" rel="canonical" /
     meta name="viewport" content="width=device-width, initial-scale=1"
     meta name="google-site-verification" content="N_qR6-efA-BOE-NPwuBG69fmJ-UG_wDHG34i4ixSlug"
     meta name="description" content="Golden Owl - We do Ruby on Rails, NodeJS, ReactJS and React Native. We follow Agile & TDD practice and cool softwares like Github, Basecamp, Slack in our daily work to provide best communication and transparency to clients. Our services include web development, mobile development, head hunting and more."
@@ -16,6 +18,17 @@ html
     script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
     script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"
 
+    script type="application/ld+json"
+      | {
+      | "@context": "http://schema.org",
+      | "@type": "NewsArticle",
+      | "headline": "Open-source framework for publishing content",
+      | "datePublished": "2017-10-05T12:02:41Z",
+      | "image": [
+      | "logo.jpg"
+      | ]
+      | }
+
     <script type="text/javascript">
         window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
                 d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
@@ -23,7 +36,9 @@ html
             $.src="//v2.zopim.com/?3zExcF60Etu1FYzSvBcjft54xYqZSbOM";z.t=+new Date;$.
                     type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
     </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   body data-spy="scroll"
     = yield
     .footer
       = render 'layouts/footer'
+

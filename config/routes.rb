@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get 'home/home'
   get 'home/about'
   get 'home/sitemap'
+  get 'home/amp'
 
   namespace :blogs do
     get '/' => 'toppage#index'
