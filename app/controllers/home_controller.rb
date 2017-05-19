@@ -9,6 +9,6 @@ class HomeController < ApplicationController
   def about;end
 
   def amp
-      render layout: 'amp'
+      render layou: 'amp'
   end
 end
