@@ -1,5 +1,6 @@
 $('document').ready(function() {
 
+
     //responsive
     var current_menu = $('.menu-content > li:nth-child(2)');
     var numMenu = $('.menu-content > li').size();
