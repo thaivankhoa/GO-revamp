@@ -311,6 +311,26 @@
   }
 }
 
+//========
+//
+//========
+@media screen and (max-width: 960px) {
+  //FEEDBACK
+  .feedback-section{
+    .feedback-group {
+      .feedback.element{
+        width: 46%;
+      }
+    }
+    ol.carousel-indicators {
+      li {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}
+
 //==============================================
 // Tablet devices -Ipad mini -> Samsung glaxy tab
 //==============================================

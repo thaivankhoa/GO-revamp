@@ -2,6 +2,7 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
@@ -13,7 +14,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Roboto', 'Open Sans';
-  background: black;
+  background: white;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -21,7 +22,7 @@ a:visited{
   text-decoration: none;
 }
 .body-content{
-  background: black;
+  background: white;
 }
 button{
   background-color: transparent;
@@ -167,6 +168,9 @@ button{
           width: 100%;
           height: 100%;
         }
+        img:hover {
+          animation: spinHorizontal 1s;
+        }
       }
       .title-logo{
         height: 55px;
@@ -196,7 +200,8 @@ button{
       float: right;
       padding: 10px 20px 0px 0px;
       li{
-        padding: 10px 15px;
+        padding: 10px 0px 0px 0px;
+        margin: 0px 15px;
         float: left;
         cursor: pointer;
         color: black;
@@ -205,8 +210,28 @@ button{
         /*font-weight: 300;*/
         text-transform: uppercase;
         font-family: 'Roboto', 'Open Sans';
-        &:hover, &.active{
-          text-decoration: underline;
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          /*z-index: -1;*/
+          left: 50%;
+          right: 50%;
+          bottom: 0;
+          background-color: black;
+          height: 1px;
+          -webkit-transition-property: left, right;
+          transition-property: left, right;
+          -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+          -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+        }
+      }
+      li:hover, li.active {
+        &:before {
+          left: 0;
+          right: 0;
         }
       }
     }
@@ -230,6 +255,9 @@ button{
       .image-logo{
         width: 50px;
         height: 55px;
+        img {
+          content: url(asset_path('logo-fixed.png'));
+        }
       }
 
     }
@@ -240,13 +268,16 @@ button{
         font-size: 12px;
         font-weight: 400;
         &.active{
-          text-decoration: underline;
-          text-decoration-color: #FCB829;
           color: #FCB829;
+          &:before{
+            background-color: #FCB829;
+          }
         }
         &:hover{
           color: #FCB829;
-          text-decoration: none;
+          &:before{
+            background-color: #FCB829;
+          }
         };
       }
     }
@@ -300,7 +331,8 @@ button{
     }
   }
   button.btn-details{
-    background-color: transparent;
+    /*background-color: transparent;*/
+    background-color: rgba(252, 184, 41, 0);
     color: white;
     padding: 8px 20px;
     margin-top: 35px;
@@ -374,6 +406,10 @@ button{
     .image-service{
       border: 1px solid #fdd47e;
       box-shadow: 0px 5px 2px #fdd47e;
+      animation: spinHorizontal 1s;
+      img {
+        animation: spinHorizontal 1s;
+      }
     }
   }
   .service-element{
@@ -387,22 +423,57 @@ button{
     &:nth-child(1){
       margin-left: -50px;
     }
+    &:nth-child(1):hover{
+      .image-service {
+        img {
+          content: url(asset_path('icon-outsource-hover.png'));
+        }
+      }
+    }
     &:nth-child(2){
       margin-top: 25px;
+    }
+    &:nth-child(2):hover{
+      .image-service {
+        img {
+          content: url(asset_path('icon-mobile-hover.png'));
+        }
+      }
     }
     &:nth-child(3){
 /*      position: absolute;
       right: 0;*/
       margin-top: 50px;
     }
+    &:nth-child(3):hover{
+      .image-service {
+        img {
+          content: url(asset_path('icon-design-hover.png'));
+        }
+      }
+    }
     &:nth-child(4){
       margin-top: 25px;
       margin-left: 100px;
+    }
+    &:nth-child(4):hover{
+      .image-service {
+        img {
+          content: url(asset_path('icon-pm-hover.png'));
+        }
+      }
     }
     &:nth-child(5){
       margin-right: -50px;
       position: absolute;
       right: 0;
+    }
+    &:nth-child(5):hover{
+      .image-service {
+        img {
+          content: url(asset_path('icon-hr-hover.png'));
+        }
+      }
     }
 
     .image-service{
@@ -454,14 +525,40 @@ button{
         padding: 0px !important;
         margin: 0px !important;
     }
-    .nav-element:hover {
-        text-decoration: none;
-        color: #e6e6e6;
-        li{color: #8a8a8a;}
-
+/*    .nav-element:hover {
+      text-decoration: none;
+      color: #e6e6e6;
+      li {
+        color: #8a8a8a;
+      }
+    }*/
+    //animation
+    .nav-element {
+      li::before {
+        content: "";
+        position: absolute;
+        /*z-index: -1;*/
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        background-color: #FCB829;
+        height: 4px;
+        -webkit-transition-property: left, right;
+        transition-property: left, right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+      }
     }
+    .nav-element:hover {
+      li::before {
+        left: 0;
+        right: 0;
+      }
+    }
+    //
     .nav-element{
-      text-align: center;
       text-align: center;
       width: 25%;
       margin-right: 4.16%;
@@ -478,12 +575,19 @@ button{
         font-weight: 500;
         text-decoration: none;
         text-transform: uppercase;
+        position: relative;
+        /*border-bottom: 0px solid #FCB829;*/
       }
       li.active{
-        border-bottom: 4px solid #FCB829;
+        &:before{
+          left: 0;
+          right: 0;
+        }
       }
       li.deactive{
-        border: none;
+        &:before{
+
+        }
       }
     }
   }
@@ -522,12 +626,20 @@ button{
         position: relative;
         z-index: 1;
         /*background-image: url(asset_path('fawm-web.png'));*/
+        cursor: default;
+        /*smooth ease in out animation*/
+/*        box-shadow:
+          inset 0 0 0 0 rgba(252,184,41, 0.6),
+          inset 0 0 0 0 rgba(0,0,0, 0.4),
+          0 1px 2px rgba(0,0,0,0.1);*/
+        transition: all 0.4s ease-in-out;
+        /*smooth ease in out animation*/
         .icon1{
           position: absolute;
           top: 80%;
           left: 10%;
           z-index: 2;
-          display: none;
+/*          display: none;*/
           img{
             height:50px;
             width: 50px;
@@ -539,7 +651,7 @@ button{
           top: 80%;
           left: 45%;
           z-index: 2;
-          display: none;
+/*          display: none;*/
           img{
             height: 50px;
             width: 50px;
@@ -551,20 +663,34 @@ button{
           top: 80%;
           right: 10%;
           z-index: 2;
-          display: none;
+/*          display: none;*/
           img{
             height: 50px;
             width: 50px;
             opacity: 1;
           }
         }
+        .icon1, .icon2, .icon3 {
+          display: block;
+          overflow: hidden;
+          opacity: 0;
+          transition: all 0.4s ease-in-out;
+          transform: scale(0);
+          backface-visibility: hidden;
+        }
         .introduction{
-          transition: opacity 2s ease-in;
-          display: none;
           background: transparent;
-          /*opacity: 0.3;*/
+          /*smooth ease in out animation*/
+          display: block;
+          overflow: hidden;
+          opacity: 0;
+          transition: all 0.4s ease-in-out;
+          transform: scale(0);
+          backface-visibility: hidden;
+          /*smooth ease in out animation*/
           padding: 15px 10px 15px 10px;
-          color: white;
+          /*color: white;*/
+          color: black;
           text-align: center;
           height: 100%;
           z-index: 2;
@@ -572,7 +698,8 @@ button{
           .title{
             margin-top: 70px;
             font-weight: 600;
-            color: #fcbf3e;
+            /*color: #fcbf3e;*/
+            color: black;
             margin-bottom: 15px;
             font-size: 20px;
             text-transform: uppercase;
@@ -589,12 +716,21 @@ button{
         }
       }
       .portfolio-element:hover {
+        /*smooth ease in out animation*/
+        box-shadow:
+          inset 0 0 20px 180px rgba(252,184,41, 0.8),
+          inset 0 0 20px 0px rgba(255,255,255, 0.8),
+          0 1px 2px rgba(0,0,0,0.1);
+        opacity: 1;
+        transform: scale(1);
+        /*smooth ease in out animation*/
         .introduction{
-          animation: fadein 0.5s;
           position: absolute;
           z-index: 2;
-          display: block;
-          background: rgba(0, 0, 0, 0.8);
+          /*smooth ease in out animation for introduction*/
+          opacity: 1;
+          transform: scale(1);
+          /*smooth ease in out animation for introduction*/
           .title{
             opacity: 1;
           }
@@ -603,8 +739,8 @@ button{
           }
         }
         .icon1, .icon2, .icon3 {
-          display: block;
-          animation: fadein 1.5s;
+          opacity: 1;
+          transform: scale(1);
         }
       }
     }
@@ -827,9 +963,11 @@ button{
 .btn-customs{
   text-align: center;
   display: block;
-  border: 3px double #a1a1a1;
+  /*border: 3px double #a1a1a1;*/
+  border: 3px double white;
   border-radius: 50%;
-  background: transparent;
+  /*background: transparent;*/
+  background-color: rgba(252, 184, 41, 0);
   text-align: center;
   margin: auto;
   margin-top: 110px;
@@ -1504,10 +1642,20 @@ button{
         border-radius: 18px;
         background-color: transparent;
         margin-bottom: 20px;
+        a {
+          color: white;
+          text-decoration: none;
+          background-color: transparent;
+        }
       }
       button:hover{
         color: black;
         border: 2px solid black;
+        a {
+          color: black;
+          text-decoration: none;
+          background-color: transparent;
+        }
       }
     }
   }
@@ -1885,12 +2033,6 @@ ol.carousel-indicators li.active {
   padding: 0px !important;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-
 #triangle-down {
   height: 0;
   border-left: 8px solid transparent;
@@ -1900,6 +2042,8 @@ ol.carousel-indicators li.active {
   margin: auto;
   margin-bottom: 5px;
 }
+
+//Projects avatar
 
 #giveasia, #giveasia-w{
   background-image: url(asset_path('por-give.jpg'));
@@ -2128,6 +2272,8 @@ ol.carousel-indicators li.active {
   background-size: cover;
 }
 
+//tech banner
+
 .tech-section{
   width: 100%;
   text-align: center;
@@ -2175,6 +2321,13 @@ ol.carousel-indicators li.active {
       }
     }
   }
+}
+
+//Others
+
+//fa angel down
+.fa {
+  font-weight: bold !important;
 }
 
 //===============

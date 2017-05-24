@@ -1,5 +1,6 @@
 $('document').ready(function() {
 
+
     //responsive
     var current_menu = $('.menu-content > li:nth-child(2)');
     var numMenu = $('.menu-content > li').size();
@@ -298,8 +299,6 @@ function scaleBannerVideoSize(element){
     windowHeight = $(window).height() + 5,
     videoWidth,
     videoHeight;
-
-    console.log(windowHeight);
 
     $(element).each(function(){
         var videoAspectRatio = $(this).data('height')/$(this).data('width');
