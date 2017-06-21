@@ -49,13 +49,13 @@ $('document').ready(function(){
     var all = document.getElementById('all-group');
     var elAll1 = document.getElementById('techlist');
     var elAll2 = document.getElementById('idea-burn');
-    var elAll3 = document.getElementById('giveasia');
+    // var elAll3 = document.getElementById('giveasia');
     var elAll4 = document.getElementById('weath');
     var elAll13 = document.getElementById('artfolo');
     var elAll14 = document.getElementById('cpd');
     var elAll15 = document.getElementById('blix');
     var elAll16 = document.getElementById('built');
-    var elAll17 = document.getElementById('flat');
+    // var elAll17 = document.getElementById('flat');
     var elAll18 = document.getElementById('gllu');
     var elAll19 = document.getElementById('fitday');
     var elAll20 = document.getElementById('stage');
@@ -72,10 +72,10 @@ $('document').ready(function(){
     var elAll31 = document.getElementById('a21');
     var elAll32 = document.getElementById('dbs');
     var elAll5 = document.getElementById('corpzap');
-    var elAll6 = document.getElementById('luxufy');
+    // var elAll6 = document.getElementById('luxufy');
     var elAll7 = document.getElementById('student');
     var elAll8 = document.getElementById('luxenomad');
-    var elAll9 = document.getElementById('booqed');
+    // var elAll9 = document.getElementById('booqed');
     var elAll10 = document.getElementById('mywork');
     var elAll11 = document.getElementById('app2rist');
     var elAll12 = document.getElementById('nattrart');
@@ -390,13 +390,13 @@ $('document').ready(function(){
     }
     elAll1.addEventListener('click', all1Click, false);
     elAll2.addEventListener('click', all2Click, false);
-    elAll3.addEventListener('click', all3Click, false);
+    // elAll3.addEventListener('click', all3Click, false);
     elAll4.addEventListener('click', all4Click, false);
     elAll5.addEventListener('click', all5Click, false);
-    elAll6.addEventListener('click', all6Click, false);
+    // elAll6.addEventListener('click', all6Click, false);
     elAll7.addEventListener('click', all7Click, false);
     elAll8.addEventListener('click', all8Click, false);
-    elAll9.addEventListener('click', all9Click, false);
+    // elAll9.addEventListener('click', all9Click, false);
     elAll10.addEventListener('click', all10Click, false);
     elAll11.addEventListener('click', all11Click, false);
     elAll12.addEventListener('click', all12Click, false);
@@ -404,7 +404,7 @@ $('document').ready(function(){
     elAll14.addEventListener('click', all14Click, false);
     elAll15.addEventListener('click', all15Click, false);
     elAll16.addEventListener('click', all16Click, false);
-    elAll17.addEventListener('click', all17Click, false);
+    // elAll17.addEventListener('click', all17Click, false);
     elAll18.addEventListener('click', all18Click, false);
     elAll19.addEventListener('click', all19Click, false);
     elAll20.addEventListener('click', all20Click, false);
