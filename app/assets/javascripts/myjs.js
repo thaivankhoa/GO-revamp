@@ -1,6 +1,8 @@
 $('document').ready(function() {
+  // $('window').load(function () {
 
-
+    $('.preloader-screen').fadeOut(1000);
+    $('#body-content').fadeIn(2000);
     //responsive
     var current_menu = $('.menu-content > li:nth-child(2)');
     var numMenu = $('.menu-content > li').size();
@@ -273,6 +275,7 @@ $('document').ready(function() {
         }
       })
     }
+  // });
 });
 
 //Video Loop BackGround

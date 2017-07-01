@@ -21,9 +21,18 @@ body {
 a:visited{
   text-decoration: none;
 }
-.body-content{
+#body-content{
   background: white;
 }
+
+.preloader {
+  display: none;
+}
+
+.loader {
+  display: block;
+}
+
 button{
   background-color: transparent;
   border: 1px solid transparent;
