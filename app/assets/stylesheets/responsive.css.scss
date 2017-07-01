@@ -15,6 +15,23 @@
       }
     }
   }
+  .portfolio-details{
+    .portfolio-content{
+      .portfolio-group{
+        width: 100%;
+        height: 100%;
+        .portfolio-element:hover {
+          /*smooth ease in out animation*/
+          box-shadow:
+            inset 0 0 20px 240px rgba(252,184,41, 0.8),
+            inset 0 0 20px 0px rgba(255,255,255, 0.8),
+            0 1px 2px rgba(0,0,0,0.1);
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    }
+  }
 }
 
 //====================
@@ -89,7 +106,25 @@
       }
     }
   }
+  .portfolio-details{
+    .portfolio-content{
+      .portfolio-group{
+        width: 100%;
+        height: 100%;
+        .portfolio-element:hover {
+          /*smooth ease in out animation*/
+          box-shadow:
+            inset 0 0 20px 210px rgba(252,184,41, 0.8),
+            inset 0 0 20px 0px rgba(255,255,255, 0.8),
+            0 1px 2px rgba(0,0,0,0.1);
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    }
+  }
 }
+
 
 //===============
 // HD screen 1368
@@ -108,6 +143,23 @@
     .portfolio-content {
       .item {
         height: 350px;
+      }
+    }
+  }
+  .portfolio-details{
+    .portfolio-content{
+      .portfolio-group{
+        width: 100%;
+        height: 100%;
+        .portfolio-element:hover {
+          /*smooth ease in out animation*/
+          box-shadow:
+            inset 0 0 20px 170px rgba(252,184,41, 0.8),
+            inset 0 0 20px 0px rgba(255,255,255, 0.8),
+            0 1px 2px rgba(0,0,0,0.1);
+          opacity: 1;
+          transform: scale(1);
+        }
       }
     }
   }
@@ -182,7 +234,6 @@
 
 //SERVICE
 
-//PORFOLIO
 
 //TESTIMONIAL
 
