@@ -32,6 +32,50 @@
       }
     }
   }
+  .portfolio-details{
+    .portfolio-content{
+      .portfolio-group{
+        .portfolio-element{
+          .icon1{
+            position: absolute;
+            top: 80%;
+            left: 10%;
+            z-index: 2;
+  /*          display: none;*/
+            img{
+              height:80px;
+              width: 80px;
+              opacity: 1;
+            }
+          }
+          .icon2{
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            z-index: 2;
+            margin-left: -40px;
+            img{
+              height: 80px;
+              width: 80px;
+              opacity: 1;
+            }
+          }
+          .icon3{
+            position: absolute;
+            top: 80%;
+            right: 10%;
+            z-index: 2;
+  /*          display: none;*/
+            img{
+              height: 80px;
+              width: 80px;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 //====================
@@ -123,6 +167,50 @@
       }
     }
   }
+  .portfolio-details{
+    .portfolio-content{
+      .portfolio-group{
+        .portfolio-element{
+          .icon1{
+            position: absolute;
+            top: 80%;
+            left: 10%;
+            z-index: 2;
+  /*          display: none;*/
+            img{
+              height:60px;
+              width: 60px;
+              opacity: 1;
+            }
+          }
+          .icon2{
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            z-index: 2;
+            margin-left: -30px;
+            img{
+              height: 60px;
+              width: 60px;
+              opacity: 1;
+            }
+          }
+          .icon3{
+            position: absolute;
+            top: 80%;
+            right: 10%;
+            z-index: 2;
+  /*          display: none;*/
+            img{
+              height: 60px;
+              width: 60px;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 
@@ -159,6 +247,50 @@
             0 1px 2px rgba(0,0,0,0.1);
           opacity: 1;
           transform: scale(1);
+        }
+      }
+    }
+  }
+  .portfolio-details{
+    .portfolio-content{
+      .portfolio-group{
+        .portfolio-element{
+          .icon1{
+            position: absolute;
+            top: 80%;
+            left: 10%;
+            z-index: 2;
+  /*          display: none;*/
+            img{
+              height: 50px;
+              width: 50px;
+              opacity: 1;
+            }
+          }
+          .icon2{
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            z-index: 2;
+            margin-left: -25px;
+            img{
+              height: 50px;
+              width: 50px;
+              opacity: 1;
+            }
+          }
+          .icon3{
+            position: absolute;
+            top: 80%;
+            right: 10%;
+            z-index: 2;
+  /*          display: none;*/
+            img{
+              height: 50px;
+              width: 50px;
+              opacity: 1;
+            }
+          }
         }
       }
     }
@@ -234,7 +366,50 @@
 
 //SERVICE
 
-
+  .portfolio-details{
+    .portfolio-content{
+      .portfolio-group{
+        .portfolio-element{
+          .icon1{
+            position: absolute;
+            top: 80%;
+            left: 10%;
+            z-index: 2;
+  /*          display: none;*/
+            img{
+              height:40px;
+              width: 40px;
+              opacity: 1;
+            }
+          }
+          .icon2{
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            z-index: 2;
+            margin-left: -20px;
+            img{
+              height: 40px;
+              width: 40px;
+              opacity: 1;
+            }
+          }
+          .icon3{
+            position: absolute;
+            top: 80%;
+            right: 10%;
+            z-index: 2;
+  /*          display: none;*/
+            img{
+              height: 40px;
+              width: 40px;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
 //TESTIMONIAL
 
 //ABOUT
@@ -994,9 +1169,10 @@
           .icon2{
             position: absolute;
             top: 80%;
-            left: 44%;
+            left: 50%;
             z-index: 2;
             display: none;
+            marker-left: -12px;
             img{
               height: 25px;
               width: 25px;
