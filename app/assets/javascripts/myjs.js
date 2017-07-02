@@ -1,6 +1,6 @@
 $('document').ready(function() {
-
-
+  $(window).load(function () {
+    $('.preloader-screen').fadeOut(500);
     //responsive
     var current_menu = $('.menu-content > li:nth-child(2)');
     var numMenu = $('.menu-content > li').size();
@@ -19,7 +19,7 @@ $('document').ready(function() {
     });
 
     //Animation Content Slider
-    $('.slider-title').css({'animation':'slider_content 0.5s forwards','animation-delay':'0.8s'});
+    $('.slider-title').css({'animation':'slider_content 0.6s forwards','animation-delay':'1s'});
     $('.slider-content > button').delay(1500).animate({'opacity':'1'},1000);
     $('.slider-content > button.btn-customs').delay(1500).animate({'opacity':'1'},1000);
 
@@ -273,6 +273,7 @@ $('document').ready(function() {
         }
       })
     }
+  });
 });
 
 //Video Loop BackGround

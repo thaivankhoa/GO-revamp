@@ -21,9 +21,18 @@ body {
 a:visited{
   text-decoration: none;
 }
-.body-content{
+#body-content{
   background: white;
 }
+
+/*.preloader {
+  display: none;
+}*/
+
+.loader {
+  display: block;
+}
+
 button{
   background-color: transparent;
   border: 1px solid transparent;
@@ -354,12 +363,6 @@ button{
   }
 }
 
-@keyframes slider_content {
-  0% {transform: scale(0);}
-  50% {transform: scale(1.3);}
-  100% {transform: scale(1);}
-}
-
 //===============
 //SERVICE SECTION
 //===============
@@ -430,7 +433,7 @@ button{
         }
       }
     }
-    &:nth-child(2){
+    &:nth-child(2) {
       margin-top: 25px;
     }
     &:nth-child(2):hover{
@@ -649,9 +652,9 @@ button{
         .icon2{
           position: absolute;
           top: 80%;
-          left: 45%;
+          left: 50%;
           z-index: 2;
-/*          display: none;*/
+          margin-left: -25px;
           img{
             height: 50px;
             width: 50px;
@@ -718,7 +721,7 @@ button{
       .portfolio-element:hover {
         /*smooth ease in out animation*/
         box-shadow:
-          inset 0 0 20px 180px rgba(252,184,41, 0.8),
+          inset 0 0 20px 240px rgba(252,184,41, 0.8),
           inset 0 0 20px 0px rgba(255,255,255, 0.8),
           0 1px 2px rgba(0,0,0,0.1);
         opacity: 1;
@@ -997,7 +1000,6 @@ button{
 #detail-project{
   width: 100%;
   height: 100%;
-  text-align: center;
   position: fixed;
   top: 0;
   z-index: 20;
