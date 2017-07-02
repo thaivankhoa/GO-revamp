@@ -1,8 +1,7 @@
 $('document').ready(function() {
-  // $('window').load(function () {
+  $('.slider-section').ready(function () {
 
-    $('.preloader-screen').fadeOut(500);
-    $('#body-content').fadeIn(2000);
+    $('.preloader-screen').delay(1000).fadeOut(500);
     //responsive
     var current_menu = $('.menu-content > li:nth-child(2)');
     var numMenu = $('.menu-content > li').size();
@@ -275,7 +274,7 @@ $('document').ready(function() {
         }
       })
     }
-  // });
+  });
 });
 
 //Video Loop BackGround
