@@ -105,6 +105,8 @@ $('document').ready(function(){
 
     $('#toned-m').click(toned);
 
+    $('#toned-w').click(toned);
+
     $('#tyk').click(tyk);
 
     $('#tyk-w').click(tyk);
