@@ -1,7 +1,6 @@
 $('document').ready(function() {
-  $('.slider-section').ready(function () {
-
-    $('.preloader-screen').delay(1000).fadeOut(500);
+  $('.portfolio-details').ready(function () {
+    $('.preloader-screen').delay(500).fadeOut(500);
     //responsive
     var current_menu = $('.menu-content > li:nth-child(2)');
     var numMenu = $('.menu-content > li').size();
@@ -20,7 +19,7 @@ $('document').ready(function() {
     });
 
     //Animation Content Slider
-    $('.slider-title').css({'animation':'slider_content 0.5s forwards','animation-delay':'0.8s'});
+    $('.slider-title').css({'animation':'slider_content 0.6s forwards','animation-delay':'1.3s'});
     $('.slider-content > button').delay(1500).animate({'opacity':'1'},1000);
     $('.slider-content > button.btn-customs').delay(1500).animate({'opacity':'1'},1000);
 
