@@ -76,6 +76,18 @@
       }
     }
   }
+
+  .feedback-section{
+    .feedback-group{
+      .feedback.element{
+        .info-customer{
+          .feedback-content{
+            min-height: 90px;
+          }
+        }
+      }
+    }
+  }
 }
 
 //====================
@@ -110,6 +122,17 @@
     .portfolio-content {
       .item {
         height: 430px;
+      }
+    }
+  }
+  .feedback-section{
+    .feedback-group{
+      .feedback.element{
+        .info-customer{
+          .feedback-content{
+            min-height: 100px;
+          }
+        }
       }
     }
   }
@@ -211,6 +234,18 @@
       }
     }
   }
+
+  .feedback-section{
+    .feedback-group{
+      .feedback.element{
+        .info-customer{
+          .feedback-content{
+            min-height: 110px;
+          }
+        }
+      }
+    }
+  }
 }
 
 
@@ -219,6 +254,18 @@
 //===============
 
 @media screen and (max-width: 1368px){
+
+  .feedback-section{
+    .feedback-group{
+      .feedback.element{
+        .info-customer{
+          .feedback-content{
+            min-height: 120px;
+          }
+        }
+      }
+    }
+  }
 
   .slider-section{
     height: 880px;
