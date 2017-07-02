@@ -3,67 +3,137 @@ $('document').ready(function(){
   if ( window.innerWidth > 0 ) {
     $('#techlist').click(techlist);
 
+    $('#techlist-w').click(techlist);
+
     $('#idea-burn').click(idea_burn);
+
+    $('#idea-burn-w').click(idea_burn);
 
     $('#giveasia').click(giveasia);
 
+    $('#giveasia-w').click(giveasia);
+
     $('#weath').click(weath);
+
+    $('#weath-w').click(weath);
 
     $('#corpzap').click(corzap);
 
+    $('#corpzap-w').click(corzap);
+
     $('#luxufy').click(luxufy);
+
+    $('#luxufy-w').click(luxufy);
 
     $('#student').click(student);
 
+    $('#student-w').click(student);
+
     $('#luxenomad').click(luxenomad);
+
+    $('#luxenomad-w').click(luxenomad);
 
     $('#booqed').click(booqed);
 
+    $('#booqed-m').click(booqed);
+
     $('#mywork').click(mywork);
+
+    $('#mywork-m').click(mywork);
 
     $('#app2rist').click(app2rist);
 
+    $('#app2rist-m').click(app2rist);
+
+    $('#app2rist-m2').click(app2rist);
+
     $('#nattrart').click(nattrart);
+
+    $('#nattrart-m').click(nattrart);
 
     $('#artfolo').click(artfolo);
 
+    $('#artfolo-w').click(artfolo);
+
     $('#cpd').click(cpd);
+
+    $('#cpd-w').click(cpd);
 
     $('#blix').click(blix);
 
+    $('#blix-w').click(blix);
+
     $('#built').click(built);
+
+    $('#built-m').click(built);
 
     $('#flat').click(flat);
 
+    $('#flat-w').click(flat);
+
     $('#gllu').click(gllu)
+
+    $('#gllu-m').click(gllu)
 
     $('#fitday').click(fitday);
 
+    $('#fitday-m').click(fitday);
+
     $('#stage').click(stage);
+
+    $('#stage-w').click(stage);
 
     $('#study').click(study);
 
+    $('#study-w').click(study);
+
+    $('#study-w2').click(study);
+
     $('#iadoa').click(iadoa);
+
+    $('#iadoa-w').click(iadoa);
 
     $('#serumi').click(serumi);
 
+    $('#serumi-w').click(serumi);
+
     $('#scope').click(scope);
+
+    $('#scope-m').click(scope);
 
     $('#toned').click(toned);
 
+    $('#toned-m').click(toned);
+
     $('#tyk').click(tyk);
+
+    $('#tyk-w').click(tyk);
 
     $('#war').click(war);
 
+    $('#war-w').click(war);
+
     $('#natt').click(natt);
+
+    $('#natt-w').click(natt);
 
     $('#allstart').click(allstart);
 
+    $('#allstart-w').click(allstart);
+
     $('#laku6').click(laku6);
+
+    $('#laku6-w').click(laku6);
 
     $('#a21').click(a21);
 
+    $('#a21-w').click(a21);
+
     $('#dbs').click(dbs);
+
+    $('#dbs-m').click(dbs);
+
+    $('#view360-m').click(view360);
 
 
     //main-details
@@ -141,8 +211,8 @@ $('document').ready(function(){
 
     function nattrart() {
       $('#detail-project').css('display','block');
-      $('#detail-project .image-large img:nth-child(12)').css('display','block');
-      $('#detail-project .image-large img:nth-child(12)').css({'animation':'slider_content 0.6s forwards'});
+      $('#detail-project .image-large img:nth-child(32)').css('display','block');
+      $('#detail-project .image-large img:nth-child(32)').css({'animation':'slider_content 0.6s forwards'});
     }
 
     function artfolo() {
@@ -237,8 +307,8 @@ $('document').ready(function(){
 
     function natt() {
       $('#detail-project').css('display','block');
-      $('#detail-project .image-large img:nth-child(32)').css('display','block');
-      $('#detail-project .image-large img:nth-child(32)').css({'animation':'slider_content 0.6s forwards'});
+      $('#detail-project .image-large img:nth-child(12)').css('display','block');
+      $('#detail-project .image-large img:nth-child(12)').css({'animation':'slider_content 0.6s forwards'});
     }
 
     function allstart() {
@@ -263,6 +333,12 @@ $('document').ready(function(){
       $('#detail-project').css('display','block');
       $('#detail-project .image-large img:nth-child(31)').css('display','block');
       $('#detail-project .image-large img:nth-child(31)').css({'animation':'slider_content 0.6s forwards'});
+    }
+
+    function view360() {
+      $('#detail-project').css('display','block');
+      $('#detail-project .image-large img:nth-child(29)').css('display','block');
+      $('#detail-project .image-large img:nth-child(29)').css({'animation':'slider_content 0.6s forwards'});
     }
   }
 });
