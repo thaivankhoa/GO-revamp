@@ -552,6 +552,7 @@ button{
         transition-duration: 0.3s;
         -webkit-transition-timing-function: ease-out;
         transition-timing-function: ease-out;
+        cursor: pointer !important;
       }
     }
     .nav-element:hover {
@@ -567,6 +568,7 @@ button{
       margin-right: 4.16%;
       margin-left: 4.16%;
       display: inline-block;
+      cursor: pointer;
       li{
         margin-top: 25px;
         margin-bottom: 30px;
@@ -624,7 +626,6 @@ button{
       .portfolio-element{
         width: 25%;
         height: 100%;
-
         display: inline-block;
         position: relative;
         z-index: 1;
@@ -1369,6 +1370,7 @@ button{
           margin: 0px;
           font-weight: 500;
           min-height: 120px;
+          cursor: pointer;
           p{
             margin-right: 0px;
             text-align: left;
