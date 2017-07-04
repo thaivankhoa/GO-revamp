@@ -693,17 +693,16 @@ button{
           backface-visibility: hidden;
           /*smooth ease in out animation*/
           padding: 15px 10px 15px 10px;
-          /*color: white;*/
-          color: black;
+          color: white;
           text-align: center;
           height: 100%;
           z-index: 2;
           position: absolute;
           .title{
-            margin-top: 70px;
+            margin-top: 30px;
             font-weight: 600;
-            /*color: #fcbf3e;*/
-            color: black;
+            color: #fcbf3e;
+            /*color: black;*/
             margin-bottom: 15px;
             font-size: 20px;
             text-transform: uppercase;
@@ -722,7 +721,7 @@ button{
       .portfolio-element:hover {
         /*smooth ease in out animation*/
         box-shadow:
-          inset 0 0 20px 240px rgba(252,184,41, 0.8),
+          inset 0 0 20px 240px rgba(0,0,0, 0.8),
           inset 0 0 20px 0px rgba(255,255,255, 0.8),
           0 1px 2px rgba(0,0,0,0.1);
         opacity: 1;
@@ -2050,142 +2049,142 @@ ol.carousel-indicators li.active {
 //Projects avatar
 
 #giveasia, #giveasia-w{
-  background-image: url(asset_path('por-give.jpg'));
+  background-image: url(asset_path('giveasia.jpg'));
   background-size: cover;
 }
 
 #idea-burn, #idea-burn-w{
-  background-image: url(asset_path('por-idea.jpg'));
+  background-image: url(asset_path('idea.jpg'));
   background-size: cover;
 }
 
 #techlist, #techlist-w{
-  background-image: url(asset_path('por-tech.jpg'));
+  background-image: url(asset_path('techlist.jpg'));
   background-size: cover;
 }
 
 #weath, #weath-w{
-  background-image: url(asset_path('por-weath.jpg'));
+  background-image: url(asset_path('fawm.jpg'));
   background-size: cover;
 }
 #blix, #blix-w{
-  background-image: url(asset_path('por-blix.jpg'));
+  background-image: url(asset_path('blix.jpg'));
   background-size: cover;
 }
 
 #corpzap{
-  background-image: url(asset_path('por-corzap.jpg'));
+  background-image: url(asset_path('corpzap2.jpg'));
   background-size: cover;
 }
 
 #student{
-  background-image: url(asset_path('por-student.jpg'));
+  background-image: url(asset_path('student.jpg'));
   background-size: cover;
 }
 
 #luxenomad{
-  background-image: url(asset_path('por-luxe.jpg'));
+  background-image: url(asset_path('luxenomad.jpg'));
   background-size: cover;
 }
 
 #luxufy{
-  background-image: url(asset_path('por-luxify.jpg'));
+  background-image: url(asset_path('luxify.jpg'));
   background-size: cover;
 }
 
 #gllu, #gullu-m{
-  background-image: url(asset_path('por-gllu.jpg'));
+  background-image: url(asset_path('gllu.jpg'));
   background-size: cover;
 }
 
 #mywork{
-  background-image: url(asset_path('por-mywork.jpg'));
+  background-image: url(asset_path('mywork.jpg'));
   background-size: cover;
 }
 
 #app2rist, #app2rist-m2{
-  background-image: url(asset_path('por-2rist.jpg'));
+  background-image: url(asset_path('2rist.jpg'));
   background-size: cover;
 }
 
 #nattrart{
-  background-image: url(asset_path('por-narr.jpg'));
+  background-image: url(asset_path('narr.jpg'));
   background-size: cover;
 }
 
 #allstart, #allstart-w{
-  background-image: url(asset_path('por-all.jpg'));
+  background-image: url(asset_path('allstartup.jpg'));
   background-size: cover;
 }
 #view360{
-  background-image: url(asset_path('por-360view.jpg'));
+  background-image: url(asset_path('360view.jpg'));
   background-size: cover;
 }
 #a21, #a21-w{
-  background-image: url(asset_path('por-alex.jpg'));
+  background-image: url(asset_path('a21.jpg'));
   background-size: cover;
 }
 #dbs{
-  background-image: url(asset_path('por-dbs.jpg'));
+  background-image: url(asset_path('dbs.jpg'));
   background-size: cover;
 }
 
 /*web*/
 #corpzap-w{
-  background-image: url(asset_path('por-corzap.jpg'));
+  background-image: url(asset_path('corpzap.jpg'));
   background-size: cover;
 }
 
 #student-w{
-  background-image: url(asset_path('por-student.jpg'));
+  background-image: url(asset_path('student.jpg'));
   background-size: cover;
 }
 
 #luxenomad-w{
-  background-image: url(asset_path('por-luxe.jpg'));
+  background-image: url(asset_path('luxenomad.jpg'));
   background-size: cover;
 }
 
 #luxufy-w{
-  background-image: url(asset_path('por-luxify.jpg'));
+  background-image: url(asset_path('luxify.jpg'));
   background-size: cover;
 }
 
 /*mobile*/
 
 #mywork-m{
-  background-image: url(asset_path('por-mywork.jpg'));
+  background-image: url(asset_path('mywork.jpg'));
   background-size: cover;
 }
 
 #app2rist-m{
-  background-image: url(asset_path('por-2rist.jpg'));
+  background-image: url(asset_path('2rist.jpg'));
   background-size: cover;
 }
 
 #nattrart-m{
-  background-image: url(asset_path('por-narr.jpg'));
+  background-image: url(asset_path('narr.jpg'));
   background-size: cover;
 }
 
 #booqed-m{
-  background-image: url(asset_path('por-booqed.jpg'));
+  background-image: url(asset_path('getbooqed.jpg'));
   background-size: cover;
 }
 
 #gllu-m{
-  background-image: url(asset_path('por-gllu.jpg'));
+  background-image: url(asset_path('gllu.jpg'));
   background-size: cover;
 }
 
 /* */
 #booqed{
-  background-image: url(asset_path('por-booqed.jpg'));
+  background-image: url(asset_path('getbooqed.jpg'));
   background-size: cover;
 }
 
 #artfolo, #artfolo-w{
-  background-image: url(asset_path('por-art.jpg'));
+  background-image: url(asset_path('artfolo.jpg'));
   background-size: cover;
 }
 
@@ -2196,27 +2195,27 @@ ol.carousel-indicators li.active {
 }
 
 #cpd, #cpd-w{
-  background-image: url(asset_path('por-cpd.jpg'));
+  background-image: url(asset_path('cpd.jpg'));
   background-size: cover;
 }
 
 #stage, #stage-w{
-  background-image: url(asset_path('por-stage.jpg'));
+  background-image: url(asset_path('thework.jpg'));
   background-size: cover;
 }
 
 #fitday, #fitday-m{
-  background-image: url(asset_path('details-fit.jpg'));
+  background-image: url(asset_path('fitday1.jpg'));
   background-size: cover;
 }
 
 #flat, #flat-w{
-  background-image: url(asset_path('por-flat.jpg'));
+  background-image: url(asset_path('flat.jpg'));
   background-size: cover;
 }
 
 #scope, #scope-m{
-  background-image: url(asset_path('por-scope.jpg'));
+  background-image: url(asset_path('scope.jpg'));
   background-size: cover;
 }
 
@@ -2226,17 +2225,17 @@ ol.carousel-indicators li.active {
 }
 
 #serumi, #serumi-w{
-  background-image: url(asset_path('por-serumi.jpg'));
+  background-image: url(asset_path('serumi.jpg'));
   background-size: cover;
 }
 
 #study, #study-w, #study-w2{
-  background-image: url(asset_path('por-study.jpg'));
+  background-image: url(asset_path('study.jpg'));
   background-size: cover;
 }
 
 #toned, #toned-w, #toned-m{
-  background-image: url(asset_path('por-toned.jpg'));
+  background-image: url(asset_path('toned.jpg'));
   background-size: cover;
 }
 
@@ -2246,33 +2245,33 @@ ol.carousel-indicators li.active {
 }
 
 #war, #war-w{
-  background-image: url(asset_path('por-war.jpg'));
+  background-image: url(asset_path('war.jpg'));
   background-size: cover;
 }
 
 #natt, #natt-w{
-  background-image: url(asset_path('por-narr.jpg'));
+  background-image: url(asset_path('narr.jpg'));
   background-size: cover;
 }
 #allstart{
-  background-image: url(asset_path('por-all.jpg'));
+  background-image: url(asset_path('allstartup.jpg'));
   background-size: cover;
 }
 #view360, #view360-m{
-  background-image: url(asset_path('por-360view.jpg'));
+  background-image: url(asset_path('360view.jpg'));
   background-size: cover;
 }
 #a21{
-  background-image: url(asset_path('por-alex.jpg'));
+  background-image: url(asset_path('a21.jpg'));
   background-size: cover;
 }
 #dbs, #dbs-m{
-  background-image: url(asset_path('por-dbs.jpg'));
+  background-image: url(asset_path('dbs.jpg'));
   background-size: cover;
 }
 
 #laku6, #laku6-w{
-  background-image: url(asset_path('por-laku.jpg'));
+  background-image: url(asset_path('laku.jpg'));
   background-size: cover;
 }
 
