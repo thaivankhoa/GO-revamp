@@ -131,11 +131,14 @@ $('document').ready(function(){
 
     $('#a21-w').click(a21);
 
+    $('#a21-m').click(a21);
+
     $('#dbs').click(dbs);
 
     $('#dbs-m').click(dbs);
 
     $('#view360-m').click(view360);
+    $('#view360').click(view360);
 
 
     //main-details
