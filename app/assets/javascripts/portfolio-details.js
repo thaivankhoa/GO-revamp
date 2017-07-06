@@ -99,7 +99,7 @@ $('document').ready(function(){
 
     $('#scope').click(scope);
 
-    $('#scope-m').click(scope);
+    $('#scope-w').click(scope);
 
     $('#toned').click(toned);
 
